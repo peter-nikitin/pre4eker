@@ -1,48 +1,58 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import shevron from "../../assets/shevron.svg";
 import Input from "../Input/Input";
 import style from "./Selector.css";
 
 export default function Selector(props) {
-  const [isOptionsShown, toggleOptions] = useState(false)
-  const options = Object.values(props.options);
-  const {field} = props;
-  
-  let selectedInputField;
-    if (field.name === "externalID") {
-      selectedInputField = <input type="text" className={style.field}   value="" placeholder="Название идентификатора"/>
-    } else {
-      selectedInputField = <input type="text" className={style.field}    value={field.label}  placeholder="Название идентификатора"/>
-    } 
-  // console.log(props)
+  const [isOptionsShown, toggleOptions] = useState(false);
+  const { selected, options, changeSelection, label } = props;
+
   return (
     <div className={style.selector}>
-      <div>
+      <div className={style.half}>
         <label htmlFor="" className={style.label}>
-          Поле
+          {label || "Поле"}
         </label>
-        <div className={style.selectorGroup}> 
-          <button className={style.button} onClick={() => toggleOptions(!isOptionsShown)}>
+        <div className={style.selectorGroup}>
+          <button
+            className={style.button}
+            onClick={() => toggleOptions(!isOptionsShown)}
+          >
             <img src={shevron} />
           </button>
-         {selectedInputField}
+          <input
+            type="text"
+            className={style.field}
+            value={selected === "externalId" ? "" : options[selected]}
+            onChange={(evetn) => props.onInputChange}
+            placeholder="Название идентификатора"
+          />
         </div>
-        {isOptionsShown && <ul className={style.list}>
-
-         
-        {options.map( (item, index) => (
-          <li className={style.listItem} key={index} onClick={() => {
-            props.changeSelection(item.name)
-            toggleOptions(!isOptionsShown)
-            }} > {item.label}</li>
-        ))} 
-      </ul> }
-        
+        {isOptionsShown && (
+          <ul className={style.list}>
+            {Object.keys(options).map((item, index) => (
+              <li
+                key={index}
+                onClick={() => {
+                  changeSelection(item);
+                  toggleOptions(!isOptionsShown);
+                }}
+              >
+                <button className={style.listItem}>{options[item]}</button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
-
-      <Input field={props.field} />
-      
+      <div className={style.half}>
+        <Input label={options[selected]} name={selected} />
+      </div>
+      {selected === "externalId" && (
+        <p className={style.description}>
+          Введите название поля идентификатора
+        </p>
+      )}
     </div>
   );
 }
