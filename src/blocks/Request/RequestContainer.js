@@ -3,14 +3,24 @@ import { connect } from 'react-redux';
 import Request from './Request'
 
 const mapStateToProps = state => {
+
   return {
-    customer: state
+    request: state
   }
 };
 
 const mapDispatchToProps = dispatch => {
+
   return {
-    changeSelection: (option) => dispatch({ type: "SELECT", selected: option  })
+    changeCustomerIdentifier: (option) => {      
+      return dispatch({ type: "SELECT_CUSTOMER",  selected: option })},
+    changeOrderIdentifier: (option) => {      
+      return dispatch({ type: "SELECT_ORDER_IDENTIFIER",  selected: option })},
+    addCF: (option) => {      
+      return dispatch({ type: "ADD_CUSTOM_FIELD" })},
+    onInputChange: (value) => {
+      return dispatch({ type: "SET_REQUEST_VALUE" })
+    }
   }
 }
 
