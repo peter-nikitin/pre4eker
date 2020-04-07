@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
   },
+  devtool: `source-map`,
   module: {
     rules: [
       {
@@ -27,7 +28,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: {
-                localIdentName: "[path][name]__[local]--[hash:base64:5]"
+                localIdentName: "[name]__[local]--[hash:base64:5]"
               }
             }
           },
