@@ -4,10 +4,10 @@ import 'regenerator-runtime/runtime'
 import thunk from 'redux-thunk';
 
 // import {countReducer} from './counter/reducer'; 
-import {selectorReducer} from './blocks/Selector/reducer'; 
+import {requestReducer} from './blocks/Request/reducer'; 
 
 const allReducers = combineReducers({
-  selectorReducer
+  requestReducer
 })
 
 export const store = createStore(allReducers, applyMiddleware(thunk)); 
