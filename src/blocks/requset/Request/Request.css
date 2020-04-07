@@ -1,0 +1,11 @@
+.request {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  padding: 16px 26px;
+}
+
+.h2 {
+  font-size: 18px;
+  line-height: 22px;
+}

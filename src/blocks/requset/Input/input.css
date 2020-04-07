@@ -1,0 +1,25 @@
+.inputItem {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 8px; */
+  /* margin-right: 4px; */
+}
+
+.input {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+.label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #000000;
+  margin-bottom: 4px;
+}
