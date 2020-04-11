@@ -4,8 +4,8 @@ import { connect } from 'react-redux'
 import Response from './Response';
 
 
-const mapStateToProps = (state) => ({
-  state: state
+const mapStateToProps = ({responseReducer}) => ({
+  response: responseReducer, 
 })
 
 const mapDispatchToProps = {
