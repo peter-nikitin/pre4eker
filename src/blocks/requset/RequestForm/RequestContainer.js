@@ -2,12 +2,10 @@ import { connect } from 'react-redux';
 
 import Request from './Request'
 
-const mapStateToProps = state => {
-
-  return {
-    request: state
+const mapStateToProps = ({requestReducer}) => ({
+  request: requestReducer
   }
-};
+)
 
 const mapDispatchToProps = dispatch => {
 
