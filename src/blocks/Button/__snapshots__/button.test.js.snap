@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button changes color when hovered 1`] = `
+<DocumentFragment>
+  <button
+    class="button normal dropdown"
+  >
+    <img
+      src="test-file-stub"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button changes color when hovered 2`] = `
+<DocumentFragment>
+  <button
+    class="button hover dropdown"
+  >
+    <img
+      src="test-file-stub"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button changes color when hovered 3`] = `
+<DocumentFragment>
+  <button
+    class="button normal dropdown"
+  >
+    <img
+      src="test-file-stub"
+    />
+  </button>
+</DocumentFragment>
+`;
