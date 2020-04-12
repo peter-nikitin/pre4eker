@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Request from './Request'
+import Request from './RequestForm'
 
 const mapStateToProps = ({requestReducer}) => ({
   request: requestReducer

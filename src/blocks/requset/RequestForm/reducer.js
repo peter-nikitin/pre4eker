@@ -1,4 +1,4 @@
-import request from './requestObj';
+import request from 'Data/requestObj';
 
 export const requestReducer = function(state = request, action) {
   // console.log(state)

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Input from "../Input/Input";
+import Input from "Src/blocks/Input/Input";
+
 import style from "./Selector.css";
 
 import Button from '../../Button/Button';

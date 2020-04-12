@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import style from "./Order.css";
 import Selector from "../Selector/Selector";
-import Input from "../Input/Input";
+import Input from "Src/blocks/Input/Input";
 import CustomFields from '../CustomFields/CustomFields';
 
 export default class Order extends Component {
