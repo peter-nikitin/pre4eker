@@ -6,22 +6,7 @@ const customer = {
   mobilePhone: "Мобильный телефон",
 };
 
-const order = {
-  ids: {
-    mindboxId: "Mindbox Id",
-    externalId: "Внешний ID",
-  },
-  cashdesk: "ИД кассы",
-  deliveryCost: "Стоимость доставки",
-  area: "Зона",
-  customFields: "Дополнительные поля",
-  pointOfContact: "Точка контакта",
-  requestedPromotions: [requestedPromotion],
-  bonusPoints: [bonusPoint],
-  coupons: [coupon],
-  payments: [payment],
-  lines: [line],
-};
+
 
 const payment = {
   type: "Тип оплаты (card1)",
@@ -69,6 +54,23 @@ const line = {
   product: "ИД продукта",
   status: "Статус",
   giftCard: giftCard,
+};
+
+const order = {
+  ids: {
+    mindboxId: "Mindbox Id",
+    externalId: "Внешний ID",
+  },
+  cashdesk: "ИД кассы",
+  deliveryCost: "Стоимость доставки",
+  area: "Зона",
+  customFields: "Дополнительные поля",
+  pointOfContact: "Точка контакта",
+  requestedPromotions: [requestedPromotion],
+  bonusPoints: [bonusPoint],
+  coupons: [coupon],
+  payments: [payment],
+  lines: [line],
 };
 
 const request = {

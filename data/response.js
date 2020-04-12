@@ -1,6 +1,6 @@
 const response = {
-status: "Success",
-order: {
+  status: "Success",
+  order: {
     processingStatus: "Calculated",
     deliveryCost: 20638572.96,
     ids: {
@@ -1167,8 +1167,8 @@ order: {
       child1Sex: "",
       clearTestClient: "",
       isCompany: true,
-      multiline: ["", ""],
-      singleline: ["", ""],
+      multiline: ["1", "2"],
+      singleline: ["56", ""],
       walletCardLink: "",
       walletCardQrCodeLink: "",
       walletCardSubscription: false,
