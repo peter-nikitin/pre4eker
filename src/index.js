@@ -18,7 +18,7 @@ const App = () =>  (
     <Normalize />
     <Header />
     <Main  />
-    {/* <Container/> */}
+
   
   </Provider>
 )
