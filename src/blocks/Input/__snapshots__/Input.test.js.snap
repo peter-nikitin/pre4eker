@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the field match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="inputItem"
+  >
+    <label
+      class="label"
+      for="email"
+    >
+      email
+    </label>
+    <input
+      class="input"
+      name="email"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
