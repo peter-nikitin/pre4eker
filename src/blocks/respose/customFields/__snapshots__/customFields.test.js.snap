@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customfields shoulg match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="name"
+    >
+      Дополнительные поля 
+      <button
+        class="button normal dropdown"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`customfields shoulg match snapshot 2`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="name"
+    >
+      Дополнительные поля 
+      <button
+        class="button normal dropdown"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </button>
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        child1Sex
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        clearTestClient
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        isCompany
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        multiline
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        singleline
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        walletCardLink
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        walletCardQrCodeLink
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+    <div>
+      <div
+        class="half"
+      >
+        walletCardSubscription
+      </div>
+      <div
+        class="half"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`customfields shoulg match snapshot 3`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="name"
+    >
+      Дополнительные поля 
+      <button
+        class="button normal dropdown"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
