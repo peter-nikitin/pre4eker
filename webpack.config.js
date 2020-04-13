@@ -6,15 +6,14 @@ module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   devtool: `source-map`,
   resolve: {
-    alias:{
-      Src: path.resolve(__dirname,   "src"),
-      Data: path.resolve(__dirname,   "data")
+    alias: {
+      Src: path.resolve(__dirname, "src"),
+      Data: path.resolve(__dirname, "data"),
     },
- 
   },
   module: {
     rules: [
@@ -23,8 +22,8 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
         options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"]
-        }
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        },
       },
       {
         test: /\.css$/,
@@ -35,9 +34,9 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: {
-                localIdentName: "[name]__[local]--[hash:base64:5]"
-              }
-            }
+                localIdentName: "[name]__[local]--[hash:base64:5]",
+              },
+            },
           },
           {
             loader: require.resolve("postcss-loader"),
@@ -48,14 +47,13 @@ module.exports = {
               plugins: () => [
                 require("postcss-flexbugs-fixes"),
                 require("autoprefixer")({
-                  
-                  flexbox: "no-2009"
+                  flexbox: "no-2009",
                 }),
-                require("postcss-modules-values")
-              ]
-            }
-          }
-        ]
+                require("postcss-modules-values"),
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.svg$/,
@@ -63,16 +61,16 @@ module.exports = {
           {
             loader: "svg-url-loader",
             options: {
-              limit: 10000
-            }
-          }
-        ]
-      }
-    ]
+              limit: 10000,
+            },
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html")
-    })
-  ]
+      template: path.resolve(__dirname, "src", "index.html"),
+    }),
+  ],
 };
