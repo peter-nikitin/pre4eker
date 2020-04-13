@@ -7,7 +7,7 @@ import {ResponseContainer} from '../respose/ResponseContainer';
 export default function Main(props) {
   return (
     <div className={style.main}>
-      <RequestContainer/>
+      {/* <RequestContainer/> */}
       <ResponseContainer/>
     </div>
   );
