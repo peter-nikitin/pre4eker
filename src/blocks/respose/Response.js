@@ -1,10 +1,13 @@
 import React from 'react'
-import Customer from './customer/customer';
+import Customer from './Customer/Customer';
 
 export default Response = (props) => {
+
+  const {customer} = props.response
+
   return (
     <div>
-      <Customer />
+      <Customer customer={customer}/>
     </div>
   )
 }
