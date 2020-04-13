@@ -72,7 +72,14 @@ exports[`customfields shoulg match snapshot 2`] = `
       </div>
       <div
         class="half"
-      />
+      >
+        <p>
+          1
+        </p>
+        <p>
+          2
+        </p>
+      </div>
     </div>
     <div>
       <div
@@ -82,7 +89,12 @@ exports[`customfields shoulg match snapshot 2`] = `
       </div>
       <div
         class="half"
-      />
+      >
+        <p>
+          56
+        </p>
+        <p />
+      </div>
     </div>
     <div>
       <div
