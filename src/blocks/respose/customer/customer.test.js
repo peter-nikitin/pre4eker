@@ -1,8 +1,8 @@
 import React from "react";
-import Customer from "./customer";
+import Customer from "./Customer";
 import { render, fireEvent, waitFor, screen, cleanup, act } from '@testing-library/react' 
 import response from 'Data/response'
-import { exportAllDeclaration } from "../../../../../../../Library/Caches/typescript/3.8/node_modules/@babel/types/lib/index";
+import { exportAllDeclaration } from "@babel/types";
 
 afterEach(cleanup)
  

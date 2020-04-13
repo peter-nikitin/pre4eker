@@ -1,20 +1,77 @@
+.customer {
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  padding: 16px 8px;
+}
+
 .name {
   font-size: 8px;
   line-height: 10px;
   color: #828282;
+  width: 100%;
 }
 
 .value {
   font-size: 12px;
   line-height: 15px;
   color: #000000;
+  margin-bottom: 4px;
 }
 
 .inline {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.inline:last-child {
+  margin-bottom: 0;
 }
 
 .half {
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  padding-left: 12px;
+  position: relative;
+}
+
+.status::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.neutral {
+  color: #828282;
+  padding-left: 0;
+}
+
+.good {
+  color: #219653;
+}
+
+.good::before {
+  background-image: url('/src/assets/daw.svg');
+}
+
+.bad {
+  color: #C41717;
+}
+
+.bad::before {
+  background-image: url('/src/assets/cross.svg');
 }

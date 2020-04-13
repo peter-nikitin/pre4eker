@@ -2,7 +2,9 @@
 
 exports[`customer match snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="customer"
+  >
     <div
       class="inline"
     >
@@ -48,7 +50,9 @@ exports[`customer match snapshot 1`] = `
         </div>
         <div
           class="value"
-        />
+        >
+          Женский
+        </div>
       </div>
       <div
         class="half"
@@ -71,7 +75,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="name"
       >
-        Телефон
+        Мобильный телефон
       </div>
       <div
         class="half"
@@ -82,12 +86,12 @@ exports[`customer match snapshot 1`] = `
           79001234567
         </div>
         <p
-          class="good"
+          class="good status"
         >
           Валидный 
         </p>
         <p
-          class="good"
+          class="good status"
         >
           Подтвержден 
         </p>
@@ -101,7 +105,7 @@ exports[`customer match snapshot 1`] = `
           79652026149
         </div>
         <p
-          class="bad"
+          class="bad status"
         >
           Ожидает подтверждения 
         </p>
@@ -124,14 +128,9 @@ exports[`customer match snapshot 1`] = `
           test@mindbox.ru
         </div>
         <p
-          class="good"
+          class="good status"
         >
           Валидный 
-        </p>
-        <p
-          class="bad"
-        >
-          Не подтвержден 
         </p>
       </div>
     </div>
@@ -151,8 +150,29 @@ exports[`customer match snapshot 1`] = `
         >
           Москва
         </div>
-        <p>
+        <p
+          class="neutral status"
+        >
           MoscowCity
+        </p>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Часовой пояс
+        </div>
+        <div
+          class="value"
+        >
+          Asia/Hong_Kong
+        </div>
+        <p
+          class="neutral status"
+        >
+          Определили в трекере
         </p>
       </div>
     </div>
