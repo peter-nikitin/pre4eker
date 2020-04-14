@@ -9,6 +9,12 @@ afterEach(cleanup)
 const {customer} = response;
 
 test(`customer match snapshot`, () => {
-  const {asFragment} = render(<Customer customer={customer} />)
-  expect(asFragment(<Customer />)).toMatchSnapshot()
+  const {asFragment, getByRole} = render(<Customer customer={customer} />)
+  expect(asFragment(<Customer />)).toMatchSnapshot();
+
+  fireEvent.click(screen.getByRole('button'));
+  expect(asFragment(<Customer />)).toMatchSnapshot();
+  
+  fireEvent.click(screen.getByRole('button'));
+  expect(asFragment(<Customer />)).toMatchSnapshot();
 })
