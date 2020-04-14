@@ -1,3 +1,3 @@
-<svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 1L4.5 4.52381L8.5 1" stroke="black"/>
+<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="shevron" d="M0.5 0.738037L4.5 4.26185L8.5 0.738037" stroke="black"/>
 </svg>
