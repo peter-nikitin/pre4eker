@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Рассчитан
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          Доставка
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          20638572.96
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          Итоговая цена
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          10542306.11
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="name"
+      >
+        Дополнительные поля 
+        <button
+          class="small button normal dropdown"
+        >
+          <img
+            src="test-file-stub"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`customer match snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Рассчитан
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          Доставка
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          20638572.96
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          Итоговая цена
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          10542306.11
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="name"
+      >
+        Дополнительные поля 
+        <button
+          class="small button normal dropdown"
+        >
+          <img
+            src="test-file-stub"
+          />
+        </button>
+      </div>
+      <div
+        class="inline"
+      >
+        <div
+          class="half value"
+        >
+          defectTestField
+        </div>
+        <div
+          class="half value"
+        >
+          test13
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <div
+          class="half value"
+        >
+          socialcard
+        </div>
+        <div
+          class="half value"
+        >
+          true
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`customer match snapshot 3`] = `
+<DocumentFragment>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Рассчитан
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          Доставка
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          20638572.96
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          Итоговая цена
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="value"
+        >
+          10542306.11
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="name"
+      >
+        Дополнительные поля 
+        <button
+          class="small button normal dropdown"
+        >
+          <img
+            src="test-file-stub"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
