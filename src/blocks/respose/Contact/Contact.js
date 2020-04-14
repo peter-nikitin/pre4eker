@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styleShared from "../Customer/customer.css";
+import styleShared from "Src/customer.css";
 
 const Contact = ({ label, main, pending, invalid, confirmed }) => {
   

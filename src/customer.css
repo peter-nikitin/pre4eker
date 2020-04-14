@@ -2,6 +2,7 @@
   background: #FFFFFF;
   border: 1px solid #BDBDBD;
   padding: 16px 8px;
+  margin-bottom: 8px;
 }
 
 .name {
@@ -9,6 +10,8 @@
   line-height: 10px;
   color: #828282;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .value {
