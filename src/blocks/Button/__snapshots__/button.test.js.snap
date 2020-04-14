@@ -3,7 +3,7 @@
 exports[`Button changes color when hovered 1`] = `
 <DocumentFragment>
   <button
-    class="button normal dropdown"
+    class="medium button normal dropdown"
   >
     <img
       src="test-file-stub"
@@ -15,7 +15,7 @@ exports[`Button changes color when hovered 1`] = `
 exports[`Button changes color when hovered 2`] = `
 <DocumentFragment>
   <button
-    class="button hover dropdown"
+    class="medium button hover dropdown"
   >
     <img
       src="test-file-stub"
@@ -27,7 +27,7 @@ exports[`Button changes color when hovered 2`] = `
 exports[`Button changes color when hovered 3`] = `
 <DocumentFragment>
   <button
-    class="button normal dropdown"
+    class="medium button normal dropdown"
   >
     <img
       src="test-file-stub"

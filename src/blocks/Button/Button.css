@@ -1,6 +1,8 @@
 .button {
-  padding: 5px 10px;
   border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .normal {
@@ -9,4 +11,19 @@
 
 .hover {
   background: #27AE60;
+  
+}
+
+.normal .hover#shevron {
+  stroke: white;
+}
+
+.small {
+ height: 14px; 
+ width: 14px; 
+}
+
+.medium {
+  height: 24px; 
+  width: 24px; 
 }
