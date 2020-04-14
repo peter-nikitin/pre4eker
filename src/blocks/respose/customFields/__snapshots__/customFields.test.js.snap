@@ -8,7 +8,7 @@ exports[`customfields shoulg match snapshot 1`] = `
     >
       Дополнительные поля 
       <button
-        class="button normal dropdown"
+        class="small button normal dropdown"
       >
         <img
           src="test-file-stub"
@@ -27,104 +27,154 @@ exports[`customfields shoulg match snapshot 2`] = `
     >
       Дополнительные поля 
       <button
-        class="button normal dropdown"
+        class="small button normal dropdown"
       >
         <img
           src="test-file-stub"
         />
       </button>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         child1Sex
       </div>
       <div
-        class="half"
-      />
+        class="half value"
+      >
+        <span
+          class="neutral"
+        >
+          Пусто
+        </span>
+      </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         clearTestClient
       </div>
       <div
-        class="half"
-      />
+        class="half value"
+      >
+        <span
+          class="neutral"
+        >
+          Пусто
+        </span>
+      </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         isCompany
       </div>
       <div
-        class="half"
-      />
+        class="half value"
+      >
+        true
+      </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         multiline
       </div>
       <div
-        class="half"
+        class="half value"
       >
-        <p>
+        <div>
           1
-        </p>
-        <p>
+        </div>
+        <div>
           2
-        </p>
+        </div>
       </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         singleline
       </div>
       <div
-        class="half"
+        class="half value"
       >
-        <p>
+        <div>
           56
-        </p>
-        <p />
+        </div>
+        <div>
+          <span
+            class="neutral"
+          >
+            Пусто
+          </span>
+        </div>
       </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         walletCardLink
       </div>
       <div
-        class="half"
-      />
+        class="half value"
+      >
+        <span
+          class="neutral"
+        >
+          Пусто
+        </span>
+      </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         walletCardQrCodeLink
       </div>
       <div
-        class="half"
-      />
+        class="half value"
+      >
+        <span
+          class="neutral"
+        >
+          Пусто
+        </span>
+      </div>
     </div>
-    <div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="half value"
       >
         walletCardSubscription
       </div>
       <div
-        class="half"
-      />
+        class="half value"
+      >
+        false
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -138,7 +188,7 @@ exports[`customfields shoulg match snapshot 3`] = `
     >
       Дополнительные поля 
       <button
-        class="button normal dropdown"
+        class="small button normal dropdown"
       >
         <img
           src="test-file-stub"

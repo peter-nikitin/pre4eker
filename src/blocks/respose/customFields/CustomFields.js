@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import stylesShared from "../Customer/customer.css";
+import stylesShared from "Src/customer.css";
 import Button from "Src/blocks/Button/Button";
 
 const CustomFields = ({ data }) => {
@@ -8,26 +8,41 @@ const CustomFields = ({ data }) => {
 
   const [showCustomFields, toggle] = useState(false);
 
+  const drawValues = (values) =>{
+   switch (typeof values) {
+     case 'object':
+       return values.map((value, i) => (
+        <div key={`item ${i}`}>
+          {`${value}` || <span className={stylesShared.neutral}>Пусто</span>}
+        </div>
+      ));   
+     default:
+      return `${values}` || (
+        <span className={stylesShared.neutral}>Пусто</span>
+      ) 
+   }
+   }
+
   return (
     <div>
       <div className={stylesShared.name}>
         Дополнительные поля{" "}
-        <Button type="DROPDOWN" action={() => toggle(!showCustomFields)} />
+        <Button
+          type="DROPDOWN"
+          size="small"
+          action={() => toggle(!showCustomFields)}
+        />
       </div>
 
       {showCustomFields &&
-        keys.map((item, index) => (
-          <div key={`keys ${index}`}>
-            <div className={stylesShared.half}>{item}</div> 
-            {typeof data[item] === `object` ? (
-              <div className={stylesShared.half}>
-                {data[item].map((value, i) => (
-                  <p key={`item ${i}`}>{value}</p>
-                ))}
-              </div>
-            ) : (
-              <div className={stylesShared.half}>{data[item]}</div>
-            )}
+        keys.map((field, index) => (
+          <div key={`field ${index}`} className={stylesShared.inline}>
+            <div className={`${stylesShared.half} ${stylesShared.value}`}>
+              {field}
+            </div>
+            <div className={`${stylesShared.half} ${stylesShared.value}`}>
+              {drawValues(data[field])}
+            </div>
           </div>
         ))}
     </div>
