@@ -19,7 +19,7 @@ const BonusPointsChange = ({ bonusPointsChanges }) => {
         <div className={stylesShared.half}>
           <div className={stylesShared.name}>Балльный счет</div>
           <div className={stylesShared.value}>{balanceType.name}</div>
-          <div className={stylesShared.status}>{balanceType.ids.systemName}</div>
+          <div className={`${stylesShared.status} ${stylesShared.neutral}`}>{balanceType.ids.systemName}</div>
         </div>
       </div>
       <div className={stylesShared.inline}>
