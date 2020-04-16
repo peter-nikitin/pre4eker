@@ -1,21 +1,27 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
 import style from "./Button.css";
-import dropdown from "Src/assets/shevron.svg";
-import add from "Src/assets/add.svg";
-import remove from "Src/assets/remove.svg";
-import propTypes from "prop-types";
+import add from "src/assets/add.svg";
+import remove from "src/assets/remove.svg";
+
+import  Shevron from "src/blocks/Icons/Shevron";
+import  Add from "src/blocks/Icons/Add";
+import  Remove from "src/blocks/Icons/Remove";
+
+
 
 export default function Button({ action, type, size = "medium", ...props }) {
   const [status, changeStatus] = useState(`normal`);
 
-  const typeOfButton = (icon) => {
-    switch (icon) {
+  const typeOfButton = (type) => {
+    switch (type) {
       case `DROPDOWN`:
-        return { file: dropdown, className: `dropdown` };
+        return { icon: <Shevron />, styleClass: style.normal };
       case `ADD`:
-        return { file: add, className: `add` };
+        return { icon: <Add />, styleClass: style.add };
       case `REMOVE`:
-        return { file: remove, className: `remove` };
+        return { icon: <Remove />, styleClass: style.remove };
 
       default:
         break;
@@ -25,18 +31,18 @@ export default function Button({ action, type, size = "medium", ...props }) {
   return (
     <button
       className={`${style[size]} ${style.button} ${style[status]} ${
-        typeOfButton(type).className
+        typeOfButton(type).styleClass
       }`}
       onClick={() => action()}
       onMouseEnter={() => changeStatus(`hover`)}
       onMouseLeave={() => changeStatus(`normal`)}
     >
-      <img src={typeOfButton(type).file} />
+    {typeOfButton(type).icon}
     </button>
   );
 }
 
 Button.propTypes = {
-  action: propTypes.func,
-  type: propTypes.string,
+  action: PropTypes.func,
+  type: PropTypes.string,
 };

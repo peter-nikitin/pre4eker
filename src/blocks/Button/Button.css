@@ -3,20 +3,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .normal {
   background: #FFFFFF;
 }
 
-.hover {
-  background: #27AE60;
-  
+.normal.hover {
+  background: #4F4F4F; 
+  border-color:  #4F4F4F ;
+}
+.hover  svg  path {
+  fill: white;
 }
 
-.normal .hover#shevron {
-  stroke: white;
+.add.hover {
+  background: #27AE60;
+  border-color: #27AE60;
 }
+
+.remove.hover {
+  background: #EB5757;
+  border-color: #EB5757;
+}
+
 
 .small {
  height: 14px; 
