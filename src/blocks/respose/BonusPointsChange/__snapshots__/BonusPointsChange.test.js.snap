@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          P02zXwLm
+        </div>
+        <div
+          class="status"
+        >
+          MBcRZtuf
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          1396638.62
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            5761799.72
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
