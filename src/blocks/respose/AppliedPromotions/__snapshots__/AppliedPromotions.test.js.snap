@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Начисление баллов
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              tmtk1GOB
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: ojbLVRsD
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            1180401.2
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              До
+            </div>
+            <div
+              class="value"
+            >
+              Tue Feb 14 2017
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1043337289
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
