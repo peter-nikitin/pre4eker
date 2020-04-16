@@ -14,23 +14,35 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half"
       >
-        <div>
-          mindboxId: 1968413179 
+        <div
+          class="name"
+        >
+          mindboxId: 1968413179
         </div>
-        <div>
-          orderId2Id: 1784802773 
+        <div
+          class="name"
+        >
+          orderId2Id: 1784802773
         </div>
-        <div>
-          orderMobileAppIdId: 1288953047 
+        <div
+          class="name"
+        >
+          orderMobileAppIdId: 1288953047
         </div>
-        <div>
-          offlineTransactionIdId: 1430164306 
+        <div
+          class="name"
+        >
+          offlineTransactionIdId: 1430164306
         </div>
-        <div>
-          websiteTransactionIdId: 2035457217 
+        <div
+          class="name"
+        >
+          websiteTransactionIdId: 2035457217
         </div>
-        <div>
-          receiptNumberId: 107913866 
+        <div
+          class="name"
+        >
+          receiptNumberId: 107913866
         </div>
       </div>
       <div
@@ -98,7 +110,7 @@ exports[`customer match snapshot 1`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal shevron"
+          class="small button normal basic"
         >
           <div>
             <svg
@@ -117,6 +129,572 @@ exports[`customer match snapshot 1`] = `
             </svg>
           </div>
         </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Начисление баллов
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              tmtk1GOB
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: ojbLVRsD
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            1180401.2
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              До
+            </div>
+            <div
+              class="value"
+            >
+              Tue Feb 14 2017
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1043337289
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка балламми
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              iLqkYKaK
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: 8r6qx418
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            16327420.01
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          880694824
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            6929359.6
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          118506896
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка на доставку
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            6653645.27
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1497291562
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Сообщение
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1976033026
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Выданный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула:Новый пул промокодов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          11133877
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            17853107.91
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          58219796
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            17074535.58
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -171,7 +749,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        10/23/2018
+        Tue Oct 23 2018
       </div>
     </div>
     <div
@@ -185,7 +763,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        11/21/2017
+        Tue Nov 21 2017
       </div>
     </div>
     <div
@@ -199,7 +777,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        4/20/2019
+        Sat Apr 20 2019
       </div>
     </div>
   </div>
@@ -254,7 +832,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        9/27/2019
+        Fri Sep 27 2019
       </div>
     </div>
     <div
@@ -268,7 +846,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        9/15/2017
+        Fri Sep 15 2017
       </div>
     </div>
     <div
@@ -282,7 +860,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        2/16/2018
+        Fri Feb 16 2018
       </div>
     </div>
   </div>
@@ -551,7 +1129,7 @@ exports[`customer match snapshot 1`] = `
           P02zXwLm
         </div>
         <div
-          class="status"
+          class="status neutral"
         >
           MBcRZtuf
         </div>
@@ -623,7 +1201,7 @@ exports[`customer match snapshot 1`] = `
           LE0pZEmG
         </div>
         <div
-          class="status"
+          class="status neutral"
         >
           REDNhFOU
         </div>
@@ -683,23 +1261,35 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half"
       >
-        <div>
-          mindboxId: 1968413179 
+        <div
+          class="name"
+        >
+          mindboxId: 1968413179
         </div>
-        <div>
-          orderId2Id: 1784802773 
+        <div
+          class="name"
+        >
+          orderId2Id: 1784802773
         </div>
-        <div>
-          orderMobileAppIdId: 1288953047 
+        <div
+          class="name"
+        >
+          orderMobileAppIdId: 1288953047
         </div>
-        <div>
-          offlineTransactionIdId: 1430164306 
+        <div
+          class="name"
+        >
+          offlineTransactionIdId: 1430164306
         </div>
-        <div>
-          websiteTransactionIdId: 2035457217 
+        <div
+          class="name"
+        >
+          websiteTransactionIdId: 2035457217
         </div>
-        <div>
-          receiptNumberId: 107913866 
+        <div
+          class="name"
+        >
+          receiptNumberId: 107913866
         </div>
       </div>
       <div
@@ -767,7 +1357,7 @@ exports[`customer match snapshot 2`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal shevron"
+          class="small button normal basic"
         >
           <div>
             <svg
@@ -788,7 +1378,7 @@ exports[`customer match snapshot 2`] = `
         </button>
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half value"
@@ -802,7 +1392,7 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half value"
@@ -813,6 +1403,572 @@ exports[`customer match snapshot 2`] = `
           class="half value"
         >
           true
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Начисление баллов
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              tmtk1GOB
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: ojbLVRsD
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            1180401.2
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              До
+            </div>
+            <div
+              class="value"
+            >
+              Tue Feb 14 2017
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1043337289
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка балламми
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              iLqkYKaK
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: 8r6qx418
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            16327420.01
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          880694824
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            6929359.6
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          118506896
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка на доставку
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            6653645.27
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1497291562
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Сообщение
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1976033026
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Выданный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула:Новый пул промокодов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          11133877
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            17853107.91
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          58219796
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            17074535.58
+          </div>
         </div>
       </div>
     </div>
@@ -868,7 +2024,7 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half value"
       >
-        10/23/2018
+        Tue Oct 23 2018
       </div>
     </div>
     <div
@@ -882,7 +2038,7 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half value"
       >
-        11/21/2017
+        Tue Nov 21 2017
       </div>
     </div>
     <div
@@ -896,7 +2052,7 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half value"
       >
-        4/20/2019
+        Sat Apr 20 2019
       </div>
     </div>
   </div>
@@ -951,7 +2107,7 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half value"
       >
-        9/27/2019
+        Fri Sep 27 2019
       </div>
     </div>
     <div
@@ -965,7 +2121,7 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half value"
       >
-        9/15/2017
+        Fri Sep 15 2017
       </div>
     </div>
     <div
@@ -979,7 +2135,7 @@ exports[`customer match snapshot 2`] = `
       <div
         class="half value"
       >
-        2/16/2018
+        Fri Feb 16 2018
       </div>
     </div>
   </div>
@@ -1248,7 +2404,7 @@ exports[`customer match snapshot 2`] = `
           P02zXwLm
         </div>
         <div
-          class="status"
+          class="status neutral"
         >
           MBcRZtuf
         </div>
@@ -1320,7 +2476,7 @@ exports[`customer match snapshot 2`] = `
           LE0pZEmG
         </div>
         <div
-          class="status"
+          class="status neutral"
         >
           REDNhFOU
         </div>
@@ -1380,23 +2536,35 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half"
       >
-        <div>
-          mindboxId: 1968413179 
+        <div
+          class="name"
+        >
+          mindboxId: 1968413179
         </div>
-        <div>
-          orderId2Id: 1784802773 
+        <div
+          class="name"
+        >
+          orderId2Id: 1784802773
         </div>
-        <div>
-          orderMobileAppIdId: 1288953047 
+        <div
+          class="name"
+        >
+          orderMobileAppIdId: 1288953047
         </div>
-        <div>
-          offlineTransactionIdId: 1430164306 
+        <div
+          class="name"
+        >
+          offlineTransactionIdId: 1430164306
         </div>
-        <div>
-          websiteTransactionIdId: 2035457217 
+        <div
+          class="name"
+        >
+          websiteTransactionIdId: 2035457217
         </div>
-        <div>
-          receiptNumberId: 107913866 
+        <div
+          class="name"
+        >
+          receiptNumberId: 107913866
         </div>
       </div>
       <div
@@ -1464,7 +2632,7 @@ exports[`customer match snapshot 3`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal shevron"
+          class="small button normal basic"
         >
           <div>
             <svg
@@ -1483,6 +2651,572 @@ exports[`customer match snapshot 3`] = `
             </svg>
           </div>
         </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Начисление баллов
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              tmtk1GOB
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: ojbLVRsD
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            1180401.2
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              До
+            </div>
+            <div
+              class="value"
+            >
+              Tue Feb 14 2017
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1043337289
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка балламми
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Балльный счет
+            </div>
+            <div
+              class="value"
+            >
+              iLqkYKaK
+            </div>
+            <div
+              class="status neutral"
+            >
+              Сис имя: 8r6qx418
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            16327420.01
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          880694824
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            6929359.6
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          118506896
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка на доставку
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            6653645.27
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1497291562
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Сообщение
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          1976033026
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Выданный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула:Новый пул промокодов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          11133877
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="value"
+          >
+             Новая акция
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            17853107.91
+          </div>
+        </div>
+      </div>
+      <div
+        class="inline"
+      >
+        <span>
+          58219796
+        </span>
+        <span>
+          promotion-1
+        </span>
+        <span>
+          mindbox
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="customer"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="promoType"
+          >
+            Скидка
+          </div>
+          <div
+            class="line"
+          >
+            <div
+              class="name"
+            >
+              Примененный промокод
+            </div>
+            <div
+              class="value"
+            >
+              ABC12345
+            </div>
+            <div
+              class="status neutral"
+            >
+              Из пула: Новый пул промокодов
+            </div>
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            17074535.58
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1537,7 +3271,7 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half value"
       >
-        10/23/2018
+        Tue Oct 23 2018
       </div>
     </div>
     <div
@@ -1551,7 +3285,7 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half value"
       >
-        11/21/2017
+        Tue Nov 21 2017
       </div>
     </div>
     <div
@@ -1565,7 +3299,7 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half value"
       >
-        4/20/2019
+        Sat Apr 20 2019
       </div>
     </div>
   </div>
@@ -1620,7 +3354,7 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half value"
       >
-        9/27/2019
+        Fri Sep 27 2019
       </div>
     </div>
     <div
@@ -1634,7 +3368,7 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half value"
       >
-        9/15/2017
+        Fri Sep 15 2017
       </div>
     </div>
     <div
@@ -1648,7 +3382,7 @@ exports[`customer match snapshot 3`] = `
       <div
         class="half value"
       >
-        2/16/2018
+        Fri Feb 16 2018
       </div>
     </div>
   </div>
@@ -1917,7 +3651,7 @@ exports[`customer match snapshot 3`] = `
           P02zXwLm
         </div>
         <div
-          class="status"
+          class="status neutral"
         >
           MBcRZtuf
         </div>
@@ -1989,7 +3723,7 @@ exports[`customer match snapshot 3`] = `
           LE0pZEmG
         </div>
         <div
-          class="status"
+          class="status neutral"
         >
           REDNhFOU
         </div>

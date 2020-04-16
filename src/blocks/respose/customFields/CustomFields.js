@@ -36,7 +36,7 @@ const CustomFields = ({ data }) => {
 
       {showCustomFields &&
         keys.map((field, index) => (
-          <div key={`field ${index}`} className={stylesShared.inline}>
+          <div key={`field ${index}`} className={`${stylesShared.inline} ${stylesShared.line}`}>
             <div className={`${stylesShared.half} ${stylesShared.value}`}>
               {field}
             </div>

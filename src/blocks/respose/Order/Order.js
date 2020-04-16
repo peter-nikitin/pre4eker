@@ -7,6 +7,7 @@ import CustomFileds from "../CustomFields/CustomFields";
 import Coupons from "../Coupons/Coupons";
 import BonusPointsInfo from "../BonusPointsInfo/BonusPointsInfo";
 import BonusPointsChange from "../BonusPointsChange/BonusPointsChange";
+import AppliedPropmotion from "../AppliedPromotions/appliedPromotions";
 
 const Order = ({ order }) => {
   const {
@@ -17,12 +18,17 @@ const Order = ({ order }) => {
     couponsInfo,
     bonusPointsInfo,
     bonusPointsChanges,
-    ids
+    ids,
+    appliedPromotions,
   } = order;
 
   const drawIds = (ids) => {
     const systemNames = Object.keys(ids);
-    return systemNames.map((item) =>  (<div className={stylesShared.name}>{item}: {ids[item]} </div>) )
+    return systemNames.map((item, i) => (
+      <div key={`orderID_${i}`} className={stylesShared.name}>
+        {item}: {ids[item]}
+      </div>
+    ));
   };
 
   return (
@@ -30,9 +36,7 @@ const Order = ({ order }) => {
       <h2>Заказ</h2>
       <div className={stylesShared.customer}>
         <div className={stylesShared.inline}>
-          <div className={stylesShared.half}>
-            { drawIds(ids) }
-          </div>
+          <div className={stylesShared.half}>{drawIds(ids)}</div>
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Статус обработки</div>
             <div className={stylesShared.value}>
@@ -58,15 +62,24 @@ const Order = ({ order }) => {
         </div>
         {customFields && <CustomFileds data={customFields} />}
       </div>
+      {appliedPromotions &&
+        appliedPromotions.map((promo, i) => (
+          <AppliedPropmotion key={`promo_${i}`} promoInfo={promo} />
+        ))}
       {couponsInfo &&
-        couponsInfo.map((coupon) => <Coupons couponInfo={coupon} />)}
+        couponsInfo.map((coupon, i) => (
+          <Coupons key={`coupon_${i}`} couponInfo={coupon} />
+        ))}
       {bonusPointsInfo &&
-        bonusPointsInfo.map((bonus) => (
-          <BonusPointsInfo bonusPointsInfo={bonus} />
+        bonusPointsInfo.map((bonus, i) => (
+          <BonusPointsInfo key={`bonusInfo_${i}`} bonusPointsInfo={bonus} />
         ))}
       {bonusPointsChanges &&
-        bonusPointsChanges.map((bonus) => (
-          <BonusPointsChange bonusPointsChanges={bonus} />
+        bonusPointsChanges.map((bonus, i) => (
+          <BonusPointsChange
+            key={`bonusChange_${i}`}
+            bonusPointsChanges={bonus}
+          />
         ))}
     </>
   );
