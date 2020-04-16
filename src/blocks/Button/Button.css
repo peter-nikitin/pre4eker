@@ -6,11 +6,11 @@
   padding: 0;
 }
 
-.normal {
+.basic.normal,.add.normal, .remove.normal  {
   background: #FFFFFF;
 }
 
-.normal.hover {
+.basic.hover {
   background: #4F4F4F; 
   border-color:  #4F4F4F ;
 }

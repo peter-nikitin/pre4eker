@@ -12,12 +12,12 @@ import  Remove from "src/blocks/Icons/Remove";
 
 
 export default function Button({ action, type, size = "medium", ...props }) {
-  const [status, changeStatus] = useState(`normal`);
+ 
 
   const typeOfButton = (type) => {
     switch (type) {
       case `DROPDOWN`:
-        return { icon: <Shevron />, styleClass: style.normal };
+        return { icon: <Shevron />, styleClass: style.basic };
       case `ADD`:
         return { icon: <Add />, styleClass: style.add };
       case `REMOVE`:
@@ -26,8 +26,10 @@ export default function Button({ action, type, size = "medium", ...props }) {
       default:
         break;
     }
+
   };
 
+  const [status, changeStatus] = useState(`normal`);
   return (
     <button
       className={`${style[size]} ${style.button} ${style[status]} ${
