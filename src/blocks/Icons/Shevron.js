@@ -11,8 +11,8 @@ const Shevron = (props) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M0.0344238 1.16905L0.732916 0.502381L3.54531 3.1561L6.33428 0.499939L7.03473 1.16647L3.53314 4.50002L0.0344238 1.16905Z"
           fill={props.color || '#000'}
         />
