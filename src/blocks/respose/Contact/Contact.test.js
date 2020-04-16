@@ -8,7 +8,7 @@ import {
   cleanup,
   act,
 } from "@testing-library/react";
-import response from "Data/response";
+import response from "data/response";
 
 
 const {
