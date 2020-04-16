@@ -40,7 +40,7 @@ const Coupons = ({ couponInfo }) => {
             Выдан
           </div>
           <div className={`${stylesShared.half} ${stylesShared.value}`}>
-            {availableFrom.toLocaleDateString()}
+            {availableFrom.toDateString()}
           </div>
         </div>
       )}
@@ -50,7 +50,7 @@ const Coupons = ({ couponInfo }) => {
             Сгорит
           </div>
           <div className={`${stylesShared.half} ${stylesShared.value}`}>
-            {availableTill.toLocaleDateString()}
+            {availableTill.toDateString()}
           </div>
         </div>
       )}
@@ -60,7 +60,7 @@ const Coupons = ({ couponInfo }) => {
             Использован
           </div>
           <div className={`${stylesShared.half} ${stylesShared.value}`}>
-            {usedDate.toLocaleDateString()}
+            {usedDate.toDateString()}
           </div>
         </div>
       )}

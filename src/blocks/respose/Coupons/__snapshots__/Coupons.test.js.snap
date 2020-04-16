@@ -53,7 +53,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        10/23/2018
+        Tue Oct 23 2018
       </div>
     </div>
     <div
@@ -67,7 +67,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        11/21/2017
+        Tue Nov 21 2017
       </div>
     </div>
     <div
@@ -81,7 +81,7 @@ exports[`customer match snapshot 1`] = `
       <div
         class="half value"
       >
-        4/20/2019
+        Sat Apr 20 2019
       </div>
     </div>
   </div>
