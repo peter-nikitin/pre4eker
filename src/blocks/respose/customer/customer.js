@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import stylesShared from "Src/customer.css";
+import stylesShared from "src/customer.css";
 import Contact from "../Contact/Contact";
 import statuses from './statuses'
 import sexes from './sexes'
@@ -31,6 +31,8 @@ const Customer = ({ customer, ...props }) => {
 
 
   return (
+    <>
+    <h2>Клиент</h2>
     <div className={stylesShared.customer}>
       <div className={stylesShared.inline}>
         <div className={stylesShared.half}>
@@ -90,6 +92,7 @@ const Customer = ({ customer, ...props }) => {
       </div>
       {customFields && <CustomFields data={customFields} />}
     </div>
+     </>
   );
 };
 
