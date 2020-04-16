@@ -2,12 +2,37 @@
 
 exports[`customer match snapshot 1`] = `
 <DocumentFragment>
+  <h2>
+    Заказ
+  </h2>
   <div
     class="customer"
   >
     <div
       class="inline"
     >
+      <div
+        class="half"
+      >
+        <div>
+          mindboxId: 1968413179 
+        </div>
+        <div>
+          orderId2Id: 1784802773 
+        </div>
+        <div>
+          orderMobileAppIdId: 1288953047 
+        </div>
+        <div>
+          offlineTransactionIdId: 1430164306 
+        </div>
+        <div>
+          websiteTransactionIdId: 2035457217 
+        </div>
+        <div>
+          receiptNumberId: 107913866 
+        </div>
+      </div>
       <div
         class="half"
       >
@@ -71,14 +96,573 @@ exports[`customer match snapshot 1`] = `
       <div
         class="name"
       >
-        Дополнительные поля 
+        Дополнительные поля
         <button
-          class="small button normal dropdown"
+          class="small button normal shevron"
         >
-          <img
-            src="test-file-stub"
-          />
+          <div>
+            <svg
+              fill="none"
+              height="5"
+              viewBox="0 0 8 5"
+              width="8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0.0344238 1.16905L0.732916 0.502381L3.54531 3.1561L6.33428 0.499939L7.03473 1.16647L3.53314 4.50002L0.0344238 1.16905Z"
+                fill="#000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Промокод
+        </div>
+        <div
+          class="value"
+        >
+          ABC12345
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Сумма скидки
+        </div>
+        <div
+          class="promoValue"
+        >
+          10528369.9
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      Пока еще не активен
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Выдан
+      </div>
+      <div
+        class="half value"
+      >
+        10/23/2018
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Сгорит
+      </div>
+      <div
+        class="half value"
+      >
+        11/21/2017
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Использован
+      </div>
+      <div
+        class="half value"
+      >
+        4/20/2019
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Промокод
+        </div>
+        <div
+          class="value"
+        >
+          ABC12345
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Сумма скидки
+        </div>
+        <div
+          class="promoValue"
+        >
+          6533321.56
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      Нельзя применить на этот заказ
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Выдан
+      </div>
+      <div
+        class="half value"
+      >
+        9/27/2019
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Сгорит
+      </div>
+      <div
+        class="half value"
+      >
+        9/15/2017
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Использован
+      </div>
+      <div
+        class="half value"
+      >
+        2/16/2018
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Информация о баллах
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Успешно
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Доступно для списание на этот заказ
+        </div>
+        <div
+          class="promoValue"
+        >
+          8295431.24
+        </div>
+      </div>
+    </div>
+    <div
+      class="half"
+    >
+      <div
+        class="name"
+      >
+        Будет списано на этот заказ
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="promoValue"
+        >
+          1559295.84
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="name"
+      >
+        Баланс
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Доступно
+        </div>
+        <div
+          class="value"
+        >
+          2202060.23
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Блок
+        </div>
+        <div
+          class="value"
+        >
+          19474460.28
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Всего
+        </div>
+        <div
+          class="value"
+        >
+          16594789.28
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Информация о баллах
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Успешно
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Доступно для списание на этот заказ
+        </div>
+        <div
+          class="promoValue"
+        >
+          15417181.89
+        </div>
+      </div>
+    </div>
+    <div
+      class="half"
+    >
+      <div
+        class="name"
+      >
+        Будет списано на этот заказ
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="promoValue"
+        >
+          20423028.05
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="name"
+      >
+        Баланс
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Доступно
+        </div>
+        <div
+          class="value"
+        >
+          8865936.3
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Блок
+        </div>
+        <div
+          class="value"
+        >
+          19197363.33
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Всего
+        </div>
+        <div
+          class="value"
+        >
+          15632017.52
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          P02zXwLm
+        </div>
+        <div
+          class="status"
+        >
+          MBcRZtuf
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          1396638.62
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            5761799.72
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          LE0pZEmG
+        </div>
+        <div
+          class="status"
+        >
+          REDNhFOU
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          20955125.72
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            10868072.91
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,12 +671,37 @@ exports[`customer match snapshot 1`] = `
 
 exports[`customer match snapshot 2`] = `
 <DocumentFragment>
+  <h2>
+    Заказ
+  </h2>
   <div
     class="customer"
   >
     <div
       class="inline"
     >
+      <div
+        class="half"
+      >
+        <div>
+          mindboxId: 1968413179 
+        </div>
+        <div>
+          orderId2Id: 1784802773 
+        </div>
+        <div>
+          orderMobileAppIdId: 1288953047 
+        </div>
+        <div>
+          offlineTransactionIdId: 1430164306 
+        </div>
+        <div>
+          websiteTransactionIdId: 2035457217 
+        </div>
+        <div>
+          receiptNumberId: 107913866 
+        </div>
+      </div>
       <div
         class="half"
       >
@@ -156,13 +765,26 @@ exports[`customer match snapshot 2`] = `
       <div
         class="name"
       >
-        Дополнительные поля 
+        Дополнительные поля
         <button
-          class="small button normal dropdown"
+          class="small button normal shevron"
         >
-          <img
-            src="test-file-stub"
-          />
+          <div>
+            <svg
+              fill="none"
+              height="5"
+              viewBox="0 0 8 5"
+              width="8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0.0344238 1.16905L0.732916 0.502381L3.54531 3.1561L6.33428 0.499939L7.03473 1.16647L3.53314 4.50002L0.0344238 1.16905Z"
+                fill="#000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </button>
       </div>
       <div
@@ -195,17 +817,588 @@ exports[`customer match snapshot 2`] = `
       </div>
     </div>
   </div>
-</DocumentFragment>
-`;
-
-exports[`customer match snapshot 3`] = `
-<DocumentFragment>
   <div
     class="customer"
   >
     <div
       class="inline"
     >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Промокод
+        </div>
+        <div
+          class="value"
+        >
+          ABC12345
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Сумма скидки
+        </div>
+        <div
+          class="promoValue"
+        >
+          10528369.9
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      Пока еще не активен
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Выдан
+      </div>
+      <div
+        class="half value"
+      >
+        10/23/2018
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Сгорит
+      </div>
+      <div
+        class="half value"
+      >
+        11/21/2017
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Использован
+      </div>
+      <div
+        class="half value"
+      >
+        4/20/2019
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Промокод
+        </div>
+        <div
+          class="value"
+        >
+          ABC12345
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Сумма скидки
+        </div>
+        <div
+          class="promoValue"
+        >
+          6533321.56
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      Нельзя применить на этот заказ
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Выдан
+      </div>
+      <div
+        class="half value"
+      >
+        9/27/2019
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Сгорит
+      </div>
+      <div
+        class="half value"
+      >
+        9/15/2017
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Использован
+      </div>
+      <div
+        class="half value"
+      >
+        2/16/2018
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Информация о баллах
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Успешно
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Доступно для списание на этот заказ
+        </div>
+        <div
+          class="promoValue"
+        >
+          8295431.24
+        </div>
+      </div>
+    </div>
+    <div
+      class="half"
+    >
+      <div
+        class="name"
+      >
+        Будет списано на этот заказ
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="promoValue"
+        >
+          1559295.84
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="name"
+      >
+        Баланс
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Доступно
+        </div>
+        <div
+          class="value"
+        >
+          2202060.23
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Блок
+        </div>
+        <div
+          class="value"
+        >
+          19474460.28
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Всего
+        </div>
+        <div
+          class="value"
+        >
+          16594789.28
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Информация о баллах
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Успешно
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Доступно для списание на этот заказ
+        </div>
+        <div
+          class="promoValue"
+        >
+          15417181.89
+        </div>
+      </div>
+    </div>
+    <div
+      class="half"
+    >
+      <div
+        class="name"
+      >
+        Будет списано на этот заказ
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="promoValue"
+        >
+          20423028.05
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="name"
+      >
+        Баланс
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Доступно
+        </div>
+        <div
+          class="value"
+        >
+          8865936.3
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Блок
+        </div>
+        <div
+          class="value"
+        >
+          19197363.33
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Всего
+        </div>
+        <div
+          class="value"
+        >
+          15632017.52
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          P02zXwLm
+        </div>
+        <div
+          class="status"
+        >
+          MBcRZtuf
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          1396638.62
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            5761799.72
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          LE0pZEmG
+        </div>
+        <div
+          class="status"
+        >
+          REDNhFOU
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          20955125.72
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            10868072.91
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`customer match snapshot 3`] = `
+<DocumentFragment>
+  <h2>
+    Заказ
+  </h2>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div>
+          mindboxId: 1968413179 
+        </div>
+        <div>
+          orderId2Id: 1784802773 
+        </div>
+        <div>
+          orderMobileAppIdId: 1288953047 
+        </div>
+        <div>
+          offlineTransactionIdId: 1430164306 
+        </div>
+        <div>
+          websiteTransactionIdId: 2035457217 
+        </div>
+        <div>
+          receiptNumberId: 107913866 
+        </div>
+      </div>
       <div
         class="half"
       >
@@ -269,14 +1462,573 @@ exports[`customer match snapshot 3`] = `
       <div
         class="name"
       >
-        Дополнительные поля 
+        Дополнительные поля
         <button
-          class="small button normal dropdown"
+          class="small button normal shevron"
         >
-          <img
-            src="test-file-stub"
-          />
+          <div>
+            <svg
+              fill="none"
+              height="5"
+              viewBox="0 0 8 5"
+              width="8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0.0344238 1.16905L0.732916 0.502381L3.54531 3.1561L6.33428 0.499939L7.03473 1.16647L3.53314 4.50002L0.0344238 1.16905Z"
+                fill="#000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Промокод
+        </div>
+        <div
+          class="value"
+        >
+          ABC12345
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Сумма скидки
+        </div>
+        <div
+          class="promoValue"
+        >
+          10528369.9
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      Пока еще не активен
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Выдан
+      </div>
+      <div
+        class="half value"
+      >
+        10/23/2018
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Сгорит
+      </div>
+      <div
+        class="half value"
+      >
+        11/21/2017
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Использован
+      </div>
+      <div
+        class="half value"
+      >
+        4/20/2019
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Промокод
+        </div>
+        <div
+          class="value"
+        >
+          ABC12345
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Сумма скидки
+        </div>
+        <div
+          class="promoValue"
+        >
+          6533321.56
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      Нельзя применить на этот заказ
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Выдан
+      </div>
+      <div
+        class="half value"
+      >
+        9/27/2019
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Сгорит
+      </div>
+      <div
+        class="half value"
+      >
+        9/15/2017
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half value"
+      >
+        Использован
+      </div>
+      <div
+        class="half value"
+      >
+        2/16/2018
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Информация о баллах
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Успешно
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Доступно для списание на этот заказ
+        </div>
+        <div
+          class="promoValue"
+        >
+          8295431.24
+        </div>
+      </div>
+    </div>
+    <div
+      class="half"
+    >
+      <div
+        class="name"
+      >
+        Будет списано на этот заказ
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="promoValue"
+        >
+          1559295.84
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="name"
+      >
+        Баланс
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Доступно
+        </div>
+        <div
+          class="value"
+        >
+          2202060.23
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Блок
+        </div>
+        <div
+          class="value"
+        >
+          19474460.28
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Всего
+        </div>
+        <div
+          class="value"
+        >
+          16594789.28
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Информация о баллах
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Статус обработки
+        </div>
+        <div
+          class="value"
+        >
+          Успешно
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Доступно для списание на этот заказ
+        </div>
+        <div
+          class="promoValue"
+        >
+          15417181.89
+        </div>
+      </div>
+    </div>
+    <div
+      class="half"
+    >
+      <div
+        class="name"
+      >
+        Будет списано на этот заказ
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="promoValue"
+        >
+          20423028.05
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="name"
+      >
+        Баланс
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Доступно
+        </div>
+        <div
+          class="value"
+        >
+          8865936.3
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Блок
+        </div>
+        <div
+          class="value"
+        >
+          19197363.33
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Всего
+        </div>
+        <div
+          class="value"
+        >
+          15632017.52
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          P02zXwLm
+        </div>
+        <div
+          class="status"
+        >
+          MBcRZtuf
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          1396638.62
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            5761799.72
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="customer"
+  >
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="promoType"
+        >
+          Изменения баллов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          LE0pZEmG
+        </div>
+        <div
+          class="status"
+        >
+          REDNhFOU
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="promoValue"
+        >
+          20955125.72
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            10868072.91
+          </div>
+        </div>
       </div>
     </div>
   </div>
