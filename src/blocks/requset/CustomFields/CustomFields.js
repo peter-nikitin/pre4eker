@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./CustomFields.css";
 
-import Input from "Src/blocks/Input/Input.js";
+import Input from "src/blocks/Input/Input.js";
 
 export default function CustomFields(props) {
   const { addCustomField, fields, removeCustomField } = props;

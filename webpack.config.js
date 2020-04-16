@@ -11,8 +11,9 @@ module.exports = {
   devtool: `source-map`,
   resolve: {
     alias: {
-      Src: path.resolve(__dirname, "src"),
-      Data: path.resolve(__dirname, "data"),
+      src: path.resolve(__dirname, "src"),
+      data: path.resolve(__dirname, "data"),
+      "styled-components": path.resolve(__dirname, "node_modules", "styled-components"),
     },
   },
   module: {
