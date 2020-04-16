@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import stylesShared from "Src/customer.css";
-import Button from "Src/blocks/Button/Button";
+import stylesShared from "src/customer.css";
+import Button from "src/blocks/Button/Button";
 
 const CustomFields = ({ data }) => {
   const keys = Object.keys(data);
@@ -26,7 +26,7 @@ const CustomFields = ({ data }) => {
   return (
     <div>
       <div className={stylesShared.name}>
-        Дополнительные поля{" "}
+        Дополнительные поля 
         <Button
           type="DROPDOWN"
           size="small"
