@@ -1,13 +1,13 @@
 .customer {
   background: #FFFFFF;
   border: 1px solid #BDBDBD;
-  padding: 16px 8px;
-  margin-bottom: 8px;
+  padding: 1.2rem 1rem;
+  margin-bottom: .5rem;
 }
 
 .name {
-  font-size: 8px;
-  line-height: 10px;
+  font-size: .7rem;
+  line-height: 1.7;
   color: #828282;
   width: 100%;
   display: flex;
@@ -15,16 +15,17 @@
 }
 
 .value {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.7;
   color: #000000;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 }
 
 .inline {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  margin: 0 -1rem;
 }
 
 .inline:last-child {
@@ -35,19 +36,21 @@
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
 }
 
 .third {
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
 }
 
 .status {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: .75rem;
+  line-height: 1.7;
   margin: 0;
-  padding-left: 12px;
+  padding-left: .75rem;
   position: relative;
 }
 
@@ -55,9 +58,9 @@
   position: absolute;
   display: block;
   content: '';
-  width: 6px;
-  height: 6px;
-  top: 2px;
+  width: .5rem;
+  height: .5rem;
+  top: .2rem;
   left: 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,10 +89,39 @@
 }
 
 .promoValue {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.promoType {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+.promoDetail {
+  font-size: .7rem;
+  padding: .15rem 0.4rem;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  opacity: 0.4;
+  margin-right: .4rem;
 }
 
 .line {
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
+}
+
+.promo {
+  background: #F2F2F2;
+  border: 1px solid #BDBDBD;
+  padding: 1.2rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.response {
+  padding: 1rem 2.5rem;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  
 }

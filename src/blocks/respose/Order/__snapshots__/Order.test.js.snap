@@ -134,19 +134,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Начисление баллов
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Начисление баллов
-          </div>
           <div
             class="value"
           >
@@ -221,15 +221,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1043337289
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -237,19 +243,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка балламми
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка балламми
-          </div>
           <div
             class="value"
           >
@@ -310,15 +316,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           880694824
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -326,19 +338,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="value"
           >
@@ -380,15 +392,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           118506896
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -396,19 +414,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка на доставку
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка на доставку
-          </div>
           <div
             class="value"
           >
@@ -450,15 +468,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1497291562
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -466,19 +490,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Сообщение
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Сообщение
-          </div>
           <div
             class="value"
           >
@@ -506,15 +530,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1976033026
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -522,19 +552,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Выданный промокод
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Выданный промокод
-          </div>
           <div
             class="value"
           >
@@ -581,15 +611,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           11133877
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -597,19 +633,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="value"
           >
@@ -632,15 +668,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           58219796
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -648,19 +690,19 @@ exports[`customer match snapshot 1`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="line"
           >
@@ -702,82 +744,90 @@ exports[`customer match snapshot 1`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Пока еще не активен
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            10528369.9
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Oct 23 2018
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          10528369.9
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Nov 21 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Пока еще не активен
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Oct 23 2018
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Nov 21 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Sat Apr 20 2019
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Sat Apr 20 2019
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -785,82 +835,90 @@ exports[`customer match snapshot 1`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Нельзя применить на этот заказ
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            6533321.56
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Sep 27 2019
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          6533321.56
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Sep 15 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Нельзя применить на этот заказ
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Sep 27 2019
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Sep 15 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Feb 16 2018
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Feb 16 2018
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -903,7 +961,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="name"
         >
-          Доступно для списание на этот заказ
+          Доступно для списание
         </div>
         <div
           class="promoValue"
@@ -911,22 +969,22 @@ exports[`customer match snapshot 1`] = `
           8295431.24
         </div>
       </div>
-    </div>
-    <div
-      class="half"
-    >
-      <div
-        class="name"
-      >
-        Будет списано на этот заказ
-      </div>
       <div
         class="half"
       >
         <div
-          class="promoValue"
+          class="name"
         >
-          1559295.84
+          Будет списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            1559295.84
+          </div>
         </div>
       </div>
     </div>
@@ -1021,7 +1079,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="name"
         >
-          Доступно для списание на этот заказ
+          Доступно для списание
         </div>
         <div
           class="promoValue"
@@ -1029,22 +1087,22 @@ exports[`customer match snapshot 1`] = `
           15417181.89
         </div>
       </div>
-    </div>
-    <div
-      class="half"
-    >
-      <div
-        class="name"
-      >
-        Будет списано на этот заказ
-      </div>
       <div
         class="half"
       >
         <div
-          class="promoValue"
+          class="name"
         >
-          20423028.05
+          Будет списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            20423028.05
+          </div>
         </div>
       </div>
     </div>
@@ -1115,8 +1173,12 @@ exports[`customer match snapshot 1`] = `
           Изменения баллов
         </div>
       </div>
+    </div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -1134,12 +1196,8 @@ exports[`customer match snapshot 1`] = `
           MBcRZtuf
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -1147,13 +1205,13 @@ exports[`customer match snapshot 1`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           1396638.62
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -1164,31 +1222,18 @@ exports[`customer match snapshot 1`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             5761799.72
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="customer"
-  >
     <div
       class="inline"
     >
       <div
-        class="half"
-      >
-        <div
-          class="promoType"
-        >
-          Изменения баллов
-        </div>
-      </div>
-      <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -1206,12 +1251,8 @@ exports[`customer match snapshot 1`] = `
           REDNhFOU
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -1219,13 +1260,13 @@ exports[`customer match snapshot 1`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           20955125.72
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -1236,7 +1277,7 @@ exports[`customer match snapshot 1`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             10868072.91
           </div>
@@ -1409,19 +1450,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Начисление баллов
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Начисление баллов
-          </div>
           <div
             class="value"
           >
@@ -1496,15 +1537,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1043337289
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1512,19 +1559,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка балламми
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка балламми
-          </div>
           <div
             class="value"
           >
@@ -1585,15 +1632,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           880694824
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1601,19 +1654,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="value"
           >
@@ -1655,15 +1708,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           118506896
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1671,19 +1730,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка на доставку
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка на доставку
-          </div>
           <div
             class="value"
           >
@@ -1725,15 +1784,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1497291562
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1741,19 +1806,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Сообщение
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Сообщение
-          </div>
           <div
             class="value"
           >
@@ -1781,15 +1846,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1976033026
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1797,19 +1868,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Выданный промокод
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Выданный промокод
-          </div>
           <div
             class="value"
           >
@@ -1856,15 +1927,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           11133877
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1872,19 +1949,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="value"
           >
@@ -1907,15 +1984,21 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           58219796
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -1923,19 +2006,19 @@ exports[`customer match snapshot 2`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="line"
           >
@@ -1977,82 +2060,90 @@ exports[`customer match snapshot 2`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Пока еще не активен
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            10528369.9
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Oct 23 2018
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          10528369.9
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Nov 21 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Пока еще не активен
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Oct 23 2018
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Nov 21 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Sat Apr 20 2019
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Sat Apr 20 2019
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -2060,82 +2151,90 @@ exports[`customer match snapshot 2`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Нельзя применить на этот заказ
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            6533321.56
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Sep 27 2019
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          6533321.56
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Sep 15 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Нельзя применить на этот заказ
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Sep 27 2019
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Sep 15 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Feb 16 2018
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Feb 16 2018
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -2178,7 +2277,7 @@ exports[`customer match snapshot 2`] = `
         <div
           class="name"
         >
-          Доступно для списание на этот заказ
+          Доступно для списание
         </div>
         <div
           class="promoValue"
@@ -2186,22 +2285,22 @@ exports[`customer match snapshot 2`] = `
           8295431.24
         </div>
       </div>
-    </div>
-    <div
-      class="half"
-    >
-      <div
-        class="name"
-      >
-        Будет списано на этот заказ
-      </div>
       <div
         class="half"
       >
         <div
-          class="promoValue"
+          class="name"
         >
-          1559295.84
+          Будет списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            1559295.84
+          </div>
         </div>
       </div>
     </div>
@@ -2296,7 +2395,7 @@ exports[`customer match snapshot 2`] = `
         <div
           class="name"
         >
-          Доступно для списание на этот заказ
+          Доступно для списание
         </div>
         <div
           class="promoValue"
@@ -2304,22 +2403,22 @@ exports[`customer match snapshot 2`] = `
           15417181.89
         </div>
       </div>
-    </div>
-    <div
-      class="half"
-    >
-      <div
-        class="name"
-      >
-        Будет списано на этот заказ
-      </div>
       <div
         class="half"
       >
         <div
-          class="promoValue"
+          class="name"
         >
-          20423028.05
+          Будет списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            20423028.05
+          </div>
         </div>
       </div>
     </div>
@@ -2390,8 +2489,12 @@ exports[`customer match snapshot 2`] = `
           Изменения баллов
         </div>
       </div>
+    </div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -2409,12 +2512,8 @@ exports[`customer match snapshot 2`] = `
           MBcRZtuf
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -2422,13 +2521,13 @@ exports[`customer match snapshot 2`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           1396638.62
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -2439,31 +2538,18 @@ exports[`customer match snapshot 2`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             5761799.72
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="customer"
-  >
     <div
       class="inline"
     >
       <div
-        class="half"
-      >
-        <div
-          class="promoType"
-        >
-          Изменения баллов
-        </div>
-      </div>
-      <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -2481,12 +2567,8 @@ exports[`customer match snapshot 2`] = `
           REDNhFOU
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -2494,13 +2576,13 @@ exports[`customer match snapshot 2`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           20955125.72
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -2511,7 +2593,7 @@ exports[`customer match snapshot 2`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             10868072.91
           </div>
@@ -2656,19 +2738,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Начисление баллов
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Начисление баллов
-          </div>
           <div
             class="value"
           >
@@ -2743,15 +2825,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1043337289
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -2759,19 +2847,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка балламми
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка балламми
-          </div>
           <div
             class="value"
           >
@@ -2832,15 +2920,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           880694824
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -2848,19 +2942,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="value"
           >
@@ -2902,15 +2996,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           118506896
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -2918,19 +3018,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка на доставку
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка на доставку
-          </div>
           <div
             class="value"
           >
@@ -2972,15 +3072,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1497291562
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -2988,19 +3094,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Сообщение
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Сообщение
-          </div>
           <div
             class="value"
           >
@@ -3028,15 +3134,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1976033026
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -3044,19 +3156,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Выданный промокод
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Выданный промокод
-          </div>
           <div
             class="value"
           >
@@ -3103,15 +3215,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           11133877
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -3119,19 +3237,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="value"
           >
@@ -3154,15 +3272,21 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           58219796
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
@@ -3170,19 +3294,19 @@ exports[`customer match snapshot 3`] = `
   </div>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Скидка
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Скидка
-          </div>
           <div
             class="line"
           >
@@ -3224,82 +3348,90 @@ exports[`customer match snapshot 3`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Пока еще не активен
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            10528369.9
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Oct 23 2018
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          10528369.9
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Nov 21 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Пока еще не активен
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Oct 23 2018
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Nov 21 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Sat Apr 20 2019
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Sat Apr 20 2019
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -3307,82 +3439,90 @@ exports[`customer match snapshot 3`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Нельзя применить на этот заказ
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            6533321.56
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Sep 27 2019
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          6533321.56
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Sep 15 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Нельзя применить на этот заказ
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Sep 27 2019
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Sep 15 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Fri Feb 16 2018
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Fri Feb 16 2018
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -3425,7 +3565,7 @@ exports[`customer match snapshot 3`] = `
         <div
           class="name"
         >
-          Доступно для списание на этот заказ
+          Доступно для списание
         </div>
         <div
           class="promoValue"
@@ -3433,22 +3573,22 @@ exports[`customer match snapshot 3`] = `
           8295431.24
         </div>
       </div>
-    </div>
-    <div
-      class="half"
-    >
-      <div
-        class="name"
-      >
-        Будет списано на этот заказ
-      </div>
       <div
         class="half"
       >
         <div
-          class="promoValue"
+          class="name"
         >
-          1559295.84
+          Будет списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            1559295.84
+          </div>
         </div>
       </div>
     </div>
@@ -3543,7 +3683,7 @@ exports[`customer match snapshot 3`] = `
         <div
           class="name"
         >
-          Доступно для списание на этот заказ
+          Доступно для списание
         </div>
         <div
           class="promoValue"
@@ -3551,22 +3691,22 @@ exports[`customer match snapshot 3`] = `
           15417181.89
         </div>
       </div>
-    </div>
-    <div
-      class="half"
-    >
-      <div
-        class="name"
-      >
-        Будет списано на этот заказ
-      </div>
       <div
         class="half"
       >
         <div
-          class="promoValue"
+          class="name"
         >
-          20423028.05
+          Будет списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="promoValue"
+          >
+            20423028.05
+          </div>
         </div>
       </div>
     </div>
@@ -3637,8 +3777,12 @@ exports[`customer match snapshot 3`] = `
           Изменения баллов
         </div>
       </div>
+    </div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -3656,12 +3800,8 @@ exports[`customer match snapshot 3`] = `
           MBcRZtuf
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -3669,13 +3809,13 @@ exports[`customer match snapshot 3`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           1396638.62
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -3686,31 +3826,18 @@ exports[`customer match snapshot 3`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             5761799.72
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="customer"
-  >
     <div
       class="inline"
     >
       <div
-        class="half"
-      >
-        <div
-          class="promoType"
-        >
-          Изменения баллов
-        </div>
-      </div>
-      <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -3728,12 +3855,8 @@ exports[`customer match snapshot 3`] = `
           REDNhFOU
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -3741,13 +3864,13 @@ exports[`customer match snapshot 3`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           20955125.72
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -3758,7 +3881,7 @@ exports[`customer match snapshot 3`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             10868072.91
           </div>

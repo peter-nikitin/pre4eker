@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import stylesShared from "src/customer.css";
+import stylesShared from "src/blocks/respose/responseShared.css";
 import Button from "src/blocks/Button/Button";
 
 const CustomFields = ({ data }) => {

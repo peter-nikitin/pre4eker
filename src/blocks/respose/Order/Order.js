@@ -2,12 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import statuses from "./statuses";
-import stylesShared from "src/customer.css";
+import stylesShared from "src/blocks/respose/responseShared.css";
 import CustomFileds from "../CustomFields/CustomFields";
 import Coupons from "../Coupons/Coupons";
 import BonusPointsInfo from "../BonusPointsInfo/BonusPointsInfo";
 import BonusPointsChange from "../BonusPointsChange/BonusPointsChange";
-import AppliedPropmotion from "../AppliedPromotions/appliedPromotions";
+import AppliedPropmotion from "../AppliedPromotion/AppliedPromotion";
+
 
 const Order = ({ order }) => {
   const {
@@ -20,6 +21,7 @@ const Order = ({ order }) => {
     bonusPointsChanges,
     ids,
     appliedPromotions,
+    lines,
   } = order;
 
   const drawIds = (ids) => {
@@ -74,13 +76,14 @@ const Order = ({ order }) => {
         bonusPointsInfo.map((bonus, i) => (
           <BonusPointsInfo key={`bonusInfo_${i}`} bonusPointsInfo={bonus} />
         ))}
-      {bonusPointsChanges &&
-        bonusPointsChanges.map((bonus, i) => (
-          <BonusPointsChange
-            key={`bonusChange_${i}`}
-            bonusPointsChanges={bonus}
-          />
-        ))}
+      {bonusPointsChanges && (
+        <BonusPointsChange
+          bonusPointsChanges={bonusPointsChanges}
+        />
+      )}
+
+     
+      
     </>
   );
 };
