@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import stylesShared from "src/customer.css";
+import stylesShared from "src/blocks/respose/responseShared.css";
 import statuses from "./statuses";
 
 const BonusPointsInfo = ({ bonusPointsInfo }) => {
@@ -23,21 +23,21 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
           <div className={stylesShared.value}>{statuses[status] || status}</div>
         </div>
       </div>
-      {availableAmountForCurrentOrder && (
         <div className={stylesShared.inline}>
+      {availableAmountForCurrentOrder && (
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>
-              Доступно для списание на этот заказ
+              Доступно для списание
             </div>
             <div className={stylesShared.promoValue}>
               {availableAmountForCurrentOrder}
             </div>
           </div>
-        </div>
       )}
+       
       {spentAmountForCurrentOrder && (
         <div className={stylesShared.half}>
-          <div className={stylesShared.name}>Будет списано на этот заказ</div>
+          <div className={stylesShared.name}>Будет списано</div>
           <div className={stylesShared.half}>
             <div className={stylesShared.promoValue}>
               {spentAmountForCurrentOrder}
@@ -45,6 +45,7 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
           </div>
         </div>
       )}
+      </div>
 
       <div className={stylesShared.inline}>
         <div className={stylesShared.name}>Баланс</div>
