@@ -9,71 +9,79 @@ exports[`customer match snapshot 1`] = `
     class="customer"
   >
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="name"
+          class="half"
         >
-          ФИО
+          <div
+            class="name"
+          >
+            ФИО
+          </div>
+          <div
+            class="value"
+          >
+            Иван Иванович Иванов
+          </div>
         </div>
         <div
-          class="value"
+          class="half"
         >
-          Иван Иванович Иванов
-        </div>
-      </div>
-      <div
-        class="half"
-      >
-        <div
-          class="name"
-        >
-          Статус обработки
-        </div>
-        <div
-          class="value"
-        >
-          Processed
+          <div
+            class="name"
+          >
+            Статус обработки
+          </div>
+          <div
+            class="value"
+          >
+            Processed
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="name"
+          class="half"
         >
-          Пол
+          <div
+            class="name"
+          >
+            Пол
+          </div>
+          <div
+            class="value"
+          >
+            Женский
+          </div>
         </div>
         <div
-          class="value"
+          class="half"
         >
-          Женский
-        </div>
-      </div>
-      <div
-        class="half"
-      >
-        <div
-          class="name"
-        >
-          Дата рождения
-        </div>
-        <div
-          class="value"
-        >
-          1990-01-31
+          <div
+            class="name"
+          >
+            Дата рождения
+          </div>
+          <div
+            class="value"
+          >
+            1990-01-31
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
         class="name"
@@ -81,41 +89,45 @@ exports[`customer match snapshot 1`] = `
         Мобильный телефон
       </div>
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="value"
+          class="half"
         >
-          79001234567
+          <div
+            class="value"
+          >
+            79001234567
+          </div>
+          <p
+            class="good status"
+          >
+            Валидный 
+          </p>
+          <p
+            class="good status"
+          >
+            Подтвержден 
+          </p>
         </div>
-        <p
-          class="good status"
-        >
-          Валидный 
-        </p>
-        <p
-          class="good status"
-        >
-          Подтвержден 
-        </p>
-      </div>
-      <div
-        class="half"
-      >
         <div
-          class="value"
+          class="half"
         >
-          79652026149
+          <div
+            class="value"
+          >
+            79652026149
+          </div>
+          <p
+            class="bad status"
+          >
+            Ожидает подтверждения 
+          </p>
         </div>
-        <p
-          class="bad status"
-        >
-          Ожидает подтверждения 
-        </p>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
         class="name"
@@ -123,18 +135,22 @@ exports[`customer match snapshot 1`] = `
         Email
       </div>
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="value"
+          class="half"
         >
-          test@mindbox.ru
+          <div
+            class="value"
+          >
+            test@mindbox.ru
+          </div>
+          <p
+            class="good status"
+          >
+            Валидный 
+          </p>
         </div>
-        <p
-          class="good status"
-        >
-          Валидный 
-        </p>
       </div>
     </div>
     <div
@@ -219,71 +235,79 @@ exports[`customer match snapshot 2`] = `
     class="customer"
   >
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="name"
+          class="half"
         >
-          ФИО
+          <div
+            class="name"
+          >
+            ФИО
+          </div>
+          <div
+            class="value"
+          >
+            Иван Иванович Иванов
+          </div>
         </div>
         <div
-          class="value"
+          class="half"
         >
-          Иван Иванович Иванов
-        </div>
-      </div>
-      <div
-        class="half"
-      >
-        <div
-          class="name"
-        >
-          Статус обработки
-        </div>
-        <div
-          class="value"
-        >
-          Processed
+          <div
+            class="name"
+          >
+            Статус обработки
+          </div>
+          <div
+            class="value"
+          >
+            Processed
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="name"
+          class="half"
         >
-          Пол
+          <div
+            class="name"
+          >
+            Пол
+          </div>
+          <div
+            class="value"
+          >
+            Женский
+          </div>
         </div>
         <div
-          class="value"
+          class="half"
         >
-          Женский
-        </div>
-      </div>
-      <div
-        class="half"
-      >
-        <div
-          class="name"
-        >
-          Дата рождения
-        </div>
-        <div
-          class="value"
-        >
-          1990-01-31
+          <div
+            class="name"
+          >
+            Дата рождения
+          </div>
+          <div
+            class="value"
+          >
+            1990-01-31
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
         class="name"
@@ -291,41 +315,45 @@ exports[`customer match snapshot 2`] = `
         Мобильный телефон
       </div>
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="value"
+          class="half"
         >
-          79001234567
+          <div
+            class="value"
+          >
+            79001234567
+          </div>
+          <p
+            class="good status"
+          >
+            Валидный 
+          </p>
+          <p
+            class="good status"
+          >
+            Подтвержден 
+          </p>
         </div>
-        <p
-          class="good status"
-        >
-          Валидный 
-        </p>
-        <p
-          class="good status"
-        >
-          Подтвержден 
-        </p>
-      </div>
-      <div
-        class="half"
-      >
         <div
-          class="value"
+          class="half"
         >
-          79652026149
+          <div
+            class="value"
+          >
+            79652026149
+          </div>
+          <p
+            class="bad status"
+          >
+            Ожидает подтверждения 
+          </p>
         </div>
-        <p
-          class="bad status"
-        >
-          Ожидает подтверждения 
-        </p>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
         class="name"
@@ -333,18 +361,22 @@ exports[`customer match snapshot 2`] = `
         Email
       </div>
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="value"
+          class="half"
         >
-          test@mindbox.ru
+          <div
+            class="value"
+          >
+            test@mindbox.ru
+          </div>
+          <p
+            class="good status"
+          >
+            Валидный 
+          </p>
         </div>
-        <p
-          class="good status"
-        >
-          Валидный 
-        </p>
       </div>
     </div>
     <div
@@ -571,71 +603,79 @@ exports[`customer match snapshot 3`] = `
     class="customer"
   >
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="name"
+          class="half"
         >
-          ФИО
+          <div
+            class="name"
+          >
+            ФИО
+          </div>
+          <div
+            class="value"
+          >
+            Иван Иванович Иванов
+          </div>
         </div>
         <div
-          class="value"
+          class="half"
         >
-          Иван Иванович Иванов
-        </div>
-      </div>
-      <div
-        class="half"
-      >
-        <div
-          class="name"
-        >
-          Статус обработки
-        </div>
-        <div
-          class="value"
-        >
-          Processed
+          <div
+            class="name"
+          >
+            Статус обработки
+          </div>
+          <div
+            class="value"
+          >
+            Processed
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="name"
+          class="half"
         >
-          Пол
+          <div
+            class="name"
+          >
+            Пол
+          </div>
+          <div
+            class="value"
+          >
+            Женский
+          </div>
         </div>
         <div
-          class="value"
+          class="half"
         >
-          Женский
-        </div>
-      </div>
-      <div
-        class="half"
-      >
-        <div
-          class="name"
-        >
-          Дата рождения
-        </div>
-        <div
-          class="value"
-        >
-          1990-01-31
+          <div
+            class="name"
+          >
+            Дата рождения
+          </div>
+          <div
+            class="value"
+          >
+            1990-01-31
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
         class="name"
@@ -643,41 +683,45 @@ exports[`customer match snapshot 3`] = `
         Мобильный телефон
       </div>
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="value"
+          class="half"
         >
-          79001234567
+          <div
+            class="value"
+          >
+            79001234567
+          </div>
+          <p
+            class="good status"
+          >
+            Валидный 
+          </p>
+          <p
+            class="good status"
+          >
+            Подтвержден 
+          </p>
         </div>
-        <p
-          class="good status"
-        >
-          Валидный 
-        </p>
-        <p
-          class="good status"
-        >
-          Подтвержден 
-        </p>
-      </div>
-      <div
-        class="half"
-      >
         <div
-          class="value"
+          class="half"
         >
-          79652026149
+          <div
+            class="value"
+          >
+            79652026149
+          </div>
+          <p
+            class="bad status"
+          >
+            Ожидает подтверждения 
+          </p>
         </div>
-        <p
-          class="bad status"
-        >
-          Ожидает подтверждения 
-        </p>
       </div>
     </div>
     <div
-      class="inline"
+      class="line"
     >
       <div
         class="name"
@@ -685,18 +729,22 @@ exports[`customer match snapshot 3`] = `
         Email
       </div>
       <div
-        class="half"
+        class="inline"
       >
         <div
-          class="value"
+          class="half"
         >
-          test@mindbox.ru
+          <div
+            class="value"
+          >
+            test@mindbox.ru
+          </div>
+          <p
+            class="good status"
+          >
+            Валидный 
+          </p>
         </div>
-        <p
-          class="good status"
-        >
-          Валидный 
-        </p>
       </div>
     </div>
     <div
