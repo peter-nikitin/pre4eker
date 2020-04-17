@@ -17,8 +17,12 @@ exports[`customer match snapshot 1`] = `
           Изменения баллов
         </div>
       </div>
+    </div>
+    <div
+      class="inline"
+    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -36,12 +40,8 @@ exports[`customer match snapshot 1`] = `
           MBcRZtuf
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -49,13 +49,13 @@ exports[`customer match snapshot 1`] = `
           Начислено
         </div>
         <div
-          class="promoValue"
+          class="value"
         >
           1396638.62
         </div>
       </div>
       <div
-        class="half"
+        class="third"
       >
         <div
           class="name"
@@ -66,9 +66,64 @@ exports[`customer match snapshot 1`] = `
           class="half"
         >
           <div
-            class="promoValue"
+            class="value"
           >
             5761799.72
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          LE0pZEmG
+        </div>
+        <div
+          class="status neutral"
+        >
+          REDNhFOU
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Начислено
+        </div>
+        <div
+          class="value"
+        >
+          20955125.72
+        </div>
+      </div>
+      <div
+        class="third"
+      >
+        <div
+          class="name"
+        >
+          Списано
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="value"
+          >
+            10868072.91
           </div>
         </div>
       </div>

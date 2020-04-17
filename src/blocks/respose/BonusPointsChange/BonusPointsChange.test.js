@@ -9,6 +9,6 @@ afterEach(cleanup)
 const {order} = response;
 
 test(`customer match snapshot`, () => {
-  const {asFragment, getByRole} = render(<BonusPointsChange bonusPointsChanges={order.bonusPointsChanges[0]} />)
+  const {asFragment, getByRole} = render(<BonusPointsChange bonusPointsChanges={order.bonusPointsChanges} />)
   expect(asFragment(<BonusPointsChange />)).toMatchSnapshot(); 
 })
