@@ -6,10 +6,12 @@ import thunk from 'redux-thunk';
 // import {countReducer} from './counter/reducer'; 
 import {requestReducer} from './blocks/requset/RequestForm/reducer'; 
 import {responseReducer} from './blocks/respose/reducer'; 
+import {requestFormReducer} from 'src/blocks/requset/reducer'; 
 
 const allReducers = combineReducers({
   requestReducer,
-  responseReducer
+  responseReducer,
+  requestFormReducer,
 })
 
 export const store = createStore(allReducers, applyMiddleware(thunk)); 
