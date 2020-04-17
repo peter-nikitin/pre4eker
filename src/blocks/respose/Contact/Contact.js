@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styleShared from "src/customer.css";
+import styleShared from "src/blocks/respose/responseShared.css";
 
 const Contact = ({ label, main, pending, invalid, confirmed }) => {
   
   
   return (
-    <div className={styleShared.inline}>
+    <>
       <div className={styleShared.name}>{label}</div>
+    <div className={styleShared.inline}>
       <div className={styleShared.half}>
         <div className={styleShared.value}>{main}</div>
 
@@ -30,6 +31,7 @@ const Contact = ({ label, main, pending, invalid, confirmed }) => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

@@ -6,82 +6,90 @@ exports[`customer match snapshot 1`] = `
     class="customer"
   >
     <div
+      class="promoType"
+    >
+      Промокод
+    </div>
+    <div
       class="inline"
     >
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Промокод
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
         </div>
         <div
-          class="value"
+          class="line"
         >
-          ABC12345
+          Пока еще не активен
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Сумма скидки
+          </div>
+          <div
+            class="promoValue"
+          >
+            10528369.9
+          </div>
         </div>
       </div>
       <div
         class="half"
       >
         <div
-          class="name"
+          class="line"
         >
-          Сумма скидки
+          <div
+            class=" name"
+          >
+            Выдан
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Oct 23 2018
+          </div>
         </div>
         <div
-          class="promoValue"
+          class="line"
         >
-          10528369.9
+          <div
+            class="  name"
+          >
+            Сгорит
+          </div>
+          <div
+            class="  value"
+          >
+            Tue Nov 21 2017
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      Пока еще не активен
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Выдан
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Oct 23 2018
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Сгорит
-      </div>
-      <div
-        class="half value"
-      >
-        Tue Nov 21 2017
-      </div>
-    </div>
-    <div
-      class="inline"
-    >
-      <div
-        class="half value"
-      >
-        Использован
-      </div>
-      <div
-        class="half value"
-      >
-        Sat Apr 20 2019
+        <div
+          class="line"
+        >
+          <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            Sat Apr 20 2019
+          </div>
+        </div>
       </div>
     </div>
   </div>
