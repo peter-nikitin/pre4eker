@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Request from './RequestForm'
+import RequestForm from './RequestForm'
 
 const mapStateToProps = ({requestReducer}) => ({
   request: requestReducer
@@ -22,4 +22,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export const RequestContainer = connect(mapStateToProps, mapDispatchToProps)(Request); 
+export const RequestContainer = connect(mapStateToProps, mapDispatchToProps)(RequestForm); 

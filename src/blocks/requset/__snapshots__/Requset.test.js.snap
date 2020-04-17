@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="buttonLine"
+    >
+      <button>
+        Форма запроса
+      </button>
+      <button>
+        JSON запроса
+      </button>
+      <button>
+        JSON ответа
+      </button>
+    </div>
+    <div />
+  </div>
+</DocumentFragment>
+`;
