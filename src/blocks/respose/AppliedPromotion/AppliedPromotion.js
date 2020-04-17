@@ -2,7 +2,7 @@ import types from "./types";
 
 import React from "react";
 import PropTypes from "prop-types";
-import stylesShared from "src/customer.css";
+import stylesShared from "src/blocks/respose/responseShared.css";
 
 const AppliedPropmotion = ({ promoInfo }) => {
   const {
@@ -18,10 +18,10 @@ const AppliedPropmotion = ({ promoInfo }) => {
   const expirationDate = new Date(expirationDateTimeUtc);
   return (
     <div>
-      <div className={stylesShared.customer}>
+      <div className={stylesShared.promo}>
+        <div className={stylesShared.promoType}>{types[type]}</div>
         <div className={stylesShared.inline}>
           <div className={stylesShared.half}>
-            <div className={stylesShared.promoType}>{types[type]}</div>
             {promotion && (
               <div className={stylesShared.value}> {promotion.name}</div>
             )}
@@ -52,9 +52,11 @@ const AppliedPropmotion = ({ promoInfo }) => {
             )}
             {balanceType && (
               <div className={stylesShared.line}>
-              <div className={stylesShared.name}>Балльный счет</div>
+                <div className={stylesShared.name}>Балльный счет</div>
                 <div className={stylesShared.value}>{balanceType.name}</div>
-                <div className={`${stylesShared.status} ${stylesShared.neutral}`}>
+                <div
+                  className={`${stylesShared.status} ${stylesShared.neutral}`}
+                >
                   Сис имя: {balanceType.ids.systemName}
                 </div>
               </div>
@@ -78,10 +80,14 @@ const AppliedPropmotion = ({ promoInfo }) => {
         </div>
 
         {promotion && (
-          <div className={stylesShared.inline}>
-            <span>{promotion.ids.mindboxId}</span>
-            <span>{promotion.ids.externalId}</span>
-            <span>{promotion.type}</span>
+          <div className={stylesShared.line}>
+            <span className={stylesShared.promoDetail}>
+              {promotion.ids.mindboxId}
+            </span>
+            <span className={stylesShared.promoDetail}>
+              {promotion.ids.externalId}
+            </span>
+            <span className={stylesShared.promoDetail}>{promotion.type}</span>
           </div>
         )}
       </div>

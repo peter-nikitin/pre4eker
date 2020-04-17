@@ -4,19 +4,19 @@ exports[`customer match snapshot 1`] = `
 <DocumentFragment>
   <div>
     <div
-      class="customer"
+      class="promo"
     >
+      <div
+        class="promoType"
+      >
+        Начисление баллов
+      </div>
       <div
         class="inline"
       >
         <div
           class="half"
         >
-          <div
-            class="promoType"
-          >
-            Начисление баллов
-          </div>
           <div
             class="value"
           >
@@ -91,15 +91,21 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="inline"
+        class="line"
       >
-        <span>
+        <span
+          class="promoDetail"
+        >
           1043337289
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           promotion-1
         </span>
-        <span>
+        <span
+          class="promoDetail"
+        >
           mindbox
         </span>
       </div>
