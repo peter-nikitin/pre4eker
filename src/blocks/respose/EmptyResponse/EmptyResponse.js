@@ -5,13 +5,13 @@ const EmptyResponse = (props) => {
   return (
     <div className={style.response}>
       <div className={style.text}>
-        <p>Pre4eker - это сервис проверки акций. </p>
-        <p>Вы можете:</p>
+        <p>Pre4eker - это сервис проверки и визуализации акций.</p>
         <ol>
-          <li>Сконфигурировать запрос в форме (скоро)</li>
-          <li>Вставить запрос в формате JSON (скоро)</li>
-          <li>Вставить ответ в формате JSON</li>
+          <li>Получи ответ АПИ Mindbox. Например, через Postman или от клиента</li>
+          <li>Введи его в форму</li>
+          <li>Проверь то, как настроены акции. </li>
         </ol>
+        <p>github: <a href="https://github.com/peter-nikitin/mindbox-pre4eker">pre4eker</a></p>
       </div>
     </div>
   );
