@@ -3,9 +3,8 @@ import { connect } from "react-redux";
 
 import Response from "./Response";
 
-const mapStateToProps = ({ responseReducer, requestFormReducer}) => ({
-  response: responseReducer,
-  JSON: requestFormReducer
+const mapStateToProps = ({ requestReducer}) => ({
+  response: requestReducer.responseJSON
 });
 
 const mapDispatchToProps = {};

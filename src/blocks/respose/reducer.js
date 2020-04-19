@@ -2,7 +2,7 @@ import response from '../../../data/response';
 
 
 
-export const responseReducer = (state = response, { type, payload }) => {
+export const responseReducer = (state = {}, { type, payload }) => {
   switch (type) {
  
   default:
