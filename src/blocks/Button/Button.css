@@ -8,11 +8,13 @@
 
 .basic.normal,.add.normal, .remove.normal  {
   background: #FFFFFF;
+  color: #000000;
 }
 
 .basic.hover {
-  background: #4F4F4F; 
-  border-color:  #4F4F4F ;
+  background: #000; 
+  color: #fff;
+  border-color:  #000;
 }
 .hover  svg  path {
   fill: white;
@@ -21,10 +23,13 @@
 .add.hover {
   background: #27AE60;
   border-color: #27AE60;
+  color: #fff;
+
 }
 
 .remove.hover {
   background: #EB5757;
+  color: #fff;
   border-color: #EB5757;
 }
 
@@ -37,4 +42,10 @@
 .medium {
   height: 24px; 
   width: 24px; 
+}
+
+.sizeAuto {
+  width: auto;
+  height: auto;
+  padding: .4rem .5rem .3rem .5rem ;
 }

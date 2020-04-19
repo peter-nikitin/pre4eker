@@ -22,6 +22,8 @@ export default function Button({ action, type, size = "medium", ...props }) {
         return { icon: <Add />, styleClass: style.add };
       case `REMOVE`:
         return { icon: <Remove />, styleClass: style.remove };
+      case `TEXT`:
+        return { icon: props.children, styleClass: style.basic };
 
       default:
         return { icon: <Shevron />, styleClass: style.basic };
@@ -35,7 +37,7 @@ export default function Button({ action, type, size = "medium", ...props }) {
       className={`${style[size]} ${style.button} ${style[status]} ${
         typeOfButton(type).styleClass
       }`}
-      onClick={() => action()}
+      onClick={(e) => action(e)}
       onMouseEnter={() => changeStatus(`hover`)}
       onMouseLeave={() => changeStatus(`normal`)}
     >
