@@ -990,7 +990,7 @@ exports[`full response to match snapshot 1`] = `
             >
               Дополнительные поля
               <button
-                class="small button normal basic"
+                class="small button normal undefined basic"
               >
                 <div>
                   <svg
@@ -1120,7 +1120,7 @@ exports[`full response to match snapshot 1`] = `
             >
               Дополнительные поля
               <button
-                class="small button normal basic"
+                class="small button normal undefined basic"
               >
                 <div>
                   <svg
