@@ -15,7 +15,7 @@ const InputJSON = (props) => {
         locale={locale}
         height="85vh"
         width="100%"
-        onChange={(e) => props.setJSON(e)}
+        onChange={(e) => props.setJSON(e.jsObject)}
       />
     </div>
   );
