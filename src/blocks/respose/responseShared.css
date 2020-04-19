@@ -7,7 +7,7 @@
 
 .name {
   font-size: .7rem;
-  line-height: 1.7;
+  line-height: 1.4;
   color: #828282;
   width: 100%;
   display: flex;
@@ -16,7 +16,7 @@
 
 .value {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.4;
   color: #000000;
   /* margin-bottom: 4px; */
 }
@@ -48,7 +48,7 @@
 
 .status {
   font-size: .75rem;
-  line-height: 1.7;
+  line-height: 1.4;
   margin: 0;
   padding-left: .75rem;
   position: relative;
@@ -90,12 +90,12 @@
 
 .promoValue {
   font-size: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 .promoType {
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.4;
   font-weight: bold;
 }
 
