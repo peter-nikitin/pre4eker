@@ -11,7 +11,7 @@ import  Remove from "src/blocks/Icons/Remove";
 
 
 
-export default function Button({ action, type, size = "medium", ...props }) {
+export default function Button({ action, type, size = "medium", active, ...props }) {
  
 
   const typeOfButton = (type) => {
@@ -34,9 +34,9 @@ export default function Button({ action, type, size = "medium", ...props }) {
   const [status, changeStatus] = useState(`normal`);
   return (
     <button
-      className={`${style[size]} ${style.button} ${style[status]} ${
+      className={`${style[size]} ${style.button} ${style[status]} ${active && style.active} ${
         typeOfButton(type).styleClass
-      }`}
+      }` }
       onClick={(e) => action(e)}
       onMouseEnter={() => changeStatus(`hover`)}
       onMouseLeave={() => changeStatus(`normal`)}
