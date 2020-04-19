@@ -1205,3 +1205,206 @@ const response = {
   ],
 };
 export default response;
+
+
+export const noPromo = {
+  status: "Success",
+  order: {
+    processingStatus: "Calculated",
+    deliveryCost: 20638572.96,
+    ids: {
+      mindboxId: 1968413179,
+    },
+    totalPrice: 10542306.11,
+    lines: [
+      {
+        product: {
+          ids: {
+            website: "798199676",
+          },
+        },
+        quantity: 13179398.15,
+        basePricePerItem: 17639978.17,
+        discountedPriceOfLine: 804584.3,
+        status: {
+          ids: {
+            externalId: "delivered",
+          },
+        },
+        lineNumber: 1,
+        lineId: "8",
+        minPricePerItem: 19739487.99,
+        costPricePerItem: 12489015.84,
+      },
+      {
+        product: {
+          ids: {
+            website: "1963295047",
+          },
+        },
+        quantity: 20422921.01,
+        basePricePerItem: 16956137.47,
+        discountedPriceOfLine: 9906634.11,
+        status: {
+          ids: {
+            externalId: "delivered",
+          },
+        },
+        lineNumber: 1,
+        lineId: "6",
+        minPricePerItem: 95251.03,
+        costPricePerItem: 9725898.93,
+        giftCard: {
+          ids: {
+            number: "3284651302",
+          },
+          getFromPool: true,
+          status: "CanBeActivated",
+        },
+      },
+    ],
+  },
+  customer: {
+    processingStatus: "Processed",
+    firstName: "Иван",
+    middleName: "Иванович",
+    lastName: "Иванов",
+    email: "test@mindbox.ru",
+    isEmailInvalid: false,
+    mobilePhone: 79001234567,
+    isMobilePhoneInvalid: false,
+    isMobilePhoneConfirmed: true,
+    pendingMobilePhone: 79652026149,
+    area: {
+      ids: {
+        externalId: "MoscowCity",
+      },
+      name: "Москва",
+    },
+    birthDate: "1990-01-31",
+    sex: "female",
+    changeDateTimeUtc: "2018-10-22T22:04:40.76Z",
+    ianaTimeZone: "Asia/Hong_Kong",
+    timeZoneSource: "Определили в трекере",
+  },
+};
+export const noOrder = {
+  status: "Success",
+  customer: {
+    processingStatus: "Processed",
+    firstName: "Иван",
+    middleName: "Иванович",
+    lastName: "Иванов",
+    email: "test@mindbox.ru",
+    isEmailInvalid: false,
+    mobilePhone: 79001234567,
+    isMobilePhoneInvalid: false,
+    isMobilePhoneConfirmed: true,
+    pendingMobilePhone: 79652026149,
+    area: {
+      ids: {
+        externalId: "MoscowCity",
+      },
+      name: "Москва",
+    },
+    birthDate: "1990-01-31",
+    sex: "female",
+    changeDateTimeUtc: "2018-10-22T22:04:40.76Z",
+    ianaTimeZone: "Asia/Hong_Kong",
+    timeZoneSource: "Определили в трекере",
+  },
+};
+
+export const noLines = {
+  status: "Success",
+  order: {
+    processingStatus: "Calculated",
+    deliveryCost: 20638572.96,
+    ids: {
+      mindboxId: 1968413179,
+    },
+    totalPrice: 10542306.11,
+  },
+  customer: {
+    processingStatus: "Processed",
+    firstName: "Иван",
+    middleName: "Иванович",
+    lastName: "Иванов",
+    email: "test@mindbox.ru",
+    isEmailInvalid: false,
+    mobilePhone: 79001234567,
+    isMobilePhoneInvalid: false,
+    isMobilePhoneConfirmed: true,
+    pendingMobilePhone: 79652026149,
+    area: {
+      ids: {
+        externalId: "MoscowCity",
+      },
+      name: "Москва",
+    },
+    birthDate: "1990-01-31",
+    sex: "female",
+    changeDateTimeUtc: "2018-10-22T22:04:40.76Z",
+    ianaTimeZone: "Asia/Hong_Kong",
+    timeZoneSource: "Определили в трекере",
+  },
+};
+export const noCustomer = {
+  status: "Success",
+  order: {
+    processingStatus: "Calculated",
+    deliveryCost: 20638572.96,
+    ids: {
+      mindboxId: 1968413179,
+    },
+    totalPrice: 10542306.11,
+    lines: [
+      {
+        product: {
+          ids: {
+            website: "798199676",
+          },
+        },
+        quantity: 13179398.15,
+        basePricePerItem: 17639978.17,
+        discountedPriceOfLine: 804584.3,
+        status: {
+          ids: {
+            externalId: "delivered",
+          },
+        },
+        lineNumber: 1,
+        lineId: "8",
+        minPricePerItem: 19739487.99,
+        costPricePerItem: 12489015.84,
+      },
+      {
+        product: {
+          ids: {
+            website: "1963295047",
+          },
+        },
+        quantity: 20422921.01,
+        basePricePerItem: 16956137.47,
+        discountedPriceOfLine: 9906634.11,
+        status: {
+          ids: {
+            externalId: "delivered",
+          },
+        },
+        lineNumber: 1,
+        lineId: "6",
+        minPricePerItem: 95251.03,
+        costPricePerItem: 9725898.93,
+        giftCard: {
+          ids: {
+            number: "3284651302",
+          },
+          getFromPool: true,
+          status: "CanBeActivated",
+        },
+      },
+    ],
+  },
+};
+export const noResponse = {};
