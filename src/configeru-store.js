@@ -4,9 +4,9 @@ import 'regenerator-runtime/runtime'
 import thunk from 'redux-thunk';
 
 // import {countReducer} from './counter/reducer'; 
-import {requestReducer} from './blocks/requset/RequestForm/reducer'; 
+import {requestFormReducer} from './blocks/requset/RequestForm/reducer'; 
 import {responseReducer} from './blocks/respose/reducer'; 
-import {requestFormReducer} from 'src/blocks/requset/reducer'; 
+import {requestReducer} from 'src/blocks/requset/reducer'; 
 
 const allReducers = combineReducers({
   requestReducer,
