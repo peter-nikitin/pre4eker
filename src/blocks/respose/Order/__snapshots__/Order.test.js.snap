@@ -9,7 +9,7 @@ exports[`customer match snapshot 1`] = `
     class="customer"
   >
     <div
-      class="inline"
+      class="inline line"
     >
       <div
         class="half"
@@ -67,38 +67,26 @@ exports[`customer match snapshot 1`] = `
         class="half"
       >
         <div
-          class="value"
+          class="name"
         >
           Доставка
         </div>
-      </div>
-      <div
-        class="half"
-      >
         <div
           class="value"
         >
           20638572.96
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
         class="half"
       >
         <div
-          class="value"
+          class="name"
         >
           Итоговая цена
         </div>
-      </div>
-      <div
-        class="half"
-      >
         <div
-          class="value"
+          class="promoValue"
         >
           10542306.11
         </div>
@@ -137,58 +125,25 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Начисление баллов
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              tmtk1GOB
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: ojbLVRsD
-            </div>
           </div>
         </div>
         <div
@@ -221,23 +176,65 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            tmtk1GOB
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: ojbLVRsD
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1043337289
-        </span>
-        <span
+          MB ID: 1043337289
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -246,58 +243,25 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка балламми
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              iLqkYKaK
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: 8r6qx418
-            </div>
           </div>
         </div>
         <div
@@ -316,23 +280,65 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            iLqkYKaK
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: 8r6qx418
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          880694824
-        </span>
-        <span
+          MB ID: 880694824
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -341,39 +347,25 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
         <div
@@ -392,23 +384,46 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          118506896
-        </span>
-        <span
+          MB ID: 118506896
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -417,39 +432,25 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка на доставку
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
         <div
@@ -468,23 +469,46 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1497291562
-        </span>
-        <span
+          MB ID: 1497291562
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -493,60 +517,69 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Сообщение
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1976033026
-        </span>
-        <span
+          MB ID: 1976033026
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -555,79 +588,88 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Выданный промокод
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Выданный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула:Новый пул промокодов
-            </div>
           </div>
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула:Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          11133877
-        </span>
-        <span
+          MB ID: 11133877
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -636,18 +678,23 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
           </div>
@@ -668,23 +715,26 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
+      />
+      <div
+        class="line promoFooter"
       >
-        <span
+        <div
           class="promoDetail"
         >
-          58219796
-        </span>
-        <span
+          MB ID: 58219796
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -693,36 +743,16 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
-        >
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-        </div>
+        />
         <div
           class="half"
         >
@@ -738,10 +768,33 @@ exports[`customer match snapshot 1`] = `
           </div>
         </div>
       </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
@@ -832,7 +885,7 @@ exports[`customer match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
@@ -923,7 +976,7 @@ exports[`customer match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -1041,7 +1094,7 @@ exports[`customer match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -1159,7 +1212,7 @@ exports[`customer match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -1297,7 +1350,7 @@ exports[`customer match snapshot 2`] = `
     class="customer"
   >
     <div
-      class="inline"
+      class="inline line"
     >
       <div
         class="half"
@@ -1355,38 +1408,26 @@ exports[`customer match snapshot 2`] = `
         class="half"
       >
         <div
-          class="value"
+          class="name"
         >
           Доставка
         </div>
-      </div>
-      <div
-        class="half"
-      >
         <div
           class="value"
         >
           20638572.96
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
         class="half"
       >
         <div
-          class="value"
+          class="name"
         >
           Итоговая цена
         </div>
-      </div>
-      <div
-        class="half"
-      >
         <div
-          class="value"
+          class="promoValue"
         >
           10542306.11
         </div>
@@ -1453,58 +1494,25 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Начисление баллов
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              tmtk1GOB
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: ojbLVRsD
-            </div>
           </div>
         </div>
         <div
@@ -1537,23 +1545,65 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            tmtk1GOB
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: ojbLVRsD
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1043337289
-        </span>
-        <span
+          MB ID: 1043337289
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1562,58 +1612,25 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка балламми
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              iLqkYKaK
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: 8r6qx418
-            </div>
           </div>
         </div>
         <div
@@ -1632,23 +1649,65 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            iLqkYKaK
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: 8r6qx418
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          880694824
-        </span>
-        <span
+          MB ID: 880694824
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1657,39 +1716,25 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
         <div
@@ -1708,23 +1753,46 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          118506896
-        </span>
-        <span
+          MB ID: 118506896
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1733,39 +1801,25 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка на доставку
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
         <div
@@ -1784,23 +1838,46 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1497291562
-        </span>
-        <span
+          MB ID: 1497291562
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1809,60 +1886,69 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Сообщение
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1976033026
-        </span>
-        <span
+          MB ID: 1976033026
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1871,79 +1957,88 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Выданный промокод
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Выданный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула:Новый пул промокодов
-            </div>
           </div>
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула:Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          11133877
-        </span>
-        <span
+          MB ID: 11133877
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -1952,18 +2047,23 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
           </div>
@@ -1984,23 +2084,26 @@ exports[`customer match snapshot 2`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
+      />
+      <div
+        class="line promoFooter"
       >
-        <span
+        <div
           class="promoDetail"
         >
-          58219796
-        </span>
-        <span
+          MB ID: 58219796
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -2009,36 +2112,16 @@ exports[`customer match snapshot 2`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
-        >
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-        </div>
+        />
         <div
           class="half"
         >
@@ -2054,10 +2137,33 @@ exports[`customer match snapshot 2`] = `
           </div>
         </div>
       </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
@@ -2148,7 +2254,7 @@ exports[`customer match snapshot 2`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
@@ -2239,7 +2345,7 @@ exports[`customer match snapshot 2`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -2357,7 +2463,7 @@ exports[`customer match snapshot 2`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -2475,7 +2581,7 @@ exports[`customer match snapshot 2`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -2613,7 +2719,7 @@ exports[`customer match snapshot 3`] = `
     class="customer"
   >
     <div
-      class="inline"
+      class="inline line"
     >
       <div
         class="half"
@@ -2671,38 +2777,26 @@ exports[`customer match snapshot 3`] = `
         class="half"
       >
         <div
-          class="value"
+          class="name"
         >
           Доставка
         </div>
-      </div>
-      <div
-        class="half"
-      >
         <div
           class="value"
         >
           20638572.96
         </div>
       </div>
-    </div>
-    <div
-      class="inline"
-    >
       <div
         class="half"
       >
         <div
-          class="value"
+          class="name"
         >
           Итоговая цена
         </div>
-      </div>
-      <div
-        class="half"
-      >
         <div
-          class="value"
+          class="promoValue"
         >
           10542306.11
         </div>
@@ -2741,58 +2835,25 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Начисление баллов
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              tmtk1GOB
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: ojbLVRsD
-            </div>
           </div>
         </div>
         <div
@@ -2825,23 +2886,65 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            tmtk1GOB
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: ojbLVRsD
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1043337289
-        </span>
-        <span
+          MB ID: 1043337289
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -2850,58 +2953,25 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка балламми
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              iLqkYKaK
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: 8r6qx418
-            </div>
           </div>
         </div>
         <div
@@ -2920,23 +2990,65 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            iLqkYKaK
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: 8r6qx418
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          880694824
-        </span>
-        <span
+          MB ID: 880694824
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -2945,39 +3057,25 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
         <div
@@ -2996,23 +3094,46 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          118506896
-        </span>
-        <span
+          MB ID: 118506896
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -3021,39 +3142,25 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка на доставку
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
         <div
@@ -3072,23 +3179,46 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1497291562
-        </span>
-        <span
+          MB ID: 1497291562
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -3097,60 +3227,69 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Сообщение
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
           >
-             Новая акция
+            Название акции
           </div>
           <div
-            class="line"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+             Новая акция
           </div>
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1976033026
-        </span>
-        <span
+          MB ID: 1976033026
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -3159,79 +3298,88 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Выданный промокод
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Выданный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула:Новый пул промокодов
-            </div>
           </div>
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула:Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          11133877
-        </span>
-        <span
+          MB ID: 11133877
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -3240,18 +3388,23 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
           </div>
@@ -3272,23 +3425,26 @@ exports[`customer match snapshot 3`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
+      />
+      <div
+        class="line promoFooter"
       >
-        <span
+        <div
           class="promoDetail"
         >
-          58219796
-        </span>
-        <span
+          MB ID: 58219796
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -3297,36 +3453,16 @@ exports[`customer match snapshot 3`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Скидка
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
-        >
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-        </div>
+        />
         <div
           class="half"
         >
@@ -3342,10 +3478,33 @@ exports[`customer match snapshot 3`] = `
           </div>
         </div>
       </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
@@ -3436,7 +3595,7 @@ exports[`customer match snapshot 3`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
@@ -3527,7 +3686,7 @@ exports[`customer match snapshot 3`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -3645,7 +3804,7 @@ exports[`customer match snapshot 3`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"
@@ -3763,7 +3922,7 @@ exports[`customer match snapshot 3`] = `
     </div>
   </div>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="inline"

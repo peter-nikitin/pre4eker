@@ -9,7 +9,6 @@ import BonusPointsInfo from "../BonusPointsInfo/BonusPointsInfo";
 import BonusPointsChange from "../BonusPointsChange/BonusPointsChange";
 import AppliedPropmotion from "../AppliedPromotion/AppliedPromotion";
 
-
 const Order = ({ order }) => {
   const {
     processingStatus,
@@ -37,7 +36,7 @@ const Order = ({ order }) => {
     <>
       <h2>Заказ</h2>
       <div className={stylesShared.customer}>
-        <div className={stylesShared.inline}>
+        <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           {ids && <div className={stylesShared.half}>{drawIds(ids)}</div>}
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Статус обработки</div>
@@ -46,20 +45,16 @@ const Order = ({ order }) => {
             </div>
           </div>
         </div>
-        {deliveryCost && <div className={stylesShared.inline}>
-          <div className={stylesShared.half}>
-            <div className={stylesShared.value}>Доставка</div>
-          </div>
-          <div className={stylesShared.half}>
-            <div className={stylesShared.value}>{deliveryCost}</div>
-          </div>
-        </div>}
         <div className={stylesShared.inline}>
+          {deliveryCost && (
+            <div className={stylesShared.half}>
+              <div className={stylesShared.name}>Доставка</div>
+              <div className={stylesShared.value}>{deliveryCost}</div>
+            </div>
+          )}
           <div className={stylesShared.half}>
-            <div className={stylesShared.value}>Итоговая цена</div>
-          </div>
-          <div className={stylesShared.half}>
-            <div className={stylesShared.value}>{totalPrice}</div>
+            <div className={stylesShared.name}>Итоговая цена</div>
+            <div className={stylesShared.promoValue}>{totalPrice}</div>
           </div>
         </div>
         {customFields && <CustomFileds data={customFields} />}
@@ -77,13 +72,8 @@ const Order = ({ order }) => {
           <BonusPointsInfo key={`bonusInfo_${i}`} bonusPointsInfo={bonus} />
         ))}
       {bonusPointsChanges && (
-        <BonusPointsChange
-          bonusPointsChanges={bonusPointsChanges}
-        />
+        <BonusPointsChange bonusPointsChanges={bonusPointsChanges} />
       )}
-
-     
-      
     </>
   );
 };
