@@ -24,7 +24,7 @@ export default function Button({ action, type, size = "medium", ...props }) {
         return { icon: <Remove />, styleClass: style.remove };
 
       default:
-        break;
+        return { icon: <Shevron />, styleClass: style.basic };
     }
 
   };
