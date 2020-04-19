@@ -1,33 +1,31 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import RequestForm from "./RequestForm/RequestForm";
+import { RequestFormContainer } from "./RequestForm/RequestFormContainer";
 import InputJSON from "./InputJSON/InputJSON";
-import style from './Request.css';
+import style from "./Request.css";
 
- const Request = (props ) => {
-
-  console.log(props);
-  
-
-  const { changeFormType, requestFromType, setRequestJSON, setResponseJSON } = props;
+const Request = (props) => {
+  const {
+    changeFormType,
+    requestFromType,
+    setRequestJSON,
+    setResponseJSON,
+  } = props;
 
   const drawRequesForm = (type) => {
     switch (type) {
       case `REQUEST_FORM`:
-        return <RequestForm />;
+        return <RequestFormContainer />;
       case `REQUEST_INPUT`:
-        return <InputJSON setJSON={setRequestJSON}/>;
+        return <InputJSON setJSON={setRequestJSON} />;
       case `RESPONSE_INPUT`:
-        return <InputJSON setJSON={setResponseJSON}/>;
+        return <InputJSON setJSON={setResponseJSON} />;
 
       default:
         break;
     }
   };
-
-
-
 
   return (
     <div>
@@ -47,8 +45,6 @@ import style from './Request.css';
   );
 };
 
-Request.propTypes = {
-
-};
+Request.propTypes = {};
 
 export default Request;
