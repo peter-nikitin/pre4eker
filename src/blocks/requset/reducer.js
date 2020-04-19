@@ -1,5 +1,5 @@
 const defaultRequestForm = {
-  type: `REQUEST_FORM`,
+  type: `RESPONSE_INPUT`,
   JSON: ''
 }
 
