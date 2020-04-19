@@ -1,37 +1,30 @@
-import React, { Component } from 'react'
+
 
 import style from './Customer.css'
 import Selector from '../Selector/Selector';
 
-export default class Customer extends Component {
-  constructor(props) {
-    super(props)
+import React, {useState} from 'react'
+import PropTypes from 'prop-types'
 
-    this.state = { 
-      selected: `email`
-    }
+const Customer = ({customer}) => {
 
-    this.options = this.props.customer
-    this.changeSelection = this.changeSelection.bind(this)
-  }
+  const [selected, changeSelection ] = useState(`email`)
 
-  changeSelection(option) {
-    this.setState({
-      selected: option
-    })
-  }
-
-  render() {
-    // console.log(this.state.selected);
-    return (
-      <div>
+  return (
+ <div>
         <h2 className={style.h2}>Клиент</h2>
         <Selector
-          selected={this.state.selected}
-          options={this.options}
-          changeSelection={this.changeSelection}
+          selected={selected}
+          options={customer}
+          changeSelection={(option) => changeSelection(option)}
         />
       </div>
-    )
-  }
+  )
 }
+
+Customer.propTypes = {
+
+}
+
+export default Customer
+
