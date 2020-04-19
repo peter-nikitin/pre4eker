@@ -38,7 +38,7 @@ const Order = ({ order }) => {
       <h2>Заказ</h2>
       <div className={stylesShared.customer}>
         <div className={stylesShared.inline}>
-          <div className={stylesShared.half}>{drawIds(ids)}</div>
+          {ids && <div className={stylesShared.half}>{drawIds(ids)}</div>}
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Статус обработки</div>
             <div className={stylesShared.value}>
@@ -46,14 +46,14 @@ const Order = ({ order }) => {
             </div>
           </div>
         </div>
-        <div className={stylesShared.inline}>
+        {deliveryCost && <div className={stylesShared.inline}>
           <div className={stylesShared.half}>
             <div className={stylesShared.value}>Доставка</div>
           </div>
           <div className={stylesShared.half}>
             <div className={stylesShared.value}>{deliveryCost}</div>
           </div>
-        </div>
+        </div>}
         <div className={stylesShared.inline}>
           <div className={stylesShared.half}>
             <div className={stylesShared.value}>Итоговая цена</div>
