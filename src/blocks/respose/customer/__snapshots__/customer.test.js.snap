@@ -201,7 +201,7 @@ exports[`customer match snapshot 1`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal basic"
+          class="small button normal undefined basic"
         >
           <div>
             <svg
@@ -427,7 +427,7 @@ exports[`customer match snapshot 2`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal basic"
+          class="small button normal undefined basic"
         >
           <div>
             <svg
@@ -795,7 +795,7 @@ exports[`customer match snapshot 3`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal basic"
+          class="small button normal undefined basic"
         >
           <div>
             <svg
