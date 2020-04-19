@@ -6,13 +6,19 @@ exports[`customer match snapshot 1`] = `
     <div
       class="buttonLine"
     >
-      <button>
+      <button
+        class="sizeAuto button normal basic"
+      >
         Форма запроса
       </button>
-      <button>
+      <button
+        class="sizeAuto button normal basic"
+      >
         JSON запроса
       </button>
-      <button>
+      <button
+        class="sizeAuto button normal basic"
+      >
         JSON ответа
       </button>
     </div>
@@ -20,7 +26,7 @@ exports[`customer match snapshot 1`] = `
       <div
         id="response-outer-box"
         name="outer-box"
-        style="display: block; overflow: none; height: 85vh; width: 100%; margin: 0px; box-sizing: border-box; position: relative;"
+        style="display: block; overflow: none; height: 75vh; width: 100%; margin: 0px; box-sizing: border-box; position: relative;"
       >
         <div
           style="opacity: 1; height: 30px; width: 30px; position: absolute; top: 0px; right: 0px; transform: translate(-25%,25%); pointer-events: none; transition-duration: 0.2s; transition-timing-function: cubic-bezier(0, 1, 0.5, 1);"
@@ -42,7 +48,7 @@ exports[`customer match snapshot 1`] = `
         <div
           id="response-container"
           name="container"
-          style="display: block; height: 85vh; width: 100%; margin: 0px; box-sizing: border-box; overflow: hidden; font-family: Roboto, sans-serif;"
+          style="display: block; height: 75vh; width: 100%; margin: 0px; box-sizing: border-box; overflow: hidden; font-family: Roboto, sans-serif;"
         >
           <div
             id="response-warning-box"

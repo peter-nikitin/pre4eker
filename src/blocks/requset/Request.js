@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { RequestFormContainer } from "./RequestForm/RequestFormContainer";
 import InputJSON from "./InputJSON/InputJSON";
 import style from "./Request.css";
+import Button from "src/blocks/Button/Button";
 
 const Request = (props) => {
   const {
@@ -30,15 +31,27 @@ const Request = (props) => {
   return (
     <div>
       <div className={style.buttonLine}>
-        <button onClick={() => changeFormType(`REQUEST_FORM`)}>
+        <Button
+          type="TEXT"
+          action={() => changeFormType(`REQUEST_FORM`)}
+          size="sizeAuto"
+        >
           Форма запроса
-        </button>
-        <button onClick={() => changeFormType(`REQUEST_INPUT`)}>
+        </Button>
+        <Button
+          type="TEXT"
+          action={() => changeFormType(`REQUEST_INPUT`)}
+          size="sizeAuto"
+        >
           JSON запроса
-        </button>
-        <button onClick={() => changeFormType(`RESPONSE_INPUT`)}>
+        </Button>
+        <Button
+          type="TEXT"
+          action={() => changeFormType(`RESPONSE_INPUT`)}
+          size="sizeAuto"
+        >
           JSON ответа
-        </button>
+        </Button>
       </div>
       {drawRequesForm(requestFromType.type)}
     </div>
