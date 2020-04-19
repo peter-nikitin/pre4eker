@@ -7,58 +7,25 @@ exports[`customer match snapshot 1`] = `
       class="promo"
     >
       <div
-        class="promoType"
+        class="promoType line"
       >
         Начисление баллов
       </div>
       <div
-        class="inline"
+        class="inline line"
       >
         <div
           class="half"
         >
           <div
-            class="value"
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
           >
              Новая акция
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              tmtk1GOB
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: ojbLVRsD
-            </div>
           </div>
         </div>
         <div
@@ -91,23 +58,65 @@ exports[`customer match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="line"
+        class="  line"
       >
-        <span
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Балльный счет
+          </div>
+          <div
+            class="value"
+          >
+            tmtk1GOB
+          </div>
+          <div
+            class="status neutral"
+          >
+            Сис имя: ojbLVRsD
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
           class="promoDetail"
         >
-          1043337289
-        </span>
-        <span
+          MB ID: 1043337289
+        </div>
+        <div
           class="promoDetail"
         >
-          promotion-1
-        </span>
-        <span
+          Ext ID: promotion-1
+        </div>
+        <div
           class="promoDetail"
         >
           mindbox
-        </span>
+        </div>
       </div>
     </div>
   </div>

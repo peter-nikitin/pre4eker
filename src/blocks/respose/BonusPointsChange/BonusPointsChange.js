@@ -5,7 +5,7 @@ import stylesShared from "src/blocks/respose/responseShared.css";
 const BonusPointsChange = ({ bonusPointsChanges }) => {
 
   return (
-    <div className={stylesShared.customer}>
+    <div className={stylesShared.promo}>
       <div className={stylesShared.inline}>
         <div className={stylesShared.half}>
           <div className={stylesShared.promoType}>Изменения баллов</div>

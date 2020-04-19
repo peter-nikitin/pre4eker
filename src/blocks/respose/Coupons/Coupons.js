@@ -20,7 +20,7 @@ const Coupons = ({ couponInfo }) => {
   const usedDate = new Date(usedDateTimeUtc);
 
   return (
-    <div className={stylesShared.customer}>
+    <div className={stylesShared.promo}>
         <div className={stylesShared.promoType}>Промокод</div>
       <div className={stylesShared.inline}>
         <div className={stylesShared.half}>

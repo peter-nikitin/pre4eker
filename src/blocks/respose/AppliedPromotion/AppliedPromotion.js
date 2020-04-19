@@ -19,50 +19,21 @@ const AppliedPropmotion = ({ promoInfo }) => {
   return (
     <div>
       <div className={stylesShared.promo}>
-        <div className={stylesShared.promoType}>{types[type]}</div>
-        <div className={stylesShared.inline}>
+        <div className={`${stylesShared.promoType} ${stylesShared.line}`}>
+          {types[type]}
+        </div>
+        <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           <div className={stylesShared.half}>
             {promotion && (
-              <div className={stylesShared.value}> {promotion.name}</div>
-            )}
-            {coupon && (
-              <div className={stylesShared.line}>
-                <div className={stylesShared.name}>Примененный промокод</div>
-                <div className={stylesShared.value}>{coupon.ids.code}</div>
-                <div
-                  className={`${stylesShared.status} ${stylesShared.neutral}`}
-                >
-                  Из пула: {coupon.pool.name}
+              <>
+                <div className={stylesShared.name}>Название акции</div>
+                <div className={`${stylesShared.value} ${stylesShared.line}`}>
+                  {" "}
+                  {promotion.name}
                 </div>
-              </div>
-            )}
-            {issuedCoupon && (
-              <div className={stylesShared.line}>
-                <div className={stylesShared.name}>Выданный промокод</div>
-                <div className={stylesShared.value}>
-                  {issuedCoupon.ids.code}
-                </div>
-                <div
-                  className={`${stylesShared.status} ${stylesShared.neutral}`}
-                >
-                  Из пула:
-                  {issuedCoupon.pool.name}
-                </div>
-              </div>
-            )}
-            {balanceType && (
-              <div className={stylesShared.line}>
-                <div className={stylesShared.name}>Балльный счет</div>
-                <div className={stylesShared.value}>{balanceType.name}</div>
-                <div
-                  className={`${stylesShared.status} ${stylesShared.neutral}`}
-                >
-                  Сис имя: {balanceType.ids.systemName}
-                </div>
-              </div>
+              </>
             )}
           </div>
-
           {amount && (
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Сумма</div>
@@ -78,16 +49,46 @@ const AppliedPropmotion = ({ promoInfo }) => {
             </div>
           )}
         </div>
+        <div className={`  ${stylesShared.line}`}>
+          {coupon && (
+            <div className={stylesShared.line}>
+              <div className={stylesShared.name}>Примененный промокод</div>
+              <div className={stylesShared.value}>{coupon.ids.code}</div>
+              <div className={`${stylesShared.status} ${stylesShared.neutral}`}>
+                Из пула: {coupon.pool.name}
+              </div>
+            </div>
+          )}
+          {issuedCoupon && (
+            <div className={stylesShared.line}>
+              <div className={stylesShared.name}>Выданный промокод</div>
+              <div className={stylesShared.value}>{issuedCoupon.ids.code}</div>
+              <div className={`${stylesShared.status} ${stylesShared.neutral}`}>
+                Из пула:
+                {issuedCoupon.pool.name}
+              </div>
+            </div>
+          )}
+          {balanceType && (
+            <div className={stylesShared.line}>
+              <div className={stylesShared.name}>Балльный счет</div>
+              <div className={stylesShared.value}>{balanceType.name}</div>
+              <div className={`${stylesShared.status} ${stylesShared.neutral}`}>
+                Сис имя: {balanceType.ids.systemName}
+              </div>
+            </div>
+          )}
+        </div>
 
         {promotion && (
-          <div className={stylesShared.line}>
-            <span className={stylesShared.promoDetail}>
-              {promotion.ids.mindboxId}
-            </span>
-            <span className={stylesShared.promoDetail}>
-              {promotion.ids.externalId}
-            </span>
-            <span className={stylesShared.promoDetail}>{promotion.type}</span>
+          <div className={`${stylesShared.line} ${stylesShared.promoFooter}`}>
+            <div className={stylesShared.promoDetail}>
+              MB ID: {promotion.ids.mindboxId}
+            </div>
+            <div className={stylesShared.promoDetail}>
+              Ext ID: {promotion.ids.externalId}
+            </div>
+            <div className={stylesShared.promoDetail}>{promotion.type}</div>
           </div>
         )}
       </div>

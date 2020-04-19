@@ -12,7 +12,7 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
   } = bonusPointsInfo;
 
   return (
-    <div className={stylesShared.customer}>
+    <div className={stylesShared.promo}>
       <div className={stylesShared.inline}>
         <div className={stylesShared.half}>
           <div className={stylesShared.promoType}>Информация о баллах</div>

@@ -20,11 +20,11 @@ const Line = ({ lineInfo }) => {
   return (
     <div>
       <div className={stylesShared.customer}>
-        <div className={stylesShared.inline}>
+        <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           <div className={`${stylesShared.third}`}>
             <div className={`${stylesShared.status} ${stylesShared.neutral}`}>
               <div>№ линии: {lineNumber}</div>
-              <div>ID линии: {lineId}</div>
+              {lineId && <div>ID линии: {lineId}</div>}
             </div>
           </div>
           <div className={stylesShared.third}>
@@ -38,11 +38,11 @@ const Line = ({ lineInfo }) => {
         </div>
         <div className={stylesShared.inline}>
           <div className={stylesShared.half}>
-            <div className={stylesShared.value}>До скидки</div>
+            <div className={stylesShared.name}>Базовая цена</div>
             <div className={stylesShared.promoValue}>{basePricePerItem}</div>
           </div>
           <div className={stylesShared.half}>
-            <div className={stylesShared.value}>Итого</div>
+            <div className={stylesShared.name}>Сумма по линии</div>
             <div className={stylesShared.promoValue}>
               {discountedPriceOfLine}
             </div>

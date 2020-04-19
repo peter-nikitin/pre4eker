@@ -3,7 +3,7 @@
 exports[`customer match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="customer"
+    class="promo"
   >
     <div
       class="promoType"
