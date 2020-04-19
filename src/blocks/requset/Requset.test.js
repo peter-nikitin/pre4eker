@@ -13,14 +13,15 @@ import { exportAllDeclaration } from "@babel/types";
 
 afterEach(cleanup);
 
-const defaultRequestForm = {
-  requstFormType: `RESPONSE_INPUT`,
-  changeFormType: jest.fn(),
-};
+const requestFromType = {
+    type: `RESPONSE_INPUT`,
+  };
+
+  const changeFormType = jest.fn();
 
 test(`customer match snapshot`, () => {
   const { asFragment, getByRole } = render(
-    <Request requestForm={defaultRequestForm} />
+    <Request requestFromType={requestFromType} changeFormType={changeFormType} />
   );
   expect(asFragment(<Request />)).toMatchSnapshot();
 });
