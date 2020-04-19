@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import Request from "./Request";
 
 
-const mapStateToProps = ({ requestFormReducer }) => ({
-  requestFromType: requestFormReducer,
+const mapStateToProps = ({ requestReducer }) => ({
+  requestFromType: requestReducer,
 });
 
 const mapDispatchToProps = (dispatch) => {
@@ -12,9 +12,9 @@ const mapDispatchToProps = (dispatch) => {
     changeFormType: (type) =>
       dispatch({ type: `CHANGE_REQUEST_FORM`, form: type }),
     setResponseJSON: (JSON) =>
-      dispatch({ type: `SET_RESPONSE_JSON`, JSON: JSON }),
+      dispatch({ type: `SET_RESPONSE_JSON`, data: JSON }),
     setRequestJSON: (JSON) =>
-      dispatch({ type: `SET_REQUEST_JSON`, JSON: JSON }),
+      dispatch({ type: `SET_REQUEST_JSON`, data: JSON }),
   };
 };
 
