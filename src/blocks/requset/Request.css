@@ -1,0 +1,11 @@
+.buttonLine {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.buttonLine button {
+  margin-right: .2rem;
+}
+.buttonLine button:last-child {
+  margin-right: 0;
+}
