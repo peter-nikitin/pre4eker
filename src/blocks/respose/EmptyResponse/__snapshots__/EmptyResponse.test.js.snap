@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyResponse has to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="response"
+  >
+    <div
+      class="text"
+    >
+      <p>
+        Pre4eker - это сервис проверки акций. 
+      </p>
+      <p>
+        Вы можете:
+      </p>
+      <ol>
+        <li>
+          Сконфигурировать запрос в форме (скоро)
+        </li>
+        <li>
+          Вставить запрос в формате JSON (скоро)
+        </li>
+        <li>
+          Вставить ответ в формате JSON
+        </li>
+      </ol>
+    </div>
+  </div>
+</DocumentFragment>
+`;
