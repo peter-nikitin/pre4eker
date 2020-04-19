@@ -1,27 +1,19 @@
-import React, { Component } from "react";
- 
+import React from "react";
+import PropTypes from "prop-types";
+
 import style from "./RequestForm.css";
-import Customer from '../Customer/Customer';
-import Order from '../Order/Order';
+import Customer from "../Customer/Customer";
+import Order from "../Order/Order";
 
+const RequestForm = ({ requestForm }) => {
+  return (
+    <div>
+      <Customer customer={requestForm.customer} />
+      <Order order={requestForm.order} />
+    </div>
+  );
+};
 
-export default class RequestForm extends Component {
-  constructor(props) {
-    super(props);
-    this.customer = this.props.request.customer;
-    this.order = this.props.request.order
-  }
+RequestForm.propTypes = {};
 
-  render() {
- console.log(this.props)
-
-    return (
-      <div className={style.request}>
-        <Customer customer={this.customer}/>
-        <Order  order={this.order}/>
-        
-
-      </div>
-    );
-  }
-}
+export default RequestForm;
