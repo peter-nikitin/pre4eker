@@ -4,9 +4,8 @@ import { Provider} from 'react-redux';
 import { Normalize } from 'styled-normalize'
 
 import {store} from './configeru-store';
-import {Container} from './counter/container';
 
-import style from './style.css';
+import './style.css';
 import Header from './blocks/Header/Header';
 import Main from './blocks/Main/Main';
 
