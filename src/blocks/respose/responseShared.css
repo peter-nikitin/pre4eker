@@ -26,7 +26,6 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
   margin: 0 -1rem;
-  height: 100%;
 }
 
 .inline:last-child {
@@ -128,22 +127,10 @@
   margin-bottom: 1.5rem;
 }
 
-.response {
-  padding: 1rem 2.5rem;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  height: 80vh;
-}
-
 .promoFooter {
   display: flex;
 }
-
-.response .half {
-  overflow-y: auto;
-  height: 100%;
-}
-
+ 
 h2 {
   margin: 0 0 .7rem 0;
 }
