@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  cursor: pointer;
 }
 
 .basic.normal,.add.normal, .remove.normal  {
@@ -48,4 +49,9 @@
   width: auto;
   height: auto;
   padding: .4rem .5rem .3rem .5rem ;
+}
+
+.sizeFull {
+  width: 100%;
+  padding: .6rem .5rem .5rem .5rem ;
 }

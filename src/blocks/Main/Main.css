@@ -1,7 +1,8 @@
 .main {
- margin: 0 auto;
+  margin: 0 auto;
   display: flex;
-  max-width: 95vw;
+  width: 95vw;
+  max-width: 1400px;
 }
 
 .oneThird {
