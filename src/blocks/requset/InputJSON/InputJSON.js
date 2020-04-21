@@ -1,22 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 
 import {smallResponse} from "data/response";
+import Button from 'src/blocks/Button/Button';
 
 const InputJSON = (props) => {
+
+  const [responseJSON, setResponseJSON] = useState(smallResponse); 
+  
   return (
     <div>
       <JSONInput
         id={props.type || "response"}
-        placeholder={smallResponse}
+        placeholder={responseJSON}
         locale={locale}
         height="75vh"
         width="100%"
-        onChange={(e) => props.setJSON(e.jsObject)}
+        onChange={(e) => setResponseJSON(e.jsObject)}
       />
+      <Button action={() => props.setJSON(responseJSON)} type='TEXT' size='sizeAuto'>Показать</Button>
     </div>
   );
 };
