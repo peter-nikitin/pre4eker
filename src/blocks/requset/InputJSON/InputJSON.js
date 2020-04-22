@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 
-import { smallResponse } from "data/response";
+
 import Button from "src/blocks/Button/Button";
 
 import style from "./InputJSON.css";
 
 const InputJSON = (props) => {
-  const [responseJSON, setResponseJSON] = useState(smallResponse);
+  const [responseJSON, setResponseJSON] = useState(props.responseJSON);
 
   return (
     <div>
