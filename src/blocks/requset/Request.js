@@ -6,6 +6,7 @@ import InputJSON from "./InputJSON/InputJSON";
 import style from "./Request.css";
 import Button from "src/blocks/Button/Button";
 import Soon from "./Soon/Soon";
+import * as formTypes from "./formTypes";
 
 const Request = (props) => {
   const {
@@ -15,32 +16,26 @@ const Request = (props) => {
     setResponseJSON,
   } = props;
 
-  const REQUSET_FORM_TYPE = {
-    requestForm: {
-      type: "REQUEST_FORM",
-      text: "Форма запроса",
-      component: <Soon />,
-    },
-    reqiestJSON: {
-      type: "REQUEST_INPUT",
-      text: "JSON запроса",
-      component: <Soon />,
-    },
-    responseJSON: {
-      type: "RESPONSE_INPUT",
-      text: "JSON ответа",
-      component: <InputJSON setJSON={setResponseJSON} />,
-    },
-  };
-
   const drawRequesForm = (type) => {
     switch (type) {
-      case REQUSET_FORM_TYPE.requestForm.type:
-        return REQUSET_FORM_TYPE.requestForm.component;
-      case REQUSET_FORM_TYPE.reqiestJSON.type:
-        return REQUSET_FORM_TYPE.reqiestJSON.component;
-      case REQUSET_FORM_TYPE.responseJSON.type:
-        return REQUSET_FORM_TYPE.responseJSON.component;
+      case formTypes.requestForm.type:
+        return (
+          <div className={style.requestForm}>
+            <Soon />
+          </div>
+        );
+      case formTypes.reqiestJSON.type:
+        return (
+          <div className={style.requestForm}>
+            <Soon />
+          </div>
+        );
+      case formTypes.responseJSON.type:
+        return (
+          <div className={style.requestJSON}>
+            <InputJSON setJSON={setResponseJSON} />
+          </div>
+        );
 
       default:
         break;
@@ -52,21 +47,19 @@ const Request = (props) => {
   return (
     <div>
       <div className={style.buttonLine}>
-        {Object.keys(REQUSET_FORM_TYPE).map((button, i) => (
+        {Object.keys(formTypes).map((button, i) => (
           <Button
             key={`button_${i}`}
             type="TEXT"
-            action={() => changeFormType(REQUSET_FORM_TYPE[button].type)}
+            action={() => changeFormType(formTypes[button].type)}
             size="sizeAuto"
-            active={requestFromType.type === REQUSET_FORM_TYPE[button].type}
+            active={requestFromType.type === formTypes[button].type}
           >
-            {REQUSET_FORM_TYPE[button].text}
+            {formTypes[button].text}
           </Button>
         ))}
       </div>
-      <div className={requestFromType.type === REQUSET_FORM_TYPE.requestForm.type ? style.requestForm : style.requestJSON}>
-        {drawRequesForm(requestFromType.type)}
-      </div>
+      {drawRequesForm(requestFromType.type)}
     </div>
   );
 };
