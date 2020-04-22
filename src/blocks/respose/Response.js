@@ -10,7 +10,9 @@ import EmptyResponse from "./EmptyResponse/EmptyResponse";
 const Response = ({ response }) => {
 
   const drawResponse = (response) => {
-    if (response != null || typeof response !== "undefined") {
+    console.log(response);
+    
+    if (typeof response !== "undefined" && Object.keys(response).length !== 0) {
       return (
         <div className={styles.response}>
           <div className={styles.inline}>
