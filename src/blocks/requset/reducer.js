@@ -1,7 +1,7 @@
 const initialState = {
   type: `RESPONSE_INPUT`,
-  responseJSON: '',
-  requestJSON: ''
+  responseJSON: {},
+  requestJSON: {}
 }
 
 import * as actionType from './actionTypes';
