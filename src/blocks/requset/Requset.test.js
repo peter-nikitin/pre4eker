@@ -11,10 +11,13 @@ import {
 
 import { exportAllDeclaration } from "@babel/types";
 
+import {smallResponse} from 'data/response';
+
 afterEach(cleanup);
 
-const requestFromType = {
+const requestFrom = {
   type: `RESPONSE_INPUT`,
+  responseJSON: smallResponse
 };
 
 const changeFormType = jest.fn();
@@ -22,7 +25,7 @@ const changeFormType = jest.fn();
 test(`customer match snapshot`, () => {
   const { asFragment, getByRole } = render(
     <Request
-      requestFromType={requestFromType}
+    requestFrom={requestFrom}
       changeFormType={changeFormType}
     />
   );
@@ -33,7 +36,7 @@ describe("Request ", () => {
   it("should call setResponseJSON ", () => {
     const props = {
       setResponseJSON: jest.fn(),
-      requestFromType: {
+      requestFrom: {
         type: "RESPONSE_INPUT",
         text: "JSON ответа",
       },
