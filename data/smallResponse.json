@@ -1,0 +1,87 @@
+{
+  "status": "Success",
+  "order": {
+    "processingStatus": "Calculated",
+    "totalPrice": 11995.0,
+    "lines": [
+      {
+        "product": {
+          "ids": {
+            "hyperautoWebsite": "000032291"
+          }
+        },
+        "quantity": 4.0,
+        "basePricePerItem": 1699.0,
+        "discountedPriceOfLine": 6296.0,
+        "status": {
+          "ids": {
+            "externalId": "accepted"
+          }
+        },
+        "appliedPromotions": [
+          {
+            "type": "discount",
+            "coupon": {
+              "ids": {
+                "code": "005ACOFHC8"
+              },
+              "pool": {
+                "ids": {
+                  "mindboxId": 9,
+                  "externalId": "promo-code-pool-7"
+                },
+                "name": "ДР купон 500р на покупки от 1000р",
+                "description": "Скидка 500 р. для заказа от 1000р"
+              }
+            },
+            "promotion": {
+              "ids": {
+                "mindboxId": 21,
+                "externalId": "Н_BX587"
+              },
+              "name": "Акция ДР купон 500р на покупки от 1000р",
+              "type": "mindbox"
+            },
+            "amount": 500.0
+          }
+        ],
+        "lineNumber": 1
+      },
+      {
+        "product": {
+          "ids": {
+            "hyperautoWebsite": "000037616"
+          }
+        },
+        "quantity": 1.0,
+        "basePricePerItem": 5699.0,
+        "discountedPriceOfLine": 5699.0,
+        "status": {
+          "ids": {
+            "externalId": "accepted"
+          }
+        },
+        "lineNumber": 2
+      }
+    ],
+    "couponsInfo": [
+      {
+        "discountAmountForCurrentOrder": 500.0,
+        "coupon": {
+          "ids": {
+            "code": "005ACOFHC8"
+          },
+          "pool": {
+            "ids": {
+              "mindboxId": 9,
+              "externalId": "promo-code-pool-7"
+            },
+            "name": "ДР купон 500р на покупки от 1000р",
+            "description": "Скидка 500 р. для заказа от 1000р"
+          },
+          "status": "CanBeUsed"
+        }
+      }
+    ]
+  }
+}
