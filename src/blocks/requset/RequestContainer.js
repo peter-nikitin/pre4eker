@@ -4,7 +4,7 @@ import Request from "./Request";
 import {changeFormType, setResponseJSON, setRequestJSON } from './actionCreators';
 
 const mapStateToProps = ({ requestReducer }) => ({
-  requestFromType: requestReducer,
+  requestFrom: requestReducer,
 });
 
 const mapDispatchToProps = (dispatch) => {
