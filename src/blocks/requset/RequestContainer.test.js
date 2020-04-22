@@ -21,8 +21,8 @@ describe("form type reducer", () => {
   it("should return initial state", () => {
     expect(requestReducer(undefined, {})).toEqual({
       type: "RESPONSE_INPUT",
-      responseJSON: '',
-      requestJSON: ''
+      responseJSON: {},
+      requestJSON: {}
     });
   });
 
@@ -34,8 +34,8 @@ describe("form type reducer", () => {
       })
     ).toEqual({
       type: "REQUEST_INPUT",
-      responseJSON: '',
-      requestJSON: ''
+      responseJSON: {},
+      requestJSON: {}
     });
   });
 
@@ -49,7 +49,7 @@ describe("form type reducer", () => {
       {
         type: "RESPONSE_INPUT",
         responseJSON: {status: 200},
-        requestJSON: ''
+        requestJSON: {}
       }
     );
   });
@@ -60,7 +60,7 @@ describe("form type reducer", () => {
         {
           type: `RESPONSE_INPUT`,
           responseJSON: {status: 200},
-          requestJSON: ''
+          requestJSON: {}
         }, {
         type: "SET_REQUEST_JSON",
         data: {status: 200},
