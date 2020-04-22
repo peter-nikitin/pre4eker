@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 
 import Request from "./Request";
-
+import {changeFormType, setResponseJSON, setRequestJSON } from './actionCreators';
 
 const mapStateToProps = ({ requestReducer }) => ({
   requestFromType: requestReducer,
@@ -9,12 +9,12 @@ const mapStateToProps = ({ requestReducer }) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    changeFormType: (type) =>
-      dispatch({ type: `CHANGE_REQUEST_FORM`, form: type }),
+    changeFormType: (form) =>
+      dispatch(changeFormType(from)),
     setResponseJSON: (JSON) =>
-      dispatch({ type: `SET_RESPONSE_JSON`, data: JSON }),
+      dispatch(setResponseJSON(JSON)),
     setRequestJSON: (JSON) =>
-      dispatch({ type: `SET_REQUEST_JSON`, data: JSON }),
+      dispatch(setRequestJSON(JSON)),
   };
 };
 
