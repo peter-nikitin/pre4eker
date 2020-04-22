@@ -11,10 +11,11 @@ import * as formTypes from "./formTypes";
 const Request = (props) => {
   const {
     changeFormType,
-    requestFromType,
+    requestFrom,
     setRequestJSON,
     setResponseJSON,
   } = props;
+
 
   const drawRequesForm = (type) => {
     switch (type) {
@@ -33,7 +34,7 @@ const Request = (props) => {
       case formTypes.responseJSON.type:
         return (
           <div className={style.requestJSON}>
-            <InputJSON setJSON={setResponseJSON} />
+            <InputJSON setJSON={setResponseJSON} responseJSON={requestFrom.responseJSON} />
           </div>
         );
 
@@ -42,7 +43,8 @@ const Request = (props) => {
     }
   };
 
-  const buttons = [];
+
+  
 
   return (
     <div>
@@ -53,13 +55,13 @@ const Request = (props) => {
             type="TEXT"
             action={() => changeFormType(formTypes[button].type)}
             size="sizeAuto"
-            active={requestFromType.type === formTypes[button].type}
+            active={requestFrom.type === formTypes[button].type}
           >
             {formTypes[button].text}
           </Button>
         ))}
       </div>
-      {drawRequesForm(requestFromType.type)}
+      {drawRequesForm(requestFrom.type)}
     </div>
   );
 };
