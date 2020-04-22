@@ -1,15 +1,18 @@
-const defaultRequestForm = {
+const initialState = {
   type: `RESPONSE_INPUT`,
-  JSON: ''
+  responseJSON: '',
+  requestJSON: ''
 }
 
-export const requestReducer = function (state = defaultRequestForm, action) {
+import * as actionType from './actionTypes';
+
+export const requestReducer = function (state = initialState, action) {
   switch (action.type) {
-    case 'CHANGE_REQUEST_FORM': 
-      return {...state, type: action.form }
-    case 'SET_RESPONSE_JSON':
+    case actionType.CHANGE_REQUEST_FORM: 
+      return {...state,  type: action.form }
+    case actionType.SET_RESPONSE_JSON:
       return {...state, responseJSON: action.data}
-    case 'SET_REQUEST_JSON':
+    case actionType.SET_REQUEST_JSON:
       return {...state, requestJSON: action.data}
     default:
       return state;
