@@ -1,0 +1,522 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Placeholder snapshot with discount and text should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div
+            class="promo"
+          >
+            <div
+              class="promoType line"
+            >
+              Сообщение
+            </div>
+            <div
+              class="inline line"
+            >
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Текст
+                </div>
+                <div
+                  class="value  "
+                >
+                  Ура! У вас скидка!
+                </div>
+              </div>
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Плэйсхолдер
+                </div>
+                <div
+                  class="value  "
+                >
+                  top
+                </div>
+              </div>
+            </div>
+            <div
+              class="line promoFooter"
+            >
+              <div
+                class="promoDetail"
+              >
+                MB ID: 920231738
+              </div>
+              <div
+                class="promoDetail"
+              >
+                Ext ID: promotion-1
+              </div>
+              <div
+                class="promoDetail"
+              >
+                mindbox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            class="promo"
+          >
+            <div
+              class="inline line"
+            >
+              Скидка на доп. товары
+            </div>
+            <div
+              class="inline line"
+            >
+              <div
+                class="third"
+              >
+                <div
+                  class="line"
+                >
+                  <div
+                    class="name"
+                  >
+                    Тип скидки
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    В рублях
+                  </div>
+                </div>
+                <div
+                  class="line"
+                >
+                  <div
+                    class="name"
+                  >
+                    Сумма
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    20069059.43
+                  </div>
+                </div>
+                <div
+                  class="line"
+                >
+                  <div
+                    class="name"
+                  >
+                    Кол-во
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    2
+                  </div>
+                </div>
+              </div>
+              <div
+                class="third"
+              >
+                <div
+                  class="name"
+                >
+                  Товары
+                </div>
+                <div
+                  class="value  "
+                >
+                  <div>
+                    mindboxId: 1086396577
+                  </div>
+                  <div>
+                    mindboxId: 93927243
+                  </div>
+                </div>
+              </div>
+              <div
+                class="third"
+              >
+                <div
+                  class="name"
+                >
+                  Плэйсхолдер
+                </div>
+                <div
+                  class="value  "
+                >
+                  top
+                </div>
+              </div>
+            </div>
+            <div
+              class="line promoFooter"
+            >
+              <div
+                class="promoDetail"
+              >
+                MB ID: 930293306
+              </div>
+              <div
+                class="promoDetail"
+              >
+                Ext ID: promotion-1
+              </div>
+              <div
+                class="promoDetail"
+              >
+                mindbox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <div
+            class="promo"
+          >
+            <div
+              class="promoType line"
+            >
+              Сообщение
+            </div>
+            <div
+              class="inline line"
+            >
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Текст
+                </div>
+                <div
+                  class="value  "
+                >
+                  Ура! У вас скидка!
+                </div>
+              </div>
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Плэйсхолдер
+                </div>
+                <div
+                  class="value  "
+                >
+                  top
+                </div>
+              </div>
+            </div>
+            <div
+              class="line promoFooter"
+            >
+              <div
+                class="promoDetail"
+              >
+                MB ID: 1672736105
+              </div>
+              <div
+                class="promoDetail"
+              >
+                Ext ID: promotion-1
+              </div>
+              <div
+                class="promoDetail"
+              >
+                mindbox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Placeholder snapshot with discount should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div
+            class="promo"
+          >
+            <div
+              class="promoType line"
+            >
+              Сообщение
+            </div>
+            <div
+              class="inline line"
+            >
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Текст
+                </div>
+                <div
+                  class="value  "
+                >
+                  Ура! У вас скидка!
+                </div>
+              </div>
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Плэйсхолдер
+                </div>
+                <div
+                  class="value  "
+                >
+                  top
+                </div>
+              </div>
+            </div>
+            <div
+              class="line promoFooter"
+            >
+              <div
+                class="promoDetail"
+              >
+                MB ID: 920231738
+              </div>
+              <div
+                class="promoDetail"
+              >
+                Ext ID: promotion-1
+              </div>
+              <div
+                class="promoDetail"
+              >
+                mindbox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            class="promo"
+          >
+            <div
+              class="inline line"
+            >
+              Скидка на доп. товары
+            </div>
+            <div
+              class="inline line"
+            >
+              <div
+                class="third"
+              >
+                <div
+                  class="line"
+                >
+                  <div
+                    class="name"
+                  >
+                    Тип скидки
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    В рублях
+                  </div>
+                </div>
+                <div
+                  class="line"
+                >
+                  <div
+                    class="name"
+                  >
+                    Сумма
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    20069059.43
+                  </div>
+                </div>
+                <div
+                  class="line"
+                >
+                  <div
+                    class="name"
+                  >
+                    Кол-во
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    2
+                  </div>
+                </div>
+              </div>
+              <div
+                class="third"
+              >
+                <div
+                  class="name"
+                >
+                  Товары
+                </div>
+                <div
+                  class="value  "
+                >
+                  <div>
+                    mindboxId: 1086396577
+                  </div>
+                  <div>
+                    mindboxId: 93927243
+                  </div>
+                </div>
+              </div>
+              <div
+                class="third"
+              >
+                <div
+                  class="name"
+                >
+                  Плэйсхолдер
+                </div>
+                <div
+                  class="value  "
+                >
+                  top
+                </div>
+              </div>
+            </div>
+            <div
+              class="line promoFooter"
+            >
+              <div
+                class="promoDetail"
+              >
+                MB ID: 930293306
+              </div>
+              <div
+                class="promoDetail"
+              >
+                Ext ID: promotion-1
+              </div>
+              <div
+                class="promoDetail"
+              >
+                mindbox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Placeholder snapshot with message should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div
+            class="promo"
+          >
+            <div
+              class="promoType line"
+            >
+              Сообщение
+            </div>
+            <div
+              class="inline line"
+            >
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Текст
+                </div>
+                <div
+                  class="value  "
+                >
+                  Ура! У вас скидка!
+                </div>
+              </div>
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  Плэйсхолдер
+                </div>
+                <div
+                  class="value  "
+                >
+                  top
+                </div>
+              </div>
+            </div>
+            <div
+              class="line promoFooter"
+            >
+              <div
+                class="promoDetail"
+              >
+                MB ID: 1672736105
+              </div>
+              <div
+                class="promoDetail"
+              >
+                Ext ID: promotion-1
+              </div>
+              <div
+                class="promoDetail"
+              >
+                mindbox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Placeholder snapshot with no message should match snapshot 1`] = `
+<DocumentFragment>
+  <div />
+</DocumentFragment>
+`;
