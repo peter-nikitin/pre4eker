@@ -1,6 +1,8 @@
+import {smallResponse} from 'data/response';
+
 const initialState = {
   type: `RESPONSE_INPUT`,
-  responseJSON: {},
+  responseJSON: smallResponse,
   requestJSON: {}
 }
 

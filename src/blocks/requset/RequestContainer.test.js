@@ -8,6 +8,12 @@ import * as formTypes from "./formTypes";
 
 import { requestReducer } from "./reducer";
 
+const initialState = {
+  type: `RESPONSE_INPUT`,
+  responseJSON: {},
+  requestJSON: {}
+}
+
 test(`action should be CHANGE_REQUEST_FORM`, () => {
   const expectdAction = {
     type: actions.CHANGE_REQUEST_FORM,
@@ -19,7 +25,7 @@ test(`action should be CHANGE_REQUEST_FORM`, () => {
 
 describe("form type reducer", () => {
   it("should return initial state", () => {
-    expect(requestReducer(undefined, {})).toEqual({
+    expect(requestReducer(initialState, {})).toEqual({
       type: "RESPONSE_INPUT",
       responseJSON: {},
       requestJSON: {}
@@ -28,7 +34,7 @@ describe("form type reducer", () => {
 
   it("should handle CHANGE_REQUEST_FORM", () => {
     expect(
-      requestReducer(undefined, {
+      requestReducer(initialState, {
         type: "CHANGE_REQUEST_FORM",
         form: "REQUEST_INPUT",
       })
@@ -41,7 +47,7 @@ describe("form type reducer", () => {
 
   it("should handle SET_RESPONSE_JSON", () => {
     expect(
-      requestReducer(undefined, {
+      requestReducer(initialState, {
         type: "SET_RESPONSE_JSON",
         data: {status: 200},
       })
