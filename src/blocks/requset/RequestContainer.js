@@ -10,7 +10,7 @@ const mapStateToProps = ({ requestReducer }) => ({
 const mapDispatchToProps = (dispatch) => {
   return {
     changeFormType: (form) =>
-      dispatch(changeFormType(from)),
+      dispatch(changeFormType(form)),
     setResponseJSON: (JSON) =>
       dispatch(setResponseJSON(JSON)),
     setRequestJSON: (JSON) =>
