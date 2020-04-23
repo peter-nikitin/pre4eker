@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text snapshot with content should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="promo"
+    >
+      <div
+        class="promoType line"
+      >
+        Сообщение
+      </div>
+      <div
+        class="inline line"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Текст
+          </div>
+          <div
+            class="value  "
+          >
+            Ура! У вас скидка!
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Плэйсхолдер
+          </div>
+          <div
+            class="value  "
+          >
+            top
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
+          class="promoDetail"
+        >
+          MB ID: 1672736105
+        </div>
+        <div
+          class="promoDetail"
+        >
+          Ext ID: promotion-1
+        </div>
+        <div
+          class="promoDetail"
+        >
+          mindbox
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
