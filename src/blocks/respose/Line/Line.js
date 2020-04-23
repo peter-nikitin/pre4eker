@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import stylesShared from "src/blocks/respose/responseShared.css";
 
 import AppliedPromotion from "../AppliedPromotion/AppliedPromotion";
+import Placeholders from "../Placeholders/Placeholders";
 
 const Line = ({ lineInfo }) => {
   const {
@@ -53,6 +54,9 @@ const Line = ({ lineInfo }) => {
         appliedPromotions.map((promo, i) => (
           <AppliedPromotion key={`line_prmo_${i}`} promoInfo={promo} />
         ))}
+      {placeholders && (
+        <Placeholders placeholders={placeholders} />
+      )}
     </div>
   );
 };

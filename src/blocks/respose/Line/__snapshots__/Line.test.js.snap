@@ -754,6 +754,370 @@ exports[`Line has to match snapshot 1`] = `
         </div>
       </div>
     </div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div
+              class="promo"
+            >
+              <div
+                class="promoType line"
+              >
+                Сообщение
+              </div>
+              <div
+                class="inline line"
+              >
+                <div
+                  class="half"
+                >
+                  <div
+                    class="name"
+                  >
+                    Текст
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    Ура! У вас скидка!
+                  </div>
+                </div>
+                <div
+                  class="half"
+                >
+                  <div
+                    class="name"
+                  >
+                    Плэйсхолдер
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    top
+                  </div>
+                </div>
+              </div>
+              <div
+                class="line promoFooter"
+              >
+                <div
+                  class="promoDetail"
+                >
+                  MB ID: 1672736105
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  Ext ID: promotion-1
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  mindbox
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div
+              class="promo"
+            >
+              <div
+                class="inline line"
+              >
+                Скидка на доп. товары
+              </div>
+              <div
+                class="inline line"
+              >
+                <div
+                  class="third"
+                >
+                  <div
+                    class="line"
+                  >
+                    <div
+                      class="name"
+                    >
+                      Тип скидки
+                    </div>
+                    <div
+                      class="value  "
+                    >
+                      В процентах
+                    </div>
+                  </div>
+                  <div
+                    class="line"
+                  >
+                    <div
+                      class="name"
+                    >
+                      Сумма
+                    </div>
+                    <div
+                      class="value  "
+                    >
+                      2848939.94
+                    </div>
+                  </div>
+                  <div
+                    class="line"
+                  >
+                    <div
+                      class="name"
+                    >
+                      Кол-во
+                    </div>
+                    <div
+                      class="value  "
+                    >
+                      2
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="third"
+                >
+                  <div
+                    class="name"
+                  >
+                    Товары
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    <div>
+                      mindboxId: 1615435128
+                    </div>
+                    <div>
+                      mindboxId: 161093334
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="third"
+                >
+                  <div
+                    class="name"
+                  >
+                    Плэйсхолдер
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    top
+                  </div>
+                </div>
+              </div>
+              <div
+                class="line promoFooter"
+              >
+                <div
+                  class="promoDetail"
+                >
+                  MB ID: 573105704
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  Ext ID: promotion-1
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  mindbox
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <div
+              class="promo"
+            >
+              <div
+                class="promoType line"
+              >
+                Сообщение
+              </div>
+              <div
+                class="inline line"
+              >
+                <div
+                  class="half"
+                >
+                  <div
+                    class="name"
+                  >
+                    Текст
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    Ура! У вас скидка!
+                  </div>
+                </div>
+                <div
+                  class="half"
+                >
+                  <div
+                    class="name"
+                  >
+                    Плэйсхолдер
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    top
+                  </div>
+                </div>
+              </div>
+              <div
+                class="line promoFooter"
+              >
+                <div
+                  class="promoDetail"
+                >
+                  MB ID: 313427658
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  Ext ID: promotion-1
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  mindbox
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div
+              class="promo"
+            >
+              <div
+                class="inline line"
+              >
+                Скидка на доп. товары
+              </div>
+              <div
+                class="inline line"
+              >
+                <div
+                  class="third"
+                >
+                  <div
+                    class="line"
+                  >
+                    <div
+                      class="name"
+                    >
+                      Тип скидки
+                    </div>
+                    <div
+                      class="value  "
+                    >
+                      В процентах
+                    </div>
+                  </div>
+                  <div
+                    class="line"
+                  >
+                    <div
+                      class="name"
+                    >
+                      Сумма
+                    </div>
+                    <div
+                      class="value  "
+                    >
+                      14273903.22
+                    </div>
+                  </div>
+                  <div
+                    class="line"
+                  >
+                    <div
+                      class="name"
+                    >
+                      Кол-во
+                    </div>
+                    <div
+                      class="value  "
+                    >
+                      2
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="third"
+                >
+                  <div
+                    class="name"
+                  >
+                    Товары
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    <div>
+                      mindboxId: 880262601
+                    </div>
+                    <div>
+                      mindboxId: 702959408
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="third"
+                >
+                  <div
+                    class="name"
+                  >
+                    Плэйсхолдер
+                  </div>
+                  <div
+                    class="value  "
+                  >
+                    top
+                  </div>
+                </div>
+              </div>
+              <div
+                class="line promoFooter"
+              >
+                <div
+                  class="promoDetail"
+                >
+                  MB ID: 1603824745
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  Ext ID: promotion-1
+                </div>
+                <div
+                  class="promoDetail"
+                >
+                  mindbox
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
