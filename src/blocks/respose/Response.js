@@ -10,7 +10,6 @@ import EmptyResponse from "./EmptyResponse/EmptyResponse";
 const Response = ({ response }) => {
 
   const drawResponse = (response) => {
-    console.log(response);
     
     if (typeof response !== "undefined" && Object.keys(response).length !== 0) {
       return (
