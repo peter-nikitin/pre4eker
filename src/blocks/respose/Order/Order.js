@@ -8,6 +8,8 @@ import Coupons from "../Coupons/Coupons";
 import BonusPointsInfo from "../BonusPointsInfo/BonusPointsInfo";
 import BonusPointsChange from "../BonusPointsChange/BonusPointsChange";
 import AppliedPropmotion from "../AppliedPromotion/AppliedPromotion";
+import Placeholders from "../Placeholders/Placeholders";
+
 
 const Order = ({ order }) => {
   const {
@@ -20,7 +22,7 @@ const Order = ({ order }) => {
     bonusPointsChanges,
     ids,
     appliedPromotions,
-    lines,
+    placeholders
   } = order;
 
   const drawIds = (ids) => {
@@ -73,6 +75,9 @@ const Order = ({ order }) => {
         ))}
       {bonusPointsChanges && (
         <BonusPointsChange bonusPointsChanges={bonusPointsChanges} />
+      )}
+      {placeholders && (
+        <Placeholders placeholders={placeholders} />
       )}
     </>
   );
