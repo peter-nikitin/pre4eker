@@ -32,7 +32,7 @@ module.exports = {
         forbid: ["any"],
       },
     ],
-    "react/jsx-one-expression-per-line": [1, { allow: "single-child" }],
+    "react/jsx-one-expression-per-line": [0, { allow: "single-child" }],
   },
   settings: {
     "import/resolver": "webpack",
