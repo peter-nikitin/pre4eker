@@ -1,11 +1,15 @@
 import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import Input from "./Input";
-import { render, fireEvent, waitFor, screen, cleanup, act } from '@testing-library/react'
 
-afterEach(cleanup)
+afterEach(cleanup);
 
-test(`the field match snapshot`, () => {
-  const {asFragment} = render(<Input label='email' name='email'  />)
+test("the field match snapshot", () => {
+  const handleInputChange = jest.fn();
+  const field = "email";
+  const { asFragment } = render(
+    <Input label={field} name={field} onChange={handleInputChange} />
+  );
 
-  expect(asFragment(<Input />)).toMatchSnapshot()
-})
+  expect(asFragment(<Input />)).toMatchSnapshot();
+});
