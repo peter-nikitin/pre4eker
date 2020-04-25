@@ -8,16 +8,19 @@ exports[`customer match snapshot 1`] = `
     >
       <button
         class="sizeAuto button normal false basic"
+        type="button"
       >
         Форма запроса
       </button>
       <button
         class="sizeAuto button normal false basic"
+        type="button"
       >
         JSON запроса
       </button>
       <button
         class="sizeAuto button normal active basic"
+        type="button"
       >
         JSON ответа
       </button>
@@ -2604,7 +2607,8 @@ exports[`customer match snapshot 1`] = `
           </div>
         </div>
         <button
-          class="sizeFull button normal undefined basic"
+          class="sizeFull button normal false basic"
+          type="button"
         >
           Показать
         </button>
