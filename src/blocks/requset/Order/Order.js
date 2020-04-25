@@ -1,47 +1,30 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
+import Input from "src/blocks/Input/Input";
 import style from "./Order.css";
 import Selector from "../Selector/Selector";
-import Input from "src/blocks/Input/Input";
-import CustomFields from '../CustomFields/CustomFields';
+import CustomFields from "../CustomFields/CustomFields";
 
 export default class Order extends Component {
-  constructor(props) {
+  constructor({ order, customFields, ...props }) {
     super(props);
 
     this.state = {
       selectedID: "mindboxId",
-      customFields: []
     };
 
-    this.ids = this.props.order.ids;
+    this.ids = order.ids;
 
     this.changeSelection = this.changeSelection.bind(this);
     this.addCustomField = this.addCustomField.bind(this);
     this.removeCustomField = this.removeCustomField.bind(this);
-
   }
 
   changeSelection(option) {
     this.setState({
       selectedID: option,
     });
-  }
-
-  addCustomField() {
-    this.setState({
-      customFields:  [...this.state.customFields, 1]
-    }) 
-  }
-
-  removeCustomField(e) {
- 
-    const array = [...this.state.customFields]; // make a separate copy of the array
-  const index = array.indexOf(e.target.value)
-  if (index !== -1) {
-    array.splice(index, 1);
-    this.setState({customFields: array});
-  }
   }
 
   render() {
@@ -57,26 +40,36 @@ export default class Order extends Component {
 
         <div className={style.inline}>
           <div className={style.half}>
-            <Input label={this.props.order.cashdesk} name="cashdesk" />
+            <Input label={this.order.cashdesk} name="cashdesk" />
           </div>
           <div className={style.half}>
-            <Input label={this.props.order.deliveryCost} name="deliveryCost" />
+            <Input label={this.order.deliveryCost} name="deliveryCost" />
           </div>
         </div>
         <div className={style.inline}>
           <div className={style.half}>
-            <Input label={this.props.order.area} name="area" />
+            <Input label={this.order.area} name="area" />
           </div>
           <div className={style.half}>
-            <Input
-              label={this.props.order.pointOfContact}
-              name="pointOfContact"
-            />
+            <Input label={this.order.pointOfContact} name="pointOfContact" />
           </div>
         </div>
 
-      <CustomFields addCustomField={this.addCustomField} removeCustomField={this.removeCustomField} fields={this.state.customFields} />
+        <CustomFields
+          addCustomField={() => ({})}
+          removeCustomField={() => ({})}
+          fields={this.customFields}
+        />
       </div>
     );
   }
 }
+
+Order.defaultProps = {
+  customFields: {},
+};
+
+Order.propTypes = {
+  order: PropTypes.object.isRequired,
+  customFields: PropTypes.object,
+};
