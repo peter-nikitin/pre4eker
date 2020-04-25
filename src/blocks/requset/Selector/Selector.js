@@ -1,43 +1,57 @@
 import React, { useState } from "react";
-import Input from "src/blocks/Input/Input";
+import PropsTypes from "prop-types";
+import shortid from "shortid";
 
+import Input from "src/blocks/Input/Input";
+import Button from "src/blocks/Button/Button";
 import style from "./Selector.css";
 
-import Button from '../../Button/Button';
-
-export default function Selector(props) {
+export default function Selector({
+  selected,
+  options,
+  changeSelection,
+  label,
+  onInputChange,
+}) {
   const [isOptionsShown, toggleOptions] = useState(false);
-  const { selected, options, changeSelection, label } = props;
-
-  const toggle = () => toggleOptions(!isOptionsShown)
-
+  const handleKeyPress = () => {};
+  const toggle = () => toggleOptions(!isOptionsShown);
+  const optionWithIDs = Object.keys(options).map((option) => ({
+    ...option,
+    id: shortid.generate(),
+  }));
   return (
     <div className={style.selector}>
       <div className={style.half}>
-        <label htmlFor="" className={style.label}>
+        <label htmlFor={options[selected]} className={style.label}>
           {label || "Поле"}
         </label>
         <div className={style.selectorGroup}>
-         <Button toggleOptions={toggle} />
+          <Button toggleOptions={toggle} />
           <input
             type="text"
+            name={options[selected]}
             className={style.field}
             value={selected === "externalId" ? "" : options[selected]}
-            onChange={(evetn) => props.onInputChange}
+            onChange={() => onInputChange}
             placeholder="Название идентификатора"
           />
         </div>
         {isOptionsShown && (
           <ul className={style.list}>
-            {Object.keys(options).map((item, index) => (
+            {optionWithIDs.map((item) => (
               <li
-                key={index}
+                key={item.id}
                 onClick={() => {
                   changeSelection(item);
                   toggleOptions(!isOptionsShown);
                 }}
+                role="menuitem"
+                onKeyPress={handleKeyPress}
               >
-                <button className={style.listItem}>{options[item]}</button>
+                <button type="button" className={style.listItem}>
+                  {options[item]}
+                </button>
               </li>
             ))}
           </ul>
@@ -55,3 +69,16 @@ export default function Selector(props) {
     </div>
   );
 }
+
+Selector.defaultProps = {
+  selected: false,
+  options: [],
+  label: "",
+};
+Selector.propTypes = {
+  selected: PropsTypes.bool,
+  options: PropsTypes.array,
+  changeSelection: PropsTypes.func.isRequired,
+  label: PropsTypes.string,
+  onInputChange: PropsTypes.func.isRequired,
+};
