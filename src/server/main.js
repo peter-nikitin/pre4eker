@@ -10,7 +10,6 @@ const watch = require("./watch");
 
 // Initialize Express app.
 const app = express();
-const url = `http://${config.host}:${config.port}`;
 
 // Watch file changes in development environment.
 if (config.isDevelopment) {
@@ -40,10 +39,6 @@ app.get("/express_backend", (req, res) => {
 // Show 404 page.
 app.use(notFound());
 
-// Start server listening.
-app.listen(config.port, config.host, (error) => {
-  if (error) throw error;
+module.exports = app;
 
-  // eslint-disable-next-line
-  console.log(`Listening at ${url}...`);
-});
+// Start server listening.
