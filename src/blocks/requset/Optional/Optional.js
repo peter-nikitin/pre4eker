@@ -1,32 +1,41 @@
-import React from 'react';
-import style from './optional.css';
+import React from "react";
+import PropTypes from "prop-types";
+import Input from "src/blocks/Input/Input";
+import style from "./optional.css";
 
-import Input  from '../Input/Input';
-
-export default function Optional(props) {
+export default function Optional({ field, addCF }) {
   const cf = [
     {
       label: "Название доп. поля",
-      name: "customFieldExternalId"
+      name: "customFieldExternalId",
     },
     {
       label: "Значение",
-      name: "customFieldVslue"
+      name: "customFieldVslue",
     },
-
-  ]
+  ];
   // console.log(props)
   return (
-    
     <div className={style.optional}>
-      <span className={style.optionalName}>{props.field.label}</span>
-      <button className={style.optionalBtn} onClick={() => props.addCF()}>+</button>
-      {props.field.fields.map( item => (
-        <div className={style.cf}>
+      <span className={style.optionalName}>{field.label}</span>
+      <button
+        className={style.optionalBtn}
+        onClick={() => addCF()}
+        type="button"
+      >
+        +
+      </button>
+      {field.fields.map((item) => (
+        <div key={item.id} className={style.cf}>
           <Input field={cf[0]} />
           <Input field={cf[1]} />
         </div>
       ))}
     </div>
-  )
+  );
 }
+
+Optional.propTypes = {
+  field: PropTypes.object.isRequired,
+  addCF: PropTypes.func.isRequired,
+};
