@@ -7,7 +7,7 @@ import statuses from "./statuses";
 import sexes from "./sexes";
 import CustomFields from "../CustomFields/CustomFields";
 
-const Customer = ({ customer, ...props }) => {
+const Customer = ({ customer }) => {
   const {
     processingStatus,
     sex,
@@ -109,6 +109,10 @@ const Customer = ({ customer, ...props }) => {
 
 Customer.propTypes = {
   customer: PropTypes.object,
+};
+
+Customer.defaultProps = {
+  customer: {},
 };
 
 export default Customer;

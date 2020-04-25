@@ -1,10 +1,9 @@
-import types from "./types";
-
 import React from "react";
 import PropTypes from "prop-types";
 import stylesShared from "src/blocks/respose/responseShared.css";
+import types from "./types";
 
-const AppliedPropmotion = ({ promoInfo }) => {
+const AppliedPropmotion = ({ promoInfo = {} }) => {
   const {
     type,
     promotion,
@@ -28,7 +27,6 @@ const AppliedPropmotion = ({ promoInfo }) => {
               <>
                 <div className={stylesShared.name}>Название акции</div>
                 <div className={`${stylesShared.value} ${stylesShared.line}`}>
-                  {" "}
                   {promotion.name}
                 </div>
               </>
@@ -96,6 +94,12 @@ const AppliedPropmotion = ({ promoInfo }) => {
   );
 };
 
-AppliedPropmotion.propTypes = {};
+AppliedPropmotion.defaultProps = {
+  promoInfo: {},
+};
+
+AppliedPropmotion.propTypes = {
+  promoInfo: PropTypes.object,
+};
 
 export default AppliedPropmotion;

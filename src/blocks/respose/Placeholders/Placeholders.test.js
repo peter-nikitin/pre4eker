@@ -1,19 +1,6 @@
 import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import Placeholders from "./Placeholders";
-import {
-  render,
-  fireEvent,
-  waitFor,
-  screen,
-  cleanup,
-  act,
-} from "@testing-library/react";
-import response, {
-  noLines,
-  noResponse,
-  noCustomer,
-  noOrder,
-} from "data/response";
 
 afterEach(cleanup);
 
@@ -95,9 +82,7 @@ const possibleDiscounts = {
 
 describe("Placeholder snapshot", () => {
   it("with message should match snapshot", () => {
-    const oneMessage = [
-      text
-    ];
+    const oneMessage = [text];
 
     const { asFragment } = render(<Placeholders placeholders={oneMessage} />);
     expect(asFragment(<Placeholders />)).toMatchSnapshot();
@@ -109,21 +94,14 @@ describe("Placeholder snapshot", () => {
     expect(asFragment(<Placeholders />)).toMatchSnapshot();
   });
   it("with discount should match snapshot", () => {
-    const oneDiscount = [
-      possibleDiscounts
-    ];
+    const oneDiscount = [possibleDiscounts];
 
-    const { asFragment } = render(
-      <Placeholders placeholders={oneDiscount} />
-    );
+    const { asFragment } = render(<Placeholders placeholders={oneDiscount} />);
     expect(asFragment(<Placeholders />)).toMatchSnapshot();
   });
 
   it("with discount and text should match snapshot", () => {
-    const discountAndMessage = [
-      possibleDiscounts, 
-      text
-    ];
+    const discountAndMessage = [possibleDiscounts, text];
 
     const { asFragment } = render(
       <Placeholders placeholders={discountAndMessage} />

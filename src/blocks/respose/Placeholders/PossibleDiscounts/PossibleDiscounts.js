@@ -1,5 +1,7 @@
 import React from "react";
+import PropsTypes from "prop-types";
 import stylesShared from "src/blocks/respose/responseShared.css";
+import shortid from "shortid";
 
 const PossibleDiscounts = ({ content, placeholder }) => {
   const { promotion, possibleDiscounts } = content;
@@ -12,22 +14,22 @@ const PossibleDiscounts = ({ content, placeholder }) => {
   return (
     <div>
       <div className={stylesShared.promo}>
-        <div className={`inline line`}>Скидка на доп. товары</div>
+        <div className="inline line">Скидка на доп. товары</div>
         <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           <div className={stylesShared.third}>
-            <div className={`line`}>
+            <div className="line">
               <div className={stylesShared.name}>Тип скидки</div>
               <div className={`${stylesShared.value}  `}>
                 {amountTypes[possibleDiscounts.discount.amountType]}
               </div>
             </div>
-            <div className={`line`}>
+            <div className="line">
               <div className={stylesShared.name}>Сумма</div>
               <div className={`${stylesShared.value}  `}>
                 {possibleDiscounts.discount.amount}
               </div>
             </div>
-            <div className={`line`}>
+            <div className="line">
               <div className={stylesShared.name}>Кол-во</div>
               <div className={`${stylesShared.value}  `}>
                 {possibleDiscounts.discountsCount}
@@ -37,11 +39,11 @@ const PossibleDiscounts = ({ content, placeholder }) => {
           <div className={stylesShared.third}>
             <div className={stylesShared.name}>Товары</div>
             <div className={`${stylesShared.value}  `}>
-              {possibleDiscounts.products.map((product, i) => {
+              {possibleDiscounts.products.map((product) => {
                 const ProductIDS = Object.keys(product.ids);
                 return (
-                  <div key={`product_${i}`}>
-                    {ProductIDS[0]}: {product.ids[ProductIDS[0]]}
+                  <div key={shortid.generate()}>
+                    {`${ProductIDS[0]}: ${product.ids[ProductIDS[0]]}`}
                   </div>
                 );
               })}
@@ -67,6 +69,16 @@ const PossibleDiscounts = ({ content, placeholder }) => {
       </div>
     </div>
   );
+};
+
+PossibleDiscounts.defaultProps = {
+  placeholder: "",
+  content: {},
+};
+
+PossibleDiscounts.propTypes = {
+  content: PropsTypes.object,
+  placeholder: PropsTypes.string,
 };
 
 export default PossibleDiscounts;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customer match snapshot 1`] = `
+exports[`AppliedPromotion match snapshot 1`] = `
 <DocumentFragment>
   <div>
     <div
@@ -25,7 +25,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div

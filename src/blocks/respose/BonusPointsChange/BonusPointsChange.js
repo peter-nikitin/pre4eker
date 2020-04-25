@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import shortid from "shortid";
+
 import stylesShared from "src/blocks/respose/responseShared.css";
 
 const BonusPointsChange = ({ bonusPointsChanges }) => {
+  const changes = bonusPointsChanges.map((change) => ({
+    ...change,
+    id: shortid.generate(),
+  }));
 
   return (
     <div className={stylesShared.promo}>
@@ -11,8 +17,8 @@ const BonusPointsChange = ({ bonusPointsChanges }) => {
           <div className={stylesShared.promoType}>Изменения баллов</div>
         </div>
       </div>
-      {bonusPointsChanges.map((change, i) => (
-        <div  key={`bonusPointsChanges_${i}`} className={stylesShared.inline}>
+      {changes.map((change) => (
+        <div key={change.id} className={stylesShared.inline}>
           <div className={stylesShared.third}>
             <div className={stylesShared.name}>Балльный счет</div>
             <div className={stylesShared.value}>{change.balanceType.name}</div>
@@ -40,6 +46,12 @@ const BonusPointsChange = ({ bonusPointsChanges }) => {
   );
 };
 
-BonusPointsChange.propTypes = {};
+BonusPointsChange.propTypes = {
+  bonusPointsChanges: PropTypes.array,
+};
+
+BonusPointsChange.defaultProps = {
+  bonusPointsChanges: [],
+};
 
 export default BonusPointsChange;

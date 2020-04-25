@@ -1,15 +1,7 @@
 import React from "react";
-import Contact from "./Contact";
-import {
-  render,
-  fireEvent,
-  waitFor,
-  screen,
-  cleanup,
-  act,
-} from "@testing-library/react";
+import { render } from "@testing-library/react";
 import response from "data/response";
-
+import Contact from "./Contact";
 
 const {
   mobilePhone,
@@ -18,11 +10,10 @@ const {
   isMobilePhoneConfirmed,
 } = response.customer;
 
-
-test(`Phone should match snapshot`, () => {
+test("Phone should match snapshot", () => {
   const { asFragment } = render(
     <Contact
-      label='Телефон'
+      label="Телефон"
       main={mobilePhone}
       Invalid={isMobilePhoneInvalid}
       Confirmed={isMobilePhoneConfirmed}
@@ -30,5 +21,5 @@ test(`Phone should match snapshot`, () => {
     />
   );
 
-  expect(asFragment(<Contact />)).toMatchSnapshot()
+  expect(asFragment(<Contact />)).toMatchSnapshot();
 });

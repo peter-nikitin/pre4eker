@@ -23,7 +23,7 @@ exports[`EmptyResponse has to match snapshot 1`] = `
         </li>
       </ol>
       <p>
-        github: 
+        github:
         <a
           href="https://github.com/peter-nikitin/mindbox-pre4eker"
         >

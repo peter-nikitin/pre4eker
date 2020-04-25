@@ -1,19 +1,6 @@
 import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import PossibleDiscounts from "./PossibleDiscounts";
-import {
-  render,
-  fireEvent,
-  waitFor,
-  screen,
-  cleanup,
-  act,
-} from "@testing-library/react";
-import response, {
-  noLines,
-  noResponse,
-  noCustomer,
-  noOrder,
-} from "data/response";
 
 afterEach(cleanup);
 
@@ -56,8 +43,9 @@ describe("PossibleDiscounts snapshot", () => {
       },
     };
 
+    const placeholderName = "top";
     const { asFragment } = render(
-      <PossibleDiscounts content={content} placeholder="top" />
+      <PossibleDiscounts content={content} placeholder={placeholderName} />
     );
     expect(asFragment(<PossibleDiscounts />)).toMatchSnapshot();
   });

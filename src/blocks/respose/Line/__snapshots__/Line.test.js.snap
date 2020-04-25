@@ -31,9 +31,7 @@ exports[`Line has to match snapshot 1`] = `
           >
             Ид продукта
           </div>
-          <div>
-             474177964
-          </div>
+          474177964
         </div>
         <div
           class="third"
@@ -43,9 +41,7 @@ exports[`Line has to match snapshot 1`] = `
           >
             Количество
           </div>
-          <div>
-             13179398.15
-          </div>
+          13179398.15
         </div>
       </div>
       <div
@@ -104,7 +100,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
           <div
@@ -222,7 +218,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
           <div
@@ -326,7 +322,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
           <div
@@ -411,7 +407,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
           <div
@@ -496,7 +492,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
         </div>
@@ -567,7 +563,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
         </div>
@@ -657,7 +653,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="value line"
             >
-               Новая акция
+              Новая акция
             </div>
           </div>
           <div

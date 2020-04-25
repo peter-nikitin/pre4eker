@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customer match snapshot 1`] = `
+exports[`order with data match snapshot 1`] = `
 <DocumentFragment>
   <h2>
     Заказ
@@ -98,7 +98,8 @@ exports[`customer match snapshot 1`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal undefined basic"
+          class="small button normal false basic"
+          type="button"
         >
           <div>
             <svg
@@ -143,7 +144,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -261,7 +262,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -365,7 +366,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -450,7 +451,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -535,7 +536,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
       </div>
@@ -606,7 +607,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
       </div>
@@ -696,7 +697,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -1705,7 +1706,7 @@ exports[`customer match snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`customer match snapshot 2`] = `
+exports[`order with data match snapshot 2`] = `
 <DocumentFragment>
   <h2>
     Заказ
@@ -1803,7 +1804,8 @@ exports[`customer match snapshot 2`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal undefined basic"
+          class="small button normal false basic"
+          type="button"
         >
           <div>
             <svg
@@ -1876,7 +1878,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -1994,7 +1996,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -2098,7 +2100,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -2183,7 +2185,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -2268,7 +2270,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
       </div>
@@ -2339,7 +2341,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
       </div>
@@ -2429,7 +2431,7 @@ exports[`customer match snapshot 2`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -3438,7 +3440,7 @@ exports[`customer match snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`customer match snapshot 3`] = `
+exports[`order with data match snapshot 3`] = `
 <DocumentFragment>
   <h2>
     Заказ
@@ -3536,7 +3538,8 @@ exports[`customer match snapshot 3`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal undefined basic"
+          class="small button normal false basic"
+          type="button"
         >
           <div>
             <svg
@@ -3581,7 +3584,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -3699,7 +3702,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -3803,7 +3806,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -3888,7 +3891,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div
@@ -3973,7 +3976,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
       </div>
@@ -4044,7 +4047,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
       </div>
@@ -4134,7 +4137,7 @@ exports[`customer match snapshot 3`] = `
           <div
             class="value line"
           >
-             Новая акция
+            Новая акция
           </div>
         </div>
         <div

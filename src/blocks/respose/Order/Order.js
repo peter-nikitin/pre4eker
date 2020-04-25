@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import shortid from "shortid";
+import stylesShared from "src/blocks/respose/responseShared.css";
 
 import statuses from "./statuses";
-import stylesShared from "src/blocks/respose/responseShared.css";
 import CustomFileds from "../CustomFields/CustomFields";
 import Coupons from "../Coupons/Coupons";
 import BonusPointsInfo from "../BonusPointsInfo/BonusPointsInfo";
 import BonusPointsChange from "../BonusPointsChange/BonusPointsChange";
 import AppliedPropmotion from "../AppliedPromotion/AppliedPromotion";
 import Placeholders from "../Placeholders/Placeholders";
-
 
 const Order = ({ order }) => {
   const {
@@ -22,14 +22,14 @@ const Order = ({ order }) => {
     bonusPointsChanges,
     ids,
     appliedPromotions,
-    placeholders
+    placeholders,
   } = order;
 
-  const drawIds = (ids) => {
-    const systemNames = Object.keys(ids);
-    return systemNames.map((item, i) => (
-      <div key={`orderID_${i}`} className={stylesShared.name}>
-        {item}: {ids[item]}
+  const drawIds = (items) => {
+    const systemNames = Object.keys(items);
+    return systemNames.map((item) => (
+      <div key={shortid.generate()} className={stylesShared.name}>
+        {`${item}: ${items[item]}`}
       </div>
     ));
   };
@@ -62,29 +62,28 @@ const Order = ({ order }) => {
         {customFields && <CustomFileds data={customFields} />}
       </div>
       {appliedPromotions &&
-        appliedPromotions.map((promo, i) => (
-          <AppliedPropmotion key={`promo_${i}`} promoInfo={promo} />
+        appliedPromotions.map((promo) => (
+          <AppliedPropmotion key={shortid.generate()} promoInfo={promo} />
         ))}
-      {couponsInfo &&
-        couponsInfo.map((coupon, i) => (
-          <Coupons key={`coupon_${i}`} couponInfo={coupon} />
-        ))}
+      {couponsInfo && <Coupons coupons={couponsInfo} />}
       {bonusPointsInfo &&
-        bonusPointsInfo.map((bonus, i) => (
-          <BonusPointsInfo key={`bonusInfo_${i}`} bonusPointsInfo={bonus} />
+        bonusPointsInfo.map((bonus) => (
+          <BonusPointsInfo key={shortid.generate()} bonusPointsInfo={bonus} />
         ))}
       {bonusPointsChanges && (
         <BonusPointsChange bonusPointsChanges={bonusPointsChanges} />
       )}
-      {placeholders && (
-        <Placeholders placeholders={placeholders} />
-      )}
+      {placeholders && <Placeholders placeholders={placeholders} />}
     </>
   );
 };
 
 Order.propTypes = {
   order: PropTypes.object,
+};
+
+Order.defaultProps = {
+  order: {},
 };
 
 export default Order;

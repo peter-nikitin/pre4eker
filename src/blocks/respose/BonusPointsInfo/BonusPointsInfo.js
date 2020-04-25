@@ -23,28 +23,26 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
           <div className={stylesShared.value}>{statuses[status] || status}</div>
         </div>
       </div>
-        <div className={stylesShared.inline}>
-      {availableAmountForCurrentOrder && (
+      <div className={stylesShared.inline}>
+        {availableAmountForCurrentOrder && (
           <div className={stylesShared.half}>
-            <div className={stylesShared.name}>
-              Доступно для списание
-            </div>
+            <div className={stylesShared.name}>Доступно для списание</div>
             <div className={stylesShared.promoValue}>
               {availableAmountForCurrentOrder}
             </div>
           </div>
-      )}
-       
-      {spentAmountForCurrentOrder && (
-        <div className={stylesShared.half}>
-          <div className={stylesShared.name}>Будет списано</div>
+        )}
+
+        {spentAmountForCurrentOrder && (
           <div className={stylesShared.half}>
-            <div className={stylesShared.promoValue}>
-              {spentAmountForCurrentOrder}
+            <div className={stylesShared.name}>Будет списано</div>
+            <div className={stylesShared.half}>
+              <div className={stylesShared.promoValue}>
+                {spentAmountForCurrentOrder}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
 
       <div className={stylesShared.inline}>
@@ -66,6 +64,11 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
   );
 };
 
-BonusPointsInfo.propTypes = {};
+BonusPointsInfo.propTypes = {
+  bonusPointsInfo: PropTypes.object,
+};
+BonusPointsInfo.defaultProps = {
+  bonusPointsInfo: {},
+};
 
 export default BonusPointsInfo;

@@ -1,15 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import stylesShared from "src/blocks/respose/responseShared.css";
 
 const Text = ({ content, placeholder }) => {
-  const {promotion} = content;
+  const { promotion } = content;
   return (
     <div>
       <div className={stylesShared.promo}>
         <div className={`${stylesShared.promoType} ${stylesShared.line}`}>
           Сообщение
         </div>
-        <div className={`inline line`}>
+        <div className="inline line">
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Текст</div>
             <div className={`${stylesShared.value}  `}>{content.message}</div>
@@ -18,7 +20,7 @@ const Text = ({ content, placeholder }) => {
             <div className={stylesShared.name}>Плэйсхолдер</div>
             <div className={`${stylesShared.value}  `}>{placeholder}</div>
           </div>
-        </div> 
+        </div>
 
         {promotion && (
           <div className={`line ${stylesShared.promoFooter}`}>
@@ -34,6 +36,16 @@ const Text = ({ content, placeholder }) => {
       </div>
     </div>
   );
+};
+
+Text.defaultProps = {
+  placeholder: "",
+  content: {},
+};
+
+Text.propTypes = {
+  content: PropTypes.object,
+  placeholder: PropTypes.string,
 };
 
 export default Text;

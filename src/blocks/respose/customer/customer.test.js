@@ -1,20 +1,19 @@
 import React from "react";
+import { render, fireEvent, screen, cleanup } from "@testing-library/react";
+import response from "data/response";
 import Customer from "./Customer";
-import { render, fireEvent, waitFor, screen, cleanup, act } from '@testing-library/react' 
-import response from 'data/response'
-import { exportAllDeclaration } from "@babel/types";
 
-afterEach(cleanup)
- 
-const {customer} = response;
+afterEach(cleanup);
 
-test(`customer match snapshot`, () => {
-  const {asFragment, getByRole} = render(<Customer customer={customer} />)
+const { customer } = response;
+
+test("customer match snapshot", () => {
+  const { asFragment } = render(<Customer customer={customer} />);
   expect(asFragment(<Customer />)).toMatchSnapshot();
 
-  fireEvent.click(screen.getByRole('button'));
+  fireEvent.click(screen.getByRole("button"));
   expect(asFragment(<Customer />)).toMatchSnapshot();
-  
-  fireEvent.click(screen.getByRole('button'));
+
+  fireEvent.click(screen.getByRole("button"));
   expect(asFragment(<Customer />)).toMatchSnapshot();
-})
+});

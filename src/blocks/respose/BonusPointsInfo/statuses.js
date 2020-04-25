@@ -1,6 +1,6 @@
 const statuses = {
-  Unavailable: "Ошибка", 
-  Success: "Успешно"
-}
+  Unavailable: "Ошибка",
+  Success: "Успешно",
+};
 
 export default statuses;

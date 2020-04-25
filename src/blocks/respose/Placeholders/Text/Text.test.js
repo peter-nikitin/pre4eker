@@ -1,25 +1,12 @@
 import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import Text from "./Text";
-import {
-  render,
-  fireEvent,
-  waitFor,
-  screen,
-  cleanup,
-  act,
-} from "@testing-library/react";
-import response, {
-  noLines,
-  noResponse,
-  noCustomer,
-  noOrder,
-} from "data/response";
 
 afterEach(cleanup);
 
 describe("Text snapshot", () => {
   it("with content should match snapshot", () => {
-    const content = {
+    const textContent = {
       type: "text",
       promotion: {
         ids: {
@@ -32,7 +19,10 @@ describe("Text snapshot", () => {
       message: "Ура! У вас скидка!",
     };
 
-    const { asFragment } = render(<Text content={content} placeholder='top'/>);
+    const placeholder = "top";
+    const { asFragment } = render(
+      <Text content={textContent} placeholder={placeholder} />
+    );
     expect(asFragment(<Text />)).toMatchSnapshot();
   });
 });

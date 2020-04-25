@@ -1,14 +1,35 @@
 import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import BonusPointsChange from "./BonusPointsChange";
-import { render, fireEvent, waitFor, screen, cleanup, act } from '@testing-library/react' 
-import response from 'data/response'
-import { exportAllDeclaration } from "@babel/types";
 
-afterEach(cleanup)
- 
-const {order} = response;
+afterEach(cleanup);
 
-test(`customer match snapshot`, () => {
-  const {asFragment, getByRole} = render(<BonusPointsChange bonusPointsChanges={order.bonusPointsChanges} />)
-  expect(asFragment(<BonusPointsChange />)).toMatchSnapshot(); 
-})
+const bonusChange = [
+  {
+    balanceType: {
+      ids: {
+        systemName: "MBcRZtuf",
+      },
+      name: "P02zXwLm",
+    },
+    earnedAmount: 1396638.62,
+    spentAmount: 5761799.72,
+  },
+  {
+    balanceType: {
+      ids: {
+        systemName: "REDNhFOU",
+      },
+      name: "LE0pZEmG",
+    },
+    earnedAmount: 20955125.72,
+    spentAmount: 10868072.91,
+  },
+];
+
+test("bonus point change match snapshot", () => {
+  const { asFragment } = render(
+    <BonusPointsChange bonusPointsChanges={bonusChange} />
+  );
+  expect(asFragment(<BonusPointsChange />)).toMatchSnapshot();
+});

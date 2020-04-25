@@ -102,12 +102,12 @@ exports[`customer match snapshot 1`] = `
           <p
             class="good status"
           >
-            Валидный 
+            Валидный
           </p>
           <p
             class="good status"
           >
-            Подтвержден 
+            Подтвержден
           </p>
         </div>
         <div
@@ -121,7 +121,7 @@ exports[`customer match snapshot 1`] = `
           <p
             class="bad status"
           >
-            Ожидает подтверждения 
+            Ожидает подтверждения
           </p>
         </div>
       </div>
@@ -148,9 +148,10 @@ exports[`customer match snapshot 1`] = `
           <p
             class="good status"
           >
-            Валидный 
+            Валидный
           </p>
         </div>
+        0
       </div>
     </div>
     <div
@@ -201,7 +202,8 @@ exports[`customer match snapshot 1`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal undefined basic"
+          class="small button normal false basic"
+          type="button"
         >
           <div>
             <svg
@@ -328,12 +330,12 @@ exports[`customer match snapshot 2`] = `
           <p
             class="good status"
           >
-            Валидный 
+            Валидный
           </p>
           <p
             class="good status"
           >
-            Подтвержден 
+            Подтвержден
           </p>
         </div>
         <div
@@ -347,7 +349,7 @@ exports[`customer match snapshot 2`] = `
           <p
             class="bad status"
           >
-            Ожидает подтверждения 
+            Ожидает подтверждения
           </p>
         </div>
       </div>
@@ -374,9 +376,10 @@ exports[`customer match snapshot 2`] = `
           <p
             class="good status"
           >
-            Валидный 
+            Валидный
           </p>
         </div>
+        0
       </div>
     </div>
     <div
@@ -427,7 +430,8 @@ exports[`customer match snapshot 2`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal undefined basic"
+          class="small button normal false basic"
+          type="button"
         >
           <div>
             <svg
@@ -696,12 +700,12 @@ exports[`customer match snapshot 3`] = `
           <p
             class="good status"
           >
-            Валидный 
+            Валидный
           </p>
           <p
             class="good status"
           >
-            Подтвержден 
+            Подтвержден
           </p>
         </div>
         <div
@@ -715,7 +719,7 @@ exports[`customer match snapshot 3`] = `
           <p
             class="bad status"
           >
-            Ожидает подтверждения 
+            Ожидает подтверждения
           </p>
         </div>
       </div>
@@ -742,9 +746,10 @@ exports[`customer match snapshot 3`] = `
           <p
             class="good status"
           >
-            Валидный 
+            Валидный
           </p>
         </div>
+        0
       </div>
     </div>
     <div
@@ -795,7 +800,8 @@ exports[`customer match snapshot 3`] = `
       >
         Дополнительные поля
         <button
-          class="small button normal undefined basic"
+          class="small button normal false basic"
+          type="button"
         >
           <div>
             <svg

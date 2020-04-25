@@ -1,21 +1,19 @@
 import React from "react";
+import { render, fireEvent, screen, cleanup } from "@testing-library/react";
+import response from "data/response";
 import Order from "./Order";
-import { render, fireEvent, waitFor, screen, cleanup, act } from '@testing-library/react' 
-import response from 'data/response'
-import { exportAllDeclaration } from "@babel/types";
 
-afterEach(cleanup)
+afterEach(cleanup);
 
+const { order } = response;
 
-const {order} = response;
-
-test(`customer match snapshot`, () => {
-  const {asFragment} = render(<Order order={order} />)
+test("order with data match snapshot", () => {
+  const { asFragment } = render(<Order order={order} />);
   expect(asFragment(<Order />)).toMatchSnapshot();
 
-  fireEvent.click(screen.getByRole('button'));
+  fireEvent.click(screen.getByRole("button"));
   expect(asFragment(<Order />)).toMatchSnapshot();
-  
-  fireEvent.click(screen.getByRole('button'));
+
+  fireEvent.click(screen.getByRole("button"));
   expect(asFragment(<Order />)).toMatchSnapshot();
-})
+});

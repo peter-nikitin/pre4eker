@@ -21,7 +21,7 @@ exports[`Phone should match snapshot 1`] = `
       <p
         class="good status"
       >
-        Валидный 
+        Валидный
       </p>
     </div>
     <div
@@ -35,7 +35,7 @@ exports[`Phone should match snapshot 1`] = `
       <p
         class="bad status"
       >
-        Ожидает подтверждения 
+        Ожидает подтверждения
       </p>
     </div>
   </div>
