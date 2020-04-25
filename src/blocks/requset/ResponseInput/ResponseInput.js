@@ -1,16 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
-const ResponseInput = props => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const ResponseInput = () => <div />;
 
-ResponseInput.propTypes = {
+ResponseInput.propTypes = {};
 
-}
-
-export default ResponseInput
+export default ResponseInput;
