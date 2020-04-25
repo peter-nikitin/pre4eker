@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, combineReducers } from "redux";
 import "regenerator-runtime/runtime";
 import thunk from "redux-thunk";
 
-import mainReducer from "src/blocks/Main/reducer";
+import mainReducer from "src/components/Main/reducer";
 
 const allReducers = combineReducers({
   mainReducer,

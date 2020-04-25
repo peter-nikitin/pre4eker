@@ -6,8 +6,8 @@ import { Normalize } from "styled-normalize";
 import store from "./configeru-store";
 
 import "./style.css";
-import Header from "./blocks/Header/Header";
-import MainContainer from "./blocks/Main/MainContainer";
+import Header from "./components/Header/Header";
+import MainContainer from "./components/Main/MainContainer";
 
 const App = () => (
   <Provider store={store}>
