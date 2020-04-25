@@ -1,33 +1,21 @@
 import React from "react";
+import { render, fireEvent, cleanup } from "@testing-library/react";
+
+import { smallResponse } from "data/response";
 import Request from "./Request";
-import {
-  render,
-  fireEvent,
-  waitFor,
-  screen,
-  cleanup,
-  act,
-} from "@testing-library/react";
-
-import { exportAllDeclaration } from "@babel/types";
-
-import {smallResponse} from 'data/response';
 
 afterEach(cleanup);
 
 const requestFrom = {
-  type: `RESPONSE_INPUT`,
-  responseJSON: smallResponse
+  type: "RESPONSE_INPUT",
+  responseJSON: smallResponse,
 };
 
 const changeFormType = jest.fn();
 
-test(`customer match snapshot`, () => {
-  const { asFragment, getByRole } = render(
-    <Request
-    requestFrom={requestFrom}
-      changeFormType={changeFormType}
-    />
+test("customer match snapshot", () => {
+  const { asFragment } = render(
+    <Request requestFrom={requestFrom} changeFormType={changeFormType} />
   );
   expect(asFragment(<Request />)).toMatchSnapshot();
 });
@@ -42,8 +30,13 @@ describe("Request ", () => {
       },
     };
 
-    const { getByText } = render(<Request {...props} />);
-    fireEvent.click(screen.getByText("Показать"));
+    const { getByText } = render(
+      <Request
+        setResponseJSON={props.setResponseJSON}
+        requestFrom={props.requestFrom}
+      />
+    );
+    fireEvent.click(getByText("Показать"));
 
     expect(props.setResponseJSON).toHaveBeenCalledTimes(1);
   });
