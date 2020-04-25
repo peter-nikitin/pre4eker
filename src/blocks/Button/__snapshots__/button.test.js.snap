@@ -3,7 +3,8 @@
 exports[`Button changes color when hovered 1`] = `
 <DocumentFragment>
   <button
-    class="medium button normal undefined basic"
+    class="medium button normal false basic"
+    type="button"
   >
     <div>
       <svg
@@ -28,7 +29,8 @@ exports[`Button changes color when hovered 1`] = `
 exports[`Button changes color when hovered 2`] = `
 <DocumentFragment>
   <button
-    class="medium button hover undefined basic"
+    class="medium button hover false basic"
+    type="button"
   >
     <div>
       <svg
@@ -53,7 +55,8 @@ exports[`Button changes color when hovered 2`] = `
 exports[`Button changes color when hovered 3`] = `
 <DocumentFragment>
   <button
-    class="medium button normal undefined basic"
+    class="medium button normal false basic"
+    type="button"
   >
     <div>
       <svg
