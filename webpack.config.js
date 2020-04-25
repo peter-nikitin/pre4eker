@@ -1,19 +1,34 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const postcssFlexbugsFixes = require("postcss-flexbugs-fixes");
+const postcssModulesValues = require("postcss-modules-values");
+const autoprefixer = require("autoprefixer");
+const LiveReloadPlugin = require("webpack-livereload-plugin");
+const ErrorOverlayPlugin = require("error-overlay-webpack-plugin");
+
 module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   devtool: `source-map`,
+  devServer: {
+    contentBase: "./dist",
+    watchContentBase: true,
+  },
   resolve: {
     alias: {
       src: path.resolve(__dirname, "src"),
       data: path.resolve(__dirname, "data"),
-      "styled-components": path.resolve(__dirname, "node_modules", "styled-components"),
+      "styled-components": path.resolve(
+        __dirname,
+        "node_modules",
+        "styled-components"
+      ),
     },
   },
   module: {
@@ -46,11 +61,11 @@ module.exports = {
               // https://github.com/facebookincubator/create-react-app/issues/2677
               ident: "postcss",
               plugins: () => [
-                require("postcss-flexbugs-fixes"),
-                require("autoprefixer")({
+                postcssFlexbugsFixes,
+                autoprefixer({
                   flexbox: "no-2009",
                 }),
-                require("postcss-modules-values"),
+                postcssModulesValues,
               ],
             },
           },
@@ -73,5 +88,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
     }),
+    new LiveReloadPlugin({
+      appendScriptTag: true,
+    }),
+    new ErrorOverlayPlugin(),
   ],
 };
