@@ -1,11 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "src", "index.js"),
-  mode: 'production',
+  mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -14,7 +14,11 @@ module.exports = {
     alias: {
       src: path.resolve(__dirname, "src"),
       data: path.resolve(__dirname, "data"),
-      "styled-components": path.resolve(__dirname, "node_modules", "styled-components"),
+      "styled-components": path.resolve(
+        __dirname,
+        "node_modules",
+        "styled-components"
+      ),
     },
   },
   module: {
