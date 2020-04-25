@@ -1,28 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider} from 'react-redux';
-import { Normalize } from 'styled-normalize'
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { Normalize } from "styled-normalize";
 
-import {store} from './configeru-store';
+import store from "./configeru-store";
 
-import './style.css';
-import Header from './blocks/Header/Header';
-import Main from './blocks/Main/Main';
+import "./style.css";
+import Header from "./blocks/Header/Header";
+import MainContainer from "./blocks/Main/MainContainer";
 
-
-
-
-const App = () =>  (
+const App = () => (
   <Provider store={store}>
     <Normalize />
     <Header />
-    <Main  />
-
-  
+    <MainContainer />
   </Provider>
-)
-
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
 );
+
+ReactDOM.render(<App />, document.getElementById("root"));
