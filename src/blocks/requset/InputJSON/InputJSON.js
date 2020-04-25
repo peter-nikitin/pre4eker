@@ -4,26 +4,23 @@ import PropTypes from "prop-types";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 
-
 import Button from "src/blocks/Button/Button";
 
-import style from "./InputJSON.css";
-
-const InputJSON = (props) => {
-  const [responseJSON, setResponseJSON] = useState(props.responseJSON);
+const InputJSON = ({ responseJSON, setJSON, type }) => {
+  const [currentResponseJSON, setResponseJSON] = useState(responseJSON);
 
   return (
     <div>
-        <JSONInput
-          id={props.type || "response"}
-          placeholder={responseJSON}
-          locale={locale}
-          height="68vh"
-          width="100%"
-          onChange={(e) => setResponseJSON(e.jsObject)}
-        />
+      <JSONInput
+        id={type || "response"}
+        placeholder={currentResponseJSON}
+        locale={locale}
+        height="68vh"
+        width="100%"
+        onChange={(e) => setResponseJSON(e.jsObject)}
+      />
       <Button
-        action={() => props.setJSON(responseJSON)}
+        action={() => setJSON(currentResponseJSON)}
         type="TEXT"
         size="sizeFull"
       >
@@ -33,6 +30,15 @@ const InputJSON = (props) => {
   );
 };
 
-InputJSON.propTypes = {};
+InputJSON.defaultProps = {
+  responseJSON: {},
+  type: "",
+};
+
+InputJSON.propTypes = {
+  responseJSON: PropTypes.object,
+  setJSON: PropTypes.func.isRequired,
+  type: PropTypes.string,
+};
 
 export default InputJSON;
