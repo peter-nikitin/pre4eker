@@ -23,7 +23,7 @@ exports[`Response snapshot  empty response to match snapshot 1`] = `
         </li>
       </ol>
       <p>
-        github: 
+        github:
         <a
           href="https://github.com/peter-nikitin/mindbox-pre4eker"
         >
@@ -149,9 +149,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   >
                     Ид продукта
                   </div>
-                  <div>
-                     798199676
-                  </div>
+                  798199676
                 </div>
                 <div
                   class="third"
@@ -161,9 +159,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   >
                     Количество
                   </div>
-                  <div>
-                     13179398.15
-                  </div>
+                  13179398.15
                 </div>
               </div>
               <div
@@ -229,9 +225,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   >
                     Ид продукта
                   </div>
-                  <div>
-                     1963295047
-                  </div>
+                  1963295047
                 </div>
                 <div
                   class="third"
@@ -241,9 +235,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   >
                     Количество
                   </div>
-                  <div>
-                     20422921.01
-                  </div>
+                  20422921.01
                 </div>
               </div>
               <div
@@ -398,12 +390,12 @@ exports[`Response snapshot  response without lines to match snapshot 1`] = `
                 <p
                   class="good status"
                 >
-                  Валидный 
+                  Валидный
                 </p>
                 <p
                   class="good status"
                 >
-                  Подтвержден 
+                  Подтвержден
                 </p>
               </div>
               <div
@@ -417,7 +409,7 @@ exports[`Response snapshot  response without lines to match snapshot 1`] = `
                 <p
                   class="bad status"
                 >
-                  Ожидает подтверждения 
+                  Ожидает подтверждения
                 </p>
               </div>
             </div>
@@ -444,9 +436,10 @@ exports[`Response snapshot  response without lines to match snapshot 1`] = `
                 <p
                   class="good status"
                 >
-                  Валидный 
+                  Валидный
                 </p>
               </div>
+              0
             </div>
           </div>
           <div
@@ -675,12 +668,12 @@ exports[`Response snapshot  response without order to match snapshot 1`] = `
                 <p
                   class="good status"
                 >
-                  Валидный 
+                  Валидный
                 </p>
                 <p
                   class="good status"
                 >
-                  Подтвержден 
+                  Подтвержден
                 </p>
               </div>
               <div
@@ -694,7 +687,7 @@ exports[`Response snapshot  response without order to match snapshot 1`] = `
                 <p
                   class="bad status"
                 >
-                  Ожидает подтверждения 
+                  Ожидает подтверждения
                 </p>
               </div>
             </div>
@@ -721,9 +714,10 @@ exports[`Response snapshot  response without order to match snapshot 1`] = `
                 <p
                   class="good status"
                 >
-                  Валидный 
+                  Валидный
                 </p>
               </div>
+              0
             </div>
           </div>
           <div
@@ -886,12 +880,12 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <p
                   class="good status"
                 >
-                  Валидный 
+                  Валидный
                 </p>
                 <p
                   class="good status"
                 >
-                  Подтвержден 
+                  Подтвержден
                 </p>
               </div>
               <div
@@ -905,7 +899,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <p
                   class="bad status"
                 >
-                  Ожидает подтверждения 
+                  Ожидает подтверждения
                 </p>
               </div>
             </div>
@@ -932,9 +926,10 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <p
                   class="good status"
                 >
-                  Валидный 
+                  Валидный
                 </p>
               </div>
+              0
             </div>
           </div>
           <div
@@ -985,7 +980,8 @@ exports[`Response snapshot full response to match snapshot 1`] = `
             >
               Дополнительные поля
               <button
-                class="small button normal undefined basic"
+                class="small button normal false basic"
+                type="button"
               >
                 <div>
                   <svg
@@ -1103,7 +1099,8 @@ exports[`Response snapshot full response to match snapshot 1`] = `
             >
               Дополнительные поля
               <button
-                class="small button normal undefined basic"
+                class="small button normal false basic"
+                type="button"
               >
                 <div>
                   <svg
@@ -1148,7 +1145,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
               <div
@@ -1266,7 +1263,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
               <div
@@ -1370,7 +1367,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
               <div
@@ -1455,7 +1452,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
               <div
@@ -1540,7 +1537,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
             </div>
@@ -1611,7 +1608,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
             </div>
@@ -1701,7 +1698,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value line"
                 >
-                   Новая акция
+                  Новая акция
                 </div>
               </div>
               <div
@@ -2744,9 +2741,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   >
                     Ид продукта
                   </div>
-                  <div>
-                     474177964
-                  </div>
+                  474177964
                 </div>
                 <div
                   class="third"
@@ -2756,9 +2751,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   >
                     Количество
                   </div>
-                  <div>
-                     13179398.15
-                  </div>
+                  13179398.15
                 </div>
               </div>
               <div
@@ -2817,7 +2810,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -2935,7 +2928,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -3039,7 +3032,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -3124,7 +3117,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -3209,7 +3202,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                 </div>
@@ -3280,7 +3273,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                 </div>
@@ -3370,7 +3363,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -3861,9 +3854,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   >
                     Ид продукта
                   </div>
-                  <div>
-                     1992290890
-                  </div>
+                  1992290890
                 </div>
                 <div
                   class="third"
@@ -3873,9 +3864,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   >
                     Количество
                   </div>
-                  <div>
-                     20422921.01
-                  </div>
+                  20422921.01
                 </div>
               </div>
               <div
@@ -3934,7 +3923,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -4052,7 +4041,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -4156,7 +4145,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -4241,7 +4230,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
@@ -4326,7 +4315,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                 </div>
@@ -4397,7 +4386,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                 </div>
@@ -4487,7 +4476,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="value line"
                     >
-                       Новая акция
+                      Новая акция
                     </div>
                   </div>
                   <div
