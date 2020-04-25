@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import stylesShared from "src/blocks/respose/responseShared.css";
+import shortid from "shortid";
 
 import AppliedPromotion from "../AppliedPromotion/AppliedPromotion";
 import Placeholders from "../Placeholders/Placeholders";
-import shortid from "shortid";
 
 const Line = ({ lineInfo }) => {
   const {
