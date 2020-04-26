@@ -23,7 +23,7 @@ module.exports = {
     sourceType: "module",
     parser: "babel-eslint",
   },
-  plugins: ["react"],
+  plugins: ["react", "react-hooks"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "react/forbid-prop-types": [
@@ -33,6 +33,8 @@ module.exports = {
       },
     ],
     "react/jsx-one-expression-per-line": [0, { allow: "single-child" }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
   settings: {
     "import/resolver": "webpack",
