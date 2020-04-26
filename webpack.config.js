@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const postcssFlexbugsFixes = require("postcss-flexbugs-fixes");
 const postcssModulesValues = require("postcss-modules-values");
 const autoprefixer = require("autoprefixer");
+const LiveReloadPlugin = require("webpack-livereload-plugin");
+const ErrorOverlayPlugin = require("error-overlay-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -86,5 +88,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
     }),
+    new LiveReloadPlugin({
+      appendScriptTag: true,
+    }),
+    new ErrorOverlayPlugin(),
   ],
 };
