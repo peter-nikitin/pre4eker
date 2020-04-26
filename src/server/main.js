@@ -14,9 +14,9 @@ const watch = require("./watch");
 const app = express();
 
 // Watch file changes in development environment.
-if (config.isDevelopment) {
-  watch(app);
-}
+// if (config.isDevelopment) {
+//   watch(app);
+// }
 
 // app.set("views", config.views);
 app.set("view engine", "pug");
