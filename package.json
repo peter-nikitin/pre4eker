@@ -13,7 +13,7 @@
     "heroku": "src/server/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Petr Nikitin",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.7.5",
@@ -77,8 +77,8 @@
     "link-module-alias": "^1.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "nodemon": "^2.0.3",
-    "prettier": "2.0.5",
     "puppeteer": "3.0.1",
+    "prettier": "2.0.5",
     "react-test-renderer": "^16.13.1",
     "redux-mock-store": "^1.5.4",
     "superagent": "5.2.2",
