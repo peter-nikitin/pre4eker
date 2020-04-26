@@ -9,7 +9,8 @@
     "start-front": "webpack-dev-server --open",
     "build": "webpack --config webpack.config.prod.js",
     "lint": "eslint ./src --fix",
-    "server": "node src/server/server.js"
+    "server": "node src/server/server.js",
+    "heroku": "src/server/server.js"
   },
   "keywords": [],
   "author": "",
