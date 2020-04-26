@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "nodemon src/server/server.js",
     "start-front": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.prod.js",
+    "build": "webpack",
     "lint": "eslint ./src --fix",
     "server": "node src/server/server.js",
     "heroku": "src/server/server.js",
