@@ -8,20 +8,16 @@ import Response from "../respose/Response";
 export default function Main({
   changeFormType,
   requestFrom,
-  setRequestJSON,
+  fetchResponse,
   setResponseJSON,
 }) {
-  fetch("/express_backend")
-    .then((resp) => resp.json())
-    .then((data) => console.log(data));
-
   return (
     <div className={style.main}>
       <div className={style.oneThird}>
         <h2>Запрос</h2>
         <Request
           changeFormType={changeFormType}
-          setRequestJSON={setRequestJSON}
+          fetchResponse={fetchResponse}
           setResponseJSON={setResponseJSON}
           requestFrom={requestFrom}
         />
@@ -37,12 +33,12 @@ export default function Main({
 Main.propTypes = {
   changeFormType: PropTypes.func,
   requestFrom: PropTypes.object,
-  setRequestJSON: PropTypes.func,
+  fetchResponse: PropTypes.func,
   setResponseJSON: PropTypes.func,
 };
 Main.defaultProps = {
   changeFormType: () => ({}),
   requestFrom: {},
-  setRequestJSON: () => ({}),
+  fetchResponse: () => ({}),
   setResponseJSON: () => ({}),
 };
