@@ -56,6 +56,7 @@
     "@babel/preset-react": "^7.9.4",
     "@testing-library/react": "10.0.2",
     "babel-eslint": "10.1.0",
+    "error-overlay-webpack-plugin": "0.4.1",
     "babel-jest": "^25.3.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
