@@ -6,7 +6,7 @@ import locale from "react-json-editor-ajrm/locale/en";
 
 import Button from "src/components/Button/Button";
 
-const InputJSON = ({ responseJSON, setJSON, type }) => {
+const ResponseJSON = ({ responseJSON, setJSON, type }) => {
   const [currentResponseJSON, setResponseJSON] = useState(responseJSON);
 
   return (
@@ -30,15 +30,15 @@ const InputJSON = ({ responseJSON, setJSON, type }) => {
   );
 };
 
-InputJSON.defaultProps = {
+ResponseJSON.defaultProps = {
   responseJSON: {},
   type: "",
 };
 
-InputJSON.propTypes = {
+ResponseJSON.propTypes = {
   responseJSON: PropTypes.object,
   setJSON: PropTypes.func.isRequired,
   type: PropTypes.string,
 };
 
-export default InputJSON;
+export default ResponseJSON;

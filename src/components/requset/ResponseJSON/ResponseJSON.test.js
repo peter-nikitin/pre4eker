@@ -1,12 +1,12 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import InputJSON from "./InputJSON";
+import ResponseJSON from "./ResponseJSON";
 
 describe("Form", () => {
   it("should handle click on btn", () => {
     const setJSON = jest.fn();
 
-    const { getByText } = render(<InputJSON setJSON={setJSON} />);
+    const { getByText } = render(<ResponseJSON setJSON={setJSON} />);
 
     fireEvent.click(getByText("Показать"));
     expect(setJSON).toHaveBeenCalled();
