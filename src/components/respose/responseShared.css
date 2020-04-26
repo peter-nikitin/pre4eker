@@ -5,6 +5,13 @@
   margin-bottom: .5rem;
 }
 
+.error {
+  background: #ffffff;
+  border: 1px solid #DC160A;
+  padding: 1rem 1.7rem;
+  margin-bottom: .5rem;
+}
+
 .name {
   font-size: .7rem;
   line-height: 1.4;
@@ -130,7 +137,7 @@
 .promoFooter {
   display: flex;
 }
- 
+
 h2 {
   margin: 0 0 .7rem 0;
 }
