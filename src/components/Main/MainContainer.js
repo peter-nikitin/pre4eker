@@ -4,7 +4,7 @@ import Main from "./Main";
 import {
   changeFormType,
   setResponseJSON,
-  setRequestJSON,
+  fetchResponse,
 } from "./actionCreators";
 
 const mapStateToProps = ({ mainReducer }) => ({
@@ -14,7 +14,7 @@ const mapStateToProps = ({ mainReducer }) => ({
 const mapDispatchToProps = (dispatch) => ({
   changeFormType: (form) => dispatch(changeFormType(form)),
   setResponseJSON: (JSON) => dispatch(setResponseJSON(JSON)),
-  setRequestJSON: (JSON) => dispatch(setRequestJSON(JSON)),
+  fetchResponse: (JSON) => dispatch(fetchResponse(JSON)),
 });
 
 const MainContainer = connect(mapStateToProps, mapDispatchToProps)(Main);
