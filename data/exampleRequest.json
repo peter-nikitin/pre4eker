@@ -1,0 +1,273 @@
+{
+  "pointOfContact": "1Wzbtvp",
+  "customer": {
+    "discountCard": {
+      "ids": {
+        "number": "12345"
+      }
+    },
+    "ids": {
+      "mindboxId": 1011787029,
+      "websiteId": "129501701",
+      "externalId": "zmx0cdM7"
+    },
+    "email": "pcemKY@fffioot.ykn",
+    "mobilePhone": "79403648199"
+  },
+  "order": {
+    "ids": {
+      "mindboxId": 385382204,
+      "offlineTransactionId": "1166077578",
+      "receiptNumber": "1350859815",
+      "orderMobileAppId": "659685965",
+      "websiteTransactionId": "1217054239",
+      "orderId2": "1242481301"
+    },
+    "cashdesk": {
+      "ids": {
+        "externalId": "12345"
+      }
+    },
+    "deliveryCost": 15416954.95,
+    "customFields": {
+      "defectTestField": "test13",
+      "socialcard": true
+    },
+    "area": {
+      "ids": {
+        "externalId": "hgAm6vb2T"
+      }
+    },
+    "requestedPromotions": [
+      {
+        "type": "discount",
+        "promotion": {
+          "ids": {
+            "externalId": "2eUNQZyz"
+          }
+        },
+        "coupon": {
+          "ids": {
+            "code": "oadsfghoiu"
+          },
+          "pool": {
+            "ids": {
+              "externalId": "promo-code-pool-8",
+              "mindboxId": 1482966406
+            }
+          }
+        },
+        "amount": 16744372.69
+      },
+      {
+        "type": "discount",
+        "promotion": {
+          "ids": {
+            "externalId": "4RPCpsP9K"
+          }
+        },
+        "coupon": {
+          "ids": {
+            "code": "oadsfghoiu"
+          },
+          "pool": {
+            "ids": {
+              "externalId": "promo-code-pool-12",
+              "mindboxId": 1983697753
+            }
+          }
+        },
+        "amount": 14195850.26
+      }
+    ],
+    "bonusPoints": [
+      {
+        "amount": 21351003.23
+      },
+      {
+        "amount": 18715205.25
+      }
+    ],
+    "coupons": [
+      {
+        "ids": {
+          "code": "330V"
+        }
+      },
+      {
+        "ids": {
+          "code": "I1Td0TW3uu2"
+        }
+      }
+    ],
+    "payments": [
+      {
+        "type": "giftCard",
+        "id": "7zmtX3"
+      },
+      {
+        "type": "card",
+        "creditCard": {
+          "hash": "206139228"
+        }
+      },
+      {
+        "type": "card1",
+        "creditCard": {
+          "hash": "1558628074"
+        }
+      },
+      {
+        "type": "card2",
+        "creditCard": {
+          "hash": "1353390538"
+        }
+      }
+    ],
+    "lines": [
+      {
+        "minPricePerItem": 7137772.24,
+        "costPricePerItem": 9484873.84,
+        "customFields": {
+          "cF": false
+        },
+        "basePricePerItem": 12164000.28,
+        "quantity": 14347100.69,
+        "lineId": "233",
+        "lineNumber": 1,
+        "requestedPromotions": [
+          {
+            "type": "discount",
+            "promotion": {
+              "ids": {
+                "externalId": "69UyjC7wLWV"
+              }
+            },
+            "coupon": {
+              "ids": {
+                "code": "oadsfghoiu"
+              },
+              "pool": {
+                "ids": {
+                  "externalId": "promo-code-pool-13",
+                  "mindboxId": 492012669
+                }
+              }
+            },
+            "amount": 9074436.57
+          },
+          {
+            "type": "discount",
+            "promotion": {
+              "ids": {
+                "externalId": "krKPTg"
+              }
+            },
+            "coupon": {
+              "ids": {
+                "code": "oadsfghoiu"
+              },
+              "pool": {
+                "ids": {
+                  "externalId": "UnknownExternalId",
+                  "mindboxId": 1605546517
+                }
+              }
+            },
+            "amount": 13472035.18
+          }
+        ],
+        "product": {
+          "ids": {
+            "system1c": "702689775",
+            "website": "1738943172",
+            "default": "918177117"
+          }
+        },
+        "status": {
+          "ids": {
+            "externalId": "InCart"
+          }
+        },
+        "giftCard": {
+          "ids": {
+            "number": "4LF8g0y2A"
+          },
+          "getFromPool": true
+        }
+      },
+      {
+        "minPricePerItem": 5405154.09,
+        "costPricePerItem": 12508645.57,
+        "customFields": {
+          "cF": false
+        },
+        "basePricePerItem": 12746332.26,
+        "quantity": 15204073.05,
+        "lineId": "732",
+        "lineNumber": 1,
+        "requestedPromotions": [
+          {
+            "type": "discount",
+            "promotion": {
+              "ids": {
+                "externalId": "BS98"
+              }
+            },
+            "coupon": {
+              "ids": {
+                "code": "oadsfghoiu"
+              },
+              "pool": {
+                "ids": {
+                  "externalId": "promo-code-pool",
+                  "mindboxId": 300849220
+                }
+              }
+            },
+            "amount": 1252360.04
+          },
+          {
+            "type": "discount",
+            "promotion": {
+              "ids": {
+                "externalId": "6PsevlR"
+              }
+            },
+            "coupon": {
+              "ids": {
+                "code": "oadsfghoiu"
+              },
+              "pool": {
+                "ids": {
+                  "externalId": "promo-code-pool-9",
+                  "mindboxId": 24221700
+                }
+              }
+            },
+            "amount": 5759515.44
+          }
+        ],
+        "product": {
+          "ids": {
+            "system1c": "791040986",
+            "website": "1772744147",
+            "default": "823443861"
+          }
+        },
+        "status": {
+          "ids": {
+            "externalId": "InCart"
+          }
+        },
+        "giftCard": {
+          "ids": {
+            "number": "dji4pg5R"
+          },
+          "getFromPool": true
+        }
+      }
+    ]
+  },
+  "executionDateTimeUtc": "2017-11-13T16:55:38.148Z"
+}

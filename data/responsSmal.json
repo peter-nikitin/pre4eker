@@ -1,0 +1,57 @@
+{
+  "order": {
+    "lines": [
+      {
+        "basePricePerItem": "1699.00",
+        "quantity": 4,
+        "product": {
+          "ids": {
+            "hyperautoWebsite": "000032291"
+          }
+        },
+        "status": {
+          "ids": {
+            "externalId": "accepted"
+          }
+        }
+      },
+      {
+        "basePricePerItem": "5699.00",
+        "quantity": 1,
+        "product": {
+          "ids": {
+            "hyperautoWebsite": "000037616"
+          }
+        },
+        "status": {
+          "ids": {
+            "externalId": "accepted"
+          }
+        },
+        "requestedPromotions": [
+          {
+            "type": "discount",
+            "promotion": {
+              "ids": {
+                "externalId": "discountBan"
+              }
+            },
+            "amount": 0
+          }
+        ]
+      }
+    ],
+    "area": {
+      "ids": {
+        "externalId": "140e31da-27bf-4519-9ea0-6185d681d44e"
+      }
+    },
+    "coupons": [
+      {
+        "ids": {
+          "code": "005ACOFHC8"
+        }
+      }
+    ]
+  }
+}
