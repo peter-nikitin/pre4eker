@@ -1,5 +1,6 @@
 const config = require("./config");
 const app = require("./main");
+
 const url = `http://${config.host}:${config.port}`;
 
 app.listen(config.port, config.host, (error) => {
