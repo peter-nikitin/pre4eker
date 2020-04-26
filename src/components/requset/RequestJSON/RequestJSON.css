@@ -1,0 +1,22 @@
+.json {
+  margin-bottom: .5rem;
+}
+
+.inline {
+  display: flex;
+  margin: 0 -.3em .5rem -.3em;
+}
+
+.half {
+  width: 50%;
+  padding: 1rem .3rem;
+}
+
+.third {
+  width: 33%;
+  padding: 1rem .3rem;
+}
+
+.inputGroup label {
+  color: #fff;
+}
