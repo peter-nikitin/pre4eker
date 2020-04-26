@@ -8,7 +8,7 @@ const pug = require("pug");
 const { notFound } = require("./middlewares");
 const mindbox = require("./prechek");
 const config = require("./config");
-const watch = require("./watch");
+// const watch = require("./watch");
 
 // Initialize Express app.
 const app = express();

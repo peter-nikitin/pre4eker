@@ -10,7 +10,8 @@
     "build": "webpack --config webpack.config.prod.js",
     "lint": "eslint ./src --fix",
     "server": "node src/server/server.js",
-    "heroku": "src/server/server.js"
+    "heroku": "src/server/server.js",
+    "heroku-prebuild": "npm install --production=false"
   },
   "keywords": [],
   "author": "Petr Nikitin",
