@@ -1,14 +1,16 @@
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: path.resolve(__dirname, "src", "index.js"),
   mode: "production",
+  context: path.resolve(__dirname, ".."),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   resolve: {
     alias: {
@@ -44,21 +46,6 @@ module.exports = {
               },
             },
           },
-          {
-            loader: require.resolve("postcss-loader"),
-            options: {
-              // Necessary for external CSS imports to work
-              // https://github.com/facebookincubator/create-react-app/issues/2677
-              ident: "postcss",
-              plugins: () => [
-                require("postcss-flexbugs-fixes"),
-                require("autoprefixer")({
-                  flexbox: "no-2009",
-                }),
-                require("postcss-modules-values"),
-              ],
-            },
-          },
         ],
       },
       {
@@ -75,6 +62,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.ProgressPlugin({
+      profile: false,
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
