@@ -90,6 +90,9 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
+  "engines": {
+    "node": "12.16.x"
+  },
   "jest": {
     "moduleNameMapper": {
       "^data(.*)$": "<rootDir>/data$1",
