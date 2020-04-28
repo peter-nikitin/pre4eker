@@ -13,5 +13,5 @@ module.exports = {
   host: process.env.HOST || "localhost",
 
   // Public directory with static files.
-  static: path.resolve(__dirname, "../../static"),
+  static: path.resolve(__dirname, "../../dist"),
 };

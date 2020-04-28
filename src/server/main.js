@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
+const path = require("path");
 const pug = require("pug");
 // const router = require("./router");
 // const helpers = require("./helpers");
@@ -38,7 +39,7 @@ app.use("/", express.static(config.static));
 // Mount routes.
 // app.use("/", router);
 app.get("/", (req, res) => {
-  res.sendfile("index.html");
+  res.sendFile(path.join(__dirname, "../../dist/index.html"));
 });
 
 app.post("/prechek", (req, res, next) => {
