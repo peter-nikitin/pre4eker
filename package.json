@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon src/server/server.js",
+    "start": "node src/server/server.js",
     "start-front": "webpack-dev-server --open",
     "build": "webpack",
     "lint": "eslint ./src --fix",
     "server": "node src/server/server.js",
-    "heroku": "src/server/server.js",
+    "heroku-start": "node --inspect src/server/server.js",
     "heroku-prebuild": "npm install --production=false"
   },
   "keywords": [],
