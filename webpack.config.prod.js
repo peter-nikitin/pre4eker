@@ -6,9 +6,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"),
   mode: "production",
-  context: path.resolve(__dirname, ".."),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
     publicPath: "/",
   },
@@ -22,6 +21,7 @@ module.exports = {
         "styled-components"
       ),
     },
+    extensions: [".js", ".jsx", ".css"],
   },
   module: {
     rules: [
