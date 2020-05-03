@@ -2921,6 +2921,68 @@ var __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = sharedInternals;
 
 /***/ }),
 
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Button/Button.css":
 /*!*************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/Button/Button.css ***!
@@ -29755,6 +29817,244 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-loaders/dist/react-loaders.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-loaders/dist/react-loaders.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Types = exports.Loader = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _classnames2 = __webpack_require__(3);
+
+var _classnames3 = _interopRequireDefault(_classnames2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Loader = exports.Loader = function (_Component) {
+  _inherits(Loader, _Component);
+
+  function Loader() {
+    _classCallCheck(this, Loader);
+
+    return _possibleConstructorReturn(this, (Loader.__proto__ || Object.getPrototypeOf(Loader)).apply(this, arguments));
+  }
+
+  _createClass(Loader, [{
+    key: 'renderDiv',
+    value: function renderDiv(n) {
+      var styles = this.props.styles || {};
+      if (this.props.color) {
+        styles.backgroundColor = this.props.color;
+      }
+      return _react2.default.createElement('div', { key: n, style: styles });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _classnames;
+
+      var nDivs = range(Types[this.props.type]);
+      var classes = (0, _classnames3.default)((_classnames = {
+        loader: true
+      }, _defineProperty(_classnames, 'loader-' + this.props.size, this.props.size !== 'md'), _defineProperty(_classnames, 'loader-active', this.props.active), _defineProperty(_classnames, 'loader-hidden', !this.props.active), _classnames), this.props.className);
+
+      var innerClasses = (0, _classnames3.default)(['loader-inner', this.props.type, this.props.innerClassName]);
+
+      return _react2.default.createElement(
+        'div',
+        { className: classes, style: this.props.style },
+        _react2.default.createElement(
+          'div',
+          { className: innerClasses },
+          nDivs.map(this.renderDiv.bind(this))
+        )
+      );
+    }
+  }], [{
+    key: 'removeType',
+    value: function removeType(type) {
+      delete Types[key];
+    }
+  }, {
+    key: 'addType',
+    value: function addType(key, nDivs) {
+      return Types[key] = nDivs;
+    }
+  }]);
+
+  return Loader;
+}(_react.Component);
+
+Loader.propTypes = {
+  type: _propTypes2.default.string,
+  active: _propTypes2.default.bool,
+  color: _propTypes2.default.string,
+  innerClassName: _propTypes2.default.string
+};
+Loader.defaultProps = {
+  type: 'ball-pulse',
+  active: true
+};
+exports.default = Loader;
+var Types = exports.Types = {
+  "ball-pulse": 3,
+  "ball-grid-pulse": 9,
+  "ball-clip-rotate": 1,
+  "ball-clip-rotate-pulse": 2,
+  "square-spin": 1,
+  "ball-clip-rotate-multiple": 2,
+  "ball-pulse-rise": 5,
+  "ball-rotate": 1,
+  "cube-transition": 2,
+  "ball-zig-zag": 2,
+  "ball-zig-zag-deflect": 2,
+  "ball-triangle-path": 3,
+  "ball-scale": 1,
+  "line-scale": 5,
+  "line-scale-party": 4,
+  "ball-scale-multiple": 3,
+  "ball-pulse-sync": 3,
+  "ball-beat": 3,
+  "line-scale-pulse-out": 5,
+  "line-scale-pulse-out-rapid": 5,
+  "ball-scale-ripple": 1,
+  "ball-scale-ripple-multiple": 3,
+  "ball-spin-fade-loader": 8,
+  "line-spin-fade-loader": 8,
+  "triangle-skew-spin": 1,
+  "pacman": 5,
+  "ball-grid-beat": 9,
+  "semi-circle-spin": 1
+};
+
+function range(x) {
+  var i = -1,
+      arr = [];
+  while (++i < x) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+
+/***/ })
+/******/ ]);
+
+/***/ }),
+
 /***/ "./node_modules/react-redux/es/components/Context.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/components/Context.js ***!
@@ -39298,7 +39598,8 @@ function Main({
   changeFormType,
   requestFrom,
   fetchResponse,
-  setResponseJSON
+  setResponseJSON,
+  isLoading
 }) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _Main_css__WEBPACK_IMPORTED_MODULE_2___default.a.main
@@ -39312,20 +39613,23 @@ function Main({
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _Main_css__WEBPACK_IMPORTED_MODULE_2___default.a.twoThird
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "\u041E\u0442\u0432\u0435\u0442"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_respose_Response__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    response: requestFrom.responseJSON
+    response: requestFrom.responseJSON,
+    isLoading: isLoading
   })));
 }
 Main.propTypes = {
   changeFormType: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   requestFrom: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
   fetchResponse: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
-  setResponseJSON: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+  setResponseJSON: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  isLoading: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
 };
 Main.defaultProps = {
   changeFormType: () => ({}),
   requestFrom: {},
   fetchResponse: () => ({}),
-  setResponseJSON: () => ({})
+  setResponseJSON: () => ({}),
+  isLoading: false
 };
 
 /***/ }),
@@ -39367,7 +39671,7 @@ const MainContainer = Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"]
 /*!***********************************************!*\
   !*** ./src/components/Main/actionCreators.js ***!
   \***********************************************/
-/*! exports provided: changeFormType, setResponseJSON, setRequestJSON, fetchResponse */
+/*! exports provided: changeFormType, setResponseJSON, setRequestJSON, toggleLoading, fetchResponse */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39375,6 +39679,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeFormType", function() { return changeFormType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setResponseJSON", function() { return setResponseJSON; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setRequestJSON", function() { return setRequestJSON; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleLoading", function() { return toggleLoading; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchResponse", function() { return fetchResponse; });
 const changeFormType = form => ({
   type: "CHANGE_REQUEST_FORM",
@@ -39388,12 +39693,16 @@ const setRequestJSON = data => ({
   type: "SET_REQUEST_JSON",
   data
 });
+const toggleLoading = () => ({
+  type: "TOGGLE_LOADING"
+});
 const fetchResponse = data => dispatch => {
   dispatch(setRequestJSON({ ...data,
     key: ""
   }));
 
   if (typeof data.endpoint !== "undefined") {
+    dispatch(toggleLoading());
     fetch("/prechek", {
       method: "POST",
       body: JSON.stringify(data),
@@ -39402,6 +39711,7 @@ const fetchResponse = data => dispatch => {
       }
     }).then(response => response.json()).then(response => {
       dispatch(setResponseJSON(response));
+      dispatch(toggleLoading());
     }).catch(err => setResponseJSON(err));
   }
 };
@@ -39412,7 +39722,7 @@ const fetchResponse = data => dispatch => {
 /*!********************************************!*\
   !*** ./src/components/Main/actionTypes.js ***!
   \********************************************/
-/*! exports provided: CHANGE_REQUEST_FORM, SET_RESPONSE_JSON, SET_REQUEST_JSON */
+/*! exports provided: CHANGE_REQUEST_FORM, SET_RESPONSE_JSON, SET_REQUEST_JSON, TOGGLE_LOADING */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39420,9 +39730,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHANGE_REQUEST_FORM", function() { return CHANGE_REQUEST_FORM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SET_RESPONSE_JSON", function() { return SET_RESPONSE_JSON; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SET_REQUEST_JSON", function() { return SET_REQUEST_JSON; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TOGGLE_LOADING", function() { return TOGGLE_LOADING; });
 const CHANGE_REQUEST_FORM = "CHANGE_REQUEST_FORM";
 const SET_RESPONSE_JSON = "SET_RESPONSE_JSON";
 const SET_REQUEST_JSON = "SET_REQUEST_JSON";
+const TOGGLE_LOADING = "TOGGLE_LOADING";
 
 
 /***/ }),
@@ -39443,7 +39755,8 @@ __webpack_require__.r(__webpack_exports__);
 const initialState = {
   type: "RESPONSE_INPUT",
   responseJSON: {},
-  requestJSON: {}
+  requestJSON: {},
+  isLoading: true
 };
 
 const mainReducer = (state = initialState, action) => {
@@ -39461,6 +39774,11 @@ const mainReducer = (state = initialState, action) => {
     case _actionTypes__WEBPACK_IMPORTED_MODULE_1__["SET_REQUEST_JSON"]:
       return { ...state,
         requestJSON: action.data
+      };
+
+    case _actionTypes__WEBPACK_IMPORTED_MODULE_1__["TOGGLE_LOADING"]:
+      return { ...state,
+        isLoading: !state.isLoading
       };
 
     default:
@@ -39526,8 +39844,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const ResponseJSON = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_2__["default"])(() => Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, /*! ./ResponseJSON/ResponseJSON */ "./src/components/requset/ResponseJSON/ResponseJSON.js")));
-const RequestJSON = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_2__["default"])(() => Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./RequestJSON/RequestJSON */ "./src/components/requset/RequestJSON/RequestJSON.js")));
+const ResponseJSON = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_2__["default"])(() => Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./ResponseJSON/ResponseJSON */ "./src/components/requset/ResponseJSON/ResponseJSON.js")));
+const RequestJSON = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_2__["default"])(() => Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./RequestJSON/RequestJSON */ "./src/components/requset/RequestJSON/RequestJSON.js")));
 
 
 
@@ -40697,6 +41015,35 @@ Lines.propTypes = {
 
 /***/ }),
 
+/***/ "./src/components/respose/Loading/Loading.js":
+/*!***************************************************!*\
+  !*** ./src/components/respose/Loading/Loading.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_loaders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-loaders */ "./node_modules/react-loaders/dist/react-loaders.js");
+/* harmony import */ var react_loaders__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_loaders__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Loading = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loaders__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    type: "ball-scale-ripple-multiple"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Loading);
+
+/***/ }),
+
 /***/ "./src/components/respose/Order/Order.js":
 /*!***********************************************!*\
   !*** ./src/components/respose/Order/Order.js ***!
@@ -41109,6 +41456,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EmptyResponse_EmptyResponse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EmptyResponse/EmptyResponse */ "./src/components/respose/EmptyResponse/EmptyResponse.js");
 /* harmony import */ var _ErrorResponse_ErrorResponse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ErrorResponse/ErrorResponse */ "./src/components/respose/ErrorResponse/ErrorResponse.js");
 /* harmony import */ var _SuccessResponse_SuccessResponse__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SuccessResponse/SuccessResponse */ "./src/components/respose/SuccessResponse/SuccessResponse.js");
+/* harmony import */ var _Loading_Loading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Loading/Loading */ "./src/components/respose/Loading/Loading.js");
+
 
 
 
@@ -41116,9 +41465,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Response = ({
-  response
+  response,
+  isLoading
 }) => {
   const drawResponse = responseData => {
+    if (isLoading) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loading_Loading__WEBPACK_IMPORTED_MODULE_5__["default"], null);
+    }
+
     if (Object.keys(responseData).length !== 0) {
       switch (responseData.status) {
         case `ProtocolError`:
@@ -41145,10 +41499,12 @@ const Response = ({
 };
 
 Response.propTypes = {
-  response: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  response: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
+  isLoading: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
 };
 Response.defaultProps = {
-  response: {}
+  response: {},
+  isLoading: false
 };
 /* harmony default export */ __webpack_exports__["default"] = (Response);
 
