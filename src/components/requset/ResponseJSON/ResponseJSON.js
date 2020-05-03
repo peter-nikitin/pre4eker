@@ -3,13 +3,15 @@ import PropTypes from "prop-types";
 
 import AceEditor from "react-ace";
 
-import "brace/mode/json";
-import "brace/theme/xcode";
+import "ace-builds/src-noconflict/mode-json";
+import "ace-builds/src-noconflict/theme-xcode";
+import "ace-builds/webpack-resolver";
 
 import Button from "src/components/Button/Button";
 
 const ResponseJSON = ({ responseJSON, setJSON }) => {
   const [body, setBody] = useState(JSON.stringify(responseJSON, null, 1));
+
   return (
     <div>
       <AceEditor
