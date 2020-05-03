@@ -1,26 +1,35 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import JSONInput from "react-json-editor-ajrm";
-import locale from "react-json-editor-ajrm/locale/en";
+import AceEditor from "react-ace";
+
+import "brace/mode/json";
+import "brace/theme/xcode";
 
 import Button from "src/components/Button/Button";
 
-const ResponseJSON = ({ responseJSON, setJSON, type }) => {
-  const [currentResponseJSON, setResponseJSON] = useState(responseJSON);
-
+const ResponseJSON = ({ responseJSON, setJSON }) => {
+  const [body, setBody] = useState(JSON.stringify(responseJSON, null, 1));
   return (
     <div>
-      <JSONInput
-        id={type || "response"}
-        placeholder={currentResponseJSON}
-        locale={locale}
+      <AceEditor
+        name="ResponseBody"
+        mode="json"
+        theme="xcode"
+        value={body}
+        onChange={(value) => setBody(value)}
         height="68vh"
         width="100%"
-        onChange={(e) => setResponseJSON(e.jsObject)}
+        wrapEnabled
+        placeholder="Тело ответа"
+        highlightActiveLine={false}
+        setOptions={{
+          showLineNumbers: false,
+          tabSize: 2,
+        }}
       />
       <Button
-        action={() => setJSON(currentResponseJSON)}
+        action={() => setJSON(JSON.parse(body))}
         type="TEXT"
         size="sizeFull"
       >
@@ -32,13 +41,11 @@ const ResponseJSON = ({ responseJSON, setJSON, type }) => {
 
 ResponseJSON.defaultProps = {
   responseJSON: {},
-  type: "",
 };
 
 ResponseJSON.propTypes = {
   responseJSON: PropTypes.object,
   setJSON: PropTypes.func.isRequired,
-  type: PropTypes.string,
 };
 
 export default ResponseJSON;

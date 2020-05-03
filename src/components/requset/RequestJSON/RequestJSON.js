@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import JSONInput from "react-json-editor-ajrm";
-import locale from "react-json-editor-ajrm/locale/en";
+import AceEditor from "react-ace";
+
+import "brace/mode/json";
+import "brace/theme/xcode";
 
 import Button from "src/components/Button/Button";
 import Input from "src/components/Input/Input";
 
 import style from "./RequestJSON.css";
 
-const RequestJSON = ({ data, onSubmit, type }) => {
-  const [body, setResponseJSON] = useState(data.body);
+const RequestJSON = ({ data, onSubmit }) => {
+  const [body, setBody] = useState(JSON.stringify(data.body, null, 1));
   const [endpoint, setEndpoint] = useState(data.endpoint);
   const [operation, setOperation] = useState(data.operation);
   const [key, setKey] = useState(data.key);
-
-  console.log(data);
 
   return (
     <div>
@@ -24,8 +24,8 @@ const RequestJSON = ({ data, onSubmit, type }) => {
           <Input
             label="Эндпоин"
             name="endpoint"
-            value={endpoint}
             onChange={(e) => setEndpoint(e.target.value)}
+            value={endpoint}
           />
         </div>
         <div className={style.third}>
@@ -46,13 +46,21 @@ const RequestJSON = ({ data, onSubmit, type }) => {
           />
         </div>
       </div>
-      <JSONInput
-        id={type || "response"}
-        placeholder={body}
-        locale={locale}
+      <AceEditor
+        name="RequestBody"
+        mode="json"
+        theme="xcode"
+        value={body}
+        onChange={(value) => setBody(value)}
         height="58vh"
         width="100%"
-        onChange={(e) => setResponseJSON(e.jsObject)}
+        wrapEnabled
+        placeholder="Тело ответа"
+        highlightActiveLine={false}
+        setOptions={{
+          showLineNumbers: false,
+          tabSize: 2,
+        }}
       />
       <Button
         action={() =>
@@ -74,13 +82,11 @@ const RequestJSON = ({ data, onSubmit, type }) => {
 
 RequestJSON.defaultProps = {
   data: {},
-  type: "",
 };
 
 RequestJSON.propTypes = {
   data: PropTypes.object,
   onSubmit: PropTypes.func.isRequired,
-  type: PropTypes.string,
 };
 
 export default RequestJSON;
