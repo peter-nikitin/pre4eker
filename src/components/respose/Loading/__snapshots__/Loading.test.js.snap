@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading has to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="loading"
+  >
+    <div
+      class="loader loader-undefined loader-active"
+    >
+      <div
+        class="loader-inner ball-scale-ripple-multiple"
+      >
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
