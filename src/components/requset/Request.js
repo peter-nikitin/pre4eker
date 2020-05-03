@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import loadable from "@loadable/component";
 
 import Button from "src/components/Button/Button";
-import ResponseJSON from "./ResponseJSON/ResponseJSON";
-import RequestJSON from "./RequestJSON/RequestJSON";
+const ResponseJSON = loadable(() => import("./ResponseJSON/ResponseJSON"));
+const RequestJSON = loadable(() => import("./RequestJSON/RequestJSON"));
+
 import style from "./Request.css";
 import Soon from "./Soon/Soon";
 import * as formTypes from "./formTypes";
