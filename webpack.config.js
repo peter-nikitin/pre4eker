@@ -20,6 +20,9 @@ module.exports = {
     contentBase: "./dist",
     watchContentBase: true,
   },
+  resolveLoader: {
+    modules: ["node_modules", path.join(__dirname, "/node_modules")],
+  },
   resolve: {
     alias: {
       src: path.resolve(__dirname, "src"),
@@ -30,6 +33,7 @@ module.exports = {
         "styled-components"
       ),
     },
+    extensions: [".js", ".jsx", ".css"],
   },
   module: {
     rules: [
@@ -91,6 +95,6 @@ module.exports = {
     new LiveReloadPlugin({
       appendScriptTag: true,
     }),
-    // new ErrorOverlayPlugin(),
+    new ErrorOverlayPlugin(),
   ],
 };
