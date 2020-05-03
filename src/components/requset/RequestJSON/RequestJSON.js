@@ -68,7 +68,7 @@ const RequestJSON = ({ data, onSubmit }) => {
           onSubmit({
             endpoint,
             key,
-            body,
+            body: JSON.parse(body),
             operation,
           })
         }
