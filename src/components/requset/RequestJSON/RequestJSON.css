@@ -14,9 +14,9 @@
 
 .third {
   width: 33%;
-  padding: 1rem .3rem;
+  padding: 0 .3rem;
 }
 
-.inputGroup label {
-  color: #fff;
+.inputGroup {
+  padding: .3rem .6rem 0 .6rem;
 }
