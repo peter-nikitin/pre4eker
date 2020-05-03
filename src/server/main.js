@@ -14,11 +14,6 @@ const config = require("./config");
 // Initialize Express app.
 const app = express();
 
-// Watch file changes in development environment.
-// if (config.isDevelopment) {
-//   watch(app);
-// }
-
 // app.set("views", config.views);
 app.set("view engine", "pug");
 // app.locals.basedir = config.views;
@@ -39,7 +34,7 @@ app.use("/", express.static(config.static));
 // Mount routes.
 // app.use("/", router);
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../../dist/index.html"));
+  res.sendFile(path.join(__dirname, "../../build/index.html"));
 });
 
 app.post("/prechek", (req, res, next) => {
