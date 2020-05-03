@@ -7,17 +7,14 @@ import SuccessResponse from "./SuccessResponse/SuccessResponse";
 
 const Response = ({ response }) => {
   const drawResponse = (responseData) => {
-    if (
-      typeof responseData !== "undefined" &&
-      Object.keys(responseData).length !== 0
-    ) {
+    if (Object.keys(responseData).length !== 0) {
       switch (responseData.status) {
         case `ProtocolError`:
           return <ErrorResponse responseData={responseData} />;
         case `Success`:
           return <SuccessResponse responseData={responseData} />;
         default:
-          return true;
+          return <SuccessResponse responseData={responseData} />;
       }
     }
     return <EmptyResponse />;
