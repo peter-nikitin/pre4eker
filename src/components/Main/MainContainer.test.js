@@ -1,6 +1,7 @@
 import * as formTypes from "src/components/requset/formTypes";
 import { changeFormType } from "./actionCreators";
 import * as actions from "./actionTypes";
+import * as actionCreator from "./actionCreators";
 
 import mainReducer from "./reducer";
 
@@ -8,6 +9,7 @@ const initialState = {
   type: "RESPONSE_INPUT",
   responseJSON: {},
   requestJSON: {},
+  isLoading: false,
 };
 
 test("action should be CHANGE_REQUEST_FORM", () => {
@@ -25,6 +27,7 @@ describe("form type reducer", () => {
       type: "RESPONSE_INPUT",
       responseJSON: {},
       requestJSON: {},
+      isLoading: false,
     });
   });
 
@@ -38,6 +41,7 @@ describe("form type reducer", () => {
       type: "REQUEST_INPUT",
       responseJSON: {},
       requestJSON: {},
+      isLoading: false,
     });
   });
 
@@ -51,6 +55,7 @@ describe("form type reducer", () => {
       type: "RESPONSE_INPUT",
       responseJSON: { status: 200 },
       requestJSON: {},
+      isLoading: false,
     });
   });
 
@@ -71,6 +76,35 @@ describe("form type reducer", () => {
       type: "RESPONSE_INPUT",
       responseJSON: { status: 200 },
       requestJSON: { status: 200 },
+    });
+  });
+});
+
+describe("Toggle loading", () => {
+  it("should change loading state to true", () => {
+    expect(mainReducer(initialState, actionCreator.toggleLoading())).toEqual({
+      type: "RESPONSE_INPUT",
+      responseJSON: {},
+      requestJSON: {},
+      isLoading: true,
+    });
+  });
+  it("should change loading state to false", () => {
+    expect(
+      mainReducer(
+        {
+          type: "RESPONSE_INPUT",
+          responseJSON: {},
+          requestJSON: {},
+          isLoading: true,
+        },
+        actionCreator.toggleLoading()
+      )
+    ).toEqual({
+      type: "RESPONSE_INPUT",
+      responseJSON: {},
+      requestJSON: {},
+      isLoading: false,
     });
   });
 });

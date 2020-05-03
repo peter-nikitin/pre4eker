@@ -11,6 +11,8 @@ export default function Main({
   fetchResponse,
   setResponseJSON,
 }) {
+  console.log(requestFrom.isLoading);
+
   return (
     <div className={style.main}>
       <div className={style.oneThird}>
@@ -24,7 +26,10 @@ export default function Main({
       </div>
       <div className={style.twoThird}>
         <h2>Ответ</h2>
-        <Response response={requestFrom.responseJSON} />
+        <Response
+          response={requestFrom.responseJSON}
+          isLoading={requestFrom.isLoading}
+        />
       </div>
     </div>
   );
