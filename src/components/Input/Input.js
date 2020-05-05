@@ -4,7 +4,6 @@ import styles from "./input.css";
 
 export default function Input({ label, name, onChange, type, value }) {
   const localValue = localStorage.getItem(name) || "";
-  console.log(localValue);
 
   return (
     <div className={styles.inputItem}>
