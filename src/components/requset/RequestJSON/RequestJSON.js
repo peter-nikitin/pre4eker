@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import loadable from "@loadable/component";
 
-import AceEditor from "react-ace";
-
-import "ace-builds/src-noconflict/mode-json";
-import "ace-builds/src-noconflict/theme-xcode";
-import "ace-builds/webpack-resolver";
+const JsonInput = loadable(() => import("../JsonInput/JsonInput"));
 
 import Button from "src/components/Button/Button";
 import Input from "src/components/Input/Input";
@@ -47,22 +44,7 @@ const RequestJSON = ({ data, onSubmit }) => {
           />
         </div>
       </div>
-      <AceEditor
-        name="RequestBody"
-        mode="json"
-        theme="xcode"
-        value={body}
-        onChange={(value) => setBody(value)}
-        height="58vh"
-        width="100%"
-        wrapEnabled
-        placeholder="Тело ответа"
-        highlightActiveLine={false}
-        setOptions={{
-          showLineNumbers: false,
-          tabSize: 2,
-        }}
-      />
+      <JsonInput value={body} onChange={setBody} name="RequestBody" />
       <Button
         action={() =>
           onSubmit({
