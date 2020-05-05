@@ -21,8 +21,9 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: "module",
-    parser: "babel-eslint",
+    allowImportExportEverywhere: true,
   },
+  parser: "babel-eslint",
   plugins: ["react", "react-hooks"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
