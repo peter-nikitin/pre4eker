@@ -49,7 +49,7 @@ const Request = ({
   };
 
   return (
-    <div>
+    <div className={style.leftPanel}>
       <div className={style.buttonLine}>
         {Object.keys(formTypes).map((button) => (
           <Button
