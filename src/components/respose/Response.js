@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import EmptyResponse from "./EmptyResponse/EmptyResponse";
 import ErrorResponse from "./ErrorResponse/ErrorResponse";
 import SuccessResponse from "./SuccessResponse/SuccessResponse";
-import Loading from "./Loading/Loading";
+import Loading from "../Loading/Loading";
 
 const Response = ({ response, isLoading }) => {
   const drawResponse = (responseData) => {
