@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import loadable from "@loadable/component";
-
-const JsonInput = loadable(() => import("../JsonInput/JsonInput"));
+import Loading from "src/components/Loading/Loading";
 
 import Button from "src/components/Button/Button";
 import Input from "src/components/Input/Input";
 
 import style from "./RequestJSON.css";
+
+const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
+  fallback: <Loading />,
+});
 
 const RequestJSON = ({ data, onSubmit }) => {
   const [body, setBody] = useState(JSON.stringify(data.body, null, 1));
@@ -16,7 +19,7 @@ const RequestJSON = ({ data, onSubmit }) => {
   const [key, setKey] = useState(data.key);
 
   return (
-    <div>
+    <>
       <div className={`${style.inline} ${style.inputGroup}`}>
         <div className={style.third}>
           <Input
@@ -44,7 +47,9 @@ const RequestJSON = ({ data, onSubmit }) => {
           />
         </div>
       </div>
+
       <JsonInput value={body} onChange={setBody} name="RequestBody" />
+
       <Button
         action={() =>
           onSubmit({
@@ -57,9 +62,9 @@ const RequestJSON = ({ data, onSubmit }) => {
         type="TEXT"
         size="sizeFull"
       >
-        Показать
+        Рассчитать скидки
       </Button>
-    </div>
+    </>
   );
 };
 

@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import loadable from "@loadable/component";
 import Button from "src/components/Button/Button";
+import Loading from "src/components/Loading/Loading";
 
-const JsonInput = loadable(() => import("../JsonInput/JsonInput"));
+const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
+  fallback: <Loading />,
+});
 
 const ResponseJSON = ({ responseJSON, setJSON }) => {
   const [body, setBody] = useState(JSON.stringify(responseJSON, null, 1));
 
   return (
-    <div>
+    <>
       <JsonInput
         name="ResponseBody"
         value={body}
@@ -22,7 +25,7 @@ const ResponseJSON = ({ responseJSON, setJSON }) => {
       >
         Показать
       </Button>
-    </div>
+    </>
   );
 };
 
