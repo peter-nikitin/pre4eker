@@ -3,13 +3,20 @@
   display: flex;
   width: 95vw;
   max-width: 1400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .oneThird {
-  width: 33%;
+  /* width: 400px; */
   padding: 0 1rem;
+  max-width: 100%;
 }
+
 .twoThird {
-  width: 66%;
   padding: 0 1rem;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 2;
 }
