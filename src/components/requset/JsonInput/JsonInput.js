@@ -21,7 +21,7 @@ const JsonInput = ({ onChange, value, name }) => {
           localStorage.setItem(name, data);
           onChange(data);
         }}
-        height="58vh"
+        height="100%"
         width="100%"
         wrapEnabled
         placeholder="Тело ответа"
