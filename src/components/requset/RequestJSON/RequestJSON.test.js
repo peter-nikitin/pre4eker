@@ -6,9 +6,8 @@ describe("Response form", () => {
   it("should handle click on btn", () => {
     const handleSubmit = jest.fn();
 
-    const { getByText } = render(<RequestJSON onSubmit={handleSubmit} />);
+    const { asFragment } = render(<RequestJSON onSubmit={handleSubmit} />);
 
-    fireEvent.click(getByText("Показать"));
-    expect(handleSubmit).toHaveBeenCalled();
+    expect(asFragment(<RequestJSON />)).toMatchSnapshot();
   });
 });

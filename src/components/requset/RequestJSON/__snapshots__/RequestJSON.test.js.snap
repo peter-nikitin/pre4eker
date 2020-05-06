@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Response form should handle click on btn 1`] = `
+<DocumentFragment>
+  <div
+    class="inline inputGroup"
+  >
+    <div
+      class="third"
+    >
+      <div
+        class="inputItem"
+      >
+        <label
+          class="label"
+          for="endpoint"
+        >
+          Эндпоин
+        </label>
+        <input
+          class="input"
+          name="endpoint"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="third"
+    >
+      <div
+        class="inputItem"
+      >
+        <label
+          class="label"
+          for="key"
+        >
+          Секретный ключ
+        </label>
+        <input
+          class="input"
+          name="key"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="third"
+    >
+      <div
+        class="inputItem"
+      >
+        <label
+          class="label"
+          for="operation"
+        >
+          Операция
+        </label>
+        <input
+          class="input"
+          name="operation"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="editor"
+  >
+    <div
+      class="loading"
+    >
+      <div
+        class="loader loader-undefined loader-active"
+      >
+        <div
+          class="loader-inner ball-scale-ripple-multiple"
+        >
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </div>
+    <button
+      class="sizeFull button normal false basic"
+      type="button"
+    >
+      Рассчитать скидки
+    </button>
+  </div>
+</DocumentFragment>
+`;

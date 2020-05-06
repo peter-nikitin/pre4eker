@@ -6,9 +6,8 @@ describe("Form", () => {
   it("should handle click on btn", () => {
     const setJSON = jest.fn();
 
-    const { getByText } = render(<ResponseJSON setJSON={setJSON} />);
+    const { asFragment } = render(<ResponseJSON setJSON={setJSON} />);
 
-    fireEvent.click(getByText("Показать"));
-    expect(setJSON).toHaveBeenCalled();
+    expect(asFragment(<ResponseJSON />)).toMatchSnapshot();
   });
 });
