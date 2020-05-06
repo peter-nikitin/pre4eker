@@ -67,7 +67,7 @@ exports[`Response form should handle click on btn 1`] = `
     </div>
   </div>
   <div
-    class="editor"
+    class="editorWrapper"
   >
     <div
       class="loading"
@@ -84,12 +84,12 @@ exports[`Response form should handle click on btn 1`] = `
         </div>
       </div>
     </div>
-    <button
-      class="sizeFull button normal false basic"
-      type="button"
-    >
-      Рассчитать скидки
-    </button>
   </div>
+  <button
+    class="sizeFull button normal false basic"
+    type="button"
+  >
+    Рассчитать скидки
+  </button>
 </DocumentFragment>
 `;

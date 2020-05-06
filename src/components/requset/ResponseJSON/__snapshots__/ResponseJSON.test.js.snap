@@ -3,17 +3,21 @@
 exports[`Form should handle click on btn 1`] = `
 <DocumentFragment>
   <div
-    class="loading"
+    class="editWrrapper"
   >
     <div
-      class="loader loader-undefined loader-active"
+      class="loading"
     >
       <div
-        class="loader-inner ball-scale-ripple-multiple"
+        class="loader loader-undefined loader-active"
       >
-        <div />
-        <div />
-        <div />
+        <div
+          class="loader-inner ball-scale-ripple-multiple"
+        >
+          <div />
+          <div />
+          <div />
+        </div>
       </div>
     </div>
   </div>
