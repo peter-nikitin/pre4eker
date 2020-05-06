@@ -4,6 +4,8 @@ import loadable from "@loadable/component";
 import Button from "src/components/Button/Button";
 import Loading from "src/components/Loading/Loading";
 
+import style from "./ResponseJSON.css";
+
 const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
   fallback: <Loading />,
 });
@@ -13,11 +15,13 @@ const ResponseJSON = ({ responseJSON, setJSON }) => {
 
   return (
     <>
-      <JsonInput
-        name="ResponseBody"
-        value={body}
-        onChange={(value) => setBody(value)}
-      />
+      <div className={style.editWrrapper}>
+        <JsonInput
+          name="ResponseBody"
+          value={body}
+          onChange={(value) => setBody(value)}
+        />
+      </div>
       <Button
         action={() => setJSON(JSON.parse(body))}
         type="TEXT"

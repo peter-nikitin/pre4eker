@@ -5,6 +5,7 @@
 .inline {
   display: flex;
   margin: 0 -.3em .5rem -.3em;
+  flex-wrap: wrap;
 }
 
 .half {
@@ -19,4 +20,23 @@
 
 .inputGroup {
   padding: .3rem .6rem 0 .6rem;
+}
+
+.fit {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorWrapper {
+  flex-grow: 1;
+  height: calc(100% - (46.8px + 8px) - 37.6px);
+}
+
+@media (max-width: 400px) {
+  .third {
+    width: 100%;
+  }
+  .editorWrapper {
+    height: calc(100% - (130.8px + 8px) - 37.6px);
+  }
 }

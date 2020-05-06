@@ -47,8 +47,9 @@ const RequestJSON = ({ data, onSubmit }) => {
           />
         </div>
       </div>
-
-      <JsonInput value={body} onChange={setBody} name="RequestBody" />
+      <div className={style.editorWrapper}>
+        <JsonInput value={body} onChange={setBody} name="RequestBody" />
+      </div>
 
       <Button
         action={() =>
