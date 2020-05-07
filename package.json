@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "webpack && nodemon src/server/server.js",
-    "start-front": "webpack-dev-server --open",
+    "start-front": "webpack-dev-server --open  --host 192.168.199.10",
     "build": "webpack",
     "lint": "eslint ./src --fix",
     "server": "node src/server/server.js",
