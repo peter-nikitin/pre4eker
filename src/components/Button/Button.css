@@ -1,23 +1,28 @@
 .button {
   border: 1px solid #000000;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   padding: 0;
   cursor: pointer;
+  /* height: 0; */
 }
 
-.basic.normal,.add.normal, .remove.normal  {
+.basic.normal,
+.add.normal,
+.remove.normal {
   background: #FFFFFF;
   color: #000000;
 }
 
-.basic.hover, .basic.active {
-  background: #000; 
+.basic.hover,
+.basic.active {
+  background: #000;
   color: #fff;
-  border-color:  #000;
+  border-color: #000;
 }
-.hover  svg  path {
+
+.hover svg path {
   fill: white;
 }
 
@@ -25,7 +30,6 @@
   background: #27AE60;
   border-color: #27AE60;
   color: #fff;
-
 }
 
 .remove.hover {
@@ -34,24 +38,23 @@
   border-color: #EB5757;
 }
 
-
 .small {
- height: 14px; 
- width: 14px; 
+  height: 14px;
+  width: 14px;
 }
 
 .medium {
-  height: 24px; 
-  width: 24px; 
+  height: 24px;
+  width: 24px;
 }
 
 .sizeAuto {
-  width: auto;
-  height: auto;
-  padding: .4rem .5rem .3rem .5rem ;
+  /* width: auto;
+  height: auto; */
+  padding: .4rem .5rem .3rem .5rem;
 }
 
 .sizeFull {
   width: 100%;
-  padding: .6rem .5rem .5rem .5rem ;
+  padding: .6rem .5rem .5rem .5rem;
 }

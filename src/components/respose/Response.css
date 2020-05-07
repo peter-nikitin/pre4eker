@@ -23,7 +23,7 @@
   height: 80vh;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .response {
     padding: 1rem .5rem;
     height: auto;
@@ -33,8 +33,10 @@
   .inline {
     height: auto;
     margin: 0 auto;
+    justify-content: center;
   }
   .half {
     padding: 0;
+    height: auto;
   }
 }

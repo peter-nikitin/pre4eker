@@ -1,6 +1,8 @@
 .buttonLine {
   display: flex;
   margin-bottom: .5rem;
+  flex-shrink: 0;
+  justify-content: space-between;
 }
 
 .buttonLine button {
@@ -20,6 +22,7 @@
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   flex-grow: 1;
+  height: 0;
 }
 
 .leftPanel {
