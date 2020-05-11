@@ -1,6 +1,12 @@
 .form {
-  /* padding: .3rem .6rem 0 .6rem; */
   background-color: #fff;
+  overflow: auto;
+  height: calc(100% - 37.6px);
+}
+
+.formGroup {
+  padding: .3rem .6rem;
+  margin-bottom: .7rem;
 }
 
 .inline {
