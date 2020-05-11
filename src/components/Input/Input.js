@@ -2,11 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./input.css";
 
-export default function Input({ label, name, onChange, type, value }) {
-  const localValue = localStorage.getItem(name) || "";
+export default function Input({
+  label,
+  name,
+  onChange,
+  type,
+  value,
+  className,
+}) {
+  let localValue;
+  // = localStorage.getItem(name) || "";
+  // localStorage.setItem(name, e.target.value);
 
   return (
-    <div className={styles.inputItem}>
+    <div className={`${styles.inputItem} ${className}`}>
       <label htmlFor={name} className={styles.label}>
         {label}
       </label>
@@ -16,7 +25,6 @@ export default function Input({ label, name, onChange, type, value }) {
         name={name}
         value={value || localValue}
         onChange={(e) => {
-          localStorage.setItem(name, e.target.value);
           onChange(e);
         }}
       />
@@ -29,6 +37,7 @@ Input.propTypes = {
   name: PropTypes.string,
   onChange: PropTypes.func,
   type: PropTypes.string,
+  className: PropTypes.string,
   value: PropTypes.string,
 };
 Input.defaultProps = {
@@ -36,5 +45,6 @@ Input.defaultProps = {
   type: "text",
   label: "",
   name: "",
+  className: "",
   onChange: () => ({}),
 };
