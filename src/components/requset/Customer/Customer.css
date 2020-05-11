@@ -1,0 +1,23 @@
+.inline {
+  display: flex;
+  margin: 0 -.3em 0 -.3em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.buttonLine {
+  display: flex;
+  margin-bottom: .5rem;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.half {
+  width: 50%;
+  padding: 1rem .3rem;
+}
+
+.third {
+  width: 33%;
+  padding: 0 .3rem;
+}
