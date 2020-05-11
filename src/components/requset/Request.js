@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import loadable from "@loadable/component";
 
 import Button from "src/components/Button/Button";
-const ResponseJSON = loadable(() => import("./ResponseJSON/ResponseJSON"));
-const RequestJSON = loadable(() => import("./RequestJSON/RequestJSON"));
 
 import style from "./Request.css";
 import Soon from "./Soon/Soon";
 import * as formTypes from "./formTypes";
+
+const ResponseJSON = loadable(() => import("./ResponseJSON/ResponseJSON"));
+const RequestJSON = loadable(() => import("./RequestJSON/RequestJSON"));
+const RequestForm = loadable(() => import("./RequestForm/RequestForm"));
 
 const Request = ({
   changeFormType,
@@ -21,7 +23,10 @@ const Request = ({
       case formTypes.requestForm.type:
         return (
           <div className={style.requestForm}>
-            <Soon />
+            <RequestForm
+              onSubmit={fetchResponse}
+              data={requestFrom.requestJSON}
+            />
           </div>
         );
       case formTypes.reqiestJSON.type:
