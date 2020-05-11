@@ -1,75 +1,186 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
+import Button from "src/components/Button/Button";
+
 import style from "./Order.css";
-import Selector from "../Selector/Selector";
+
 import CustomFields from "../CustomFields/CustomFields";
+import ExternalPromo from "../ExternalPromo/ExternalPromo";
 
-export default class Order extends Component {
-  constructor({ order, customFields, ...props }) {
-    super(props);
+import BonusPoints from "./BonusPoints";
+import Promocodes from "./Promocodes";
 
-    this.state = {
-      selectedID: "mindboxId",
-    };
+import orderTypes from "./orderTypes";
 
-    this.ids = order.ids;
+import arrayFunctions from "../arrayFunctions";
 
-    this.changeSelection = this.changeSelection.bind(this);
-    this.addCustomField = this.addCustomField.bind(this);
-    this.removeCustomField = this.removeCustomField.bind(this);
-  }
+const Order = ({
+  orderType,
+  setOrderType,
+  orderBody,
+  setOrderBody,
+  orderCustomFields,
+  setOrderCustomFileds,
+  orderExternalPromos,
+  setOrderExternalPromo,
+  promocodes,
+  setPromocodes,
+  bonusPoints,
+  setbonusPoints,
+}) => {
+  let orderFiled;
 
-  changeSelection(option) {
-    this.setState({
-      selectedID: option,
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <h2 className={style.h2}>Заказ</h2>
-        <Selector
-          selected={this.state.selectedID}
-          options={this.ids}
-          changeSelection={this.changeSelection}
-          label="Идентификатор заказа"
-        />
-
-        <div className={style.inline}>
-          <div className={style.half}>
-            <Input label={this.order.cashdesk} name="cashdesk" />
-          </div>
-          <div className={style.half}>
-            <Input label={this.order.deliveryCost} name="deliveryCost" />
-          </div>
+  if (orderType.type === "existing") {
+    orderFiled = (
+      <div className={style.inline}>
+        <div className={style.half}>
+          <Input
+            label="Идентификатор"
+            name="orderIdField"
+            onChange={(e) =>
+              setOrderBody({
+                ...orderBody,
+                orderIdField: e.target.value,
+              })
+            }
+            value={orderBody.orderIdField}
+          />
+          <p className={style.description}>
+            Можно указать свое название идентификатора клиента
+          </p>
         </div>
-        <div className={style.inline}>
-          <div className={style.half}>
-            <Input label={this.order.area} name="area" />
-          </div>
-          <div className={style.half}>
-            <Input label={this.order.pointOfContact} name="pointOfContact" />
-          </div>
+        <div className={style.half}>
+          <Input
+            label="Значение"
+            name="orderIdValue"
+            onChange={(e) =>
+              setOrderBody({
+                ...orderBody,
+                orderIdValue: e.target.value,
+              })
+            }
+            value={orderBody.orderIdValue}
+          />
         </div>
-
-        <CustomFields
-          addCustomField={() => ({})}
-          removeCustomField={() => ({})}
-          fields={this.customFields}
-        />
       </div>
     );
   }
-}
 
-Order.defaultProps = {
-  customFields: {},
+  return (
+    <>
+      <div className={style.inline}>
+        <h2 className={style.h2}>Заказ</h2>
+        <div className={style.inline}>
+          {orderTypes.map((item) => (
+            <Button
+              key={item.type}
+              type="TEXT"
+              active={orderType.type === item.type}
+              action={() => setOrderType(item)}
+              size="sizeAuto"
+            >
+              {item.name}
+            </Button>
+          ))}
+        </div>
+      </div>
+      {orderFiled}
+      <div className={style.inline}>
+        <div className={style.third}>
+          <Input
+            label="Точка контакта"
+            name="pointOfContact"
+            value={orderBody.pointOfContact}
+            onChange={(e) =>
+              setOrderBody({
+                ...orderBody,
+                pointOfContact: e.target.value,
+              })
+            }
+          />
+        </div>
+        <div className={style.third}>
+          <Input
+            label="Зона"
+            name="area"
+            value={orderBody.area}
+            onChange={(e) =>
+              setOrderBody({
+                ...orderBody,
+                area: e.target.value,
+              })
+            }
+          />
+        </div>
+        <div className={style.third}>
+          <Input
+            label="Стоимость доставки"
+            name="deliveryCost"
+            value={orderBody.deliveryCost}
+            onChange={(e) =>
+              setOrderBody({
+                ...orderBody,
+                deliveryCost: e.target.value,
+              })
+            }
+          />
+        </div>
+      </div>
+      <div className={style.inline}>
+        <div className={style.half}>
+          <BonusPoints
+            bonusPoints={bonusPoints}
+            setbonusPoints={setbonusPoints}
+          />
+        </div>
+        <div className={style.half}>
+          <Promocodes promocodes={promocodes} setPromocodes={setPromocodes} />
+        </div>
+      </div>
+
+      <CustomFields
+        customFields={orderCustomFields}
+        setCustomFileds={setOrderCustomFileds}
+      />
+
+      <ExternalPromo
+        externalPromos={orderExternalPromos}
+        setExternalPromo={setOrderExternalPromo}
+      />
+    </>
+  );
 };
 
 Order.propTypes = {
-  order: PropTypes.object.isRequired,
-  customFields: PropTypes.object,
+  orderType: PropTypes.object,
+  setOrderType: PropTypes.func,
+  orderBody: PropTypes.object,
+  setOrderBody: PropTypes.func,
+  orderCustomFields: PropTypes.array,
+  setOrderCustomFileds: PropTypes.func,
+  orderExternalPromos: PropTypes.array,
+  setOrderExternalPromo: PropTypes.func,
+  promocodes: PropTypes.array,
+  setPromocodes: PropTypes.func,
+  bonusPoints: PropTypes.array,
+  setbonusPoints: PropTypes.func,
 };
+
+Order.defaultProps = {
+  orderType: {},
+  setOrderType: () => ({}),
+  orderBody: {},
+  setOrderBody: () => ({}),
+  orderCustomFields: [],
+  setOrderCustomFileds: () => ({}),
+  orderExternalPromos: [],
+  setOrderExternalPromo: () => ({}),
+  promocodes: [],
+  setPromocodes: () => ({}),
+  bonusPoints: [],
+  setbonusPoints: () => ({}),
+};
+
+export default Order;
