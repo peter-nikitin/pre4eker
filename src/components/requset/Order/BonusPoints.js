@@ -10,12 +10,19 @@ import style from "./Order.css";
 const BonusPoints = ({ bonusPoints, setbonusPoints }) => {
   return (
     <div>
-      <h4 className={style.h4}>Баллы</h4>
+      <div className={`${style.inline} ${style.center}`}>
+        <h4 className={style.h4}>Баллы</h4>
+        <Button
+          action={() => setbonusPoints(arrayFunctions.addItem(bonusPoints))}
+          type="ADD"
+        />
+      </div>
 
       {bonusPoints.map((item) => (
-        <div key={item.number} className={style.inline}>
+        <div key={item.number} className={`${style.promoItem} ${style.gutter}`}>
           <Input
             label=""
+            className={` ${style.cell}   ${style.promoItemInput}`}
             name={`bonusPoints-${item.number}`}
             value={item.externalSystem}
             onChange={(e) => {
@@ -28,16 +35,14 @@ const BonusPoints = ({ bonusPoints, setbonusPoints }) => {
               );
             }}
           />
-          <Button
-            action={() => setbonusPoints(arrayFunctions.addItem(bonusPoints))}
-            type="ADD"
-          />
-          <Button
-            action={() =>
-              setbonusPoints(arrayFunctions.removeItem(bonusPoints, item))
-            }
-            type="REMOVE"
-          />
+          <div className={`${style.inline}    ${style.promoItemBtns}`}>
+            <Button
+              action={() =>
+                setbonusPoints(arrayFunctions.removeItem(bonusPoints, item))
+              }
+              type="REMOVE"
+            />
+          </div>
         </div>
       ))}
     </div>
