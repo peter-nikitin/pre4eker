@@ -11,6 +11,7 @@ import ExternalPromo from "../ExternalPromo/ExternalPromo";
 
 import BonusPoints from "./BonusPoints";
 import Promocodes from "./Promocodes";
+import IdField from "../IdField/IdField";
 
 import orderTypes from "./orderTypes";
 
@@ -34,37 +35,7 @@ const Order = ({
 
   if (orderType.type === "existing") {
     orderFiled = (
-      <div className={style.inline}>
-        <div className={style.half}>
-          <Input
-            label="Идентификатор"
-            name="orderIdField"
-            onChange={(e) =>
-              setOrderBody({
-                ...orderBody,
-                orderIdField: e.target.value,
-              })
-            }
-            value={orderBody.orderIdField}
-          />
-          <p className={style.description}>
-            Можно указать свое название идентификатора клиента
-          </p>
-        </div>
-        <div className={style.half}>
-          <Input
-            label="Значение"
-            name="orderIdValue"
-            onChange={(e) =>
-              setOrderBody({
-                ...orderBody,
-                orderIdValue: e.target.value,
-              })
-            }
-            value={orderBody.orderIdValue}
-          />
-        </div>
-      </div>
+      <IdField object={orderBody} setObject={setOrderBody} type="order" />
     );
   }
 
@@ -72,7 +43,7 @@ const Order = ({
     <>
       <div className={style.inline}>
         <h2 className={style.h2}>Заказ</h2>
-        <div className={style.inline}>
+        <div className={style.orderButtons}>
           {orderTypes.map((item) => (
             <Button
               key={item.type}
@@ -86,8 +57,8 @@ const Order = ({
           ))}
         </div>
       </div>
-      {orderFiled}
-      <div className={style.inline}>
+      <div className={`${style.inline} ${style.line}`}>{orderFiled}</div>
+      <div className={`${style.inline} ${style.line}`}>
         <div className={style.third}>
           <Input
             label="Точка контакта"
@@ -128,14 +99,14 @@ const Order = ({
           />
         </div>
       </div>
-      <div className={style.inline}>
-        <div className={style.half}>
+      <div className={`${style.inline} ${style.line} `}>
+        <div className={`${style.half} ${style.promoBlock}`}>
           <BonusPoints
             bonusPoints={bonusPoints}
             setbonusPoints={setbonusPoints}
           />
         </div>
-        <div className={style.half}>
+        <div className={`${style.half} ${style.promoBlock}`}>
           <Promocodes promocodes={promocodes} setPromocodes={setPromocodes} />
         </div>
       </div>
