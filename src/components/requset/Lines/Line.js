@@ -32,11 +32,11 @@ const Line = ({ line, lines, setLines }) => {
 
   return (
     <>
-      <p>Линия №{line.number}</p>
+      {/* <p>Линия №{line.number}</p> */}
       <div className={style.inline}>
         <Input
           label="Ид линии"
-          className={style.third}
+          className={style.half}
           name={`Line-id-${line.number}`}
           value={line.id}
           onChange={(e) => {
@@ -47,22 +47,10 @@ const Line = ({ line, lines, setLines }) => {
             setLines(arrayFunctions.updateItem(lines, upDatedValue));
           }}
         />
-        <Input
-          label="Внешняя система"
-          className={style.third}
-          name={`Line-externalSystem-${line.number}`}
-          value={line.externalSystem}
-          onChange={(e) => {
-            const upDatedValue = {
-              ...line,
-              externalSystem: e.target.value,
-            };
-            setLines(arrayFunctions.updateItem(lines, upDatedValue));
-          }}
-        />
+
         <Input
           label="Статус линии"
-          className={style.third}
+          className={style.half}
           name={`Line-status-${line.number}`}
           value={line.status}
           onChange={(e) => {
@@ -76,8 +64,21 @@ const Line = ({ line, lines, setLines }) => {
       </div>
       <div className={style.inline}>
         <Input
+          label="Внешняя система"
+          className={style.quarter}
+          name={`Line-externalSystem-${line.number}`}
+          value={line.externalSystem}
+          onChange={(e) => {
+            const upDatedValue = {
+              ...line,
+              externalSystem: e.target.value,
+            };
+            setLines(arrayFunctions.updateItem(lines, upDatedValue));
+          }}
+        />
+        <Input
           label="Идентификатор"
-          className={style.third}
+          className={style.quarter}
           name={`Line-id-${line.number}`}
           value={line.id}
           onChange={(e) => {
@@ -90,7 +91,7 @@ const Line = ({ line, lines, setLines }) => {
         />
         <Input
           label="Количество"
-          className={style.third}
+          className={style.quarter}
           name={`Line-quantity-${line.number}`}
           value={line.quantity}
           onChange={(e) => {
@@ -103,7 +104,7 @@ const Line = ({ line, lines, setLines }) => {
         />
         <Input
           label="Цена за 1 шт"
-          className={style.third}
+          className={style.quarter}
           name={`Line-price-${line.number}`}
           value={line.price}
           onChange={(e) => {

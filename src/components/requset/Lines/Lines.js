@@ -16,17 +16,20 @@ const Lines = ({ lines, setLines, selectedLine, changeSelectedLine }) => {
       <div className={style.inline}>
         <h2 className={style.h2}>Линии</h2>
         <div className={style.inline}>
-          {lines.map((item) => (
-            <Button
-              key={item.number}
-              type="TEXT"
-              action={() => changeSelectedLine(item.number)}
-              active={item.number === selectedLine}
-            >
-              {String(item.number)}
-            </Button>
-          ))}
-          <div className={style.inline}>
+          <div className={`${style.lineSelector}`}>
+            {lines.map((item, index) => (
+              <Button
+                key={item.number}
+                type="TEXT"
+                action={() => changeSelectedLine(item.number)}
+                active={item.number === selectedLine}
+              >
+                {String(index + 1)}
+              </Button>
+            ))}
+          </div>
+
+          <div className={style.lineAddRemove}>
             <Button
               action={() => setLines(arrayFunctions.addItem(lines))}
               type="ADD"

@@ -1,19 +1,24 @@
 .inline {
   display: flex;
-  margin: 0 -.3em 0 -.3em;
+  /* margin: 0 -.3em 0 -.3em; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: .5rem;
 }
 
 .half {
-  width: 50%;
-  padding: 1rem .3rem;
+  width: 49%;
+  /* padding: 1rem .3rem; */
 }
 
 .third {
-  width: 33%;
-  padding: 0 .3rem;
+  width: 32%;
+  /* padding: 0 .3rem; */
+}
+
+.quarter {
+  width: 24%;
 }
 
 .h2 {
@@ -22,4 +27,24 @@
 
 .h4 {
   margin: 0;
+}
+
+.lineSelector {
+  padding: 0 .3rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 240px;
+}
+
+.lineSelector Button {
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.lineAddRemove {
+  display: flex;
+}
+
+.lineAddRemove Button {
+  margin-right: -1px;
 }
