@@ -1,12 +1,17 @@
 const customer = {
-  discountCard: "Номер дисконтной карты",
-  mindboxId: "Mindbox Id",
-  externalId: "Внешний ID",
-  email: "Email",
-  mobilePhone: "Мобильный телефон",
+  discountCard: {
+    ids: {
+      number: "<Номер дисконтной карты>",
+    },
+  },
+  ids: {
+    mindboxId: "<Id клиента в Mindbox>",
+    websiteId: "<Идентификатор на сайте>",
+    externalId: "<externalId>",
+  },
+  email: "<Email>",
+  mobilePhone: "<Мобильный телефон>",
 };
-
-
 
 const payment = {
   type: "Тип оплаты (card1)",
@@ -74,7 +79,6 @@ const order = {
 };
 
 const request = {
-
   customer: customer,
   order: order,
   executionDateTimeUtc:
