@@ -1,6 +1,6 @@
 .inline {
   display: flex;
-  margin: 0 -.3em 0 -.3em;
+  /* margin: 0 -.3em 0 -.3em; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -19,4 +19,34 @@
 
 .h4 {
   margin: 0;
+}
+
+.half {
+  width: 49%;
+}
+
+.externalPromo {
+  border: 1px solid #E0E0E0;
+  padding: .3rem .3rem .3rem .3rem;
+  margin-bottom: .7rem;
+}
+
+.item {
+  padding-bottom: .4rem;
+  padding-top: .4rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.promoTypeBtns {
+  font-size: .7rem;
+  margin-bottom: .5rem;
+}
+
+.promoTypeBtns button:first-child {
+  margin-right: -1px;
 }

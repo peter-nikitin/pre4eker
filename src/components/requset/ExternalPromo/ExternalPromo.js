@@ -10,8 +10,8 @@ import arrayFunctions from "../arrayFunctions";
 
 const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
   return (
-    <>
-      <div className={style.inline}>
+    <div className={style.externalPromo}>
+      <div className={`${style.inline}`}>
         <h4 className={style.h4}>Внешние промоакции</h4>
         <Button
           action={() =>
@@ -22,9 +22,9 @@ const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
       </div>
 
       {externalPromos.map((item) => (
-        <div key={item.number}>
-          <div className={style.inline}>
-            <div className={style.inline}>
+        <div key={item.number} className={`${style.item}`}>
+          <div className={`${style.inline}`}>
+            <div className={`${style.inline} ${style.promoTypeBtns}`}>
               <Button
                 type="TEXT"
                 size="sizeAuto"
@@ -103,7 +103,7 @@ const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
