@@ -1,6 +1,6 @@
 .inline {
   display: flex;
-  margin: 0 -.3em 0 -.3em;
+  /* margin: 0 -.3em 0 -.3em; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -22,4 +22,20 @@
 
 .h4 {
   margin: 0;
+}
+
+.customFields {
+  border: 1px solid #E0E0E0;
+  padding: .3rem .3rem .3rem .3rem;
+  margin-bottom: .5rem;
+}
+
+.item {
+  padding-bottom: .8rem;
+  padding-top: .8rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.item:last-child {
+  border-bottom: none;
 }

@@ -10,7 +10,7 @@ import arrayFunctions from "../arrayFunctions";
 
 const CustomFields = ({ customFields, setCustomFileds, type }) => {
   return (
-    <>
+    <div className={style.customFields}>
       <div className={style.inline}>
         <h4 className={style.h4}>Дополнительные поля</h4>
         <Button
@@ -20,7 +20,7 @@ const CustomFields = ({ customFields, setCustomFileds, type }) => {
       </div>
 
       {customFields.map((item) => (
-        <div key={item.number} className={style.inline}>
+        <div key={item.number} className={`${style.item} ${style.inline}`}>
           <div>
             <Input
               label="Название поля"
@@ -61,7 +61,7 @@ const CustomFields = ({ customFields, setCustomFileds, type }) => {
           />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
