@@ -1,52 +1,80 @@
 import React from "react";
 import PropsTypes from "prop-types";
-import shortid from "shortid";
 
 import Input from "src/components/Input/Input";
+import Button from "src/components/Button/Button";
+
 import style from "./CustomFields.css";
 
-export default function CustomFields({
-  addCustomField,
-  fields,
-  removeCustomField,
-}) {
-  const fieldsWithIDs = fields.map((filed) => ({
-    ...filed,
-    id: shortid.generate(),
-  }));
+import arrayFunctions from "../arrayFunctions";
 
+const CustomFields = ({ customFields, setCustomFileds, type }) => {
   return (
-    <div className={style.cf__wrapper}>
-      <span className={style.cf__btlockName}>Дополнительные поля</span>
-      <button
-        className={style.cf__addBtn}
-        onClick={() => addCustomField()}
-        type="button"
-      >
-        +
-      </button>
-      {fieldsWithIDs &&
-        fieldsWithIDs.map((item) => (
-          <div className={style.cfImet} key={item.id}>
-            <Input label="Идентификатор" name="externalID " />
-            <Input label="Значение" name="value " />
+    <>
+      <div className={style.inline}>
+        <h4 className={style.h4}>Дополнительные поля</h4>
+        <Button
+          action={() => setCustomFileds(arrayFunctions.addItem(customFields))}
+          type="ADD"
+        />
+      </div>
 
-            <button
-              key={item.id}
-              className={style.cf__removeBtn}
-              onClick={(e) => removeCustomField(e)}
-              type="button"
-            >
-              -
-            </button>
+      {customFields.map((item) => (
+        <div key={item.number} className={style.inline}>
+          <div>
+            <Input
+              label="Название поля"
+              name={`customField-${type}-${item.number}-field`}
+              value={item.field}
+              onChange={(e) => {
+                const upDatedValue = {
+                  ...item,
+                  field: e.target.value,
+                };
+                setCustomFileds(
+                  arrayFunctions.updateItem(customFields, upDatedValue)
+                );
+              }}
+            />
           </div>
-        ))}
-    </div>
+          <div>
+            <Input
+              label="Значение поля"
+              name={`customField-${type}-${item.number}-value`}
+              value={item.value}
+              onChange={(e) => {
+                const upDatedValue = {
+                  ...item,
+                  value: e.target.value,
+                };
+                setCustomFileds(
+                  arrayFunctions.updateItem(customFields, upDatedValue)
+                );
+              }}
+            />
+          </div>
+          <Button
+            action={() => {
+              setCustomFileds(arrayFunctions.removeItem(customFields, item));
+            }}
+            type="REMOVE"
+          />
+        </div>
+      ))}
+    </>
   );
-}
+};
 
 CustomFields.propTypes = {
-  addCustomField: PropsTypes.func.isRequired,
-  fields: PropsTypes.array.isRequired,
-  removeCustomField: PropsTypes.func.isRequired,
+  customFields: PropsTypes.array,
+  setCustomFileds: PropsTypes.func,
+  type: PropsTypes.string,
 };
+
+CustomFields.defaultProps = {
+  customFields: [],
+  setCustomFileds: () => ({}),
+  type: "",
+};
+
+export default CustomFields;
