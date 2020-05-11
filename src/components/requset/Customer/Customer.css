@@ -1,23 +1,38 @@
 .inline {
   display: flex;
-  margin: 0 -.3em 0 -.3em;
+  /* margin: 0 -.3em 0 -.3em; */
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .buttonLine {
   display: flex;
-  margin-bottom: .5rem;
+  /* margin-bottom: .5rem; */
   flex-shrink: 0;
-  justify-content: space-between;
+  justify-content: stretch;
+  font-size: .7rem;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.buttonLine button {
+  margin-right: -1px;
+}
+
+.h2 {
+  margin: 0;
 }
 
 .half {
-  width: 50%;
-  padding: 1rem .3rem;
+  width: 49%;
 }
 
 .third {
-  width: 33%;
-  padding: 0 .3rem;
+  width: 32%;
+}
+
+.description {
+  font-size: .7rem;
+  margin: .3rem 0 0 0;
+  color: #777;
 }
