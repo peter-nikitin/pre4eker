@@ -1,9 +1,9 @@
-import { smallResponse } from "data/response";
+// import { smallResponse } from "data/response";
 
 import * as actionType from "./actionTypes";
 
 const initialState = {
-  type: "RESPONSE_INPUT",
+  type: "REQUEST_FORM",
   responseJSON: {},
   requestJSON: {},
   isLoading: false,
