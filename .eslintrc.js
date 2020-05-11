@@ -6,8 +6,9 @@ module.exports = {
     jest: true,
   },
   extends: [
-    "plugin:prettier/recommended",
     "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
     "airbnb",
     "prettier",
   ],
@@ -24,8 +25,9 @@ module.exports = {
     allowImportExportEverywhere: true,
   },
   parser: "babel-eslint",
-  plugins: ["react", "react-hooks"],
+  plugins: ["prettier", "react", "react-hooks"],
   rules: {
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "react/forbid-prop-types": [
       1,
@@ -36,6 +38,10 @@ module.exports = {
     "react/jsx-one-expression-per-line": [0, { allow: "single-child" }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-curly-newline": [
+      0,
+      { multiline: "consistent", singleline: "consistent" },
+    ],
   },
   settings: {
     "import/resolver": "webpack",
