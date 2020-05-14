@@ -6,7 +6,7 @@ import Request from "./Request";
 
 afterEach(cleanup);
 
-const requestFrom = {
+const state = {
   type: "RESPONSE_INPUT",
   responseJSON: smallResponse,
 };
@@ -15,7 +15,7 @@ const changeFormType = jest.fn();
 
 test("customer match snapshot", () => {
   const { asFragment } = render(
-    <Request requestFrom={requestFrom} changeFormType={changeFormType} />
+    <Request state={state} changeFormType={changeFormType} />
   );
   expect(asFragment(<Request />)).toMatchSnapshot();
 });
@@ -24,7 +24,7 @@ test("customer match snapshot", () => {
 //   it("should call setResponseJSON ", () => {
 //     const props = {
 //       setResponseJSON: jest.fn(),
-//       requestFrom: {
+//       state: {
 //         type: "RESPONSE_INPUT",
 //         text: "JSON ответа",
 //       },
@@ -33,7 +33,7 @@ test("customer match snapshot", () => {
 //     const { getByText } = render(
 //       <Request
 //         setResponseJSON={props.setResponseJSON}
-//         requestFrom={props.requestFrom}
+//         state={props.state}
 //       />
 //     );
 //     fireEvent.click(getByText("Рассчитать скидки"));

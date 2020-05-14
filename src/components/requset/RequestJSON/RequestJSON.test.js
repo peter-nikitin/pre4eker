@@ -6,7 +6,7 @@ describe("Response form", () => {
   it("should handle click on btn", () => {
     const handleSubmit = jest.fn();
 
-    const { asFragment } = render(<RequestJSON onSubmit={handleSubmit} />);
+    const { asFragment } = render(<RequestJSON handleSubmit={handleSubmit} />);
 
     expect(asFragment(<RequestJSON />)).toMatchSnapshot();
   });

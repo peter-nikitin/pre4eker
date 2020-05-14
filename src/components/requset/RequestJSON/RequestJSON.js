@@ -12,7 +12,7 @@ const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
   fallback: <Loading />,
 });
 
-const RequestJSON = ({ data, onSubmit }) => {
+const RequestJSON = ({ data, handleSubmit }) => {
   const [body, setBody] = useState(JSON.stringify(data.body, null, 1));
   const [endpoint, setEndpoint] = useState(data.endpoint);
   const [operation, setOperation] = useState(data.operation);
@@ -53,7 +53,7 @@ const RequestJSON = ({ data, onSubmit }) => {
 
       <Button
         action={() =>
-          onSubmit({
+          handleSubmit({
             endpoint,
             key,
             body: JSON.parse(body),
@@ -75,7 +75,7 @@ RequestJSON.defaultProps = {
 
 RequestJSON.propTypes = {
   data: PropTypes.object,
-  onSubmit: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
 };
 
 export default RequestJSON;

@@ -14,9 +14,10 @@ const RequestForm = loadable(() => import("./RequestForm/RequestForm"));
 
 const Request = ({
   changeFormType,
-  requestFrom,
+  state,
   fetchResponse,
   setResponseJSON,
+  setRequestJSON,
 }) => {
   const drawRequesForm = (type) => {
     switch (type) {
@@ -24,8 +25,9 @@ const Request = ({
         return (
           <div className={style.requestForm}>
             <RequestForm
-              onSubmit={fetchResponse}
-              data={requestFrom.requestJSON}
+              handleSubmit={fetchResponse}
+              requestJSON={state.requestJSON}
+              setRequestJSON={setRequestJSON}
             />
           </div>
         );
@@ -33,8 +35,8 @@ const Request = ({
         return (
           <div className={style.requestJSON}>
             <RequestJSON
-              onSubmit={fetchResponse}
-              data={requestFrom.requestJSON}
+              handleSubmit={fetchResponse}
+              data={state.requestJSON}
             />
           </div>
         );
@@ -43,7 +45,7 @@ const Request = ({
           <div className={style.requestJSON}>
             <ResponseJSON
               setJSON={setResponseJSON}
-              responseJSON={requestFrom.responseJSON}
+              responseJSON={state.responseJSON}
             />
           </div>
         );
@@ -62,28 +64,30 @@ const Request = ({
             type="TEXT"
             action={() => changeFormType(formTypes[button].type)}
             size="sizeAuto"
-            active={requestFrom.type === formTypes[button].type}
+            active={state.type === formTypes[button].type}
           >
             {formTypes[button].text}
           </Button>
         ))}
       </div>
-      {drawRequesForm(requestFrom.type)}
+      {drawRequesForm(state.type)}
     </div>
   );
 };
 
 Request.propTypes = {
   changeFormType: PropTypes.func,
-  requestFrom: PropTypes.object,
+  state: PropTypes.object,
   setResponseJSON: PropTypes.func,
   fetchResponse: PropTypes.func,
+  setRequestJSON: PropTypes.func,
 };
 Request.defaultProps = {
   changeFormType: () => ({}),
-  requestFrom: {},
+  state: {},
   setResponseJSON: () => ({}),
   fetchResponse: () => ({}),
+  setRequestJSON: () => ({}),
 };
 
 export default Request;

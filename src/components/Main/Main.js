@@ -7,12 +7,11 @@ import Response from "../respose/Response";
 
 export default function Main({
   changeFormType,
-  requestFrom,
+  state,
   fetchResponse,
   setResponseJSON,
+  setRequestJSON,
 }) {
-  console.log(requestFrom.isLoading);
-
   return (
     <div className={style.main}>
       <div className={style.oneThird}>
@@ -21,15 +20,13 @@ export default function Main({
           changeFormType={changeFormType}
           fetchResponse={fetchResponse}
           setResponseJSON={setResponseJSON}
-          requestFrom={requestFrom}
+          state={state}
+          setRequestJSON={setRequestJSON}
         />
       </div>
       <div className={style.twoThird}>
         <h2>Ответ</h2>
-        <Response
-          response={requestFrom.responseJSON}
-          isLoading={requestFrom.isLoading}
-        />
+        <Response response={state.responseJSON} isLoading={state.isLoading} />
       </div>
     </div>
   );
@@ -37,13 +34,17 @@ export default function Main({
 
 Main.propTypes = {
   changeFormType: PropTypes.func,
-  requestFrom: PropTypes.object,
+  state: PropTypes.object,
+  requestJSON: PropTypes.object,
   fetchResponse: PropTypes.func,
   setResponseJSON: PropTypes.func,
+  setRequestJSON: PropTypes.func,
 };
 Main.defaultProps = {
   changeFormType: () => ({}),
-  requestFrom: {},
+  state: {},
+  requestJSON: {},
   fetchResponse: () => ({}),
   setResponseJSON: () => ({}),
+  setRequestJSON: () => ({}),
 };
