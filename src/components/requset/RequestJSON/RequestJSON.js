@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import loadable from "@loadable/component";
 import Loading from "src/components/Loading/Loading";
@@ -6,46 +6,34 @@ import Loading from "src/components/Loading/Loading";
 import Button from "src/components/Button/Button";
 import Input from "src/components/Input/Input";
 
+import RequestSettings from "../RequestSettings/RequestSettings";
+
 import style from "./RequestJSON.css";
 
 const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
   fallback: <Loading />,
 });
 
-const RequestJSON = ({ data, handleSubmit }) => {
-  const [body, setBody] = useState(JSON.stringify(data.body, null, 1));
-  const [endpoint, setEndpoint] = useState(data.endpoint);
-  const [operation, setOperation] = useState(data.operation);
-  const [key, setKey] = useState(data.key);
+const RequestJSON = ({ requestJSON, handleSubmit, setRequestJSON }) => {
+  const [body, setBody] = useState(JSON.stringify(requestJSON.body, null, 1));
+  const [key, setKey] = useState(requestJSON.key);
+
+  useEffect(() => {
+    setRequestJSON({
+      ...requestJSON,
+      body: JSON.parse(body),
+    });
+  }, [body]);
 
   return (
     <>
-      <div className={`${style.inline} ${style.inputGroup}`}>
-        <div className={style.third}>
-          <Input
-            label="Эндпоин"
-            name="endpoint"
-            onChange={(e) => setEndpoint(e.target.value)}
-            value={endpoint}
-          />
-        </div>
-        <div className={style.third}>
-          <Input
-            label="Секретный ключ"
-            name="key"
-            value={key}
-            onChange={(e) => setKey(e.target.value)}
-            type="password"
-          />
-        </div>
-        <div className={style.third}>
-          <Input
-            label="Операция"
-            name="operation"
-            value={operation}
-            onChange={(e) => setOperation(e.target.value)}
-          />
-        </div>
+      <div className={`${style.formGroup}`}>
+        <RequestSettings
+          setRequestJSON={setRequestJSON}
+          requestJSON={requestJSON}
+          setKey={setKey}
+          keyValue={key}
+        />
       </div>
       <div className={style.editorWrapper}>
         <JsonInput value={body} onChange={setBody} name="RequestBody" />
@@ -54,10 +42,8 @@ const RequestJSON = ({ data, handleSubmit }) => {
       <Button
         action={() =>
           handleSubmit({
-            endpoint,
+            ...requestJSON,
             key,
-            body: JSON.parse(body),
-            operation,
           })
         }
         type="TEXT"
@@ -70,11 +56,11 @@ const RequestJSON = ({ data, handleSubmit }) => {
 };
 
 RequestJSON.defaultProps = {
-  data: {},
+  requestJSON: {},
 };
 
 RequestJSON.propTypes = {
-  data: PropTypes.object,
+  requestJSON: PropTypes.object,
   handleSubmit: PropTypes.func.isRequired,
 };
 

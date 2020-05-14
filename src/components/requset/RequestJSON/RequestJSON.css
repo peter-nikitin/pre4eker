@@ -18,8 +18,9 @@
   padding: 0 .3rem;
 }
 
-.inputGroup {
-  padding: .3rem .6rem 0 .6rem;
+.formGroup {
+  padding: .3rem .6rem;
+  margin-bottom: .25rem;
 }
 
 .fit {
