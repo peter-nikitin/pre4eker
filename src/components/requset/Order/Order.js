@@ -15,8 +15,6 @@ import IdField from "../IdField/IdField";
 
 import orderTypes from "./orderTypes";
 
-import arrayFunctions from "../arrayFunctions";
-
 const Order = ({ setRequestJSON, requestJSON }) => {
   const { body } = requestJSON;
   let initialOrder;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -44,6 +44,17 @@ const RequestSettings = ({ requestJSON, setRequestJSON, setKey, keyValue }) => {
   );
 };
 
-RequestSettings.propTypes = {};
+RequestSettings.propTypes = {
+  requestJSON: PropTypes.object,
+  setRequestJSON: PropTypes.func,
+  setKey: PropTypes.func,
+  keyValue: PropTypes.string,
+};
+RequestSettings.defaultProps = {
+  requestJSON: {},
+  setRequestJSON: () => ({}),
+  setKey: () => ({}),
+  keyValue: "",
+};
 
 export default RequestSettings;

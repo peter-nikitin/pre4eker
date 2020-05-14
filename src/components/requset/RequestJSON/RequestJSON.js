@@ -4,7 +4,6 @@ import loadable from "@loadable/component";
 import Loading from "src/components/Loading/Loading";
 
 import Button from "src/components/Button/Button";
-import Input from "src/components/Input/Input";
 
 import RequestSettings from "../RequestSettings/RequestSettings";
 
@@ -62,6 +61,7 @@ RequestJSON.defaultProps = {
 RequestJSON.propTypes = {
   requestJSON: PropTypes.object,
   handleSubmit: PropTypes.func.isRequired,
+  setRequestJSON: PropTypes.func.isRequired,
 };
 
 export default RequestJSON;

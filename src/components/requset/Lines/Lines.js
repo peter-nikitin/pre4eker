@@ -30,8 +30,6 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
   const [selectedLine, changeSelectedLine] = useState(1);
   const currentLine = lines.find((item) => item.number === selectedLine);
 
-  console.log(currentLine);
-
   useEffect(() => {
     const linesToState = lines.map(
       (

@@ -55,6 +55,15 @@ const IdField = ({ object, setObject, type }) => {
   );
 };
 
-IdField.propTypes = {};
+IdField.propTypes = {
+  object: PropTypes.object,
+  setObject: PropTypes.func,
+  type: PropTypes.string,
+};
+IdField.defaultProps = {
+  object: {},
+  setObject: () => ({}),
+  type: "",
+};
 
 export default IdField;

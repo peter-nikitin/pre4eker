@@ -5,7 +5,6 @@ import loadable from "@loadable/component";
 import Button from "src/components/Button/Button";
 
 import style from "./Request.css";
-import Soon from "./Soon/Soon";
 import * as formTypes from "./formTypes";
 
 const ResponseJSON = loadable(() => import("./ResponseJSON/ResponseJSON"));
