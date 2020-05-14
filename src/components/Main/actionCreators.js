@@ -1,7 +1,18 @@
-export const changeFormType = (form) => ({ type: "CHANGE_REQUEST_FORM", form });
-export const setResponseJSON = (data) => ({ type: "SET_RESPONSE_JSON", data });
-export const setRequestJSON = (data) => ({ type: "SET_REQUEST_JSON", data });
-export const toggleLoading = () => ({ type: "TOGGLE_LOADING" });
+import * as actionType from "./actionTypes";
+
+export const changeFormType = (form) => ({
+  type: actionType.CHANGE_REQUEST_FORM,
+  form,
+});
+export const setResponseJSON = (data) => ({
+  type: actionType.SET_RESPONSE_JSON,
+  data,
+});
+export const setRequestJSON = (data) => ({
+  type: actionType.SET_REQUEST_JSON,
+  data,
+});
+export const toggleLoading = () => ({ type: actionType.TOGGLE_LOADING });
 export const fetchResponse = (data) => (dispatch) => {
   dispatch(setRequestJSON({ ...data, key: "" }));
 
