@@ -14,7 +14,7 @@ const IdField = ({ object, setObject, type }) => {
     if (field && value) {
       setObject({
         ...object,
-        id: {
+        ids: {
           [field]: value,
         },
       });
