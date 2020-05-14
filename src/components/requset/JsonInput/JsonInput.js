@@ -8,17 +8,14 @@ import "ace-builds/src-noconflict/theme-xcode";
 import "ace-builds/webpack-resolver";
 
 const JsonInput = ({ onChange, value, name }) => {
-  const localValue = localStorage.getItem(name) || "";
-
   return (
     <div>
       <AceEditor
         name={name}
         mode="json"
         theme="xcode"
-        value={value || localValue}
+        value={value}
         onChange={(data) => {
-          localStorage.setItem(name, data);
           onChange(data);
         }}
         height="100%"
