@@ -10,10 +10,6 @@ export default function Input({
   value,
   className,
 }) {
-  let localValue;
-  // = localStorage.getItem(name) || "";
-  // localStorage.setItem(name, e.target.value);
-
   return (
     <div className={`${styles.inputItem} ${className}`}>
       <label htmlFor={name} className={styles.label}>
@@ -23,7 +19,7 @@ export default function Input({
         type={type}
         className={styles.input}
         name={name}
-        value={value || localValue}
+        value={value}
         onChange={(e) => {
           onChange(e);
         }}
