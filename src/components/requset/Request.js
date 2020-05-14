@@ -36,7 +36,8 @@ const Request = ({
           <div className={style.requestJSON}>
             <RequestJSON
               handleSubmit={fetchResponse}
-              data={state.requestJSON}
+              requestJSON={state.requestJSON}
+              setRequestJSON={setRequestJSON}
             />
           </div>
         );
