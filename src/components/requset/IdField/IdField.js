@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -7,10 +7,10 @@ import Button from "src/components/Button/Button";
 import style from "./IdField.css";
 
 const IdField = ({ object, setObject, type }) => {
-  const [field, setField] = useState();
-  const [value, setValue] = useState();
+  const [field, setField] = useState("mindbox");
+  const [value, setValue] = useState("");
 
-  const updateObject = () => {
+  useEffect(() => {
     if (field && value) {
       setObject({
         ...object,
@@ -19,7 +19,10 @@ const IdField = ({ object, setObject, type }) => {
         },
       });
     }
-  };
+  }, [field, value]);
+  // const updateObject = () => {
+
+  // };
 
   return (
     <>
@@ -28,22 +31,20 @@ const IdField = ({ object, setObject, type }) => {
           <Input
             label="Идентификатор"
             name={`${type}-id-field`}
+            value={field}
             onChange={(e) => {
               setField(e.target.value);
-              updateObject();
             }}
-            value={field}
           />
         </div>
         <div className={style.half}>
           <Input
             label="Значение"
             name={`${type}-id-value`}
+            value={value}
             onChange={(e) => {
               setValue(e.target.value);
-              updateObject();
             }}
-            value={value}
           />
         </div>
       </div>
