@@ -14,14 +14,24 @@ const Customer = ({ setRequestJSON, requestJSON }) => {
     customerLookUpOptions[0]
   );
 
-  const [customer, setCustomer] = useState({});
+  const { body } = requestJSON;
+
+  let initialCustomer;
+  if (typeof body !== "undefined") {
+    initialCustomer = body.customer;
+  }
+
+  const [customer, setCustomer] = useState({ ...initialCustomer });
 
   useEffect(() => {
     if (Object.keys(customer).length > 0) {
       setRequestJSON({
         ...requestJSON,
-        customer: {
-          ...customer,
+        body: {
+          ...body,
+          customer: {
+            ...customer,
+          },
         },
       });
     }
@@ -38,13 +48,10 @@ const Customer = ({ setRequestJSON, requestJSON }) => {
           <Input
             label={customerLookUpOption.name}
             name={customerLookUpOption.type}
-            value={customer[customerLookUpOption]}
+            value={customer[customerLookUpOption.type]}
             onChange={(e) =>
-              setRequestJSON({
-                ...requestJSON,
-                customer: {
-                  [customerLookUpOption.type]: e.target.value,
-                },
+              setCustomer({
+                [customerLookUpOption.type]: e.target.value,
               })
             }
           />
@@ -70,9 +77,10 @@ const Customer = ({ setRequestJSON, requestJSON }) => {
               active={customerLookUpOption.type === item.type}
               action={() => {
                 setcustomerLookUpOption(item);
+                setCustomer({});
                 if (item.type === "none") {
                   const stateWithOutCustomer = requestJSON;
-                  delete requestJSON.customer;
+                  delete requestJSON.body.customer;
                   setRequestJSON({
                     ...stateWithOutCustomer,
                   });
