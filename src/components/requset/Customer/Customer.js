@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -9,12 +9,23 @@ import IdField from "../IdField/IdField";
 import style from "./Customer.css";
 import customerLookUpOptions from "./customerLookUpOptions";
 
-const Customer = ({ customer, setCustomer }) => {
+const Customer = ({ setRequestJSON, requestJSON }) => {
   const [customerLookUpOption, setcustomerLookUpOption] = useState(
     customerLookUpOptions[0]
   );
 
-  const [customerId, setCustomerId] = useState({});
+  const [customer, setCustomer] = useState({});
+
+  useEffect(() => {
+    if (Object.keys(customer).length > 0) {
+      setRequestJSON({
+        ...requestJSON,
+        customer: {
+          ...customer,
+        },
+      });
+    }
+  }, [customer]);
 
   let customerField;
   if (
@@ -29,9 +40,11 @@ const Customer = ({ customer, setCustomer }) => {
             name={customerLookUpOption.type}
             value={customer[customerLookUpOption]}
             onChange={(e) =>
-              setCustomer({
-                ...customer,
-                [customerLookUpOption.type]: e.target.value,
+              setRequestJSON({
+                ...requestJSON,
+                customer: {
+                  [customerLookUpOption.type]: e.target.value,
+                },
               })
             }
           />
@@ -58,7 +71,11 @@ const Customer = ({ customer, setCustomer }) => {
               action={() => {
                 setcustomerLookUpOption(item);
                 if (item.type === "none") {
-                  setCustomer({});
+                  const stateWithOutCustomer = requestJSON;
+                  delete requestJSON.customer;
+                  setRequestJSON({
+                    ...stateWithOutCustomer,
+                  });
                 }
               }}
               size="sizeAuto"
@@ -74,12 +91,12 @@ const Customer = ({ customer, setCustomer }) => {
 };
 
 Customer.propTypes = {
-  customer: PropTypes.object,
-  setCustomer: PropTypes.func,
+  requestJSON: PropTypes.object,
+  setRequestJSON: PropTypes.func,
 };
 Customer.defaultProps = {
-  customer: {},
-  setCustomer: () => ({}),
+  requestJSON: {},
+  setRequestJSON: () => ({}),
 };
 
 export default Customer;
