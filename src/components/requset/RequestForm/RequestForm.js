@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -12,9 +12,7 @@ import orderTypes from "../Order/orderTypes";
 
 import style from "./RequestForm.css";
 
-const RequestForm = ({ data, onSubmit }) => {
-  const [customer, setCustomer] = useState();
-
+const RequestForm = ({ requestJSON, handleSubmit, setRequestJSON }) => {
   const [orderType, setOrderType] = useState(orderTypes[0]);
   const [orderBody, setOrderBody] = useState();
   const [orderCustomFields, setOrderCustomFileds] = useState([]);
@@ -25,22 +23,10 @@ const RequestForm = ({ data, onSubmit }) => {
   const [lines, setLines] = useState([{ number: 1 }]);
   const [selectedLine, changeSelectedLine] = useState(1);
 
-  const [operation, setOperation] = useState(data.operation);
-  const [key, setKey] = useState(data.key);
-  const [endpoint, setEndpoint] = useState(data.endpoint);
-  const [body, setBody] = useState(JSON.stringify(data.body, null, 1));
-
-  console.log({
-    customer: { ...customer },
-    order: {
-      ...orderBody,
-      customFields: [...orderCustomFields],
-      externalPromo: [...orderExternalPromos],
-      lines: [...lines],
-    },
-    promocodes: [...promocodes],
-    bonusPoints: [...bonusPoints],
-  });
+  const [operation, setOperation] = useState(requestJSON.operation);
+  const [key, setKey] = useState(requestJSON.key);
+  const [endpoint, setEndpoint] = useState(requestJSON.endpoint);
+  const [body, setBody] = useState({});
 
   return (
     <>
@@ -75,7 +61,7 @@ const RequestForm = ({ data, onSubmit }) => {
           </div>
         </div>
         <div className={`${style.formGroup}`}>
-          <Customer customer={customer} setCustomer={setCustomer} />
+          <Customer setRequestJSON={setRequestJSON} requestJSON={requestJSON} />
         </div>
         <div className={`${style.formGroup}`}>
           <Order
@@ -104,7 +90,7 @@ const RequestForm = ({ data, onSubmit }) => {
       </div>
       <Button
         action={() =>
-          onSubmit({
+          handleSubmit({
             endpoint,
             key,
             body: JSON.parse(body),
@@ -121,11 +107,12 @@ const RequestForm = ({ data, onSubmit }) => {
 };
 
 RequestForm.defaultProps = {
-  data: {},
+  requestJSON: {},
 };
 
 RequestForm.propTypes = {
-  data: PropTypes.object,
-  onSubmit: PropTypes.func.isRequired,
+  requestJSON: PropTypes.object,
+  handleSubmit: PropTypes.func.isRequired,
+  setRequestJSON: PropTypes.func.isRequired,
 };
 export default RequestForm;
