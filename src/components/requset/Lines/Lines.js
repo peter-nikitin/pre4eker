@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Button from "src/components/Button/Button";
@@ -8,8 +8,74 @@ import arrayFunctions from "../arrayFunctions";
 import style from "./Line.css";
 import Line from "./Line";
 
-const Lines = ({ lines, setLines, selectedLine, changeSelectedLine }) => {
+const Lines = ({ setRequestJSON, requestJSON }) => {
+  const { body } = requestJSON;
+
+  let initialLines;
+  if (typeof body?.lines !== "undefined") {
+    initialLines = body.lines.map((line, index) => ({
+      number: index + 1,
+      lineId: line.lineId,
+      externalSystem: Object.keys(line.product.ids)[0] || "Website",
+      price: line.basePricePerItem,
+      productId: Object.values(line.product.ids)[0],
+      quantity: line.quantity,
+      status: line.status.ids.externalId,
+    }));
+  } else {
+    initialLines = [{ number: 1 }];
+  }
+
+  const [lines, setLines] = useState([...initialLines]);
+  const [selectedLine, changeSelectedLine] = useState(1);
   const currentLine = lines.find((item) => item.number === selectedLine);
+
+  console.log(currentLine);
+
+  useEffect(() => {
+    const linesToState = lines.map(
+      (
+        {
+          lineId,
+          externalSystem,
+          price,
+          productId,
+          quantity,
+          status,
+          requestedPromotions,
+          customFields,
+        },
+        index
+      ) => ({
+        product: {
+          ids: {
+            [externalSystem]: productId,
+          },
+        },
+        lineId,
+        lineNumber: index + 1,
+        quantity,
+        basePricePerItem: price,
+        customFields,
+        requestedPromotions,
+        status: {
+          ids: {
+            externalId: status,
+          },
+        },
+      })
+    );
+
+    if (linesToState.length > 0) {
+      setRequestJSON({
+        ...requestJSON,
+        body: {
+          ...body,
+          lines: [...linesToState],
+        },
+      });
+    }
+  }, [lines]);
 
   return (
     <div>
@@ -51,16 +117,12 @@ const Lines = ({ lines, setLines, selectedLine, changeSelectedLine }) => {
 };
 
 Lines.propTypes = {
-  lines: PropTypes.array,
-  setLines: PropTypes.func,
-  selectedLine: PropTypes.number,
-  changeSelectedLine: PropTypes.func,
+  requestJSON: PropTypes.object,
+  setRequestJSON: PropTypes.func,
 };
 Lines.defaultProps = {
-  lines: [],
-  setLines: () => ({}),
-  selectedLine: 1,
-  changeSelectedLine: () => ({}),
+  requestJSON: {},
+  setRequestJSON: () => ({}),
 };
 
 export default Lines;

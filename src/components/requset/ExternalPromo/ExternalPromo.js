@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -8,7 +9,49 @@ import style from "./ExternalPromo.css";
 
 import arrayFunctions from "../arrayFunctions";
 
-const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
+const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
+  let initialExternalPromo;
+  if (typeof body.requestedPromotions !== "undefined") {
+    initialExternalPromo = body.requestedPromotions.map(
+      (externalPromo, index) => ({
+        number: index,
+        type: externalPromo.promotion.type,
+        id: externalPromo.promotion.ids.externalId,
+        disCountType: externalPromo.type,
+        value: externalPromo.amount,
+      })
+    );
+  } else {
+    initialExternalPromo = [];
+  }
+
+  // console.log(body.requestedPromotions);
+
+  const [externalPromos, setExternalPromo] = useState([
+    ...initialExternalPromo,
+  ]);
+
+  useEffect(() => {
+    const requestedPromotions = externalPromos.map(
+      ({ disCountType, id, value, type }) => ({
+        type: disCountType,
+        promotion: {
+          ids: {
+            externalId: id,
+          },
+          type,
+        },
+        amount: value,
+      })
+    );
+    if (externalPromos.length > 0) {
+      setBody({
+        ...body,
+        requestedPromotions,
+      });
+    }
+  }, [externalPromos]);
+
   return (
     <div className={style.externalPromo}>
       <div className={`${style.inline}`}>
@@ -58,6 +101,40 @@ const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
                 Mindbox
               </Button>
             </div>
+            <div className={`${style.inline} ${style.promoTypeBtns}`}>
+              <Button
+                type="TEXT"
+                size="sizeAuto"
+                active={item.disCountType === "discount"}
+                action={() => {
+                  const upDatedValue = {
+                    ...item,
+                    disCountType: "discount",
+                  };
+                  setExternalPromo(
+                    arrayFunctions.updateItem(externalPromos, upDatedValue)
+                  );
+                }}
+              >
+                Скидка
+              </Button>
+              <Button
+                type="TEXT"
+                size="sizeAuto"
+                active={item.disCountType === "deliveryDiscount"}
+                action={() => {
+                  const upDatedValue = {
+                    ...item,
+                    disCountType: "deliveryDiscount",
+                  };
+                  setExternalPromo(
+                    arrayFunctions.updateItem(externalPromos, upDatedValue)
+                  );
+                }}
+              >
+                Скидка на доставку
+              </Button>
+            </div>
             <Button
               action={() => {
                 setExternalPromo(
@@ -71,7 +148,7 @@ const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
             <div className={style.half}>
               <Input
                 label="ИД"
-                name={`externalPromo-${type}-${item.number}-id`}
+                name={`externalPromo-${typeOfParrent}-${item.number}-id`}
                 value={item.id}
                 onChange={(e) => {
                   const upDatedValue = {
@@ -87,7 +164,7 @@ const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
             <div className={style.half}>
               <Input
                 label="Сумма"
-                name={`externalProm-${type}-${item.number}-value`}
+                name={`externalProm-${typeOfParrent}-${item.number}-value`}
                 value={item.value}
                 onChange={(e) => {
                   const upDatedValue = {
@@ -108,14 +185,14 @@ const ExternalPromo = ({ externalPromos, setExternalPromo, type }) => {
 };
 
 ExternalPromo.propTypes = {
-  externalPromos: PropTypes.array,
-  setExternalPromo: PropTypes.func,
-  type: PropTypes.string,
+  body: PropTypes.object,
+  setBody: PropTypes.func,
+  typeOfParrent: PropTypes.string,
 };
 
 ExternalPromo.defaultProps = {
-  externalPromos: [],
-  setExternalPromo: () => ({}),
-  type: "",
+  body: {},
+  setBody: () => ({}),
+  typeOfParrent: "",
 };
 export default ExternalPromo;

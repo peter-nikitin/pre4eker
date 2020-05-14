@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Button from "src/components/Button/Button";
@@ -7,7 +7,32 @@ import arrayFunctions from "../arrayFunctions";
 
 import style from "./Order.css";
 
-const BonusPoints = ({ bonusPoints, setbonusPoints }) => {
+const BonusPoints = ({ orderBody, setOrderBody }) => {
+  let initialBonusPoints;
+  if (typeof orderBody.bonusPoints !== "undefined") {
+    initialBonusPoints = orderBody.bonusPoints.map((bonusPointItem, index) => ({
+      number: index,
+      value: bonusPointItem.amount,
+    }));
+  } else {
+    initialBonusPoints = [];
+  }
+
+  const [bonusPoints, setbonusPoints] = useState([...initialBonusPoints]);
+
+  useEffect(() => {
+    const bunusPointsForBody = bonusPoints.map((bonusPointItem) => ({
+      amount: bonusPointItem.value,
+    }));
+    if (bonusPoints.length > 0) {
+      setOrderBody({
+        ...orderBody,
+
+        bonusPoints: bunusPointsForBody,
+      });
+    }
+  }, [bonusPoints]);
+
   return (
     <div>
       <div className={`${style.inline} ${style.center}`}>
@@ -24,7 +49,7 @@ const BonusPoints = ({ bonusPoints, setbonusPoints }) => {
             label=""
             className={` ${style.cell}   ${style.promoItemInput}`}
             name={`bonusPoints-${item.number}`}
-            value={item.externalSystem}
+            value={item.value}
             onChange={(e) => {
               const upDatedValue = {
                 ...item,
@@ -50,12 +75,12 @@ const BonusPoints = ({ bonusPoints, setbonusPoints }) => {
 };
 
 BonusPoints.propTypes = {
-  bonusPoints: PropTypes.array,
-  setbonusPoints: PropTypes.func,
+  orderBody: PropTypes.object,
+  setOrderBody: PropTypes.func,
 };
 BonusPoints.defaultProps = {
-  bonusPoints: [],
-  setbonusPoints: () => ({}),
+  orderBody: {},
+  setOrderBody: () => ({}),
 };
 
 export default BonusPoints;

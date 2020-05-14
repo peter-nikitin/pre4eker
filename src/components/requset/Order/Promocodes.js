@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import PropTypes from "prop-types";
 
 import Button from "src/components/Button/Button";
@@ -7,7 +8,34 @@ import arrayFunctions from "../arrayFunctions";
 
 import style from "./Order.css";
 
-const Promocodes = ({ promocodes, setPromocodes }) => {
+const Promocodes = ({ orderBody, setOrderBody }) => {
+  let initialPromocodes;
+  if (typeof orderBody.coupons !== "undefined") {
+    initialPromocodes = orderBody.coupons.map((coupon, index) => ({
+      number: index,
+      code: coupon.ids.code,
+    }));
+  } else {
+    initialPromocodes = [];
+  }
+
+  const [promocodes, setPromocodes] = useState([...initialPromocodes]);
+
+  useEffect(() => {
+    const coupons = promocodes.map((promocodeItem) => ({
+      ids: {
+        code: promocodeItem.code,
+      },
+    }));
+    if (promocodes.length > 0) {
+      setOrderBody({
+        ...orderBody,
+
+        coupons,
+      });
+    }
+  }, [promocodes]);
+
   return (
     <div>
       <div className={`${style.inline} ${style.center}`}>
@@ -23,7 +51,7 @@ const Promocodes = ({ promocodes, setPromocodes }) => {
             label=""
             className={` ${style.cell}   ${style.promoItemInput}`}
             name={`Promocode-${item.number}`}
-            value={item.externalSystem}
+            value={item.code}
             onChange={(e) => {
               const upDatedValue = {
                 ...item,
@@ -51,12 +79,12 @@ const Promocodes = ({ promocodes, setPromocodes }) => {
 };
 
 Promocodes.propTypes = {
-  promocodes: PropTypes.array,
-  setPromocodes: PropTypes.func,
+  orderBody: PropTypes.object,
+  setOrderBody: PropTypes.func,
 };
 Promocodes.defaultProps = {
-  promocodes: [],
-  setPromocodes: () => ({}),
+  orderBody: {},
+  setOrderBody: () => ({}),
 };
 
 export default Promocodes;

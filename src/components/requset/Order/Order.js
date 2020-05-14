@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -17,20 +17,32 @@ import orderTypes from "./orderTypes";
 
 import arrayFunctions from "../arrayFunctions";
 
-const Order = ({
-  orderType,
-  setOrderType,
-  orderBody,
-  setOrderBody,
-  orderCustomFields,
-  setOrderCustomFileds,
-  orderExternalPromos,
-  setOrderExternalPromo,
-  promocodes,
-  setPromocodes,
-  bonusPoints,
-  setbonusPoints,
-}) => {
+const Order = ({ setRequestJSON, requestJSON }) => {
+  const { body } = requestJSON;
+  let initialOrder;
+  if (typeof body !== "undefined") {
+    initialOrder = body.order;
+  }
+
+  const [orderType, setOrderType] = useState(orderTypes[0]);
+  const [orderBody, setOrderBody] = useState({ ...initialOrder });
+
+  useEffect(() => {
+    if (Object.keys(orderBody).length > 0) {
+      setRequestJSON({
+        ...requestJSON,
+        body: {
+          ...body,
+          order: {
+            ...orderBody,
+          },
+        },
+      });
+    }
+  }, [orderBody]);
+
+  // console.log(orderBody);
+
   let orderFiled;
 
   if (orderType.type === "existing") {
@@ -63,11 +75,14 @@ const Order = ({
           <Input
             label="Точка контакта"
             name="pointOfContact"
-            value={orderBody.pointOfContact}
+            value={requestJSON.body?.pointOfContact}
             onChange={(e) =>
-              setOrderBody({
-                ...orderBody,
-                pointOfContact: e.target.value,
+              setRequestJSON({
+                ...requestJSON,
+                body: {
+                  ...body,
+                  pointOfContact: e.target.value,
+                },
               })
             }
           />
@@ -76,11 +91,15 @@ const Order = ({
           <Input
             label="Зона"
             name="area"
-            value={orderBody.area}
+            value={orderBody.area?.ids?.externalId}
             onChange={(e) =>
               setOrderBody({
                 ...orderBody,
-                area: e.target.value,
+                area: {
+                  ids: {
+                    externalId: e.target.value,
+                  },
+                },
               })
             }
           />
@@ -101,57 +120,36 @@ const Order = ({
       </div>
       <div className={`${style.inline} ${style.line} `}>
         <div className={`${style.half} ${style.promoBlock}`}>
-          <BonusPoints
-            bonusPoints={bonusPoints}
-            setbonusPoints={setbonusPoints}
-          />
+          <BonusPoints orderBody={orderBody} setOrderBody={setOrderBody} />
         </div>
         <div className={`${style.half} ${style.promoBlock}`}>
-          <Promocodes promocodes={promocodes} setPromocodes={setPromocodes} />
+          <Promocodes orderBody={orderBody} setOrderBody={setOrderBody} />
         </div>
       </div>
 
       <CustomFields
-        customFields={orderCustomFields}
-        setCustomFileds={setOrderCustomFileds}
+        body={orderBody}
+        setBody={setOrderBody}
+        typeOfParrent="order"
       />
 
       <ExternalPromo
-        externalPromos={orderExternalPromos}
-        setExternalPromo={setOrderExternalPromo}
+        body={orderBody}
+        setBody={setOrderBody}
+        typeOfParrent="order"
       />
     </>
   );
 };
 
 Order.propTypes = {
-  orderType: PropTypes.object,
-  setOrderType: PropTypes.func,
-  orderBody: PropTypes.object,
-  setOrderBody: PropTypes.func,
-  orderCustomFields: PropTypes.array,
-  setOrderCustomFileds: PropTypes.func,
-  orderExternalPromos: PropTypes.array,
-  setOrderExternalPromo: PropTypes.func,
-  promocodes: PropTypes.array,
-  setPromocodes: PropTypes.func,
-  bonusPoints: PropTypes.array,
-  setbonusPoints: PropTypes.func,
+  requestJSON: PropTypes.object,
+  setRequestJSON: PropTypes.func,
 };
 
 Order.defaultProps = {
-  orderType: {},
-  setOrderType: () => ({}),
-  orderBody: {},
-  setOrderBody: () => ({}),
-  orderCustomFields: [],
-  setOrderCustomFileds: () => ({}),
-  orderExternalPromos: [],
-  setOrderExternalPromo: () => ({}),
-  promocodes: [],
-  setPromocodes: () => ({}),
-  bonusPoints: [],
-  setbonusPoints: () => ({}),
+  requestJSON: {},
+  setRequestJSON: () => ({}),
 };
 
 export default Order;

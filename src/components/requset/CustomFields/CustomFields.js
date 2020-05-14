@@ -1,5 +1,6 @@
-import React from "react";
-import PropsTypes from "prop-types";
+import React, { useState, useEffect } from "react";
+
+import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
 import Button from "src/components/Button/Button";
@@ -8,7 +9,39 @@ import style from "./CustomFields.css";
 
 import arrayFunctions from "../arrayFunctions";
 
-const CustomFields = ({ customFields, setCustomFileds, type }) => {
+const CustomFields = ({ body, setBody, typeOfParrent }) => {
+  let initialCustomFileds;
+  if (typeof body.customFields !== "undefined") {
+    initialCustomFileds = Object.keys(body.customFields).map(
+      (customField, index) => ({
+        number: index,
+        field: customField,
+        value: body.customFields[customField],
+      })
+    );
+  } else {
+    initialCustomFileds = [];
+  }
+
+  const [customFields, setCustomFileds] = useState([...initialCustomFileds]);
+
+  useEffect(() => {
+    let customFieldsToState = {};
+    customFields.forEach(({ field, value }) => {
+      if (typeof value !== "undefined" && typeof field !== "undefined") {
+        customFieldsToState = { ...customFieldsToState, [field]: value };
+      }
+      return false;
+    });
+
+    if (Object.keys(customFieldsToState).length > 0) {
+      setBody({
+        ...body,
+        customFields: customFieldsToState,
+      });
+    }
+  }, [customFields]);
+
   return (
     <div className={style.customFields}>
       <div className={style.inline}>
@@ -24,7 +57,7 @@ const CustomFields = ({ customFields, setCustomFileds, type }) => {
           <div>
             <Input
               label="Название поля"
-              name={`customField-${type}-${item.number}-field`}
+              name={`customField-${typeOfParrent}-${item.number}-field`}
               value={item.field}
               onChange={(e) => {
                 const upDatedValue = {
@@ -40,7 +73,7 @@ const CustomFields = ({ customFields, setCustomFileds, type }) => {
           <div>
             <Input
               label="Значение поля"
-              name={`customField-${type}-${item.number}-value`}
+              name={`customField-${typeOfParrent}-${item.number}-value`}
               value={item.value}
               onChange={(e) => {
                 const upDatedValue = {
@@ -66,15 +99,15 @@ const CustomFields = ({ customFields, setCustomFileds, type }) => {
 };
 
 CustomFields.propTypes = {
-  customFields: PropsTypes.array,
-  setCustomFileds: PropsTypes.func,
-  type: PropsTypes.string,
+  body: PropTypes.object,
+  setBody: PropTypes.func,
+  typeOfParrent: PropTypes.string,
 };
 
 CustomFields.defaultProps = {
-  customFields: [],
-  setCustomFileds: () => ({}),
-  type: "",
+  body: {},
+  setBody: () => ({}),
+  typeOfParrent: "",
 };
 
 export default CustomFields;

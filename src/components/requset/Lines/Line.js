@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
@@ -10,25 +10,13 @@ import ExternalPromo from "../ExternalPromo/ExternalPromo";
 import style from "./Line.css";
 
 const Line = ({ line, lines, setLines }) => {
-  const [lineCustomField, setLineCustomFileds] = useState([]);
-  const [lineExternalPromos, setLineExternalPromo] = useState([]);
+  const { lineId, status, productId, externalSystem, quantity, price } = line;
 
-  const updateLine = (filed, value) => {
-    const upDatedValue = {
-      ...line,
-      [filed]: value,
-    };
-    setLines(arrayFunctions.updateItem(lines, upDatedValue));
-  };
+  const [lineState, handleChangeLineState] = useState(line);
 
-  const handleUpdateCustomField = (value) => {
-    setLineCustomFileds(value);
-    updateLine("customFileds", lineCustomField);
-  };
-  const handleExternalPromoUpdate = (value) => {
-    setLineExternalPromo(value);
-    updateLine("externalPromo", lineCustomField);
-  };
+  useEffect(() => {
+    setLines(arrayFunctions.updateItem(lines, lineState));
+  }, [lineState]);
 
   return (
     <>
@@ -38,11 +26,11 @@ const Line = ({ line, lines, setLines }) => {
           label="Ид линии"
           className={style.half}
           name={`Line-id-${line.number}`}
-          value={line.id}
+          value={lineId}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
-              id: e.target.value,
+              lineId: e.target.value,
             };
             setLines(arrayFunctions.updateItem(lines, upDatedValue));
           }}
@@ -52,7 +40,7 @@ const Line = ({ line, lines, setLines }) => {
           label="Статус линии"
           className={style.half}
           name={`Line-status-${line.number}`}
-          value={line.status}
+          value={status || ""}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
@@ -67,7 +55,7 @@ const Line = ({ line, lines, setLines }) => {
           label="Внешняя система"
           className={style.quarter}
           name={`Line-externalSystem-${line.number}`}
-          value={line.externalSystem}
+          value={externalSystem || "Website"}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
@@ -80,11 +68,11 @@ const Line = ({ line, lines, setLines }) => {
           label="Идентификатор"
           className={style.quarter}
           name={`Line-id-${line.number}`}
-          value={line.id}
+          value={productId}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
-              id: e.target.value,
+              productId: e.target.value,
             };
             setLines(arrayFunctions.updateItem(lines, upDatedValue));
           }}
@@ -93,7 +81,7 @@ const Line = ({ line, lines, setLines }) => {
           label="Количество"
           className={style.quarter}
           name={`Line-quantity-${line.number}`}
-          value={line.quantity}
+          value={quantity}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
@@ -106,7 +94,7 @@ const Line = ({ line, lines, setLines }) => {
           label="Цена за 1 шт"
           className={style.quarter}
           name={`Line-price-${line.number}`}
-          value={line.price}
+          value={price}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
@@ -117,14 +105,14 @@ const Line = ({ line, lines, setLines }) => {
         />
       </div>
       <CustomFields
-        customFields={lineCustomField}
-        setCustomFileds={handleUpdateCustomField}
-        type="line"
+        body={lineState}
+        setBody={handleChangeLineState}
+        typeOfParrent="line"
       />
       <ExternalPromo
-        externalPromos={lineExternalPromos}
-        setExternalPromo={handleExternalPromoUpdate}
-        type="line"
+        body={lineState}
+        setBody={handleChangeLineState}
+        typeOfParrent="line"
       />
     </>
   );
