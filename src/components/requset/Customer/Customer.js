@@ -10,16 +10,24 @@ import style from "./Customer.css";
 import customerLookUpOptions from "./customerLookUpOptions";
 
 const Customer = ({ setRequestJSON, requestJSON }) => {
-  const [customerLookUpOption, setcustomerLookUpOption] = useState(
-    customerLookUpOptions[0]
-  );
-
   const { body } = requestJSON;
 
   let initialCustomer;
   if (typeof body !== "undefined") {
     initialCustomer = body.customer;
   }
+  let initialCustomerLookUpOption;
+  if (typeof initialCustomer !== "undefined") {
+    initialCustomerLookUpOption = customerLookUpOptions.find(
+      (item) => item.type === Object.keys(initialCustomer)[0]
+    );
+  } else {
+    [initialCustomerLookUpOption] = customerLookUpOptions;
+  }
+
+  const [customerLookUpOption, setcustomerLookUpOption] = useState(
+    initialCustomerLookUpOption
+  );
 
   const [customer, setCustomer] = useState({ ...initialCustomer });
 
