@@ -21,8 +21,16 @@ const Order = ({ setRequestJSON, requestJSON }) => {
   if (typeof body !== "undefined") {
     initialOrder = body.order;
   }
+  let orderIdFiled;
+  let initialOrderIdFiled;
 
-  const [orderType, setOrderType] = useState(orderTypes[0]);
+  if (typeof initialOrder !== "undefined" && initialOrder.ids !== "undefined") {
+    [, initialOrderIdFiled] = orderTypes;
+  } else {
+    [initialOrderIdFiled] = orderTypes;
+  }
+
+  const [orderType, setOrderType] = useState(initialOrderIdFiled);
   const [orderBody, setOrderBody] = useState({ ...initialOrder });
 
   useEffect(() => {
@@ -39,12 +47,8 @@ const Order = ({ setRequestJSON, requestJSON }) => {
     }
   }, [orderBody]);
 
-  // console.log(orderBody);
-
-  let orderFiled;
-
   if (orderType.type === "existing") {
-    orderFiled = (
+    orderIdFiled = (
       <IdField object={orderBody} setObject={setOrderBody} type="order" />
     );
   }
@@ -67,7 +71,7 @@ const Order = ({ setRequestJSON, requestJSON }) => {
           ))}
         </div>
       </div>
-      <div className={`${style.inline} ${style.line}`}>{orderFiled}</div>
+      <div className={`${style.inline} ${style.line}`}>{orderIdFiled}</div>
       <div className={`${style.inline} ${style.line}`}>
         <div className={style.third}>
           <Input
