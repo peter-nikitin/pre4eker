@@ -7,8 +7,17 @@ import Button from "src/components/Button/Button";
 import style from "./IdField.css";
 
 const IdField = ({ object, setObject, type }) => {
-  const [field, setField] = useState("mindbox");
-  const [value, setValue] = useState("");
+  let initialField;
+  let initialValue;
+  if (typeof object.ids !== "undefined") {
+    [initialField] = Object.keys(object.ids);
+    [initialValue] = Object.values(object.ids);
+  } else {
+    initialField = "mindboxId";
+  }
+
+  const [field, setField] = useState(initialField);
+  const [value, setValue] = useState(initialValue);
 
   useEffect(() => {
     if (field && value) {
@@ -49,7 +58,7 @@ const IdField = ({ object, setObject, type }) => {
         </div>
       </div>
       <p className={style.description}>
-        Можно указать свое название идентификатора клиента
+        Можно указать свое название идентификатора
       </p>
     </>
   );
