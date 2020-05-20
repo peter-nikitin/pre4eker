@@ -10,10 +10,17 @@ import Line from "./Line";
 
 const Lines = ({ setRequestJSON, requestJSON }) => {
   const { body } = requestJSON;
-
+  let initialOrder;
   let initialLines;
-  if (typeof body?.lines !== "undefined") {
-    initialLines = body.lines.map((line, index) => ({
+  if (typeof body !== "undefined") {
+    initialOrder = body.order;
+  }
+
+  if (
+    typeof initialOrder !== "undefined" &&
+    typeof initialOrder.lines !== "undefined"
+  ) {
+    initialLines = initialOrder.lines.map((line, index) => ({
       number: index + 1,
       lineId: line.lineId,
       externalSystem: Object.keys(line.product.ids)[0] || "Website",
@@ -21,6 +28,8 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
       productId: Object.values(line.product.ids)[0],
       quantity: line.quantity,
       status: line.status.ids.externalId,
+      customFields: line.customFields,
+      requestedPromotions: line.requestedPromotions,
     }));
   } else {
     initialLines = [{ number: 1 }];
@@ -69,7 +78,10 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
         ...requestJSON,
         body: {
           ...body,
-          lines: [...linesToState],
+          order: {
+            ...initialOrder,
+            lines: [...linesToState],
+          },
         },
       });
     }
