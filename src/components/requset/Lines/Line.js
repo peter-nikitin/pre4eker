@@ -18,6 +18,12 @@ const Line = ({ line, lines, setLines }) => {
     setLines(arrayFunctions.updateItem(lines, lineState));
   }, [lineState]);
 
+  useEffect(() => {
+    handleChangeLineState(line);
+  }, [line]);
+
+  // console.log(lineState);
+
   return (
     <>
       {/* <p>Линия №{line.number}</p> */}
@@ -55,7 +61,7 @@ const Line = ({ line, lines, setLines }) => {
           label="Внешняя система"
           className={style.quarter}
           name={`Line-externalSystem-${line.number}`}
-          value={externalSystem || "Website"}
+          value={externalSystem || "website"}
           onChange={(e) => {
             const upDatedValue = {
               ...line,
