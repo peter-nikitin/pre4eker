@@ -10,20 +10,23 @@ import style from "./CustomFields.css";
 import arrayFunctions from "../arrayFunctions";
 
 const CustomFields = ({ body, setBody, typeOfParrent }) => {
-  let initialCustomFileds;
-  if (typeof body.customFields !== "undefined") {
-    initialCustomFileds = Object.keys(body.customFields).map(
-      (customField, index) => ({
+  // let initialCustomFileds;
+
+  const initialCustomFileds = (data) => {
+    if (typeof data.customFields !== "undefined") {
+      return Object.keys(data.customFields).map((customField, index) => ({
         number: index,
         field: customField,
-        value: body.customFields[customField],
-      })
-    );
-  } else {
-    initialCustomFileds = [];
-  }
+        value: data.customFields[customField],
+      }));
+    }
+    return [];
+  };
 
-  const [customFields, setCustomFileds] = useState([...initialCustomFileds]);
+  console.log(body);
+  console.log(initialCustomFileds(body));
+
+  const [customFields, setCustomFileds] = useState(initialCustomFileds(body));
 
   useEffect(() => {
     let customFieldsToState = {};
@@ -34,13 +37,21 @@ const CustomFields = ({ body, setBody, typeOfParrent }) => {
       return false;
     });
 
-    if (Object.keys(customFieldsToState).length > 0) {
+    if (
+      Object.keys(customFieldsToState).length > 0 &&
+      Object.keys(customFieldsToState).length ===
+        Object.keys(customFields).length
+    ) {
       setBody({
         ...body,
         customFields: customFieldsToState,
       });
     }
   }, [customFields]);
+
+  useEffect(() => {
+    setCustomFileds(initialCustomFileds(body));
+  }, [body]);
 
   return (
     <div className={style.customFields}>
