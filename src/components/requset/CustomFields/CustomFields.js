@@ -23,9 +23,6 @@ const CustomFields = ({ body, setBody, typeOfParrent }) => {
     return [];
   };
 
-  console.log(body);
-  console.log(initialCustomFileds(body));
-
   const [customFields, setCustomFileds] = useState(initialCustomFileds(body));
 
   useEffect(() => {
@@ -48,10 +45,6 @@ const CustomFields = ({ body, setBody, typeOfParrent }) => {
       });
     }
   }, [customFields]);
-
-  useEffect(() => {
-    setCustomFileds(initialCustomFileds(body));
-  }, [body]);
 
   return (
     <div className={style.customFields}>
