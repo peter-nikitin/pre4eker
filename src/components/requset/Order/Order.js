@@ -24,7 +24,10 @@ const Order = ({ setRequestJSON, requestJSON }) => {
   let orderIdFiled;
   let initialOrderIdFiled;
 
-  if (typeof initialOrder !== "undefined" && initialOrder.ids !== "undefined") {
+  if (
+    typeof initialOrder !== "undefined" &&
+    typeof initialOrder.ids !== "undefined"
+  ) {
     [, initialOrderIdFiled] = orderTypes;
   } else {
     [initialOrderIdFiled] = orderTypes;
