@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Button from "src/components/Button/Button";
+import Input from "src/components/Input/Input";
 
 import arrayFunctions from "../arrayFunctions";
 
@@ -36,15 +37,13 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
   }
 
   const [lines, setLines] = useState([...initialLines]);
-  const [selectedLine, changeSelectedLine] = useState(1);
-  const currentLine = lines.find((item) => item.number === selectedLine);
+  const [externalSystem, handleExternalSystemChange] = useState("website");
 
   useEffect(() => {
     const linesToState = lines.map(
       (
         {
           lineId,
-          externalSystem,
           price,
           productId,
           quantity,
@@ -91,37 +90,31 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
     <div>
       <div className={style.inline}>
         <h2 className={style.h2}>Линии</h2>
-        <div className={style.inline}>
-          <div className={`${style.lineSelector}`}>
-            {lines.map((item, index) => (
-              <Button
-                key={item.number}
-                type="TEXT"
-                action={() => changeSelectedLine(item.number)}
-                active={item.number === selectedLine}
-              >
-                {String(index + 1)}
-              </Button>
-            ))}
-          </div>
-
-          <div className={style.lineAddRemove}>
-            <Button
-              action={() => setLines(arrayFunctions.addItem(lines))}
-              type="ADD"
-            />
-
-            <Button
-              action={() => {
-                changeSelectedLine(selectedLine - 1);
-                setLines(arrayFunctions.removeItem(lines, currentLine));
-              }}
-              type="REMOVE"
-            />
-          </div>
-        </div>
+        <Input
+          label="Внешняя система"
+          name="externalSystem"
+          className={style.half}
+          value={lines[0].externalSystem || externalSystem}
+          onChange={(e) => {
+            handleExternalSystemChange(e.target.value);
+          }}
+        />
       </div>
-      <Line line={currentLine} lines={lines} setLines={setLines} />
+      {lines.map((item) => (
+        <Line
+          line={item}
+          key={`line_${item.number}`}
+          lines={lines}
+          setLines={setLines}
+        />
+      ))}
+      <Button
+        action={() => setLines(arrayFunctions.addItem(lines))}
+        type="TEXT"
+        size="sizeFull"
+      >
+        + Добавить линию
+      </Button>
     </div>
   );
 };

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
+import Button from "src/components/Button/Button";
+
 import arrayFunctions from "../arrayFunctions";
 
 import CustomFields from "../CustomFields/CustomFields";
@@ -10,7 +12,7 @@ import ExternalPromo from "../ExternalPromo/ExternalPromo";
 import style from "./Line.css";
 
 const Line = ({ line, lines, setLines }) => {
-  const { lineId, status, productId, externalSystem, quantity, price } = line;
+  const { lineId, status, productId, quantity, price } = line;
 
   const [lineState, handleChangeLineState] = useState(line);
 
@@ -25,8 +27,19 @@ const Line = ({ line, lines, setLines }) => {
   // console.log(lineState);
 
   return (
-    <>
-      {/* <p>Линия №{line.number}</p> */}
+    <div className={style.border}>
+      <div className={style.inline}>
+        <div>Линия №{line.number}</div>
+
+        {lines.length > 1 && (
+          <Button
+            action={() => {
+              setLines(arrayFunctions.removeItem(lines, line));
+            }}
+            type="REMOVE"
+          />
+        )}
+      </div>
       <div className={style.inline}>
         <Input
           label="Ид линии"
@@ -41,7 +54,6 @@ const Line = ({ line, lines, setLines }) => {
             setLines(arrayFunctions.updateItem(lines, upDatedValue));
           }}
         />
-
         <Input
           label="Статус линии"
           className={style.half}
@@ -58,21 +70,8 @@ const Line = ({ line, lines, setLines }) => {
       </div>
       <div className={style.inline}>
         <Input
-          label="Внешняя система"
-          className={style.quarter}
-          name={`Line-externalSystem-${line.number}`}
-          value={externalSystem || "website"}
-          onChange={(e) => {
-            const upDatedValue = {
-              ...line,
-              externalSystem: e.target.value,
-            };
-            setLines(arrayFunctions.updateItem(lines, upDatedValue));
-          }}
-        />
-        <Input
-          label="Идентификатор"
-          className={style.quarter}
+          label="ИД продукта"
+          className={style.third}
           name={`Line-id-${line.number}`}
           value={productId}
           onChange={(e) => {
@@ -85,7 +84,7 @@ const Line = ({ line, lines, setLines }) => {
         />
         <Input
           label="Количество"
-          className={style.quarter}
+          className={style.third}
           name={`Line-quantity-${line.number}`}
           value={quantity}
           onChange={(e) => {
@@ -98,7 +97,7 @@ const Line = ({ line, lines, setLines }) => {
         />
         <Input
           label="Цена за 1 шт"
-          className={style.quarter}
+          className={style.third}
           name={`Line-price-${line.number}`}
           value={price}
           onChange={(e) => {
@@ -120,7 +119,7 @@ const Line = ({ line, lines, setLines }) => {
         setBody={handleChangeLineState}
         typeOfParrent="line"
       />
-    </>
+    </div>
   );
 };
 
