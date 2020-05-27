@@ -3,7 +3,7 @@ Pre4eker - это GUI для работы с API Mindbox: https://developers.min
 
 Демо: https://pre4eker.nikitin-petr.ru/
 
-![alt tag](https://ibb.co/7nHpYTc "Pre4eker - это GUI для работы с API Mindbox")​
+![Pre4eker - это GUI для работы с API Mindbox](https://ibb.co/7nHpYTc)
 
 
 ### Что такое пречек?
