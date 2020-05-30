@@ -57,9 +57,11 @@ const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
       <div className={`${style.inline}`}>
         <h4 className={style.h4}>Внешние промоакции</h4>
         <Button
+          data-testid="add"
           action={() =>
             setExternalPromo(arrayFunctions.addItem(externalPromos))
           }
+          role="button"
           type="ADD"
         />
       </div>
@@ -147,7 +149,7 @@ const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
           <div className={style.inline}>
             <div className={style.half}>
               <Input
-                label="ИД"
+                label="ИД акции"
                 name={`externalPromo-${typeOfParrent}-${item.number}-id`}
                 value={item.id}
                 onChange={(e) => {
