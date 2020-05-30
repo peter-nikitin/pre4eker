@@ -27,10 +27,7 @@ const SuccessResponse = ({ responseData }) => {
 };
 
 SuccessResponse.propTypes = {
-  responseData: PropTypes.object,
-};
-SuccessResponse.defaultProps = {
-  responseData: {},
+  responseData: PropTypes.object.isRequired,
 };
 
 export default SuccessResponse;
