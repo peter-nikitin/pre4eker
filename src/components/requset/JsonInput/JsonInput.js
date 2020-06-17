@@ -1,12 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import AceEditor from "react-ace";
 
+import Button from "src/components/Button/Button";
+
 // import "ace-builds";
 // import "ace-builds/webpack-resolver";
 import "ace-builds/src-noconflict/mode-json";
+import "ace-builds/src-noconflict/mode-xml";
 import "ace-builds/src-noconflict/theme-xcode";
+import beautify from "ace-builds/src-noconflict/ext-beautify";
+
+import style from "./JSONInput.css";
+
+import converToJSON from "./xml2json";
 
 const ace = require("ace-builds/src-noconflict/ace");
 
@@ -19,19 +27,43 @@ ace.config.setModuleUrl(
   "https://cdn.jsdelivr.net/npm/ace-builds@1.4.3/src-noconflict/worker-javascript.js"
 );
 
-const JsonInput = ({ onChange, value, name }) => {
+const modes = ["json", "xml"];
+
+const JSONInput = ({ onChange, value, name }) => {
   const editor = useRef(null);
   window.editor = editor;
+
+  const [editorMode, handleEditorModeChange] = useState(modes[0]);
+
   return (
-    <div>
+    <div className={style.editor}>
+      <div className={style.btnGroup}>
+        {modes.map((item) => (
+          <Button
+            type="TEXT"
+            size="sizeAuto"
+            action={() => handleEditorModeChange(item)}
+            active={editorMode === item}
+            key={item}
+          >
+            {item}
+          </Button>
+        ))}
+      </div>
       <AceEditor
         name={name}
-        mode="json"
+        mode={editorMode}
         theme="xcode"
         ref={editor}
         value={value}
         onChange={(data) => {
-          onChange(data);
+          if (data && data !== "") {
+            if (editorMode === "xml") {
+              console.log(converToJSON(data));
+            } else {
+              //return onChange(data);
+            }
+          }
         }}
         height="100%"
         width="100%"
@@ -47,13 +79,13 @@ const JsonInput = ({ onChange, value, name }) => {
   );
 };
 
-JsonInput.propTypes = {
+JSONInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string,
   name: PropTypes.string.isRequired,
 };
-JsonInput.defaultProps = {
+JSONInput.defaultProps = {
   value: "",
 };
 
-export default JsonInput;
+export default JSONInput;

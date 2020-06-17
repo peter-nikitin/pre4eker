@@ -6,7 +6,7 @@ import Loading from "src/components/Loading/Loading";
 
 import style from "./ResponseJSON.css";
 
-const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
+const JSONInput = loadable(() => import("../JSONInput/JSONInput"), {
   fallback: <Loading />,
 });
 
@@ -16,7 +16,7 @@ const ResponseJSON = ({ responseJSON, setJSON }) => {
   return (
     <>
       <div className={style.editWrrapper}>
-        <JsonInput
+        <JSONInput
           name="ResponseBody"
           value={body}
           onChange={(value) => setBody(value)}

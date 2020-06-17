@@ -9,7 +9,7 @@ import RequestSettings from "../RequestSettings/RequestSettings";
 
 import style from "./RequestJSON.css";
 
-const JsonInput = loadable(() => import("../JsonInput/JsonInput"), {
+const JSONInput = loadable(() => import("../JSONInput/JSONInput"), {
   fallback: <Loading />,
 });
 
@@ -39,7 +39,7 @@ const RequestJSON = ({ requestJSON, handleSubmit, setRequestJSON }) => {
         />
       </div>
       <div className={style.editorWrapper}>
-        <JsonInput value={body} onChange={setBody} name="RequestBody" />
+        <JSONInput value={body} onChange={setBody} name="RequestBody" />
       </div>
 
       <Button
