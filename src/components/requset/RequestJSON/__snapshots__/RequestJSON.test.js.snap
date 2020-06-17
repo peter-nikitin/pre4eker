@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Response form should handle click on btn 1`] = `
+exports[`RequestJSON form should handle click on btn 1`] = `
 <DocumentFragment>
   <div
     class="formGroup"
