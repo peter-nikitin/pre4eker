@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createStore, applyMiddleware, combineReducers, compose } from "redux";
 import "regenerator-runtime/runtime";
 import thunk from "redux-thunk";
 
@@ -8,5 +8,9 @@ const allReducers = combineReducers({
   mainReducer,
 });
 
-const store = createStore(allReducers, applyMiddleware(thunk));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  allReducers,
+  composeEnhancers(applyMiddleware(thunk))
+);
 export default store;

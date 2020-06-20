@@ -1,13 +1,49 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { act } from "react-dom/test-utils";
+
 import RequestJSON from "./RequestJSON";
 
-describe("Response form", () => {
-  it("should handle click on btn", () => {
+describe("RequestJSON form", () => {
+  it("should handle change on editor", () => {
     const handleSubmit = jest.fn();
+    const setRequestJSON = jest.fn();
+    const requestJSON = { body: {} };
 
-    const { asFragment } = render(<RequestJSON handleSubmit={handleSubmit} />);
+    render(
+      <RequestJSON
+        handleSubmit={handleSubmit}
+        setRequestJSON={setRequestJSON}
+        requestJSON={requestJSON}
+      />
+    );
 
-    expect(asFragment(<RequestJSON />)).toMatchSnapshot();
+    act(() => {
+      window.editor.current.editor.setValue(JSON.stringify({ a: 1 }));
+    });
+
+    expect(window.editor.current.editor.session.getDocument().getValue()).toBe(
+      JSON.stringify({ a: 1 })
+    );
+  });
+
+  it("should despatch editor content to redux", () => {
+    const handleSubmit = jest.fn();
+    const setRequestJSON = jest.fn();
+    const requestJSON = { body: {} };
+
+    render(
+      <RequestJSON
+        handleSubmit={handleSubmit}
+        setRequestJSON={setRequestJSON}
+        requestJSON={requestJSON}
+      />
+    );
+
+    act(() => {
+      window.editor.current.editor.setValue(JSON.stringify({ a: 1 }));
+    });
+
+    expect(setRequestJSON).toHaveBeenCalledWith({ body: { a: 1 } });
   });
 });

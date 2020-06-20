@@ -3,6 +3,7 @@
   /* margin: 0 -.3em 0 -.3em; */
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .buttonLine {

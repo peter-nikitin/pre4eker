@@ -18,10 +18,16 @@ const RequestJSON = ({ requestJSON, handleSubmit, setRequestJSON }) => {
   const [key, setKey] = useState(requestJSON.key);
 
   useEffect(() => {
-    setRequestJSON({
-      ...requestJSON,
-      body: JSON.parse(body),
-    });
+    try {
+      if (typeof body !== "undefined" && body.length > 0) {
+        setRequestJSON({
+          ...requestJSON,
+          body: JSON.parse(body),
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }, [body]);
 
   return (

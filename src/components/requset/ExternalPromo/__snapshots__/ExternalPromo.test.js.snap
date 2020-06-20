@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
+<div>
+  <div
+    class="externalPromo"
+  >
+    <div
+      class="inline"
+    >
+      <h4
+        class="h4"
+      >
+        Внешние промоакции
+      </h4>
+      <button
+        class="medium button normal false add"
+        type="button"
+      >
+        <div>
+          <svg
+            fill="none"
+            height="6"
+            viewBox="0 0 7 6"
+            width="7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.06 3.16H3.828V5.344H3.072V3.16H0.84V2.452H3.072V0.256H3.828V2.452H6.06V3.16Z"
+              fill="#000"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div
+      class="item"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="inline promoTypeBtns"
+        >
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Внешняя
+          </button>
+          <button
+            class="sizeAuto button normal active basic"
+            type="button"
+          >
+            Mindbox
+          </button>
+        </div>
+        <div
+          class="inline promoTypeBtns"
+        >
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Скидка
+          </button>
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Скидка на доставку
+          </button>
+        </div>
+        <button
+          class="medium button normal false remove"
+          type="button"
+        >
+          <div>
+            <svg
+              fill="none"
+              height="1"
+              viewBox="0 0 7 1"
+              width="7"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0 1.90731e-05L6.99999 0L7 0.999981L5.91125e-06 1L0 1.90731e-05Z"
+                fill="#000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="inputItem "
+          >
+            <label
+              class="label"
+              for="externalPromo-order-0-id"
+            >
+              ИД акции
+            </label>
+            <input
+              class="input"
+              id="externalPromo-order-0-id"
+              name="externalPromo-order-0-id"
+              type="text"
+              value="1"
+            />
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="inputItem "
+          >
+            <label
+              class="label"
+              for="externalProm-order-0-value"
+            >
+              Сумма
+            </label>
+            <input
+              class="input"
+              id="externalProm-order-0-value"
+              name="externalProm-order-0-value"
+              type="text"
+              value="1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ExternalPromo  with empty body should render 1 element after click on add btn  1`] = `
+<div>
+  <div
+    class="externalPromo"
+  >
+    <div
+      class="inline"
+    >
+      <h4
+        class="h4"
+      >
+        Внешние промоакции
+      </h4>
+      <button
+        class="medium button normal false add"
+        type="button"
+      >
+        <div>
+          <svg
+            fill="none"
+            height="6"
+            viewBox="0 0 7 6"
+            width="7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.06 3.16H3.828V5.344H3.072V3.16H0.84V2.452H3.072V0.256H3.828V2.452H6.06V3.16Z"
+              fill="#000"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div
+      class="item"
+    >
+      <div
+        class="inline"
+      >
+        <div
+          class="inline promoTypeBtns"
+        >
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Внешняя
+          </button>
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Mindbox
+          </button>
+        </div>
+        <div
+          class="inline promoTypeBtns"
+        >
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Скидка
+          </button>
+          <button
+            class="sizeAuto button normal false basic"
+            type="button"
+          >
+            Скидка на доставку
+          </button>
+        </div>
+        <button
+          class="medium button normal false remove"
+          type="button"
+        >
+          <div>
+            <svg
+              fill="none"
+              height="1"
+              viewBox="0 0 7 1"
+              width="7"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0 1.90731e-05L6.99999 0L7 0.999981L5.91125e-06 1L0 1.90731e-05Z"
+                fill="#000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="inline"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="inputItem "
+          >
+            <label
+              class="label"
+              for="externalPromo-order-1-id"
+            >
+              ИД акции
+            </label>
+            <input
+              class="input"
+              id="externalPromo-order-1-id"
+              name="externalPromo-order-1-id"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="inputItem "
+          >
+            <label
+              class="label"
+              for="externalProm-order-1-value"
+            >
+              Сумма
+            </label>
+            <input
+              class="input"
+              id="externalProm-order-1-value"
+              name="externalProm-order-1-value"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ExternalPromo  with empty body should render only add btn  1`] = `
+<div>
+  <div
+    class="externalPromo"
+  >
+    <div
+      class="inline"
+    >
+      <h4
+        class="h4"
+      >
+        Внешние промоакции
+      </h4>
+      <button
+        class="medium button normal false add"
+        type="button"
+      >
+        <div>
+          <svg
+            fill="none"
+            height="6"
+            viewBox="0 0 7 6"
+            width="7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.06 3.16H3.828V5.344H3.072V3.16H0.84V2.452H3.072V0.256H3.828V2.452H6.06V3.16Z"
+              fill="#000"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,13 +1,22 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
+import { act } from "react-dom/test-utils";
 import ResponseJSON from "./ResponseJSON";
 
-describe("Form", () => {
+describe("Response JSON form", () => {
   it("should handle click on btn", () => {
     const setJSON = jest.fn();
 
-    const { asFragment } = render(<ResponseJSON setJSON={setJSON} />);
+    const { getByText } = render(<ResponseJSON setJSON={setJSON} />);
 
-    expect(asFragment(<ResponseJSON />)).toMatchSnapshot();
+    const expectText = `{"a": "b"}`;
+
+    act(() => {
+      window.editor.current.editor.setValue(expectText);
+    });
+
+    fireEvent.click(getByText("Показать"));
+
+    expect(setJSON).toHaveBeenCalledWith({ a: "b" });
   });
 });

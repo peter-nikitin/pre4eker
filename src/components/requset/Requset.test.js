@@ -13,7 +13,7 @@ const state = {
 
 const changeFormType = jest.fn();
 
-test("customer match snapshot", () => {
+test("Request match snapshot", () => {
   const { asFragment } = render(
     <Request state={state} changeFormType={changeFormType} />
   );

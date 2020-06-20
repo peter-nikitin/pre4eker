@@ -17,6 +17,12 @@
   /* padding: 0 .3rem; */
 }
 
+.border {
+  border: 1px solid #E0E0E0;
+  padding: .3rem .3rem .3rem .3rem;
+  margin-bottom: .7rem;
+}
+
 .quarter {
   width: 24%;
 }
