@@ -135,13 +135,13 @@ const Order = ({ setRequestJSON, requestJSON }) => {
       <CustomFields
         body={orderBody}
         setBody={setOrderBody}
-        typeOfParrent="order"
+        typeOfParent="order"
       />
 
       <ExternalPromo
         body={orderBody}
         setBody={setOrderBody}
-        typeOfParrent="order"
+        typeOfParent="order"
       />
     </>
   );

@@ -6,14 +6,14 @@ describe("ExternalPromo ", () => {
   describe("with empty body", () => {
     const body = {};
     const setBody = jest.fn();
-    const typeOfParrent = "order";
+    const typeOfParent = "order";
 
     it("should render only add btn ", () => {
       const { container } = render(
         <ExternalPromo
           body={body}
           setBody={setBody}
-          typeOfParrent={typeOfParrent}
+          typeOfParent={typeOfParent}
         />
       );
       expect(container).toMatchSnapshot();
@@ -24,7 +24,7 @@ describe("ExternalPromo ", () => {
         <ExternalPromo
           body={body}
           setBody={setBody}
-          typeOfParrent={typeOfParrent}
+          typeOfParent={typeOfParent}
         />
       );
       fireEvent.click(screen.getByRole("button"));
@@ -36,7 +36,7 @@ describe("ExternalPromo ", () => {
         <ExternalPromo
           body={body}
           setBody={setBody}
-          typeOfParrent={typeOfParrent}
+          typeOfParent={typeOfParent}
         />
       );
       fireEvent.click(screen.getByRole("button"));
@@ -51,26 +51,71 @@ describe("ExternalPromo ", () => {
           type: "disCountType",
           promotion: {
             ids: {
-              externalId: 1,
+              externalId: "1",
             },
             type: "mindbox",
           },
-          amount: 1,
+          amount: "1",
         },
       ],
     };
     const setBody = jest.fn();
-    const typeOfParrent = "order";
+    const typeOfParent = "order";
 
     it("should render 1 element", () => {
       const { container } = render(
         <ExternalPromo
           body={body}
           setBody={setBody}
-          typeOfParrent={typeOfParrent}
+          typeOfParent={typeOfParent}
         />
       );
       expect(container).toMatchSnapshot();
+    });
+  });
+});
+
+describe("External promo", () => {
+  it("should handle adding 1 element, choosing types, handling changing in inputs and send to redux correct object", () => {
+    const body = {};
+    const setBody = jest.fn();
+    const typeOfParent = "order";
+
+    const form = render(
+      <ExternalPromo
+        body={body}
+        setBody={setBody}
+        typeOfParent={typeOfParent}
+      />
+    );
+    // add empty external promo
+    fireEvent.click(form.getByRole("button"));
+
+    // choose types
+    fireEvent.click(form.getByText("Mindbox"));
+    fireEvent.click(form.getByText("Скидка"));
+
+    // input values
+    fireEvent.change(form.getByLabelText("ИД акции"), {
+      target: { value: 10 },
+    });
+    fireEvent.change(form.getByLabelText("Сумма"), {
+      target: { value: 10 },
+    });
+
+    expect(setBody).toHaveBeenCalledWith({
+      requestedPromotions: [
+        {
+          type: "discount",
+          promotion: {
+            ids: {
+              externalId: "10",
+            },
+            type: "mindbox",
+          },
+          amount: "10",
+        },
+      ],
     });
   });
 });

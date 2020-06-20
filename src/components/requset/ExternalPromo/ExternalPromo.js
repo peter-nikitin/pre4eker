@@ -9,7 +9,7 @@ import style from "./ExternalPromo.css";
 
 import arrayFunctions from "../arrayFunctions";
 
-const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
+const ExternalPromo = ({ body, setBody, typeOfParent }) => {
   let initialExternalPromo;
   if (typeof body.requestedPromotions !== "undefined") {
     initialExternalPromo = body.requestedPromotions.map(
@@ -150,7 +150,7 @@ const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
             <div className={style.half}>
               <Input
                 label="ИД акции"
-                name={`externalPromo-${typeOfParrent}-${item.number}-id`}
+                name={`externalPromo-${typeOfParent}-${item.number}-id`}
                 value={item.id}
                 onChange={(e) => {
                   const upDatedValue = {
@@ -166,7 +166,7 @@ const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
             <div className={style.half}>
               <Input
                 label="Сумма"
-                name={`externalProm-${typeOfParrent}-${item.number}-value`}
+                name={`externalProm-${typeOfParent}-${item.number}-value`}
                 value={item.value}
                 onChange={(e) => {
                   const upDatedValue = {
@@ -189,12 +189,12 @@ const ExternalPromo = ({ body, setBody, typeOfParrent }) => {
 ExternalPromo.propTypes = {
   body: PropTypes.object,
   setBody: PropTypes.func,
-  typeOfParrent: PropTypes.string,
+  typeOfParent: PropTypes.string,
 };
 
 ExternalPromo.defaultProps = {
   body: {},
   setBody: () => ({}),
-  typeOfParrent: "",
+  typeOfParent: "",
 };
 export default ExternalPromo;

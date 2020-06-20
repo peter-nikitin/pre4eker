@@ -9,7 +9,7 @@ import style from "./CustomFields.css";
 
 import arrayFunctions from "../arrayFunctions";
 
-const CustomFields = ({ body, setBody, typeOfParrent }) => {
+const CustomFields = ({ body, setBody, typeOfParent }) => {
   // let initialCustomFileds;
 
   const initialCustomFileds = (data) => {
@@ -61,7 +61,7 @@ const CustomFields = ({ body, setBody, typeOfParrent }) => {
           <div>
             <Input
               label="Название поля"
-              name={`customField-${typeOfParrent}-${item.number}-field`}
+              name={`customField-${typeOfParent}-${item.number}-field`}
               value={item.field}
               onChange={(e) => {
                 const upDatedValue = {
@@ -77,7 +77,7 @@ const CustomFields = ({ body, setBody, typeOfParrent }) => {
           <div>
             <Input
               label="Значение поля"
-              name={`customField-${typeOfParrent}-${item.number}-value`}
+              name={`customField-${typeOfParent}-${item.number}-value`}
               value={item.value}
               onChange={(e) => {
                 const upDatedValue = {
@@ -105,13 +105,13 @@ const CustomFields = ({ body, setBody, typeOfParrent }) => {
 CustomFields.propTypes = {
   body: PropTypes.object,
   setBody: PropTypes.func,
-  typeOfParrent: PropTypes.string,
+  typeOfParent: PropTypes.string,
 };
 
 CustomFields.defaultProps = {
   body: {},
   setBody: () => ({}),
-  typeOfParrent: "",
+  typeOfParent: "",
 };
 
 export default CustomFields;

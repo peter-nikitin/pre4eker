@@ -112,12 +112,12 @@ const Line = ({ line, lines, setLines }) => {
       <CustomFields
         body={lineState}
         setBody={handleChangeLineState}
-        typeOfParrent="line"
+        typeOfParent="line"
       />
       <ExternalPromo
         body={lineState}
         setBody={handleChangeLineState}
-        typeOfParrent="line"
+        typeOfParent="line"
       />
     </div>
   );
