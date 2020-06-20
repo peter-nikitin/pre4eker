@@ -72,7 +72,7 @@ const Line = ({ line, lines, setLines }) => {
         <Input
           label="ИД продукта"
           className={style.third}
-          name={`Line-id-${line.number}`}
+          name={`Line-produtcID-${line.number}`}
           value={productId}
           onChange={(e) => {
             const upDatedValue = {
