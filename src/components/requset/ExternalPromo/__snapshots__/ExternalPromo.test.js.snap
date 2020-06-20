@@ -110,6 +110,7 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
             </label>
             <input
               class="input"
+              id="externalPromo-order-0-id"
               name="externalPromo-order-0-id"
               type="text"
               value="1"
@@ -130,6 +131,7 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
             </label>
             <input
               class="input"
+              id="externalProm-order-0-value"
               name="externalProm-order-0-value"
               type="text"
               value="1"
@@ -252,6 +254,7 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
             </label>
             <input
               class="input"
+              id="externalPromo-order-1-id"
               name="externalPromo-order-1-id"
               type="text"
               value=""
@@ -272,6 +275,7 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
             </label>
             <input
               class="input"
+              id="externalProm-order-1-value"
               name="externalProm-order-1-value"
               type="text"
               value=""

@@ -72,7 +72,7 @@ const Line = ({ line, lines, setLines }) => {
         <Input
           label="ИД продукта"
           className={style.third}
-          name={`Line-id-${line.number}`}
+          name={`Line-produtcID-${line.number}`}
           value={productId}
           onChange={(e) => {
             const upDatedValue = {
@@ -112,12 +112,12 @@ const Line = ({ line, lines, setLines }) => {
       <CustomFields
         body={lineState}
         setBody={handleChangeLineState}
-        typeOfParrent="line"
+        typeOfParent="line"
       />
       <ExternalPromo
         body={lineState}
         setBody={handleChangeLineState}
-        typeOfParrent="line"
+        typeOfParent="line"
       />
     </div>
   );

@@ -13,6 +13,7 @@ exports[`the field match snapshot 1`] = `
     </label>
     <input
       class="input"
+      id="email"
       name="email"
       type="text"
       value=""

@@ -14,6 +14,10 @@
   font-size: 12px;
 }
 
+.input:focus {
+  border: 1px solid #000;
+}
+
 .label {
   font-family: Montserrat;
   font-style: normal;

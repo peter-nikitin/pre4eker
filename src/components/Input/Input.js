@@ -20,6 +20,7 @@ export default function Input({
         className={styles.input}
         name={name}
         value={value}
+        id={name}
         onChange={(e) => {
           onChange(e);
         }}
