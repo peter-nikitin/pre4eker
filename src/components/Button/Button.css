@@ -5,6 +5,7 @@
   align-items: center;
   padding: 0;
   cursor: pointer;
+  border-radius: 0;
   /* height: 0; */
 }
 
@@ -16,7 +17,10 @@
 }
 
 .basic.hover,
-.basic.active {
+.basic.active,
+.basic:hover,
+.basic:active,
+.basic:focus {
   background: #000;
   color: #fff;
   border-color: #000;
