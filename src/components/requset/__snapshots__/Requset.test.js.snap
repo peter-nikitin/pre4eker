@@ -33,7 +33,25 @@ exports[`Request match snapshot 1`] = `
       <div
         class="editWrrapper"
       >
-        <div>
+        <div
+          class="editor"
+        >
+          <div
+            class="btnGroup"
+          >
+            <button
+              class="sizeAuto button normal active basic"
+              type="button"
+            >
+              json
+            </button>
+            <button
+              class="sizeAuto button normal false basic"
+              type="button"
+            >
+              xml
+            </button>
+          </div>
           <div
             class=" ace_editor ace_hidpi ace-tm"
             id="ResponseBody"
