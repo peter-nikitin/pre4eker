@@ -20,7 +20,7 @@ const { parseStringPromise } = new Parser({
 
 export const requestToJSON = async (data) => {
   const jsonFromXml = await parseStringPromise(data);
-  const { operation } = JSON.parse(JSON.stringify(jsonFromXml));
+  const { operation } = jsonFromXml;
 
   if (typeof operation.order.bonusPoints !== "undefined") {
     operation.order.bonusPoints = [
@@ -40,6 +40,7 @@ export const requestToJSON = async (data) => {
           ...line.requestedPromotions.requestedPromotion,
         ];
       }
+      return line;
     });
   }
   if (typeof operation.order.requestedPromotions !== "undefined") {
@@ -51,39 +52,139 @@ export const requestToJSON = async (data) => {
     operation.order.payments = [...operation.order.payments.payment];
   }
 
-  return operation;
+  return JSON.stringify(operation);
 };
 
 export const responseToJSON = async (data) => {
   const jsonFromXml = await parseStringPromise(data);
-  const { result } = JSON.parse(JSON.stringify(jsonFromXml));
+  const { result } = jsonFromXml;
 
-  if (typeof result.order.bonusPoints !== "undefined") {
-    result.order.bonusPoints = [...result.order.bonusPoints.bonusPointsItem];
+  if (typeof result.order.appliedPromotions !== "undefined") {
+    result.order.appliedPromotions = [
+      ...result.order.appliedPromotions.appliedPromotion,
+    ];
+  }
+  if (typeof result.order.placeholders !== "undefined") {
+    result.order.placeholders = [...result.order.placeholders.placeholder];
+    result.order.placeholders.map((holder) => {
+      const placeholder = holder;
+      if (typeof placeholder.products !== "undefined") {
+        placeholder.products = [...placeholder.products.product];
+      }
+      if (typeof placeholder.content !== "undefined") {
+        placeholder.content = [...placeholder.content.contentItem];
+        placeholder.content.map((contentItem) => {
+          const content = contentItem;
+          if (typeof content.possibleDiscounts !== "undefined") {
+            content.possibleDiscounts.products = [
+              ...content.possibleDiscounts.products.product,
+            ];
+          }
+          return content;
+        });
+      }
+      return placeholder;
+    });
+  }
+  if (typeof result.order.bonusPointsInfo !== "undefined") {
+    result.order.bonusPointsInfo = [
+      ...result.order.bonusPointsInfo.bonusPointsInfoItem,
+    ];
+  }
+  if (typeof result.order.couponsInfo !== "undefined") {
+    result.order.couponsInfo = [...result.order.couponsInfo.couponInfo];
+  }
+  if (typeof result.order.paymentsInfo !== "undefined") {
+    result.order.paymentsInfo = [...result.order.paymentsInfo.paymentInfo];
+  }
+  if (typeof result.order.bonusPointsChanges !== "undefined") {
+    result.order.bonusPointsChanges = [
+      ...result.order.bonusPointsChanges.bonusPointsChange,
+    ];
+  }
+  if (typeof result.order.customFields !== "undefined") {
+    const fields = Object.keys(result.customer.customFields);
+
+    fields.map((field) => {
+      if (typeof result.customer.customFields[field] === "object") {
+        const fieldValueKyes = Object.keys(
+          result.customer.customFields[field]
+        )[0];
+        if (fieldValueKyes === "value") {
+          result.customer.customFields[field] = [
+            ...result.customer.customFields[field].value,
+          ];
+        }
+      }
+    });
   }
 
-  if (typeof result.order.coupons !== "undefined") {
-    result.order.coupons = [...result.order.coupons.coupon];
+  if (typeof result.customer.customFields !== "undefined") {
+    const fields = Object.keys(result.customer.customFields);
+
+    fields.map((field) => {
+      if (typeof result.customer.customFields[field] === "object") {
+        const fieldValueKyes = Object.keys(
+          result.customer.customFields[field]
+        )[0];
+        if (fieldValueKyes === "value") {
+          result.customer.customFields[field] = [
+            ...result.customer.customFields[field].value,
+          ];
+        }
+      }
+    });
   }
+
   if (typeof result.order.lines !== "undefined") {
     result.order.lines = [...result.order.lines.line];
     result.order.lines.map((item) => {
       const line = item;
-      if (typeof line.requestedPromotions !== "undefined") {
-        line.requestedPromotions = [
-          ...line.requestedPromotions.requestedPromotion,
-        ];
+      if (typeof line.appliedPromotions !== "undefined") {
+        line.appliedPromotions = [...line.appliedPromotions.appliedPromotion];
       }
+
+      if (typeof line.customFields !== "undefined") {
+        const fields = Object.keys(line.customFields);
+
+        fields.map((field) => {
+          if (typeof line.customFields[field] === "object") {
+            const fieldValueKyes = Object.keys(line.customFields[field])[0];
+            if (fieldValueKyes === "value") {
+              line.customFields[field] = [...line.customFields[field].value];
+            }
+          }
+        });
+      }
+
+      if (typeof line.placeholders !== "undefined") {
+        line.placeholders = [...line.placeholders.placeholder];
+        line.placeholders.map((holder) => {
+          const placeholder = holder;
+          if (typeof placeholder.products !== "undefined") {
+            placeholder.products = [...placeholder.products.product];
+          }
+          if (typeof placeholder.content !== "undefined") {
+            placeholder.content = [...placeholder.content.contentItem];
+            placeholder.content.map((contentItem) => {
+              const content = contentItem;
+              if (typeof content.possibleDiscounts !== "undefined") {
+                content.possibleDiscounts.products = [
+                  ...content.possibleDiscounts.products.product,
+                ];
+              }
+              return content;
+            });
+          }
+          return placeholder;
+        });
+      }
+      return line;
     });
   }
-  if (typeof result.order.requestedPromotions !== "undefined") {
-    result.order.requestedPromotions = [
-      ...result.order.requestedPromotions.requestedPromotion,
-    ];
-  }
-  if (typeof result.order.payments !== "undefined") {
-    result.order.payments = [...result.order.payments.payment];
+  if (typeof result.balances !== "undefined") {
+    result.balances = [...result.balances.balance];
   }
 
-  return result;
+  return JSON.stringify(result);
 };
