@@ -57,13 +57,7 @@ const JSONInput = ({ onChange, value, name }) => {
         ref={editor}
         value={value}
         onChange={(data) => {
-          if (data && data !== "") {
-            if (editorMode === "xml") {
-              console.log(converToJSON(data));
-            } else {
-              //return onChange(data);
-            }
-          }
+          return onChange(data);
         }}
         height="100%"
         width="100%"
