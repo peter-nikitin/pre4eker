@@ -1,19 +1,5 @@
 import { Parser } from "xml2js";
 
-const mustBeArrays = [
-  "requestedPromotions",
-  "bonusPoints",
-  "coupons",
-  "payments",
-  "lines",
-  "appliedPromotions",
-  "placeholders",
-  "bonusPointsInfo",
-  "couponsInfo",
-  "paymentsInfo",
-  "bonusPointsChanges",
-];
-
 const { parseStringPromise } = new Parser({
   explicitArray: false,
 });
