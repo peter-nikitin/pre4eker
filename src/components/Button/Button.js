@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import Shevron from "src/components/Icons/Shevron";
+import Cross from "src/components/Icons/Cross";
 import Add from "src/components/Icons/Add";
 import Remove from "src/components/Icons/Remove";
 import style from "./Button.css";
 
-export default function Button({ action, type, size, active, children }) {
+export default function Button({
+  action,
+  type,
+  size,
+  active,
+  children,
+  passedClassName,
+}) {
   const typeOfButton = (buttonType) => {
     switch (buttonType) {
       case "DROPDOWN":
@@ -17,6 +25,8 @@ export default function Button({ action, type, size, active, children }) {
         return { icon: <Remove />, styleClass: style.remove };
       case "TEXT":
         return { icon: children, styleClass: style.basic };
+      case "CROSS":
+        return { icon: <Cross />, styleClass: style.basic };
 
       default:
         return { icon: <Shevron />, styleClass: style.basic };
@@ -26,9 +36,9 @@ export default function Button({ action, type, size, active, children }) {
   const [status, changeStatus] = useState("normal");
   return (
     <button
-      className={`${style[size]} ${style.button} ${style[status]} ${
-        active && style.active
-      } ${typeOfButton(type).styleClass}`}
+      className={`${passedClassName} ${style[size]} ${style.button} ${
+        style[status]
+      } ${active && style.active} ${typeOfButton(type).styleClass}`}
       onClick={(e) => action(e)}
       onMouseEnter={() => changeStatus("hover")}
       onMouseLeave={() => changeStatus("normal")}
@@ -52,4 +62,5 @@ Button.propTypes = {
   size: PropTypes.string,
   active: PropTypes.bool,
   children: PropTypes.string,
+  passedClassName: PropTypes.string,
 };
