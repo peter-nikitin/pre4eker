@@ -1,14 +1,14 @@
 const requestForm = {
   type: "REQUEST_FORM",
-  text: "Форма запроса",
+  text: "Конструктор запроса",
 };
-const reqiestJSON = {
+const requestJSON = {
   type: "REQUEST_INPUT",
-  text: "JSON запроса",
+  text: "Тело запроса",
 };
 const responseJSON = {
   type: "RESPONSE_INPUT",
-  text: "JSON ответа",
+  text: "Тело ответа",
 };
 
-export { requestForm, reqiestJSON, responseJSON };
+export { requestForm, requestJSON, responseJSON };
