@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import loadable from "@loadable/component";
 
 import Button from "src/components/Button/Button";
+import RequestSettings from "./RequestSettings/RequestSettings";
 
 import style from "./Request.css";
 import * as formTypes from "./formTypes";
 
 const ResponseJSON = loadable(() => import("./ResponseJSON/ResponseJSON"));
 const RequestJSON = loadable(() => import("./RequestJSON/RequestJSON"));
+const CodeInput = loadable(() => import("./CodeInput/CodeInput"));
 const RequestForm = loadable(() => import("./RequestForm/RequestForm"));
 
 const Request = ({
@@ -18,7 +20,7 @@ const Request = ({
   setResponseJSON,
   setRequestJSON,
 }) => {
-  const drawRequesForm = (type) => {
+  const drawRequestForm = (type) => {
     switch (type) {
       case formTypes.requestForm.type:
         return (
@@ -30,22 +32,28 @@ const Request = ({
             />
           </div>
         );
-      case formTypes.reqiestJSON.type:
+      case formTypes.requestJSON.type:
         return (
           <div className={style.requestJSON}>
-            <RequestJSON
+            <CodeInput
+              value={state.requestJSON}
               handleSubmit={fetchResponse}
-              requestJSON={state.requestJSON}
-              setRequestJSON={setRequestJSON}
+              sendNewValue={setRequestJSON}
+              mainName="RequestCode"
+              mainBtnText="Рассчитать скидки"
+              type="Request"
             />
           </div>
         );
       case formTypes.responseJSON.type:
         return (
           <div className={style.requestJSON}>
-            <ResponseJSON
-              setJSON={setResponseJSON}
-              responseJSON={state.responseJSON}
+            <CodeInput
+              value={state.responseJSON}
+              handleSubmit={setResponseJSON}
+              mainName="ResponseCode"
+              mainBtnText="Отобразить скидки"
+              type="Response"
             />
           </div>
         );
@@ -57,6 +65,12 @@ const Request = ({
 
   return (
     <div className={style.leftPanel}>
+      <div className={`${style.formGroup}`}>
+        <RequestSettings
+          setRequestJSON={setRequestJSON}
+          requestJSON={state.requestJSON}
+        />
+      </div>
       <div className={style.buttonLine}>
         {Object.keys(formTypes).map((button) => (
           <Button
@@ -70,7 +84,8 @@ const Request = ({
           </Button>
         ))}
       </div>
-      {drawRequesForm(state.type)}
+
+      {drawRequestForm(state.type)}
     </div>
   );
 };
