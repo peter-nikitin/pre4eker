@@ -18,11 +18,13 @@ const JSONInput = loadable(() => import("../JSONInput/JSONInput"), {
 
 const CodeInput = ({
   value,
+  valueXML,
   handleSubmit,
   sendNewValue,
   mainName,
   mainBtnText,
   type,
+  handleXMLSubmit,
 }) => {
   // const editor = useRef(null);
 
@@ -34,7 +36,7 @@ const CodeInput = ({
     )
   );
   const [localXml, handleLocalXmlChange] = useState(
-    JSON.stringify(value.bodyXML, null, 1)
+    JSON.stringify(valueXML, null, 1)
   );
   const [isModalVisible, handleModalVisibleChange] = useState(false);
 
@@ -57,7 +59,7 @@ const CodeInput = ({
         1
       )
     );
-    handleLocalXmlChange(JSON.stringify(value.bodyXML, null, 1));
+    handleLocalXmlChange(JSON.stringify(valueXML, null, 1));
   }, [mainName]);
 
   useEffect(() => {
@@ -70,8 +72,8 @@ const CodeInput = ({
         sendNewValue({
           ...value,
           body: JSON.parse(localValue),
-          bodyXML: localXml,
         });
+        handleXMLSubmit(localXml);
       }
     } catch (error) {
       console.log(error);
@@ -81,7 +83,8 @@ const CodeInput = ({
   const handleSubmitBtnClick = () => {
     switch (type) {
       case "Response":
-        handleSubmit({ ...JSON.parse(localValue), bodyXML: localXml });
+        handleSubmit({ ...JSON.parse(localValue) });
+        handleXMLSubmit(localXml);
         break;
       case "Request":
         handleSubmit(value);
@@ -143,11 +146,14 @@ const CodeInput = ({
 CodeInput.defaultProps = {
   sendNewValue: () => ({}),
   mainBtnText: "",
+  valueXML: "",
 };
 
 CodeInput.propTypes = {
   value: PropTypes.object.isRequired,
+  valueXML: PropTypes.string,
   handleSubmit: PropTypes.func.isRequired,
+  handleXMLSubmit: PropTypes.func.isRequired,
   sendNewValue: PropTypes.func,
   mainName: PropTypes.string.isRequired,
   mainBtnText: PropTypes.string,
