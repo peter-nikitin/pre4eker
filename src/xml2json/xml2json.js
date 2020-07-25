@@ -4,46 +4,47 @@ const { parseStringPromise } = new Parser({
   explicitArray: false,
 });
 
-export const requestToJSON = async (data) => {
-  const jsonFromXml = await parseStringPromise(data);
-  const { operation } = jsonFromXml;
+const requestToJSON = (data) => {
+  const operation = data;
 
-  if (typeof operation.order.bonusPoints !== "undefined") {
-    operation.order.bonusPoints = [
-      ...operation.order.bonusPoints.bonusPointsItem,
-    ];
-  }
+  try {
+    if (typeof operation.order.bonusPoints !== "undefined") {
+      operation.order.bonusPoints = [
+        ...operation.order.bonusPoints.bonusPointsItem,
+      ];
+    }
 
-  if (typeof operation.order.coupons !== "undefined") {
-    operation.order.coupons = [...operation.order.coupons.coupon];
+    if (typeof operation.order.coupons !== "undefined") {
+      operation.order.coupons = [...operation.order.coupons.coupon];
+    }
+    if (typeof operation.order.lines !== "undefined") {
+      operation.order.lines = [...operation.order.lines.line];
+      operation.order.lines.map((item) => {
+        const line = item;
+        if (typeof line.requestedPromotions !== "undefined") {
+          line.requestedPromotions = [
+            ...line.requestedPromotions.requestedPromotion,
+          ];
+        }
+        return line;
+      });
+    }
+    if (typeof operation.order.requestedPromotions !== "undefined") {
+      operation.order.requestedPromotions = [
+        ...operation.order.requestedPromotions.requestedPromotion,
+      ];
+    }
+    if (typeof operation.order.payments !== "undefined") {
+      operation.order.payments = [...operation.order.payments.payment];
+    }
+  } catch (error) {
+    console.warn(error);
   }
-  if (typeof operation.order.lines !== "undefined") {
-    operation.order.lines = [...operation.order.lines.line];
-    operation.order.lines.map((item) => {
-      const line = item;
-      if (typeof line.requestedPromotions !== "undefined") {
-        line.requestedPromotions = [
-          ...line.requestedPromotions.requestedPromotion,
-        ];
-      }
-      return line;
-    });
-  }
-  if (typeof operation.order.requestedPromotions !== "undefined") {
-    operation.order.requestedPromotions = [
-      ...operation.order.requestedPromotions.requestedPromotion,
-    ];
-  }
-  if (typeof operation.order.payments !== "undefined") {
-    operation.order.payments = [...operation.order.payments.payment];
-  }
-
-  return JSON.stringify(operation);
+  return JSON.stringify(operation, null, 1);
 };
 
-export const responseToJSON = async (data) => {
-  const jsonFromXml = await parseStringPromise(data);
-  const { result } = jsonFromXml;
+const responseToJSON = (data) => {
+  const result = data;
 
   if (typeof result.order.appliedPromotions !== "undefined") {
     result.order.appliedPromotions = [
@@ -89,16 +90,14 @@ export const responseToJSON = async (data) => {
     ];
   }
   if (typeof result.order.customFields !== "undefined") {
-    const fields = Object.keys(result.customer.customFields);
+    const fields = Object.keys(result.order.customFields);
 
     fields.map((field) => {
-      if (typeof result.customer.customFields[field] === "object") {
-        const fieldValueKyes = Object.keys(
-          result.customer.customFields[field]
-        )[0];
+      if (typeof result.order.customFields[field] === "object") {
+        const fieldValueKyes = Object.keys(result.order.customFields[field])[0];
         if (fieldValueKyes === "value") {
-          result.customer.customFields[field] = [
-            ...result.customer.customFields[field].value,
+          result.order.customFields[field] = [
+            ...result.order.customFields[field].value,
           ];
         }
       }
@@ -119,6 +118,7 @@ export const responseToJSON = async (data) => {
           ];
         }
       }
+      return "";
     });
   }
 
@@ -140,6 +140,7 @@ export const responseToJSON = async (data) => {
               line.customFields[field] = [...line.customFields[field].value];
             }
           }
+          return "";
         });
       }
 
@@ -172,5 +173,21 @@ export const responseToJSON = async (data) => {
     result.balances = [...result.balances.balance];
   }
 
-  return JSON.stringify(result);
+  return JSON.stringify(result, null, 1);
 };
+
+const convertXML2JSON = async (XMLString = "") => {
+  if (XMLString === "") {
+    return "";
+  }
+  const jsonFromXml = await parseStringPromise(XMLString);
+  if (typeof jsonFromXml.operation !== "undefined") {
+    return requestToJSON(jsonFromXml.operation);
+  }
+  if (typeof jsonFromXml.result !== "undefined") {
+    return responseToJSON(jsonFromXml.result);
+  }
+  return "";
+};
+
+export default convertXML2JSON;
