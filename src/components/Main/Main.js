@@ -35,7 +35,6 @@ export default function Main({
 Main.propTypes = {
   changeFormType: PropTypes.func,
   state: PropTypes.object,
-  requestJSON: PropTypes.object,
   fetchResponse: PropTypes.func,
   setResponseJSON: PropTypes.func,
   setRequestJSON: PropTypes.func,
@@ -43,7 +42,6 @@ Main.propTypes = {
 Main.defaultProps = {
   changeFormType: () => ({}),
   state: {},
-  requestJSON: {},
   fetchResponse: () => ({}),
   setResponseJSON: () => ({}),
   setRequestJSON: () => ({}),

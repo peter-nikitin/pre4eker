@@ -8,8 +8,6 @@ import RequestSettings from "./RequestSettings/RequestSettings";
 import style from "./Request.css";
 import * as formTypes from "./formTypes";
 
-const ResponseJSON = loadable(() => import("./ResponseJSON/ResponseJSON"));
-const RequestJSON = loadable(() => import("./RequestJSON/RequestJSON"));
 const CodeInput = loadable(() => import("./CodeInput/CodeInput"));
 const RequestForm = loadable(() => import("./RequestForm/RequestForm"));
 

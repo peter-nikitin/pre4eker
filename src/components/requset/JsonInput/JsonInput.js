@@ -1,14 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
-
-import Button from "src/components/Button/Button";
 
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-json";
 import "ace-builds/src-noconflict/mode-xml";
 import "ace-builds/src-noconflict/theme-xcode";
-
-import style from "./JSONInput.css";
 
 const ace = require("ace-builds/src-noconflict/ace");
 
@@ -24,18 +20,6 @@ ace.config.setModuleUrl(
 const JSONInput = ({ onChange, value, name }) => {
   const editor = useRef(null);
   window.editor = editor;
-
-  const handleChange = (data) => {
-    if (editorMode === "xml" && data.length > 0) {
-      try {
-        const jsonFromxml = xml2json(data);
-        return onChange(jsonFromxml);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    return onChange(data);
-  };
 
   return (
     <AceEditor

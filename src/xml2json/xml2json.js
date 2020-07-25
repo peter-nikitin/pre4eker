@@ -101,6 +101,7 @@ const responseToJSON = (data) => {
           ];
         }
       }
+      return "";
     });
   }
 

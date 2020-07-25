@@ -141,14 +141,17 @@ const CodeInput = ({
 };
 
 CodeInput.defaultProps = {
-  CodeInput: {},
+  sendNewValue: () => ({}),
+  mainBtnText: "",
 };
 
 CodeInput.propTypes = {
-  value: PropTypes.object,
+  value: PropTypes.object.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   sendNewValue: PropTypes.func,
-  mainName: PropTypes.string,
+  mainName: PropTypes.string.isRequired,
+  mainBtnText: PropTypes.string,
+  type: PropTypes.string.isRequired,
 };
 
 export default CodeInput;
