@@ -2,27 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import style from "./Main.css";
-import Request from "../requset/Request";
+import RequestContainer from "../requset/RequestContainer";
 import Response from "../respose/Response";
 
-export default function Main({
-  changeFormType,
-  state,
-  fetchResponse,
-  setResponseJSON,
-  setRequestJSON,
-}) {
+export default function Main({ state }) {
   return (
     <div className={style.main}>
       <div className={style.oneThird}>
         <h2>Запрос</h2>
-        <Request
-          changeFormType={changeFormType}
-          fetchResponse={fetchResponse}
-          setResponseJSON={setResponseJSON}
-          state={state}
-          setRequestJSON={setRequestJSON}
-        />
+        <RequestContainer />
       </div>
       <div className={style.twoThird}>
         <h2>Ответ</h2>
@@ -33,16 +21,8 @@ export default function Main({
 }
 
 Main.propTypes = {
-  changeFormType: PropTypes.func,
   state: PropTypes.object,
-  fetchResponse: PropTypes.func,
-  setResponseJSON: PropTypes.func,
-  setRequestJSON: PropTypes.func,
 };
 Main.defaultProps = {
-  changeFormType: () => ({}),
   state: {},
-  fetchResponse: () => ({}),
-  setResponseJSON: () => ({}),
-  setRequestJSON: () => ({}),
 };

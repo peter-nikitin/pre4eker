@@ -14,18 +14,26 @@ const RequestForm = loadable(() => import("./RequestForm/RequestForm"));
 const Request = ({
   changeFormType,
   state,
+  type,
   fetchResponse,
   setResponseJSON,
+  setResponseXML,
   setRequestJSON,
+  setRequestXML,
+  responseJSON,
+  responseXML,
+  requestJSON,
+  requestXML,
 }) => {
-  const drawRequestForm = (type) => {
-    switch (type) {
+  const drawRequestForm = (selectedType) => {
+    switch (selectedType) {
       case formTypes.requestForm.type:
         return (
           <div className={style.requestForm}>
             <RequestForm
               handleSubmit={fetchResponse}
-              requestJSON={state.requestJSON}
+              requestJSON={requestJSON}
+              requestXML={requestXML}
               setRequestJSON={setRequestJSON}
             />
           </div>
@@ -34,9 +42,11 @@ const Request = ({
         return (
           <div className={style.requestJSON}>
             <CodeInput
-              value={state.requestJSON}
+              value={requestJSON}
+              valueXML={requestXML}
               handleSubmit={fetchResponse}
               sendNewValue={setRequestJSON}
+              handleXMLSubmit={setRequestXML}
               mainName="RequestCode"
               mainBtnText="Рассчитать скидки"
               type="Request"
@@ -47,8 +57,10 @@ const Request = ({
         return (
           <div className={style.requestJSON}>
             <CodeInput
-              value={state.responseJSON}
+              value={responseJSON}
+              valueXML={responseXML}
               handleSubmit={setResponseJSON}
+              handleXMLSubmit={setResponseXML}
               mainName="ResponseCode"
               mainBtnText="Отобразить скидки"
               type="Response"
@@ -76,14 +88,14 @@ const Request = ({
             type="TEXT"
             action={() => changeFormType(formTypes[button].type)}
             size="sizeAuto"
-            active={state.type === formTypes[button].type}
+            active={type === formTypes[button].type}
           >
             {formTypes[button].text}
           </Button>
         ))}
       </div>
 
-      {drawRequestForm(state.type)}
+      {drawRequestForm(type)}
     </div>
   );
 };
