@@ -12,6 +12,16 @@ export const setRequestJSON = (data) => ({
   type: actionType.SET_REQUEST_JSON,
   data,
 });
+
+export const setResponseXML = (data) => ({
+  type: actionType.SET_RESPONSE_XML,
+  data,
+});
+
+export const setRequestXML = (data) => ({
+  type: actionType.SET_REQUEST_XML,
+  data,
+});
 export const toggleLoading = () => ({ type: actionType.TOGGLE_LOADING });
 export const fetchResponse = (data) => (dispatch) => {
   dispatch(setRequestJSON({ ...data, key: "" }));

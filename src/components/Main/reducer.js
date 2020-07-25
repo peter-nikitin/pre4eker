@@ -6,6 +6,8 @@ const initialState = {
   type: "REQUEST_FORM",
   responseJSON: {},
   requestJSON: {},
+  responseXML: "",
+  requestXML: "",
   isLoading: false,
 };
 
@@ -17,6 +19,10 @@ const mainReducer = (state = initialState, action) => {
       return { ...state, responseJSON: action.data };
     case actionType.SET_REQUEST_JSON:
       return { ...state, requestJSON: action.data };
+    case actionType.SET_RESPONSE_XML:
+      return { ...state, responseXML: action.data };
+    case actionType.SET_REQUEST_XML:
+      return { ...state, requestXML: action.data };
     case actionType.TOGGLE_LOADING:
       return { ...state, isLoading: !state.isLoading };
     default:
