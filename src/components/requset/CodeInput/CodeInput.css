@@ -1,0 +1,55 @@
+.json {
+  margin-bottom: .5rem;
+}
+
+.inline {
+  display: flex;
+  margin: 0 -.3em .5rem -.3em;
+  flex-wrap: wrap;
+}
+
+.half {
+  width: 50%;
+  padding: 1rem .3rem;
+}
+
+.third {
+  width: 33%;
+  padding: 0 .3rem;
+}
+
+.formGroup {
+  padding: .3rem .6rem;
+  margin-bottom: .25rem;
+}
+
+.fit {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorWrapper {
+  flex-grow: 1;
+  height: calc(100% - 37.6px);
+  position: relative;
+}
+
+@media (max-width: 400px) {
+  .third {
+    width: 100%;
+  }
+  .editorWrapper {
+    /* height: calc(100% - (130.8px + 8px) - 37.6px); */
+  }
+}
+
+.btnXML {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: .7rem;
+  z-index: 100;
+  display: flex;
+}
+
+.editor {}
