@@ -8,7 +8,7 @@ exports[`customfields shoulg match snapshot 1`] = `
     >
       Дополнительные поля
       <button
-        class="undefined small button normal false basic"
+        class=" small button normal false basic"
         type="button"
       >
         <div>
@@ -41,7 +41,7 @@ exports[`customfields shoulg match snapshot 2`] = `
     >
       Дополнительные поля
       <button
-        class="undefined small button normal false basic"
+        class=" small button normal false basic"
         type="button"
       >
         <div>
@@ -216,7 +216,7 @@ exports[`customfields shoulg match snapshot 3`] = `
     >
       Дополнительные поля
       <button
-        class="undefined small button normal false basic"
+        class=" small button normal false basic"
         type="button"
       >
         <div>

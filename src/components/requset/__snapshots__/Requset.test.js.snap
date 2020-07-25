@@ -68,19 +68,19 @@ exports[`Request match snapshot 1`] = `
       class="buttonLine"
     >
       <button
-        class="undefined sizeAuto button normal false basic"
+        class=" sizeAuto button normal false basic"
         type="button"
       >
         Конструктор запроса
       </button>
       <button
-        class="undefined sizeAuto button normal false basic"
+        class=" sizeAuto button normal false basic"
         type="button"
       >
         Тело запроса
       </button>
       <button
-        class="undefined sizeAuto button normal active basic"
+        class=" sizeAuto button normal active basic"
         type="button"
       >
         Тело ответа
@@ -191,7 +191,7 @@ exports[`Request match snapshot 1`] = `
         </button>
       </div>
       <button
-        class="undefined sizeFull button normal false basic"
+        class=" sizeFull button normal false basic"
         type="button"
       >
         Отобразить скидки

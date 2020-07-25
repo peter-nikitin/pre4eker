@@ -55,6 +55,7 @@ Button.defaultProps = {
   size: "medium",
   active: false,
   children: "",
+  passedClassName: "",
 };
 Button.propTypes = {
   action: PropTypes.func,

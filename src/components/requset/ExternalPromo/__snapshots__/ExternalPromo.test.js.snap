@@ -14,7 +14,7 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
         Внешние промоакции
       </h4>
       <button
-        class="undefined medium button normal false add"
+        class=" medium button normal false add"
         type="button"
       >
         <div>
@@ -43,13 +43,13 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
           class="inline promoTypeBtns"
         >
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Внешняя
           </button>
           <button
-            class="undefined sizeAuto button normal active basic"
+            class=" sizeAuto button normal active basic"
             type="button"
           >
             Mindbox
@@ -59,20 +59,20 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
           class="inline promoTypeBtns"
         >
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Скидка
           </button>
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Скидка на доставку
           </button>
         </div>
         <button
-          class="undefined medium button normal false remove"
+          class=" medium button normal false remove"
           type="button"
         >
           <div>
@@ -158,7 +158,7 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
         Внешние промоакции
       </h4>
       <button
-        class="undefined medium button normal false add"
+        class=" medium button normal false add"
         type="button"
       >
         <div>
@@ -187,13 +187,13 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
           class="inline promoTypeBtns"
         >
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Внешняя
           </button>
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Mindbox
@@ -203,20 +203,20 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
           class="inline promoTypeBtns"
         >
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Скидка
           </button>
           <button
-            class="undefined sizeAuto button normal false basic"
+            class=" sizeAuto button normal false basic"
             type="button"
           >
             Скидка на доставку
           </button>
         </div>
         <button
-          class="undefined medium button normal false remove"
+          class=" medium button normal false remove"
           type="button"
         >
           <div>
@@ -302,7 +302,7 @@ exports[`ExternalPromo  with empty body should render only add btn  1`] = `
         Внешние промоакции
       </h4>
       <button
-        class="undefined medium button normal false add"
+        class=" medium button normal false add"
         type="button"
       >
         <div>
