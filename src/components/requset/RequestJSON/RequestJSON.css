@@ -30,7 +30,7 @@
 
 .editorWrapper {
   flex-grow: 1;
-  height: calc(100% - (46.8px + 8px) - 37.6px);
+  height: calc(100% - 37.6px);
 }
 
 @media (max-width: 400px) {
@@ -38,6 +38,6 @@
     width: 100%;
   }
   .editorWrapper {
-    height: calc(100% - (130.8px + 8px) - 37.6px);
+    /* height: calc(100% - (130.8px + 8px) - 37.6px); */
   }
 }

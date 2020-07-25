@@ -5,7 +5,7 @@ import Loading from "src/components/Loading/Loading";
 
 import Button from "src/components/Button/Button";
 
-import RequestSettings from "../RequestSettings/RequestSettings";
+import { requestToJSON } from "src/xml2json/xml2json";
 
 import style from "./RequestJSON.css";
 
@@ -15,7 +15,6 @@ const JSONInput = loadable(() => import("../JSONInput/JSONInput"), {
 
 const RequestJSON = ({ requestJSON, handleSubmit, setRequestJSON }) => {
   const [body, setBody] = useState(JSON.stringify(requestJSON.body, null, 1));
-  const [key, setKey] = useState(requestJSON.key);
 
   useEffect(() => {
     try {
@@ -32,23 +31,19 @@ const RequestJSON = ({ requestJSON, handleSubmit, setRequestJSON }) => {
 
   return (
     <>
-      <div className={`${style.formGroup}`}>
-        <RequestSettings
-          setRequestJSON={setRequestJSON}
-          requestJSON={requestJSON}
-          setKey={setKey}
-          keyValue={key}
-        />
-      </div>
       <div className={style.editorWrapper}>
-        <JSONInput value={body} onChange={setBody} name="RequestBody" />
+        <JSONInput
+          value={body}
+          onChange={setBody}
+          name="RequestBody"
+          xml2json={requestToJSON}
+        />
       </div>
 
       <Button
         action={() =>
           handleSubmit({
             ...requestJSON,
-            key,
           })
         }
         type="TEXT"
