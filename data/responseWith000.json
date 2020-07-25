@@ -1,0 +1,81 @@
+{
+  "status": "Success",
+  "order": {
+    "processingStatus": "Calculated",
+    "deliveryCost": 0,
+    "totalPrice": 1,
+    "lines": [
+      {
+        "product": {
+          "ids": {
+            "products": "1"
+          }
+        },
+        "quantity": 1,
+        "basePricePerItem": 1,
+        "discountedPriceOfLine": 1,
+        "status": {
+          "ids": {
+            "externalId": "create"
+          }
+        },
+        "lineNumber": 1
+      }
+    ],
+    "bonusPointsInfo": [
+      {
+        "status": "Success",
+        "availableAmountForCurrentOrder": 0,
+        "spentAmountForCurrentOrder": 0,
+        "balance": {
+          "total": 0,
+          "available": 0,
+          "blocked": 0
+        }
+      }
+    ],
+    "couponsInfo": [
+      {
+        "discountAmountForCurrentOrder": 0,
+        "coupon": {
+          "ids": {
+            "code": "1112R1"
+          },
+          "pool": {
+            "ids": {
+              "mindboxId": 6,
+              "externalId": "sms-pool"
+            },
+            "name": "Коды для SMS",
+            "description": "Выдается при регистрации через СМС"
+          },
+          "status": "AlreadyNotActive",
+          "availableTillDateTimeUtc": "2019-09-15T13:06:14.04Z"
+        }
+      }
+    ]
+  },
+  "customer": {
+    "processingStatus": "Found",
+    "ids": {
+      "mindboxId": 50689
+    },
+    "mobilePhone": 79006405614,
+    "isMobilePhoneInvalid": false,
+    "changeDateTimeUtc": "2019-08-25T13:06:13.593Z",
+    "ianaTimeZone": "Europe/Moscow",
+    "timeZoneSource": "Определили по мобильному телефону",
+    "subscriptions": [
+      {
+        "pointOfContact": "Sms",
+        "topic": "Main",
+        "isSubscribed": true
+      },
+      {
+        "pointOfContact": "Sms",
+        "isSubscribed": true
+      }
+    ],
+    "sessionKey": "637312968036701923,EC6287ED0F43B0E0A482522FE291D4A5AA8120821FBD30C9FB3E81E0ADBB69639D4DC9DAF6997CA0F2D3EC04F43566E602D4F0DCEF5373B00F01F4530081C3F5"
+  }
+}
