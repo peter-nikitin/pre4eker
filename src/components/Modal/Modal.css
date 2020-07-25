@@ -1,0 +1,38 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .4);
+  z-index: 150;
+}
+
+.body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 500px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  flex-grow: 2;
+}
+
+.footer {}
+
+.closeBtn {
+  position: absolute;
+}
