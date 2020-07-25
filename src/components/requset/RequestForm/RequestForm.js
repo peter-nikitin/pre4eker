@@ -16,14 +16,14 @@ const RequestForm = ({ requestJSON, handleSubmit, setRequestJSON }) => {
   return (
     <>
       <div className={style.form}>
-        <div className={`${style.formGroup}`}>
+        {/* <div className={`${style.formGroup}`}>
           <RequestSettings
             setRequestJSON={setRequestJSON}
             requestJSON={requestJSON}
             setKey={setKey}
             keyValue={key}
           />
-        </div>
+        </div> */}
         <div className={`${style.formGroup}`}>
           <Customer setRequestJSON={setRequestJSON} requestJSON={requestJSON} />
         </div>

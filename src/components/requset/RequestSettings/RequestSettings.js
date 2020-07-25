@@ -23,9 +23,14 @@ const RequestSettings = ({ requestJSON, setRequestJSON, setKey, keyValue }) => {
       <Input
         label="Секретный ключ"
         name="key"
-        value={keyValue}
+        value={requestJSON.key}
         className={style.third}
-        onChange={(e) => setKey(e.target.value)}
+        onChange={(e) =>
+          setRequestJSON({
+            ...requestJSON,
+            key: e.target.value,
+          })
+        }
         type="password"
       />
       <Input

@@ -1,11 +1,11 @@
 .form {
   background-color: #fff;
-  overflow: auto;
-  height: calc(100% - 37.6px);
+  /* overflow: auto; */
+  /* height: calc(100% - 37.6px); */
 }
 
 .formGroup {
-  padding: .3rem .6rem;
+  /* padding: .3rem .6rem; */
   margin-bottom: .7rem;
 }
 
