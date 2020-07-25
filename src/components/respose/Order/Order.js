@@ -48,7 +48,7 @@ const Order = ({ order }) => {
           </div>
         </div>
         <div className={stylesShared.inline}>
-          {deliveryCost && (
+          {deliveryCost > 0 && (
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Доставка</div>
               <div className={stylesShared.value}>{deliveryCost}</div>

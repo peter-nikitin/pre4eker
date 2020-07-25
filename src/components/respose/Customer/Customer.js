@@ -32,12 +32,17 @@ const Customer = ({ customer }) => {
       <div className={stylesShared.customer}>
         <div className={stylesShared.line}>
           <div className={stylesShared.inline}>
-            <div className={stylesShared.half}>
-              <div className={stylesShared.name}>ФИО</div>
-              <div className={stylesShared.value}>
-                {`${customer.firstName} ${customer.middleName} ${customer.lastName}`}
-              </div>
-            </div>
+            {customer.firstName ||
+              customer.middleName ||
+              (customer.lastName && (
+                <div className={stylesShared.half}>
+                  <div className={stylesShared.name}>ФИО</div>
+                  <div className={stylesShared.value}>
+                    {customer.firstName} {customer.middleName}{" "}
+                    {customer.lastName}
+                  </div>
+                </div>
+              ))}
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Статус обработки</div>
               <div className={stylesShared.value}>
@@ -46,18 +51,24 @@ const Customer = ({ customer }) => {
             </div>
           </div>
         </div>
+
         <div className={stylesShared.line}>
           <div className={stylesShared.inline}>
-            <div className={stylesShared.half}>
-              <div className={stylesShared.name}>Пол</div>
-              <div className={stylesShared.value}>{sexes[sex]}</div>
-            </div>
-            <div className={stylesShared.half}>
-              <div className={stylesShared.name}>Дата рождения</div>
-              <div className={stylesShared.value}>{birthDate}</div>
-            </div>
+            {sex && (
+              <div className={stylesShared.half}>
+                <div className={stylesShared.name}>Пол</div>
+                <div className={stylesShared.value}>{sexes[sex]}</div>
+              </div>
+            )}
+            {birthDate && (
+              <div className={stylesShared.half}>
+                <div className={stylesShared.name}>Дата рождения</div>
+                <div className={stylesShared.value}>{birthDate}</div>
+              </div>
+            )}
           </div>
         </div>
+
         <div className={stylesShared.line}>
           {mobilePhone && (
             <Contact

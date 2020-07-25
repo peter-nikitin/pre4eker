@@ -283,20 +283,7 @@ exports[`Response snapshot  response without lines to match snapshot 1`] = `
             <div
               class="inline"
             >
-              <div
-                class="half"
-              >
-                <div
-                  class="name"
-                >
-                  ФИО
-                </div>
-                <div
-                  class="value"
-                >
-                  Иван Иванович Иванов
-                </div>
-              </div>
+              Иван
               <div
                 class="half"
               >
@@ -420,7 +407,6 @@ exports[`Response snapshot  response without lines to match snapshot 1`] = `
                   Валидный
                 </p>
               </div>
-              0
             </div>
           </div>
           <div
@@ -561,20 +547,7 @@ exports[`Response snapshot  response without order to match snapshot 1`] = `
             <div
               class="inline"
             >
-              <div
-                class="half"
-              >
-                <div
-                  class="name"
-                >
-                  ФИО
-                </div>
-                <div
-                  class="value"
-                >
-                  Иван Иванович Иванов
-                </div>
-              </div>
+              Иван
               <div
                 class="half"
               >
@@ -698,7 +671,6 @@ exports[`Response snapshot  response without order to match snapshot 1`] = `
                   Валидный
                 </p>
               </div>
-              0
             </div>
           </div>
           <div
@@ -773,20 +745,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
             <div
               class="inline"
             >
-              <div
-                class="half"
-              >
-                <div
-                  class="name"
-                >
-                  ФИО
-                </div>
-                <div
-                  class="value"
-                >
-                  Иван Иванович Иванов
-                </div>
-              </div>
+              Иван
               <div
                 class="half"
               >
@@ -910,7 +869,6 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   Валидный
                 </p>
               </div>
-              0
             </div>
           </div>
           <div
@@ -2014,24 +1972,20 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 Будет списано
               </div>
               <div
-                class="half"
+                class="promoValue"
               >
-                <div
-                  class="promoValue"
-                >
-                  1559295.84
-                </div>
+                1559295.84
               </div>
             </div>
           </div>
           <div
+            class="name"
+          >
+            Баланс
+          </div>
+          <div
             class="inline"
           >
-            <div
-              class="name"
-            >
-              Баланс
-            </div>
             <div
               class="third"
             >
@@ -2132,24 +2086,20 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 Будет списано
               </div>
               <div
-                class="half"
+                class="promoValue"
               >
-                <div
-                  class="promoValue"
-                >
-                  20423028.05
-                </div>
+                20423028.05
               </div>
             </div>
           </div>
           <div
+            class="name"
+          >
+            Баланс
+          </div>
+          <div
             class="inline"
           >
-            <div
-              class="name"
-            >
-              Баланс
-            </div>
             <div
               class="third"
             >

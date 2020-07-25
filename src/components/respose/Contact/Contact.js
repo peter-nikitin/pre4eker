@@ -31,7 +31,7 @@ const Contact = ({ label, main, pending, invalid, confirmed }) => (
           ))}
       </div>
 
-      {pending && (
+      {pending && pending > 0 && (
         <div className={styleShared.half}>
           <div className={styleShared.value}>{pending}</div>
           <p className={`${styleShared.bad} ${styleShared.status}`}>
@@ -46,7 +46,7 @@ const Contact = ({ label, main, pending, invalid, confirmed }) => (
 Contact.defaultProps = {
   label: "",
   main: "",
-  pending: 0,
+  pending: -1,
   invalid: false,
   confirmed: false,
 };

@@ -58,24 +58,20 @@ exports[`customer match snapshot 1`] = `
           Будет списано
         </div>
         <div
-          class="half"
+          class="promoValue"
         >
-          <div
-            class="promoValue"
-          >
-            1559295.84
-          </div>
+          1559295.84
         </div>
       </div>
     </div>
     <div
+      class="name"
+    >
+      Баланс
+    </div>
+    <div
       class="inline"
     >
-      <div
-        class="name"
-      >
-        Баланс
-      </div>
       <div
         class="third"
       >

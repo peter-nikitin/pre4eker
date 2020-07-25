@@ -24,29 +24,24 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
         </div>
       </div>
       <div className={stylesShared.inline}>
-        {availableAmountForCurrentOrder && (
-          <div className={stylesShared.half}>
-            <div className={stylesShared.name}>Доступно для списание</div>
-            <div className={stylesShared.promoValue}>
-              {availableAmountForCurrentOrder}
-            </div>
+        <div className={stylesShared.half}>
+          <div className={stylesShared.name}>Доступно для списание</div>
+          <div className={stylesShared.promoValue}>
+            {availableAmountForCurrentOrder}
           </div>
-        )}
+        </div>
 
-        {spentAmountForCurrentOrder && (
-          <div className={stylesShared.half}>
-            <div className={stylesShared.name}>Будет списано</div>
-            <div className={stylesShared.half}>
-              <div className={stylesShared.promoValue}>
-                {spentAmountForCurrentOrder}
-              </div>
-            </div>
+        <div className={stylesShared.half}>
+          <div className={stylesShared.name}>Будет списано</div>
+
+          <div className={stylesShared.promoValue}>
+            {spentAmountForCurrentOrder}
           </div>
-        )}
+        </div>
       </div>
 
+      <div className={stylesShared.name}>Баланс</div>
       <div className={stylesShared.inline}>
-        <div className={stylesShared.name}>Баланс</div>
         <div className={stylesShared.third}>
           <div className={stylesShared.name}>Доступно</div>
           <div className={stylesShared.value}>{balance.available}</div>

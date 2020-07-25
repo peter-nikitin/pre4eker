@@ -41,7 +41,7 @@ exports[`Request match snapshot 1`] = `
             class="input"
             id="key"
             name="key"
-            type="password"
+            type="text"
             value=""
           />
         </div>
@@ -80,121 +80,10 @@ exports[`Request match snapshot 1`] = `
         Тело запроса
       </button>
       <button
-        class=" sizeAuto button normal active basic"
+        class=" sizeAuto button normal false basic"
         type="button"
       >
         Тело ответа
-      </button>
-    </div>
-    <div
-      class="requestJSON"
-    >
-      <div
-        class="editorWrapper"
-      >
-        <div
-          class=" ace_editor ace_hidpi ace-tm"
-          id="ResponseCode"
-          style="width: 100%; height: 100%;"
-        >
-          <textarea
-            autocapitalize="off"
-            autocorrect="off"
-            class="ace_text-input"
-            spellcheck="false"
-            style="opacity: 0; font-size: 1px;"
-            wrap="off"
-          />
-          <div
-            aria-hidden="true"
-            class="ace_gutter"
-          >
-            <div
-              class="ace_layer ace_gutter-layer ace_folding-enabled"
-              style="height: 1000000px;"
-            />
-          </div>
-          <div
-            class="ace_scroller"
-            style="line-height: 0px;"
-          >
-            <div
-              class="ace_content"
-            >
-              <div
-                class="ace_layer ace_print-margin-layer"
-              >
-                <div
-                  class="ace_print-margin"
-                  style="left: 4px; visibility: visible;"
-                />
-              </div>
-              <div
-                class="ace_layer ace_marker-layer"
-              />
-              <div
-                class="ace_layer ace_text-layer"
-                style="height: 1000000px; margin: 0px 4px;"
-              />
-              <div
-                class="ace_layer ace_marker-layer"
-              />
-              <div
-                class="ace_layer ace_cursor-layer ace_hidden-cursors"
-              >
-                <div
-                  class="ace_cursor"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="ace_scrollbar ace_scrollbar-v"
-            style="display: none; width: 20px;"
-          >
-            <div
-              class="ace_scrollbar-inner"
-              style="width: 20px;"
-            >
-               
-            </div>
-          </div>
-          <div
-            class="ace_scrollbar ace_scrollbar-h"
-            style="display: none; height: 20px;"
-          >
-            <div
-              class="ace_scrollbar-inner"
-              style="height: 20px;"
-            >
-               
-            </div>
-          </div>
-          <div
-            style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; overflow: hidden;"
-          >
-            <div
-              style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; overflow: visible;"
-            />
-            <div
-              style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; overflow: visible;"
-            >
-              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            </div>
-          </div>
-        </div>
-        <button
-          class="btnXML sizeAuto button normal false basic"
-          type="button"
-        >
-          XML
-        </button>
-      </div>
-      <button
-        class=" sizeFull button normal false basic"
-        type="button"
-      >
-        Отобразить скидки
       </button>
     </div>
   </div>
