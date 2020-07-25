@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import Button from "src/components/Button/Button";
@@ -22,10 +22,10 @@ const Modal = ({ header, footer, main, onCloseBtnClick }) => {
 };
 
 Modal.propTypes = {
-  header: PropTypes.string,
-  footer: PropTypes.func,
-  main: PropTypes.func,
-  onCloseBtnClick: PropTypes.func,
+  header: PropTypes.string.isRequired,
+  footer: PropTypes.func.isRequired,
+  main: PropTypes.func.isRequired,
+  onCloseBtnClick: PropTypes.func.isRequired,
 };
 
 export default Modal;
