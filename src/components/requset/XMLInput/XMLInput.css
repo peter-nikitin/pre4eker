@@ -1,0 +1,12 @@
+.btnGroup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: .7rem;
+  z-index: 100;
+  display: flex;
+}
+
+.editor {
+  position: relative;
+}
