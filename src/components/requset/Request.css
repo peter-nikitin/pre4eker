@@ -3,7 +3,7 @@
   margin-bottom: .5rem;
   flex-shrink: 0;
   justify-content: space-between;
-  /* font-size: .78rem; */
+  font-size: 0.9rem;
 }
 
 .buttonLine button {
