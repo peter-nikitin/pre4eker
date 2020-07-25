@@ -4,17 +4,15 @@ import PropTypes from "prop-types";
 const Cross = ({ color }) => (
   <div>
     <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
+      width="7"
+      height="7"
+      viewBox="0 0 7 7"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M4.21972 8L0 3.78028L3.78028 0L8 4.21972L12.2197 0L16 3.78028L11.7803 8L16 12.2197L12.2197 16L8 11.7803L3.78028 16L0 12.2197L4.21972 8Z"
-        fill={color || "#000"}
+        d="M6.98986 0.875398L4.3754 3.48986L7 6.11446L6.11446 7L3.48986 4.3754L0.875398 6.98986L0.0245652 6.13902L2.63902 3.52457L0 0.885542L0.885542 0L3.52457 2.63902L6.13902 0.0245657L6.98986 0.875398Z"
+        fill={color || "Black"}
       />
     </svg>
   </div>
