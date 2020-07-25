@@ -31,7 +31,7 @@ const RequestSettings = ({ requestJSON, setRequestJSON, setKey, keyValue }) => {
             key: e.target.value,
           })
         }
-        type="password"
+        type="text"
       />
       <Input
         label="Операция"
