@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import saveToLocalStorage from "src/helpers/saveToLocalStorage";
 
 import style from "./Main.css";
 import RequestContainer from "../requset/RequestContainer";
 import Response from "../respose/Response";
 
 export default function Main({ state }) {
+  useEffect(() => {
+    if (state.requestJSON.endpoint) {
+      saveToLocalStorage(state.requestJSON.endpoint, JSON.stringify(state));
+    }
+  }, [state]);
+
   return (
     <div className={style.main}>
       <div className={style.oneThird}>

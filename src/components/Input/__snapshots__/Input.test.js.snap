@@ -11,13 +11,17 @@ exports[`the field match snapshot 1`] = `
     >
       email
     </label>
-    <input
-      class="input"
-      id="email"
-      name="email"
-      type="text"
-      value=""
-    />
+    <div
+      class="inputGroup"
+    >
+      <input
+        class="input"
+        id="email"
+        name="email"
+        type="text"
+        value=""
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -20,13 +20,17 @@ exports[`Request match snapshot 1`] = `
           >
             Эндпоин
           </label>
-          <input
-            class="input"
-            id="endpoint"
-            name="endpoint"
-            type="text"
-            value=""
-          />
+          <div
+            class="inputGroup"
+          >
+            <input
+              class="input"
+              id="endpoint"
+              name="endpoint"
+              type="text"
+              value=""
+            />
+          </div>
         </div>
         <div
           class="inputItem third"
@@ -37,13 +41,17 @@ exports[`Request match snapshot 1`] = `
           >
             Секретный ключ
           </label>
-          <input
-            class="input"
-            id="key"
-            name="key"
-            type="text"
-            value=""
-          />
+          <div
+            class="inputGroup"
+          >
+            <input
+              class="input"
+              id="key"
+              name="key"
+              type="text"
+              value=""
+            />
+          </div>
         </div>
         <div
           class="inputItem third"
@@ -54,13 +62,17 @@ exports[`Request match snapshot 1`] = `
           >
             Операция
           </label>
-          <input
-            class="input"
-            id="operation"
-            name="operation"
-            type="text"
-            value=""
-          />
+          <div
+            class="inputGroup"
+          >
+            <input
+              class="input"
+              id="operation"
+              name="operation"
+              type="text"
+              value=""
+            />
+          </div>
         </div>
       </div>
     </div>

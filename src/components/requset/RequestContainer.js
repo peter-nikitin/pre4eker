@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
 
-import Request from "./Request";
 import {
   changeFormType,
   setResponseJSON,
@@ -9,6 +8,8 @@ import {
   setRequestXML,
   setResponseXML,
 } from "src/components/Main/actionCreators";
+
+import Request from "./Request";
 
 const mapStateToProps = ({ mainReducer }) => ({
   responseJSON: mainReducer.responseJSON,
