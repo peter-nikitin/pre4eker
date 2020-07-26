@@ -39,18 +39,19 @@
         "discountAmountForCurrentOrder": 0,
         "coupon": {
           "ids": {
-            "code": "1112R1"
+            "code": "BLS3TQO"
           },
           "pool": {
             "ids": {
-              "mindboxId": 6,
-              "externalId": "sms-pool"
+              "mindboxId": 4,
+              "externalId": "promo-code-pool-2"
             },
-            "name": "Коды для SMS",
-            "description": "Выдается при регистрации через СМС"
+            "name": "Сертификаты 2019 - без нулей",
+            "description": "Копия изначального пула, но шаблон без использования нулей"
           },
-          "status": "AlreadyNotActive",
-          "availableTillDateTimeUtc": "2019-09-15T13:06:14.04Z"
+          "status": "Used",
+          "availableTillDateTimeUtc": "2019-11-07T15:26:28.817Z",
+          "usedDateTimeUtc": "2019-10-17T15:34:04.47Z"
         }
       }
     ]
@@ -58,11 +59,15 @@
   "customer": {
     "processingStatus": "Found",
     "ids": {
-      "mindboxId": 50689
+      "mindboxId": 79368
     },
-    "mobilePhone": 79006405614,
-    "isMobilePhoneInvalid": false,
-    "changeDateTimeUtc": "2019-08-25T13:06:13.593Z",
+    "firstName": "Петр",
+    "middleName": "Александрович",
+    "lastName": "Никитин",
+    "email": "nikitin-test@mindbox.ru",
+    "isEmailInvalid": true,
+    "sex": "male",
+    "changeDateTimeUtc": "2019-11-14T09:59:27.35Z",
     "ianaTimeZone": "Europe/Moscow",
     "timeZoneSource": "Определили по мобильному телефону",
     "subscriptions": [
@@ -72,10 +77,11 @@
         "isSubscribed": true
       },
       {
-        "pointOfContact": "Sms",
+        "pointOfContact": "Email",
+        "topic": "Main",
         "isSubscribed": true
       }
     ],
-    "sessionKey": "637312968036701923,EC6287ED0F43B0E0A482522FE291D4A5AA8120821FBD30C9FB3E81E0ADBB69639D4DC9DAF6997CA0F2D3EC04F43566E602D4F0DCEF5373B00F01F4530081C3F5"
+    "sessionKey": "637313598323053575,CEF1867BF044FF37B1DB34FE0BAC90F33656519C7298CD66DBC4F757F35B7C70F83F081082997B893E84B8E2C59E84662CB21D65857A5ECCAF690D5CC2C85694"
   }
 }
