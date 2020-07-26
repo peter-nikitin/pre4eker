@@ -11,7 +11,7 @@ exports[`customer match snapshot 1`] = `
       Промокод
     </div>
     <div
-      class="inline"
+      class="line inline"
     >
       <div
         class="half"
@@ -46,7 +46,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            10 528 369,9
+            10 528 369,9 ₽
           </div>
         </div>
       </div>
@@ -71,6 +71,20 @@ exports[`customer match snapshot 1`] = `
           class="line"
         >
           <div
+            class=" name"
+          >
+            Использован
+          </div>
+          <div
+            class="  value"
+          >
+            20 апреля 2019 г.
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
             class="  name"
           >
             Сгорит
@@ -81,19 +95,37 @@ exports[`customer match snapshot 1`] = `
             21 ноября 2017 г.
           </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="inline"
+    >
+      <div
+        class="half"
+      >
         <div
-          class="line"
+          class=" name"
         >
-          <div
-            class=" name"
-          >
-            Использован
-          </div>
-          <div
-            class="  value"
-          >
-            20 апреля 2019 г.
-          </div>
+          Назнивае пула
+        </div>
+        <div
+          class=" name"
+        >
+          Новый пул промокодов
+        </div>
+      </div>
+      <div
+        class="half"
+      >
+        <div
+          class=" name"
+        >
+          Описание пула
+        </div>
+        <div
+          class=" name"
+        >
+          Пул для новой акции!
         </div>
       </div>
     </div>

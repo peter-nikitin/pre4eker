@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import shortid from "shortid";
 import stylesShared from "src/components/respose/responseShared.css";
 
-import toRuDateFormat from "src/helpers/formatDate";
 import toRuNumberFormat from "src/helpers/formatNumber";
 
 import statuses from "./statuses";
@@ -39,7 +38,7 @@ const Order = ({ order }) => {
 
   return (
     <>
-      <h2>Заказ</h2>
+      <h2 className={stylesShared.h2}>Заказ</h2>
       <div className={stylesShared.customer}>
         <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           {ids && <div className={stylesShared.half}>{drawIds(ids)}</div>}

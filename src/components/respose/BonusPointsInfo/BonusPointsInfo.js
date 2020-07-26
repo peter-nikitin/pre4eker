@@ -43,7 +43,7 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
         </div>
       </div>
 
-      <div className={stylesShared.name}>Баланс</div>
+      <div className={stylesShared.promoType}>Баланс</div>
       <div className={stylesShared.inline}>
         <div className={stylesShared.third}>
           <div className={stylesShared.name}>Доступно</div>

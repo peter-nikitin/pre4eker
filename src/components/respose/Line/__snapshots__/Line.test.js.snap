@@ -58,7 +58,7 @@ exports[`Line has to match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            17 639 978,17
+            17 639 978,17 ₽
           </div>
         </div>
         <div
@@ -72,7 +72,7 @@ exports[`Line has to match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            804 584,3
+            804 584,3 ₽
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              10 465 118,7
+              10 465 118,7 ₽
             </div>
             <div
               class="line"
@@ -232,7 +232,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              15 785 603,89
+              15 785 603,89 ₽
             </div>
           </div>
         </div>
@@ -336,7 +336,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              15 872 309,02
+              15 872 309,02 ₽
             </div>
           </div>
         </div>
@@ -421,7 +421,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              4 987 163,88
+              4 987 163,88 ₽
             </div>
           </div>
         </div>
@@ -667,7 +667,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              2 714 279,45
+              2 714 279,45 ₽
             </div>
           </div>
         </div>
@@ -721,7 +721,7 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              20 439 998,48
+              20 439 998,48 ₽
             </div>
           </div>
         </div>

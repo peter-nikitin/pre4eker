@@ -38,7 +38,7 @@ const Customer = ({ customer }) => {
               <div className={stylesShared.half}>
                 <div className={stylesShared.name}>ФИО</div>
                 <div className={stylesShared.value}>
-                  {customer.firstName} {customer.middleName} {customer.lastName}
+                  {customer.lastName} {customer.firstName} {customer.middleName}
                 </div>
               </div>
             )}
