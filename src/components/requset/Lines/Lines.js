@@ -24,7 +24,7 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
     initialLines = initialOrder.lines.map((line, index) => ({
       number: index + 1,
       lineId: line.lineId,
-      externalSystem: Object.keys(line.product.ids)[0] || "Website",
+      externalSystem: Object.keys(line.product.ids)[0],
       price: line.basePricePerItem,
       productId: Object.values(line.product.ids)[0],
       quantity: line.quantity,
@@ -37,7 +37,9 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
   }
 
   const [lines, setLines] = useState([...initialLines]);
-  const [externalSystem, handleExternalSystemChange] = useState("website");
+  const [externalSystem, handleExternalSystemChange] = useState(
+    initialLines[0].externalSystem || "website"
+  );
 
   useEffect(() => {
     const linesToState = lines.map(
@@ -94,8 +96,11 @@ const Lines = ({ setRequestJSON, requestJSON }) => {
           label="Внешняя система"
           name="externalSystem"
           className={style.half}
-          value={lines[0].externalSystem || externalSystem}
+          value={externalSystem}
           onChange={(e) => {
+            setLines(
+              lines.map((line) => ({ ...line, externalSystem: e.target.value }))
+            );
             handleExternalSystemChange(e.target.value);
           }}
         />
