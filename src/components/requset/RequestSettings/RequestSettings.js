@@ -5,7 +5,7 @@ import Input from "src/components/Input/Input";
 
 import style from "./RequestSettings.css";
 
-const RequestSettings = ({ requestJSON, setRequestJSON, setKey, keyValue }) => {
+const RequestSettings = ({ requestJSON, setRequestJSON }) => {
   return (
     <div className={`${style.inline}`}>
       <Input

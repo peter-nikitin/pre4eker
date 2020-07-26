@@ -24,7 +24,7 @@ export const setRequestXML = (data) => ({
 });
 export const toggleLoading = () => ({ type: actionType.TOGGLE_LOADING });
 export const fetchResponse = (data) => (dispatch) => {
-  dispatch(setRequestJSON({ ...data, key: "" }));
+  dispatch(setRequestJSON({ ...data }));
 
   if (typeof data.endpoint !== "undefined") {
     dispatch(toggleLoading());

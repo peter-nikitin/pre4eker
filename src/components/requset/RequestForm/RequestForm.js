@@ -11,8 +11,6 @@ import RequestSettings from "../RequestSettings/RequestSettings";
 import style from "./RequestForm.css";
 
 const RequestForm = ({ requestJSON, handleSubmit, setRequestJSON }) => {
-  const [key, setKey] = useState();
-
   return (
     <>
       <div className={style.form}>
@@ -38,7 +36,6 @@ const RequestForm = ({ requestJSON, handleSubmit, setRequestJSON }) => {
         action={() =>
           handleSubmit({
             ...requestJSON,
-            key,
           })
         }
         type="TEXT"
