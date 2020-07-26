@@ -14,7 +14,20 @@ exports[`customer match snapshot 1`] = `
       <div
         class="inline"
       >
-        Иван
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            ФИО
+          </div>
+          <div
+            class="value"
+          >
+            Иван Иванович Иванов
+          </div>
+        </div>
         <div
           class="half"
         >
@@ -228,7 +241,20 @@ exports[`customer match snapshot 2`] = `
       <div
         class="inline"
       >
-        Иван
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            ФИО
+          </div>
+          <div
+            class="value"
+          >
+            Иван Иванович Иванов
+          </div>
+        </div>
         <div
           class="half"
         >
@@ -584,7 +610,20 @@ exports[`customer match snapshot 3`] = `
       <div
         class="inline"
       >
-        Иван
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            ФИО
+          </div>
+          <div
+            class="value"
+          >
+            Иван Иванович Иванов
+          </div>
+        </div>
         <div
           class="half"
         >

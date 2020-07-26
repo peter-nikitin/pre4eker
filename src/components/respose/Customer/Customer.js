@@ -32,17 +32,16 @@ const Customer = ({ customer }) => {
       <div className={stylesShared.customer}>
         <div className={stylesShared.line}>
           <div className={stylesShared.inline}>
-            {customer.firstName ||
+            {(customer.firstName ||
               customer.middleName ||
-              (customer.lastName && (
-                <div className={stylesShared.half}>
-                  <div className={stylesShared.name}>ФИО</div>
-                  <div className={stylesShared.value}>
-                    {customer.firstName} {customer.middleName}{" "}
-                    {customer.lastName}
-                  </div>
+              customer.lastName) && (
+              <div className={stylesShared.half}>
+                <div className={stylesShared.name}>ФИО</div>
+                <div className={stylesShared.value}>
+                  {customer.firstName} {customer.middleName} {customer.lastName}
                 </div>
-              ))}
+              </div>
+            )}
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Статус обработки</div>
               <div className={stylesShared.value}>
