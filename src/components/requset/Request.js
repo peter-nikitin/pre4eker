@@ -4,6 +4,7 @@ import loadable from "@loadable/component";
 
 import Button from "src/components/Button/Button";
 import RequestSettings from "./RequestSettings/RequestSettings";
+import Loading from "src/components/Loading/Loading";
 
 import style from "./Request.css";
 import * as formTypes from "./formTypes";
@@ -66,6 +67,12 @@ const Request = ({
             />
           </div>
         );
+      case "Loading":
+        return (
+          <div className={style.requestJSON}>
+            <Loading />
+          </div>
+        );
 
       default:
         return true;
@@ -78,6 +85,9 @@ const Request = ({
         <RequestSettings
           setRequestJSON={setRequestJSON}
           requestJSON={requestJSON}
+          setResponseJSON={setResponseJSON}
+          changeFormType={changeFormType}
+          type={type}
         />
       </div>
       <div className={style.buttonLine}>
