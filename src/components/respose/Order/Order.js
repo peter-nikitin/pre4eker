@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import shortid from "shortid";
 import stylesShared from "src/components/respose/responseShared.css";
 
+import toRuDateFormat from "src/helpers/formatDate";
+import toRuNumberFormat from "src/helpers/formatNumber";
+
 import statuses from "./statuses";
 import CustomFileds from "../CustomFields/CustomFields";
 import Coupons from "../Coupons/Coupons";
@@ -51,12 +54,16 @@ const Order = ({ order }) => {
           {deliveryCost > 0 && (
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Доставка</div>
-              <div className={stylesShared.value}>{deliveryCost}</div>
+              <div className={stylesShared.value}>
+                {toRuNumberFormat(deliveryCost)}
+              </div>
             </div>
           )}
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Итоговая цена</div>
-            <div className={stylesShared.promoValue}>{totalPrice}</div>
+            <div className={stylesShared.promoValue}>
+              {toRuNumberFormat(totalPrice)}
+            </div>
           </div>
         </div>
         {customFields && <CustomFileds data={customFields} />}

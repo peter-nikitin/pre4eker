@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import stylesShared from "src/components/respose/responseShared.css";
+
+import toRuNumberFormat from "src/helpers/formatNumber";
+
 import statuses from "./statuses";
 
 const BonusPointsInfo = ({ bonusPointsInfo }) => {
@@ -27,7 +30,7 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
         <div className={stylesShared.half}>
           <div className={stylesShared.name}>Доступно для списание</div>
           <div className={stylesShared.promoValue}>
-            {availableAmountForCurrentOrder}
+            {toRuNumberFormat(availableAmountForCurrentOrder)}
           </div>
         </div>
 
@@ -35,7 +38,7 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
           <div className={stylesShared.name}>Будет списано</div>
 
           <div className={stylesShared.promoValue}>
-            {spentAmountForCurrentOrder}
+            {toRuNumberFormat(spentAmountForCurrentOrder)}
           </div>
         </div>
       </div>
@@ -44,15 +47,21 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
       <div className={stylesShared.inline}>
         <div className={stylesShared.third}>
           <div className={stylesShared.name}>Доступно</div>
-          <div className={stylesShared.value}>{balance.available}</div>
+          <div className={stylesShared.value}>
+            {toRuNumberFormat(balance.available)}
+          </div>
         </div>
         <div className={stylesShared.third}>
           <div className={stylesShared.name}>Блок</div>
-          <div className={stylesShared.value}>{balance.blocked}</div>
+          <div className={stylesShared.value}>
+            {toRuNumberFormat(balance.blocked)}
+          </div>
         </div>
         <div className={stylesShared.third}>
           <div className={stylesShared.name}>Всего</div>
-          <div className={stylesShared.value}>{balance.total}</div>
+          <div className={stylesShared.value}>
+            {toRuNumberFormat(balance.total)}
+          </div>
         </div>
       </div>
     </div>

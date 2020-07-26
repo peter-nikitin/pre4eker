@@ -39,7 +39,7 @@ exports[`AppliedPromotion match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            1180401.2
+            1 180 401,2
           </div>
           <div
             class="line"
@@ -52,7 +52,7 @@ exports[`AppliedPromotion match snapshot 1`] = `
             <div
               class="value"
             >
-              Tue Feb 14 2017
+              14 февраля 2017 г.
             </div>
           </div>
         </div>

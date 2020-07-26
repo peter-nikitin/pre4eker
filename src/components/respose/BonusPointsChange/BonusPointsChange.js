@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import shortid from "shortid";
 
+import toRuNumberFormat from "src/helpers/formatNumber";
+
 import stylesShared from "src/components/respose/responseShared.css";
 
 const BonusPointsChange = ({ bonusPointsChanges }) => {
@@ -29,14 +31,14 @@ const BonusPointsChange = ({ bonusPointsChanges }) => {
           <div className={stylesShared.third}>
             <div className={stylesShared.name}>Начислено</div>
             <div className={stylesShared.value}>
-              {change.earnedAmount || "–"}
+              {toRuNumberFormat(change.earnedAmount) || "–"}
             </div>
           </div>
           <div className={stylesShared.third}>
             <div className={stylesShared.name}>Списано</div>
             <div className={stylesShared.half}>
               <div className={stylesShared.value}>
-                {change.spentAmount || "–"}
+                {toRuNumberFormat(change.spentAmount) || "–"}
               </div>
             </div>
           </div>

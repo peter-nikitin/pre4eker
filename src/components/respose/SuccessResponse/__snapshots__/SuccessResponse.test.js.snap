@@ -157,7 +157,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    17639978.17
+                    17 639 978,17
                   </div>
                 </div>
                 <div
@@ -171,7 +171,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    804584.3
+                    804 584,3
                   </div>
                 </div>
               </div>
@@ -233,7 +233,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    16956137.47
+                    16 956 137,47
                   </div>
                 </div>
                 <div
@@ -247,7 +247,7 @@ exports[`Response snapshot  response without customer to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    9906634.11
+                    9 906 634,11
                   </div>
                 </div>
               </div>
@@ -283,7 +283,20 @@ exports[`Response snapshot  response without lines to match snapshot 1`] = `
             <div
               class="inline"
             >
-              Иван
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  ФИО
+                </div>
+                <div
+                  class="value"
+                >
+                  Иван Иванович Иванов
+                </div>
+              </div>
               <div
                 class="half"
               >
@@ -547,7 +560,20 @@ exports[`Response snapshot  response without order to match snapshot 1`] = `
             <div
               class="inline"
             >
-              Иван
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  ФИО
+                </div>
+                <div
+                  class="value"
+                >
+                  Иван Иванович Иванов
+                </div>
+              </div>
               <div
                 class="half"
               >
@@ -745,7 +771,20 @@ exports[`Response snapshot full response to match snapshot 1`] = `
             <div
               class="inline"
             >
-              Иван
+              <div
+                class="half"
+              >
+                <div
+                  class="name"
+                >
+                  ФИО
+                </div>
+                <div
+                  class="value"
+                >
+                  Иван Иванович Иванов
+                </div>
+              </div>
               <div
                 class="half"
               >
@@ -1098,7 +1137,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  1180401.2
+                  1 180 401,2
                 </div>
                 <div
                   class="line"
@@ -1111,7 +1150,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   <div
                     class="value"
                   >
-                    Tue Feb 14 2017
+                    14 февраля 2017 г.
                   </div>
                 </div>
               </div>
@@ -1216,7 +1255,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  16327420.01
+                  16 327 420,01
                 </div>
               </div>
             </div>
@@ -1320,7 +1359,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  6929359.6
+                  6 929 359,6
                 </div>
               </div>
             </div>
@@ -1405,7 +1444,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  6653645.27
+                  6 653 645,27
                 </div>
               </div>
             </div>
@@ -1651,7 +1690,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  17853107.91
+                  17 853 107,91
                 </div>
               </div>
             </div>
@@ -1705,7 +1744,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  17074535.58
+                  17 074 535,58
                 </div>
               </div>
             </div>
@@ -1758,6 +1797,11 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 </div>
               </div>
               <div
+                class="name"
+              >
+                Статус промокода
+              </div>
+              <div
                 class="line"
               >
                 Пока еще не активен
@@ -1773,7 +1817,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  10528369.9
+                  10 528 369,9
                 </div>
               </div>
             </div>
@@ -1791,7 +1835,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="  value"
                 >
-                  Tue Oct 23 2018
+                  23 октября 2018 г.
                 </div>
               </div>
               <div
@@ -1805,7 +1849,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="  value"
                 >
-                  Tue Nov 21 2017
+                  21 ноября 2017 г.
                 </div>
               </div>
               <div
@@ -1819,7 +1863,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="  value"
                 >
-                  Sat Apr 20 2019
+                  20 апреля 2019 г.
                 </div>
               </div>
             </div>
@@ -1849,6 +1893,11 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 </div>
               </div>
               <div
+                class="name"
+              >
+                Статус промокода
+              </div>
+              <div
                 class="line"
               >
                 Нельзя применить на этот заказ
@@ -1864,7 +1913,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="promoValue"
                 >
-                  6533321.56
+                  6 533 321,56
                 </div>
               </div>
             </div>
@@ -1882,7 +1931,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="  value"
                 >
-                  Fri Sep 27 2019
+                  27 сентября 2019 г.
                 </div>
               </div>
               <div
@@ -1896,7 +1945,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="  value"
                 >
-                  Fri Sep 15 2017
+                  15 сентября 2017 г.
                 </div>
               </div>
               <div
@@ -1910,7 +1959,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="  value"
                 >
-                  Fri Feb 16 2018
+                  16 февраля 2018 г.
                 </div>
               </div>
             </div>
@@ -1960,7 +2009,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="promoValue"
               >
-                8295431.24
+                8 295 431,24
               </div>
             </div>
             <div
@@ -1974,7 +2023,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="promoValue"
               >
-                1559295.84
+                1 559 295,84
               </div>
             </div>
           </div>
@@ -1997,7 +2046,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                2202060.23
+                2 202 060,23
               </div>
             </div>
             <div
@@ -2011,7 +2060,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                19474460.28
+                19 474 460,28
               </div>
             </div>
             <div
@@ -2025,7 +2074,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                16594789.28
+                16 594 789,28
               </div>
             </div>
           </div>
@@ -2074,7 +2123,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="promoValue"
               >
-                15417181.89
+                15 417 181,89
               </div>
             </div>
             <div
@@ -2088,7 +2137,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="promoValue"
               >
-                20423028.05
+                20 423 028,05
               </div>
             </div>
           </div>
@@ -2111,7 +2160,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                8865936.3
+                8 865 936,3
               </div>
             </div>
             <div
@@ -2125,7 +2174,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                19197363.33
+                19 197 363,33
               </div>
             </div>
             <div
@@ -2139,7 +2188,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                15632017.52
+                15 632 017,52
               </div>
             </div>
           </div>
@@ -2193,7 +2242,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                1396638.62
+                1 396 638,62
               </div>
             </div>
             <div
@@ -2210,7 +2259,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value"
                 >
-                  5761799.72
+                  5 761 799,72
                 </div>
               </div>
             </div>
@@ -2248,7 +2297,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
               <div
                 class="value"
               >
-                20955125.72
+                20 955 125,72
               </div>
             </div>
             <div
@@ -2265,7 +2314,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                 <div
                   class="value"
                 >
-                  10868072.91
+                  10 868 072,91
                 </div>
               </div>
             </div>
@@ -2699,7 +2748,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    17639978.17
+                    17 639 978,17
                   </div>
                 </div>
                 <div
@@ -2713,7 +2762,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    804584.3
+                    804 584,3
                   </div>
                 </div>
               </div>
@@ -2755,7 +2804,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      10465118.7
+                      10 465 118,7
                     </div>
                     <div
                       class="line"
@@ -2768,7 +2817,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                       <div
                         class="value"
                       >
-                        Sun Sep 15 2019
+                        15 сентября 2019 г.
                       </div>
                     </div>
                   </div>
@@ -2873,7 +2922,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      15785603.89
+                      15 785 603,89
                     </div>
                   </div>
                 </div>
@@ -2977,7 +3026,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      15872309.02
+                      15 872 309,02
                     </div>
                   </div>
                 </div>
@@ -3062,7 +3111,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      4987163.88
+                      4 987 163,88
                     </div>
                   </div>
                 </div>
@@ -3308,7 +3357,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      2714279.45
+                      2 714 279,45
                     </div>
                   </div>
                 </div>
@@ -3362,7 +3411,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      20439998.48
+                      20 439 998,48
                     </div>
                   </div>
                 </div>
@@ -3812,7 +3861,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    16956137.47
+                    16 956 137,47
                   </div>
                 </div>
                 <div
@@ -3826,7 +3875,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                   <div
                     class="promoValue"
                   >
-                    9906634.11
+                    9 906 634,11
                   </div>
                 </div>
               </div>
@@ -3868,7 +3917,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      4390646.74
+                      4 390 646,74
                     </div>
                     <div
                       class="line"
@@ -3881,7 +3930,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                       <div
                         class="value"
                       >
-                        Sun Nov 17 2019
+                        17 ноября 2019 г.
                       </div>
                     </div>
                   </div>
@@ -3986,7 +4035,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      6967802.04
+                      6 967 802,04
                     </div>
                   </div>
                 </div>
@@ -4090,7 +4139,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      21098663.17
+                      21 098 663,17
                     </div>
                   </div>
                 </div>
@@ -4175,7 +4224,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      6272434.97
+                      6 272 434,97
                     </div>
                   </div>
                 </div>
@@ -4421,7 +4470,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      16032274.27
+                      16 032 274,27
                     </div>
                   </div>
                 </div>
@@ -4475,7 +4524,7 @@ exports[`Response snapshot full response to match snapshot 1`] = `
                     <div
                       class="promoValue"
                     >
-                      5200120.47
+                      5 200 120,47
                     </div>
                   </div>
                 </div>

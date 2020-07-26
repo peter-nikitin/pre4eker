@@ -1,6 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import stylesShared from "src/components/respose/responseShared.css";
+
+import toRuDateFormat from "src/helpers/formatDate";
+import toRuNumberFormat from "src/helpers/formatNumber";
+
 import types from "./types";
 
 const AppliedPropmotion = ({ promoInfo = {} }) => {
@@ -35,12 +39,14 @@ const AppliedPropmotion = ({ promoInfo = {} }) => {
           {amount && (
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Сумма</div>
-              <div className={stylesShared.promoValue}>{amount}</div>
+              <div className={stylesShared.promoValue}>
+                {toRuNumberFormat(amount)}
+              </div>
               {expirationDateTimeUtc && (
                 <div className={stylesShared.line}>
                   <div className={stylesShared.name}>До</div>
                   <div className={stylesShared.value}>
-                    {expirationDate.toDateString()}
+                    {toRuDateFormat(expirationDate)}
                   </div>
                 </div>
               )}

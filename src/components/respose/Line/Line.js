@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import stylesShared from "src/components/respose/responseShared.css";
 import shortid from "shortid";
 
+import toRuNumberFormat from "src/helpers/formatNumber";
+
 import AppliedPromotion from "../AppliedPromotion/AppliedPromotion";
 import Placeholders from "../Placeholders/Placeholders";
 
@@ -47,12 +49,14 @@ const Line = ({ lineInfo }) => {
         <div className={stylesShared.inline}>
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Базовая цена</div>
-            <div className={stylesShared.promoValue}>{basePricePerItem}</div>
+            <div className={stylesShared.promoValue}>
+              {toRuNumberFormat(basePricePerItem)}
+            </div>
           </div>
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Сумма по линии</div>
             <div className={stylesShared.promoValue}>
-              {discountedPriceOfLine}
+              {toRuNumberFormat(discountedPriceOfLine)}
             </div>
           </div>
         </div>

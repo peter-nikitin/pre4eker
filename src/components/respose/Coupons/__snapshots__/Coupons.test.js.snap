@@ -26,6 +26,11 @@ exports[`customer match snapshot 1`] = `
           </div>
         </div>
         <div
+          class="name"
+        >
+          Статус промокода
+        </div>
+        <div
           class="line"
         >
           Пока еще не активен
@@ -41,7 +46,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            10528369.9
+            10 528 369,9
           </div>
         </div>
       </div>
@@ -59,7 +64,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="  value"
           >
-            Tue Oct 23 2018
+            23 октября 2018 г.
           </div>
         </div>
         <div
@@ -73,7 +78,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="  value"
           >
-            Tue Nov 21 2017
+            21 ноября 2017 г.
           </div>
         </div>
         <div
@@ -87,7 +92,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="  value"
           >
-            Sat Apr 20 2019
+            20 апреля 2019 г.
           </div>
         </div>
       </div>
