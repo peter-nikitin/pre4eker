@@ -13,13 +13,12 @@ const RequestForm = loadable(() => import("./RequestForm/RequestForm"));
 
 const Request = ({
   changeFormType,
-  state,
-  type,
   fetchResponse,
   setResponseJSON,
   setResponseXML,
   setRequestJSON,
   setRequestXML,
+  type,
   responseJSON,
   responseXML,
   requestJSON,
@@ -78,7 +77,7 @@ const Request = ({
       <div className={`${style.formGroup}`}>
         <RequestSettings
           setRequestJSON={setRequestJSON}
-          requestJSON={state.requestJSON}
+          requestJSON={requestJSON}
         />
       </div>
       <div className={style.buttonLine}>
@@ -102,17 +101,29 @@ const Request = ({
 
 Request.propTypes = {
   changeFormType: PropTypes.func,
-  state: PropTypes.object,
   setResponseJSON: PropTypes.func,
+  setResponseXML: PropTypes.func,
   fetchResponse: PropTypes.func,
   setRequestJSON: PropTypes.func,
+  setRequestXML: PropTypes.func,
+  type: PropTypes.string,
+  responseJSON: PropTypes.object,
+  responseXML: PropTypes.string,
+  requestJSON: PropTypes.object,
+  requestXML: PropTypes.string,
 };
 Request.defaultProps = {
   changeFormType: () => ({}),
-  state: {},
   setResponseJSON: () => ({}),
+  setResponseXML: () => ({}),
   fetchResponse: () => ({}),
   setRequestJSON: () => ({}),
+  setRequestXML: () => ({}),
+  type: "",
+  responseJSON: {},
+  responseXML: "",
+  requestJSON: {},
+  requestXML: "",
 };
 
 export default Request;
