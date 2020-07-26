@@ -108,13 +108,17 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
             >
               ИД акции
             </label>
-            <input
-              class="input"
-              id="externalPromo-order-0-id"
-              name="externalPromo-order-0-id"
-              type="text"
-              value="1"
-            />
+            <div
+              class="inputGroup"
+            >
+              <input
+                class="input"
+                id="externalPromo-order-0-id"
+                name="externalPromo-order-0-id"
+                type="text"
+                value="1"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -129,13 +133,17 @@ exports[`ExternalPromo  with 1 promo should render 1 element 1`] = `
             >
               Сумма
             </label>
-            <input
-              class="input"
-              id="externalProm-order-0-value"
-              name="externalProm-order-0-value"
-              type="text"
-              value="1"
-            />
+            <div
+              class="inputGroup"
+            >
+              <input
+                class="input"
+                id="externalProm-order-0-value"
+                name="externalProm-order-0-value"
+                type="text"
+                value="1"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -252,13 +260,17 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
             >
               ИД акции
             </label>
-            <input
-              class="input"
-              id="externalPromo-order-1-id"
-              name="externalPromo-order-1-id"
-              type="text"
-              value=""
-            />
+            <div
+              class="inputGroup"
+            >
+              <input
+                class="input"
+                id="externalPromo-order-1-id"
+                name="externalPromo-order-1-id"
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
         <div
@@ -273,13 +285,17 @@ exports[`ExternalPromo  with empty body should render 1 element after click on a
             >
               Сумма
             </label>
-            <input
-              class="input"
-              id="externalProm-order-1-value"
-              name="externalProm-order-1-value"
-              type="text"
-              value=""
-            />
+            <div
+              class="inputGroup"
+            >
+              <input
+                class="input"
+                id="externalProm-order-1-value"
+                name="externalProm-order-1-value"
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>

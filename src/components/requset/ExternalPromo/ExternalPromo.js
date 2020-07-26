@@ -10,25 +10,22 @@ import style from "./ExternalPromo.css";
 import arrayFunctions from "../arrayFunctions";
 
 const ExternalPromo = ({ body, setBody, typeOfParent }) => {
-  let initialExternalPromo;
-  if (typeof body.requestedPromotions !== "undefined") {
-    initialExternalPromo = body.requestedPromotions.map(
-      (externalPromo, index) => ({
+  const toLocalExternalPromo = (passedBody) => {
+    if (typeof passedBody.requestedPromotions !== "undefined") {
+      return passedBody.requestedPromotions.map((externalPromo, index) => ({
         number: index,
         type: externalPromo.promotion.type,
         id: externalPromo.promotion.ids.externalId,
         disCountType: externalPromo.type,
         value: externalPromo.amount,
-      })
-    );
-  } else {
-    initialExternalPromo = [];
-  }
-
+      }));
+    }
+    return [];
+  };
   // console.log(body.requestedPromotions);
 
   const [externalPromos, setExternalPromo] = useState([
-    ...initialExternalPromo,
+    ...toLocalExternalPromo(body),
   ]);
 
   useEffect(() => {
