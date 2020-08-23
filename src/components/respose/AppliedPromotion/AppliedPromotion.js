@@ -20,7 +20,7 @@ const AppliedPropmotion = ({ promoInfo = {} }) => {
 
   const expirationDate = new Date(expirationDateTimeUtc);
   return (
-    <div>
+    <>
       <div className={stylesShared.promo}>
         <div className={`${stylesShared.promoType} ${stylesShared.line}`}>
           {types[type]}
@@ -96,7 +96,7 @@ const AppliedPropmotion = ({ promoInfo = {} }) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 

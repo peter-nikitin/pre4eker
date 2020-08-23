@@ -27,7 +27,7 @@ const Customer = ({ customer }) => {
   } = customer;
 
   return (
-    <>
+    <div>
       <h2>Клиент</h2>
       <div className={stylesShared.customer}>
         <div className={stylesShared.line}>
@@ -113,7 +113,7 @@ const Customer = ({ customer }) => {
         </div>
         {customFields && <CustomFields data={customFields} />}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -37,7 +37,7 @@ const Order = ({ order }) => {
   };
 
   return (
-    <>
+    <div>
       <h2 className={stylesShared.h2}>Заказ</h2>
       <div className={stylesShared.customer}>
         <div className={`${stylesShared.inline} ${stylesShared.line}`}>
@@ -80,7 +80,7 @@ const Order = ({ order }) => {
         <BonusPointsChange bonusPointsChanges={bonusPointsChanges} />
       )}
       {placeholders && <Placeholders placeholders={placeholders} />}
-    </>
+    </div>
   );
 };
 
