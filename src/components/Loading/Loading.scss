@@ -6,16 +6,18 @@ $primary-color: #000;
 
 .loader-active {
   display: block;
+  margin-bottom: 1rem;
 }
 
 .loading {
-  background: #ffffff;
-  border: 1px solid #bdbdbd;
-  padding: 1rem 1.7rem;
+  // background: #ffffff;
+  // border: 1px solid #bdbdbd;
+  // padding: 1rem 1.7rem;
   // margin-bottom: 0.5rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
