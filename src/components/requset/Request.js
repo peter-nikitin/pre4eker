@@ -81,6 +81,7 @@ const Request = ({
 
   return (
     <div className={style.leftPanel}>
+      <h2 className={style.header}>Запрос</h2>
       <div className={`${style.formGroup}`}>
         <RequestSettings
           setRequestJSON={setRequestJSON}

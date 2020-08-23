@@ -6,6 +6,8 @@ import ErrorResponse from "./ErrorResponse/ErrorResponse";
 import SuccessResponse from "./SuccessResponse/SuccessResponse";
 import Loading from "../Loading/Loading";
 
+import style from "./Response.css";
+
 const Response = ({ response, isLoading }) => {
   const drawResponse = (responseData) => {
     if (isLoading) {
@@ -14,11 +16,21 @@ const Response = ({ response, isLoading }) => {
     if (Object.keys(responseData).length !== 0) {
       switch (responseData.status) {
         case `ProtocolError`:
-          return <ErrorResponse responseData={responseData} />;
+          return (
+            <>
+              <h2 className={style.header}>Ошибка </h2>
+              <ErrorResponse responseData={responseData} />{" "}
+            </>
+          );
         case `Success`:
-          return <SuccessResponse responseData={responseData} />;
+          return (
+            <>
+              <h2 className={style.header}>Расчет заказа</h2>
+              <SuccessResponse responseData={responseData} />
+            </>
+          );
         default:
-          return <SuccessResponse responseData={responseData} />;
+          return <ErrorResponse responseData={responseData} />;
       }
     }
     return <EmptyResponse />;

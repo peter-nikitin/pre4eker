@@ -33,11 +33,9 @@ export default function Main({ state }) {
   return (
     <div className={style.main}>
       <div className={style.oneThird}>
-        <h2>Запрос</h2>
         <RequestContainer />
       </div>
       <div className={style.twoThird}>
-        <h2>Ответ</h2>
         <Response response={state.responseJSON} isLoading={state.isLoading} />
       </div>
     </div>
