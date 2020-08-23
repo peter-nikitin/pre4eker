@@ -19,7 +19,7 @@ const App = () => (
       <meta name="description" content="Сервис проверки акций" />
     </Helmet>
     <Normalize />
-    <Header />
+
     <MainContainer />
   </Provider>
 );
