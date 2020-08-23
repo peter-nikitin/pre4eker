@@ -9,14 +9,18 @@ import arrayFunctions from "../arrayFunctions";
 import style from "./Order.css";
 
 const Promocodes = ({ orderBody, setOrderBody }) => {
-  let initialPromocodes;
-  if (typeof orderBody.coupons !== "undefined") {
-    initialPromocodes = orderBody.coupons.map((coupon, index) => ({
-      number: index,
-      code: coupon.ids.code,
-    }));
-  } else {
-    initialPromocodes = [];
+  let initialPromocodes = [];
+  try {
+    if (typeof orderBody.coupons !== "undefined") {
+      initialPromocodes = orderBody.coupons.map((coupon, index) => ({
+        number: index,
+        code: coupon.ids.code,
+      }));
+    } else {
+      initialPromocodes = [];
+    }
+  } catch (error) {
+    console.log(error);
   }
 
   const [promocodes, setPromocodes] = useState([...initialPromocodes]);

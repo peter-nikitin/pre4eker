@@ -46,31 +46,35 @@ const Customer = ({ setRequestJSON, requestJSON }) => {
   }, [customer]);
 
   let customerField;
-  if (
-    customerLookUpOption.type !== "none" &&
-    customerLookUpOption.type !== "ids"
-  ) {
-    customerField = (
-      <div className={style.inline}>
-        <div className={style.half}>
-          <Input
-            label={customerLookUpOption.name}
-            name={customerLookUpOption.type}
-            value={customer[customerLookUpOption.type]}
-            onChange={(e) =>
-              setCustomer({
-                [customerLookUpOption.type]: e.target.value,
-              })
-            }
-          />
-          <p className={style.description}>&nbsp;</p>
+  try {
+    if (
+      customerLookUpOption.type !== "none" &&
+      customerLookUpOption.type !== "ids"
+    ) {
+      customerField = (
+        <div className={style.inline}>
+          <div className={style.half}>
+            <Input
+              label={customerLookUpOption.name}
+              name={customerLookUpOption.type}
+              value={customer[customerLookUpOption.type]}
+              onChange={(e) =>
+                setCustomer({
+                  [customerLookUpOption.type]: e.target.value,
+                })
+              }
+            />
+            <p className={style.description}>&nbsp;</p>
+          </div>
         </div>
-      </div>
-    );
-  } else if (customerLookUpOption.type === "ids") {
-    customerField = (
-      <IdField object={customer} setObject={setCustomer} type="customer" />
-    );
+      );
+    } else if (customerLookUpOption.type === "ids") {
+      customerField = (
+        <IdField object={customer} setObject={setCustomer} type="customer" />
+      );
+    }
+  } catch (error) {
+    console.log(error);
   }
 
   return (

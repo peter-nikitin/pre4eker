@@ -8,14 +8,21 @@ import arrayFunctions from "../arrayFunctions";
 import style from "./Order.css";
 
 const BonusPoints = ({ orderBody, setOrderBody }) => {
-  let initialBonusPoints;
-  if (typeof orderBody.bonusPoints !== "undefined") {
-    initialBonusPoints = orderBody.bonusPoints.map((bonusPointItem, index) => ({
-      number: index,
-      value: bonusPointItem.amount,
-    }));
-  } else {
-    initialBonusPoints = [];
+  let initialBonusPoints = [];
+
+  try {
+    if (typeof orderBody.bonusPoints !== "undefined") {
+      initialBonusPoints = orderBody.bonusPoints.map(
+        (bonusPointItem, index) => ({
+          number: index,
+          value: bonusPointItem.amount,
+        })
+      );
+    } else {
+      initialBonusPoints = [];
+    }
+  } catch (error) {
+    console.log(error);
   }
 
   const [bonusPoints, setbonusPoints] = useState([...initialBonusPoints]);
