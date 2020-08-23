@@ -7,7 +7,7 @@
 
 .buttonLine {
   display: flex;
-  /* margin-bottom: .5rem; */
+  margin-right: 1px;
   flex-shrink: 0;
   justify-content: stretch;
   font-size: .7rem;

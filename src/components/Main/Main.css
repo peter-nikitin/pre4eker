@@ -1,33 +1,33 @@
 .main {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   /* padding-bottom: 2rem; */
 }
 
 .oneThird {
-  width: 33%;
+  /* width: 450px; */
   /* margin-right: 1rem; */
-  max-width: 100%;
+  /* max-width: 100%;
   height: 100vh;
-  min-height: 500px;
+  min-height: 500px; */
 }
 
 .twoThird {
   /* padding: 0 1rem; */
+  margin-left: 450px;
   max-width: 100%;
   flex-grow: 1;
-  flex-shrink: 2;
+  flex-shrink: 10;
   display: flex;
   flex-direction: column;
   padding: 1.3rem;
 }
 
 @media (max-width: 1200px) {
-  .oneThird {
-    width: 60%;
+  .twoThird {
+    /* width: 50%; */
   }
-  .twoThird {}
 }
 
 @media (max-width: 800px) {
@@ -39,5 +39,7 @@
   }
   .twoThird {
     width: 100%;
+    padding-top: 3rem;
+    margin-left: 0;
   }
 }

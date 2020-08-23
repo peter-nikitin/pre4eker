@@ -1,14 +1,39 @@
 .response {
-  width: 100%;
-  height: calc(80vh);
-  background: #F2F2F2;
-  border: 1px dashed #000000;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  max-width: 800px;
+  height: 100vh;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .text {
-  width: 30rem;
-  padding: 1rem 2rem;
+  width: 40%;
+  max-width: 100%;
+  padding: 0 1rem 1rem;
+  min-width: 400px;
+}
+
+
+/* @media (max-width: 1300px) and (min-width: 800px) {
+  .inline {
+    width: 40%
+  }
+} */
+
+@media (max-width: 800px) {
+  .inline {}
+  .text {
+    width: auto;
+    padding: 1rem 0;
+    min-width: auto;
+  }
+  .response {
+    height: auto;
+  }
 }

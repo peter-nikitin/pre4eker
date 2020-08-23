@@ -11,22 +11,21 @@
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
-  height: 100%;
+  /* height: 100%; */
   overflow-y: auto;
-  min-width: 300px;
-  max-width: 50%;
+  min-width: 400px;
+  max-width: 450px;
 }
 
 .response {
-  padding: 1rem 2.5rem;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  height: 80vh;
+  /* padding: 1rem 2.5rem; */
+  /* background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
+  /* height: 100vh; */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .response {
-    padding: 1rem .5rem;
     height: auto;
     margin-bottom: 1rem;
     justify-content: center;
@@ -39,5 +38,11 @@
   .half {
     padding: 0;
     height: auto;
+    min-width: 100%;
   }
+}
+
+.header {
+  padding-bottom: .3rem;
+  border-bottom: 2px solid black;
 }

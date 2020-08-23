@@ -1,7 +1,9 @@
 .form {
   background-color: #fff;
-  /* overflow: auto; */
-  /* height: calc(100% - 37.6px); */
+  overflow-y: auto;
+  overflow-x: visible;
+  height: calc(100% - 37.6px - 16px);
+  margin-bottom: 1rem;
 }
 
 .formGroup {
