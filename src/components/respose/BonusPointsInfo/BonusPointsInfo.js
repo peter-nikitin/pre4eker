@@ -16,17 +16,16 @@ const BonusPointsInfo = ({ bonusPointsInfo }) => {
 
   return (
     <div className={stylesShared.promo}>
-      <div className={stylesShared.inline}>
-        <div className={stylesShared.half}>
-          <div className={stylesShared.promoType}>Информация о баллах</div>
-        </div>
-
-        <div className={stylesShared.half}>
-          <div className={stylesShared.name}>Статус обработки</div>
-          <div className={stylesShared.value}>{statuses[status] || status}</div>
-        </div>
+      <div className={stylesShared.line}>
+        <div className={stylesShared.promoType}>Информация о баллах</div>
       </div>
-      <div className={stylesShared.inline}>
+
+      <div className={stylesShared.line}>
+        <div className={stylesShared.name}>Статус обработки</div>
+        <div className={stylesShared.value}>{statuses[status] || status}</div>
+      </div>
+
+      <div className={`${stylesShared.inline} ${stylesShared.line}`}>
         <div className={stylesShared.half}>
           <div className={stylesShared.name}>Доступно для списание</div>
           <div className={stylesShared.promoValue}>

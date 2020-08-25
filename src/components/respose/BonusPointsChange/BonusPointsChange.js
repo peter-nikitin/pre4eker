@@ -14,29 +14,28 @@ const BonusPointsChange = ({ bonusPointsChanges }) => {
 
   return (
     <div className={stylesShared.promo}>
-      <div className={stylesShared.inline}>
-        <div className={stylesShared.half}>
-          <div className={stylesShared.promoType}>Изменения баллов</div>
-        </div>
+      <div className={stylesShared.line}>
+        <div className={stylesShared.promoType}>Изменения баллов</div>
       </div>
       {changes.map((change) => (
-        <div key={change.id} className={stylesShared.inline}>
-          <div className={stylesShared.third}>
+        <div key={change.id} className={`  ${stylesShared.line}`}>
+          <div className={stylesShared.line}>
             <div className={stylesShared.name}>Балльный счет</div>
             <div className={stylesShared.value}>{change.balanceType.name}</div>
             <div className={`${stylesShared.status} ${stylesShared.neutral}`}>
               {change.balanceType.ids.systemName}
             </div>
           </div>
-          <div className={stylesShared.third}>
-            <div className={stylesShared.name}>Начислено</div>
-            <div className={stylesShared.value}>
-              {toRuNumberFormat(change.earnedAmount) || "–"}
-            </div>
-          </div>
-          <div className={stylesShared.third}>
-            <div className={stylesShared.name}>Списано</div>
+          <div className={`${stylesShared.inline} ${stylesShared.line}`}>
             <div className={stylesShared.half}>
+              <div className={stylesShared.name}>Начислено</div>
+              <div className={stylesShared.value}>
+                {toRuNumberFormat(change.earnedAmount) || "–"}
+              </div>
+            </div>
+            <div className={stylesShared.half}>
+              <div className={stylesShared.name}>Списано</div>
+
               <div className={stylesShared.value}>
                 {toRuNumberFormat(change.spentAmount) || "–"}
               </div>

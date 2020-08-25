@@ -26,16 +26,15 @@ const AppliedPropmotion = ({ promoInfo = {} }) => {
           {types[type]}
         </div>
         <div className={`${stylesShared.inline} ${stylesShared.line}`}>
-          <div className={stylesShared.half}>
-            {promotion && (
-              <>
-                <div className={stylesShared.name}>Название акции</div>
-                <div className={`${stylesShared.value} ${stylesShared.line}`}>
-                  {promotion.name}
-                </div>
-              </>
-            )}
-          </div>
+          {promotion && (
+            <div className={stylesShared.half}>
+              <div className={stylesShared.name}>Название акции</div>
+              <div className={`${stylesShared.value} ${stylesShared.line}`}>
+                {promotion.name}
+              </div>
+            </div>
+          )}
+
           {amount && (
             <div className={stylesShared.half}>
               <div className={stylesShared.name}>Сумма</div>

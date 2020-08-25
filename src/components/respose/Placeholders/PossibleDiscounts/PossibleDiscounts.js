@@ -7,14 +7,16 @@ const PossibleDiscounts = ({ content, placeholder }) => {
   const { promotion, possibleDiscounts } = content;
 
   const amountTypes = {
-    Percent: "В процентах",
-    Absolute: "В рублях",
+    Percent: "В процентах",
+    Absolute: "В рублях",
   };
 
   return (
-    <div>
+    <>
       <div className={stylesShared.promo}>
-        <div className="inline line">Скидка на доп. товары</div>
+        <div className={`${stylesShared.promoType} ${stylesShared.line}`}>
+          Скидка на доп. товары
+        </div>
         <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           <div className={stylesShared.third}>
             <div className="line">
@@ -43,7 +45,7 @@ const PossibleDiscounts = ({ content, placeholder }) => {
                 const ProductIDS = Object.keys(product.ids);
                 return (
                   <div key={shortid.generate()}>
-                    {`${ProductIDS[0]}: ${product.ids[ProductIDS[0]]}`}
+                    {` ${product.ids[ProductIDS[0]]}`}
                   </div>
                 );
               })}
@@ -67,7 +69,7 @@ const PossibleDiscounts = ({ content, placeholder }) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 

@@ -6,12 +6,12 @@ import stylesShared from "src/components/respose/responseShared.css";
 const Text = ({ content, placeholder }) => {
   const { promotion } = content;
   return (
-    <div>
+    <>
       <div className={stylesShared.promo}>
         <div className={`${stylesShared.promoType} ${stylesShared.line}`}>
           Сообщение
         </div>
-        <div className="inline line">
+        <div className={`${stylesShared.inline} ${stylesShared.line}`}>
           <div className={stylesShared.half}>
             <div className={stylesShared.name}>Текст</div>
             <div className={`${stylesShared.value}  `}>{content.message}</div>
@@ -34,7 +34,7 @@ const Text = ({ content, placeholder }) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 
