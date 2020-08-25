@@ -77,82 +77,43 @@ exports[`Line has to match snapshot 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      class="promo"
+    >
       <div
-        class="promo"
+        class="promoType line"
+      >
+        Начисление баллов
+      </div>
+      <div
+        class="inline line"
       >
         <div
-          class="promoType line"
-        >
-          Начисление баллов
-        </div>
-        <div
-          class="inline line"
+          class="half"
         >
           <div
-            class="half"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
+            Название акции
           </div>
           <div
-            class="half"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Сумма
-            </div>
-            <div
-              class="promoValue"
-            >
-              10 465 118,7 ₽
-            </div>
-            <div
-              class="line"
-            >
-              <div
-                class="name"
-              >
-                До
-              </div>
-              <div
-                class="value"
-              >
-                15 сентября 2019 г.
-              </div>
-            </div>
+            Новая акция
           </div>
         </div>
         <div
-          class="  line"
+          class="half"
         >
           <div
-            class="line"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            10 465 118,7 ₽
           </div>
           <div
             class="line"
@@ -160,592 +121,615 @@ exports[`Line has to match snapshot 1`] = `
             <div
               class="name"
             >
-              Балльный счет
+              До
             </div>
             <div
               class="value"
             >
-              aa1HemNi
+              15 сентября 2019 г.
             </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: nCE33ILt
-            </div>
-          </div>
-        </div>
-        <div
-          class="line promoFooter"
-        >
-          <div
-            class="promoDetail"
-          >
-            MB ID: 181652215
-          </div>
-          <div
-            class="promoDetail"
-          >
-            Ext ID: promotion-1
-          </div>
-          <div
-            class="promoDetail"
-          >
-            mindbox
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div
-        class="promo"
+        class="  line"
       >
         <div
-          class="promoType line"
-        >
-          Скидка балламми
-        </div>
-        <div
-          class="inline line"
+          class="line"
         >
           <div
-            class="half"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
+            Примененный промокод
           </div>
           <div
-            class="half"
+            class="value"
           >
-            <div
-              class="name"
-            >
-              Сумма
-            </div>
-            <div
-              class="promoValue"
-            >
-              15 785 603,89 ₽
-            </div>
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
           </div>
         </div>
         <div
-          class="  line"
+          class="line"
         >
           <div
-            class="line"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+            Балльный счет
           </div>
           <div
-            class="line"
+            class="value"
           >
-            <div
-              class="name"
-            >
-              Балльный счет
-            </div>
-            <div
-              class="value"
-            >
-              dhVKsVFD
-            </div>
-            <div
-              class="status neutral"
-            >
-              Сис имя: Dc5EuQOG
-            </div>
-          </div>
-        </div>
-        <div
-          class="line promoFooter"
-        >
-          <div
-            class="promoDetail"
-          >
-            MB ID: 355187063
+            aa1HemNi
           </div>
           <div
-            class="promoDetail"
+            class="status neutral"
           >
-            Ext ID: promotion-1
-          </div>
-          <div
-            class="promoDetail"
-          >
-            mindbox
+            Сис имя: nCE33ILt
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div
-        class="promo"
+        class="line promoFooter"
       >
         <div
-          class="promoType line"
+          class="promoDetail"
         >
-          Скидка
+          MB ID: 181652215
         </div>
         <div
-          class="inline line"
+          class="promoDetail"
         >
-          <div
-            class="half"
-          >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
-          </div>
-          <div
-            class="half"
-          >
-            <div
-              class="name"
-            >
-              Сумма
-            </div>
-            <div
-              class="promoValue"
-            >
-              15 872 309,02 ₽
-            </div>
-          </div>
+          Ext ID: promotion-1
         </div>
         <div
-          class="  line"
+          class="promoDetail"
         >
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-        </div>
-        <div
-          class="line promoFooter"
-        >
-          <div
-            class="promoDetail"
-          >
-            MB ID: 1761263450
-          </div>
-          <div
-            class="promoDetail"
-          >
-            Ext ID: promotion-1
-          </div>
-          <div
-            class="promoDetail"
-          >
-            mindbox
-          </div>
+          mindbox
         </div>
       </div>
     </div>
-    <div>
+    <div
+      class="promo"
+    >
       <div
-        class="promo"
+        class="promoType line"
+      >
+        Скидка балламми
+      </div>
+      <div
+        class="inline line"
       >
         <div
-          class="promoType line"
-        >
-          Скидка на доставку
-        </div>
-        <div
-          class="inline line"
+          class="half"
         >
           <div
-            class="half"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
+            Название акции
           </div>
           <div
-            class="half"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Сумма
-            </div>
-            <div
-              class="promoValue"
-            >
-              4 987 163,88 ₽
-            </div>
+            Новая акция
           </div>
         </div>
         <div
-          class="  line"
+          class="half"
         >
           <div
-            class="line"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-        </div>
-        <div
-          class="line promoFooter"
-        >
-          <div
-            class="promoDetail"
-          >
-            MB ID: 361022015
+            Сумма
           </div>
           <div
-            class="promoDetail"
+            class="promoValue"
           >
-            Ext ID: promotion-1
-          </div>
-          <div
-            class="promoDetail"
-          >
-            mindbox
+            15 785 603,89 ₽
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div
-        class="promo"
+        class="  line"
       >
         <div
-          class="promoType line"
-        >
-          Сообщение
-        </div>
-        <div
-          class="inline line"
+          class="line"
         >
           <div
-            class="half"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
           </div>
         </div>
         <div
-          class="  line"
+          class="line"
         >
           <div
-            class="line"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-        </div>
-        <div
-          class="line promoFooter"
-        >
-          <div
-            class="promoDetail"
-          >
-            MB ID: 1991884686
+            Балльный счет
           </div>
           <div
-            class="promoDetail"
+            class="value"
           >
-            Ext ID: promotion-1
+            dhVKsVFD
           </div>
           <div
-            class="promoDetail"
+            class="status neutral"
           >
-            mindbox
+            Сис имя: Dc5EuQOG
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div
-        class="promo"
+        class="line promoFooter"
       >
         <div
-          class="promoType line"
+          class="promoDetail"
         >
-          Выданный промокод
+          MB ID: 355187063
         </div>
         <div
-          class="inline line"
+          class="promoDetail"
         >
-          <div
-            class="half"
-          >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
-          </div>
+          Ext ID: promotion-1
         </div>
         <div
-          class="  line"
+          class="promoDetail"
         >
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              Выданный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула:Новый пул промокодов
-            </div>
-          </div>
-        </div>
-        <div
-          class="line promoFooter"
-        >
-          <div
-            class="promoDetail"
-          >
-            MB ID: 1303715822
-          </div>
-          <div
-            class="promoDetail"
-          >
-            Ext ID: promotion-1
-          </div>
-          <div
-            class="promoDetail"
-          >
-            mindbox
-          </div>
+          mindbox
         </div>
       </div>
     </div>
-    <div>
+    <div
+      class="promo"
+    >
       <div
-        class="promo"
+        class="promoType line"
+      >
+        Скидка
+      </div>
+      <div
+        class="inline line"
       >
         <div
-          class="promoType line"
-        >
-          Скидка
-        </div>
-        <div
-          class="inline line"
+          class="half"
         >
           <div
-            class="half"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Название акции
-            </div>
-            <div
-              class="value line"
-            >
-              Новая акция
-            </div>
+            Название акции
           </div>
           <div
-            class="half"
+            class="value line"
           >
-            <div
-              class="name"
-            >
-              Сумма
-            </div>
-            <div
-              class="promoValue"
-            >
-              2 714 279,45 ₽
-            </div>
+            Новая акция
           </div>
         </div>
         <div
-          class="  line"
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            15 872 309,02 ₽
+          </div>
+        </div>
+      </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
+          class="promoDetail"
+        >
+          MB ID: 1761263450
+        </div>
+        <div
+          class="promoDetail"
+        >
+          Ext ID: promotion-1
+        </div>
+        <div
+          class="promoDetail"
+        >
+          mindbox
+        </div>
+      </div>
+    </div>
+    <div
+      class="promo"
+    >
+      <div
+        class="promoType line"
+      >
+        Скидка на доставку
+      </div>
+      <div
+        class="inline line"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
+          >
+            Новая акция
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            4 987 163,88 ₽
+          </div>
+        </div>
+      </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
+          class="promoDetail"
+        >
+          MB ID: 361022015
+        </div>
+        <div
+          class="promoDetail"
+        >
+          Ext ID: promotion-1
+        </div>
+        <div
+          class="promoDetail"
+        >
+          mindbox
+        </div>
+      </div>
+    </div>
+    <div
+      class="promo"
+    >
+      <div
+        class="promoType line"
+      >
+        Сообщение
+      </div>
+      <div
+        class="inline line"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
+          >
+            Новая акция
+          </div>
+        </div>
+      </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
+          class="promoDetail"
+        >
+          MB ID: 1991884686
+        </div>
+        <div
+          class="promoDetail"
+        >
+          Ext ID: promotion-1
+        </div>
+        <div
+          class="promoDetail"
+        >
+          mindbox
+        </div>
+      </div>
+    </div>
+    <div
+      class="promo"
+    >
+      <div
+        class="promoType line"
+      >
+        Выданный промокод
+      </div>
+      <div
+        class="inline line"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
+          >
+            Новая акция
+          </div>
+        </div>
+      </div>
+      <div
+        class="  line"
+      >
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Примененный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
+          </div>
+        </div>
+        <div
+          class="line"
+        >
+          <div
+            class="name"
+          >
+            Выданный промокод
+          </div>
+          <div
+            class="value"
+          >
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула:Новый пул промокодов
+          </div>
+        </div>
+      </div>
+      <div
+        class="line promoFooter"
+      >
+        <div
+          class="promoDetail"
+        >
+          MB ID: 1303715822
+        </div>
+        <div
+          class="promoDetail"
+        >
+          Ext ID: promotion-1
+        </div>
+        <div
+          class="promoDetail"
+        >
+          mindbox
+        </div>
+      </div>
+    </div>
+    <div
+      class="promo"
+    >
+      <div
+        class="promoType line"
+      >
+        Скидка
+      </div>
+      <div
+        class="inline line"
+      >
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Название акции
+          </div>
+          <div
+            class="value line"
+          >
+            Новая акция
+          </div>
+        </div>
+        <div
+          class="half"
+        >
+          <div
+            class="name"
+          >
+            Сумма
+          </div>
+          <div
+            class="promoValue"
+          >
+            2 714 279,45 ₽
+          </div>
+        </div>
+      </div>
+      <div
+        class="  line"
+      />
+      <div
+        class="line promoFooter"
+      >
+        <div
+          class="promoDetail"
+        >
+          MB ID: 1507016125
+        </div>
+        <div
+          class="promoDetail"
+        >
+          Ext ID: promotion-1
+        </div>
+        <div
+          class="promoDetail"
+        >
+          mindbox
+        </div>
+      </div>
+    </div>
+    <div
+      class="promo"
+    >
+      <div
+        class="promoType line"
+      >
+        Скидка
+      </div>
+      <div
+        class="inline line"
+      >
+        <div
+          class="half"
         />
         <div
-          class="line promoFooter"
+          class="half"
         >
           <div
-            class="promoDetail"
+            class="name"
           >
-            MB ID: 1507016125
+            Сумма
           </div>
           <div
-            class="promoDetail"
+            class="promoValue"
           >
-            Ext ID: promotion-1
-          </div>
-          <div
-            class="promoDetail"
-          >
-            mindbox
+            20 439 998,48 ₽
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div
-        class="promo"
+        class="  line"
       >
         <div
-          class="promoType line"
-        >
-          Скидка
-        </div>
-        <div
-          class="inline line"
+          class="line"
         >
           <div
-            class="half"
-          />
-          <div
-            class="half"
+            class="name"
           >
-            <div
-              class="name"
-            >
-              Сумма
-            </div>
-            <div
-              class="promoValue"
-            >
-              20 439 998,48 ₽
-            </div>
+            Примененный промокод
           </div>
-        </div>
-        <div
-          class="  line"
-        >
           <div
-            class="line"
+            class="value"
           >
-            <div
-              class="name"
-            >
-              Примененный промокод
-            </div>
-            <div
-              class="value"
-            >
-              ABC12345
-            </div>
-            <div
-              class="status neutral"
-            >
-              Из пула: Новый пул промокодов
-            </div>
+            ABC12345
+          </div>
+          <div
+            class="status neutral"
+          >
+            Из пула: Новый пул промокодов
           </div>
         </div>
       </div>

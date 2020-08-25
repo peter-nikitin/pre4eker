@@ -2,82 +2,43 @@
 
 exports[`AppliedPromotion match snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="promo"
+  >
     <div
-      class="promo"
+      class="promoType line"
+    >
+      Начисление баллов
+    </div>
+    <div
+      class="inline line"
     >
       <div
-        class="promoType line"
-      >
-        Начисление баллов
-      </div>
-      <div
-        class="inline line"
+        class="half"
       >
         <div
-          class="half"
+          class="name"
         >
-          <div
-            class="name"
-          >
-            Название акции
-          </div>
-          <div
-            class="value line"
-          >
-            Новая акция
-          </div>
+          Название акции
         </div>
         <div
-          class="half"
+          class="value line"
         >
-          <div
-            class="name"
-          >
-            Сумма
-          </div>
-          <div
-            class="promoValue"
-          >
-            1 180 401,2 ₽
-          </div>
-          <div
-            class="line"
-          >
-            <div
-              class="name"
-            >
-              До
-            </div>
-            <div
-              class="value"
-            >
-              14 февраля 2017 г.
-            </div>
-          </div>
+          Новая акция
         </div>
       </div>
       <div
-        class="  line"
+        class="half"
       >
         <div
-          class="line"
+          class="name"
         >
-          <div
-            class="name"
-          >
-            Примененный промокод
-          </div>
-          <div
-            class="value"
-          >
-            ABC12345
-          </div>
-          <div
-            class="status neutral"
-          >
-            Из пула: Новый пул промокодов
-          </div>
+          Сумма
+        </div>
+        <div
+          class="promoValue"
+        >
+          1 180 401,2 ₽
         </div>
         <div
           class="line"
@@ -85,38 +46,75 @@ exports[`AppliedPromotion match snapshot 1`] = `
           <div
             class="name"
           >
-            Балльный счет
+            До
           </div>
           <div
             class="value"
           >
-            tmtk1GOB
-          </div>
-          <div
-            class="status neutral"
-          >
-            Сис имя: ojbLVRsD
+            14 февраля 2017 г.
           </div>
         </div>
       </div>
+    </div>
+    <div
+      class="  line"
+    >
       <div
-        class="line promoFooter"
+        class="line"
       >
         <div
-          class="promoDetail"
+          class="name"
         >
-          MB ID: 1043337289
+          Примененный промокод
         </div>
         <div
-          class="promoDetail"
+          class="value"
         >
-          Ext ID: promotion-1
+          ABC12345
         </div>
         <div
-          class="promoDetail"
+          class="status neutral"
         >
-          mindbox
+          Из пула: Новый пул промокодов
         </div>
+      </div>
+      <div
+        class="line"
+      >
+        <div
+          class="name"
+        >
+          Балльный счет
+        </div>
+        <div
+          class="value"
+        >
+          tmtk1GOB
+        </div>
+        <div
+          class="status neutral"
+        >
+          Сис имя: ojbLVRsD
+        </div>
+      </div>
+    </div>
+    <div
+      class="line promoFooter"
+    >
+      <div
+        class="promoDetail"
+      >
+        MB ID: 1043337289
+      </div>
+      <div
+        class="promoDetail"
+      >
+        Ext ID: promotion-1
+      </div>
+      <div
+        class="promoDetail"
+      >
+        mindbox
       </div>
     </div>
   </div>

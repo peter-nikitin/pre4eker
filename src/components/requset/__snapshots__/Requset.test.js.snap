@@ -5,6 +5,11 @@ exports[`Request match snapshot 1`] = `
   <div
     class="leftPanel"
   >
+    <h2
+      class="header"
+    >
+      Запрос
+    </h2>
     <div
       class="formGroup"
     >
