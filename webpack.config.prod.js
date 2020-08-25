@@ -8,7 +8,8 @@ module.exports = {
   mode: "production",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
+    filename: "bundle-[hash].js",
+    chunkFilename: "[id]-[hash].js",
     publicPath: "/",
   },
   resolve: {
