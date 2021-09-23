@@ -6,23 +6,19 @@ exports[`bonus point change match snapshot 1`] = `
     class="promo"
   >
     <div
-      class="inline"
+      class="line"
     >
       <div
-        class="half"
+        class="promoType"
       >
-        <div
-          class="promoType"
-        >
-          Изменения баллов
-        </div>
+        Изменения баллов
       </div>
     </div>
     <div
-      class="inline"
+      class="  line"
     >
       <div
-        class="third"
+        class="line"
       >
         <div
           class="name"
@@ -41,43 +37,43 @@ exports[`bonus point change match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="third"
+        class="inline line"
       >
         <div
-          class="name"
+          class="half"
         >
-          Начислено
-        </div>
-        <div
-          class="value"
-        >
-          1 396 638,62 ₽
-        </div>
-      </div>
-      <div
-        class="third"
-      >
-        <div
-          class="name"
-        >
-          Списано
+          <div
+            class="name"
+          >
+            Начислено
+          </div>
+          <div
+            class="value"
+          >
+            1,396,638.62 ₽
+          </div>
         </div>
         <div
           class="half"
         >
           <div
+            class="name"
+          >
+            Списано
+          </div>
+          <div
             class="value"
           >
-            5 761 799,72 ₽
+            5,761,799.72 ₽
           </div>
         </div>
       </div>
     </div>
     <div
-      class="inline"
+      class="  line"
     >
       <div
-        class="third"
+        class="line"
       >
         <div
           class="name"
@@ -96,34 +92,34 @@ exports[`bonus point change match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="third"
+        class="inline line"
       >
         <div
-          class="name"
+          class="half"
         >
-          Начислено
-        </div>
-        <div
-          class="value"
-        >
-          20 955 125,72 ₽
-        </div>
-      </div>
-      <div
-        class="third"
-      >
-        <div
-          class="name"
-        >
-          Списано
+          <div
+            class="name"
+          >
+            Начислено
+          </div>
+          <div
+            class="value"
+          >
+            20,955,125.72 ₽
+          </div>
         </div>
         <div
           class="half"
         >
           <div
+            class="name"
+          >
+            Списано
+          </div>
+          <div
             class="value"
           >
-            10 868 072,91 ₽
+            10,868,072.91 ₽
           </div>
         </div>
       </div>

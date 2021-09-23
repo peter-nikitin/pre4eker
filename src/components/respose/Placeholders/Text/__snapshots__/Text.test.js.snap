@@ -2,65 +2,63 @@
 
 exports[`Text snapshot with content should match snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="promo"
+  >
     <div
-      class="promo"
+      class="promoType line"
+    >
+      Сообщение
+    </div>
+    <div
+      class="inline line"
     >
       <div
-        class="promoType line"
-      >
-        Сообщение
-      </div>
-      <div
-        class="inline line"
+        class="half"
       >
         <div
-          class="half"
+          class="name"
         >
-          <div
-            class="name"
-          >
-            Текст
-          </div>
-          <div
-            class="value  "
-          >
-            Ура! У вас скидка!
-          </div>
+          Текст
         </div>
         <div
-          class="half"
+          class="value  "
         >
-          <div
-            class="name"
-          >
-            Плэйсхолдер
-          </div>
-          <div
-            class="value  "
-          >
-            top
-          </div>
+          Ура! У вас скидка!
         </div>
       </div>
       <div
-        class="line promoFooter"
+        class="half"
       >
         <div
-          class="promoDetail"
+          class="name"
         >
-          MB ID: 1672736105
+          Плэйсхолдер
         </div>
         <div
-          class="promoDetail"
+          class="value  "
         >
-          Ext ID: promotion-1
+          top
         </div>
-        <div
-          class="promoDetail"
-        >
-          mindbox
-        </div>
+      </div>
+    </div>
+    <div
+      class="line promoFooter"
+    >
+      <div
+        class="promoDetail"
+      >
+        MB ID: 1672736105
+      </div>
+      <div
+        class="promoDetail"
+      >
+        Ext ID: promotion-1
+      </div>
+      <div
+        class="promoDetail"
+      >
+        mindbox
       </div>
     </div>
   </div>
