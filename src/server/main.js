@@ -3,13 +3,10 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const path = require("path");
-const pug = require("pug");
-// const router = require("./router");
-// const helpers = require("./helpers");
+
 const { notFound } = require("./middlewares");
 const mindbox = require("./prechek");
 const config = require("./config");
-// const watch = require("./watch");
 
 // Initialize Express app.
 const app = express();
@@ -32,7 +29,6 @@ app.use(cookieParser());
 app.use("/", express.static(config.static));
 
 // Mount routes.
-// app.use("/", router);
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../../build/index.html"));
 });

@@ -4,7 +4,7 @@ const { parseStringPromise } = new Parser({
   explicitArray: false,
 });
 
-const requestToJSON = (data) => {
+export const requestToJSON = (data) => {
   const operation = data;
 
   try {
@@ -45,7 +45,7 @@ const requestToJSON = (data) => {
   return JSON.stringify(operation, null, 1);
 };
 
-const responseToJSON = (data) => {
+export const responseToJSON = (data) => {
   const result = data;
   try {
     if (typeof result.order !== "undefined") {

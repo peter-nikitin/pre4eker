@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Line from "../Line/Line";
 import shortid from "shortid";
+import Line from "../Line/Line";
 
 const Lines = ({ lines }) => {
   const linesWithIDs = lines.map((line) => ({

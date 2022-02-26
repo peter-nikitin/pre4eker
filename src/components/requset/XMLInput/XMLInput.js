@@ -1,11 +1,9 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-xml";
 import "ace-builds/src-noconflict/theme-xcode";
-
-import style from "./XMLInput.css";
 
 const ace = require("ace-builds/src-noconflict/ace");
 

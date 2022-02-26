@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import Button from "src/components/Button/Button";
@@ -6,7 +6,6 @@ import Button from "src/components/Button/Button";
 import Customer from "../Customer/Customer";
 import Order from "../Order/Order";
 import Lines from "../Lines/Lines";
-import RequestSettings from "../RequestSettings/RequestSettings";
 
 import style from "./RequestForm.css";
 

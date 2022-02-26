@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Input from "src/components/Input/Input";
-import Button from "src/components/Button/Button";
 
 import style from "./IdField.css";
 

@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import store from "./configeru-store";
 
 import "./style.css";
-import Header from "./components/Header/Header";
 import MainContainer from "./components/Main/MainContainer";
 
 const App = () => (

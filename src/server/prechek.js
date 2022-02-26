@@ -1,5 +1,3 @@
-const path = require("path");
-const fs = require("fs");
 const fetch = require("node-fetch");
 
 const mindbox = ({ endpoint, key, operation, body }) => {
