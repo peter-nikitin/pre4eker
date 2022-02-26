@@ -46,7 +46,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            10,528,369.9 ₽
+            10 528 369,9 ₽
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="  value"
           >
-            October 23, 2018
+            23 октября 2018 г.
           </div>
         </div>
         <div
@@ -78,7 +78,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="  value"
           >
-            April 20, 2019
+            20 апреля 2019 г.
           </div>
         </div>
         <div
@@ -92,7 +92,7 @@ exports[`customer match snapshot 1`] = `
           <div
             class="  value"
           >
-            November 21, 2017
+            21 ноября 2017 г.
           </div>
         </div>
       </div>

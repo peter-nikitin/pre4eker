@@ -77,7 +77,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            20,638,572.96 ₽
+            20 638 572,96 ₽
           </div>
         </div>
         <div
@@ -91,7 +91,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            10,542,306.11 ₽
+            10 542 306,11 ₽
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            1,180,401.2 ₽
+            1 180 401,2 ₽
           </div>
           <div
             class="line"
@@ -173,7 +173,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="value"
             >
-              February 14, 2017
+              14 февраля 2017 г.
             </div>
           </div>
         </div>
@@ -276,7 +276,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            16,327,420.01 ₽
+            16 327 420,01 ₽
           </div>
         </div>
       </div>
@@ -378,7 +378,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            6,929,359.6 ₽
+            6 929 359,6 ₽
           </div>
         </div>
       </div>
@@ -461,7 +461,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            6,653,645.27 ₽
+            6 653 645,27 ₽
           </div>
         </div>
       </div>
@@ -701,7 +701,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            17,853,107.91 ₽
+            17 853 107,91 ₽
           </div>
         </div>
       </div>
@@ -750,7 +750,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            17,074,535.58 ₽
+            17 074 535,58 ₽
           </div>
         </div>
       </div>
@@ -822,7 +822,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              10,528,369.9 ₽
+              10 528 369,9 ₽
             </div>
           </div>
         </div>
@@ -840,7 +840,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="  value"
             >
-              October 23, 2018
+              23 октября 2018 г.
             </div>
           </div>
           <div
@@ -854,7 +854,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="  value"
             >
-              April 20, 2019
+              20 апреля 2019 г.
             </div>
           </div>
           <div
@@ -868,7 +868,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="  value"
             >
-              November 21, 2017
+              21 ноября 2017 г.
             </div>
           </div>
         </div>
@@ -950,7 +950,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="promoValue"
             >
-              6,533,321.56 ₽
+              6 533 321,56 ₽
             </div>
           </div>
         </div>
@@ -968,7 +968,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="  value"
             >
-              September 27, 2019
+              27 сентября 2019 г.
             </div>
           </div>
           <div
@@ -982,7 +982,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="  value"
             >
-              February 16, 2018
+              16 февраля 2018 г.
             </div>
           </div>
           <div
@@ -996,7 +996,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="  value"
             >
-              September 15, 2017
+              15 сентября 2017 г.
             </div>
           </div>
         </div>
@@ -1074,7 +1074,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            8,295,431.24 ₽
+            8 295 431,24 ₽
           </div>
         </div>
         <div
@@ -1088,7 +1088,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            1,559,295.84 ₽
+            1 559 295,84 ₽
           </div>
         </div>
       </div>
@@ -1111,7 +1111,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            2,202,060.23 ₽
+            2 202 060,23 ₽
           </div>
         </div>
         <div
@@ -1125,7 +1125,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            19,474,460.28 ₽
+            19 474 460,28 ₽
           </div>
         </div>
         <div
@@ -1139,7 +1139,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            16,594,789.28 ₽
+            16 594 789,28 ₽
           </div>
         </div>
       </div>
@@ -1184,7 +1184,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            15,417,181.89 ₽
+            15 417 181,89 ₽
           </div>
         </div>
         <div
@@ -1198,7 +1198,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="promoValue"
           >
-            20,423,028.05 ₽
+            20 423 028,05 ₽
           </div>
         </div>
       </div>
@@ -1221,7 +1221,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            8,865,936.3 ₽
+            8 865 936,3 ₽
           </div>
         </div>
         <div
@@ -1235,7 +1235,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            19,197,363.33 ₽
+            19 197 363,33 ₽
           </div>
         </div>
         <div
@@ -1249,7 +1249,7 @@ exports[`order with data match snapshot 1`] = `
           <div
             class="value"
           >
-            15,632,017.52 ₽
+            15 632 017,52 ₽
           </div>
         </div>
       </div>
@@ -1302,7 +1302,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="value"
             >
-              1,396,638.62 ₽
+              1 396 638,62 ₽
             </div>
           </div>
           <div
@@ -1316,7 +1316,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="value"
             >
-              5,761,799.72 ₽
+              5 761 799,72 ₽
             </div>
           </div>
         </div>
@@ -1357,7 +1357,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="value"
             >
-              20,955,125.72 ₽
+              20 955 125,72 ₽
             </div>
           </div>
           <div
@@ -1371,7 +1371,7 @@ exports[`order with data match snapshot 1`] = `
             <div
               class="value"
             >
-              10,868,072.91 ₽
+              10 868 072,91 ₽
             </div>
           </div>
         </div>
@@ -1814,7 +1814,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            20,638,572.96 ₽
+            20 638 572,96 ₽
           </div>
         </div>
         <div
@@ -1828,7 +1828,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            10,542,306.11 ₽
+            10 542 306,11 ₽
           </div>
         </div>
       </div>
@@ -1925,7 +1925,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            1,180,401.2 ₽
+            1 180 401,2 ₽
           </div>
           <div
             class="line"
@@ -1938,7 +1938,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="value"
             >
-              February 14, 2017
+              14 февраля 2017 г.
             </div>
           </div>
         </div>
@@ -2041,7 +2041,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            16,327,420.01 ₽
+            16 327 420,01 ₽
           </div>
         </div>
       </div>
@@ -2143,7 +2143,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            6,929,359.6 ₽
+            6 929 359,6 ₽
           </div>
         </div>
       </div>
@@ -2226,7 +2226,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            6,653,645.27 ₽
+            6 653 645,27 ₽
           </div>
         </div>
       </div>
@@ -2466,7 +2466,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            17,853,107.91 ₽
+            17 853 107,91 ₽
           </div>
         </div>
       </div>
@@ -2515,7 +2515,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            17,074,535.58 ₽
+            17 074 535,58 ₽
           </div>
         </div>
       </div>
@@ -2587,7 +2587,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="promoValue"
             >
-              10,528,369.9 ₽
+              10 528 369,9 ₽
             </div>
           </div>
         </div>
@@ -2605,7 +2605,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="  value"
             >
-              October 23, 2018
+              23 октября 2018 г.
             </div>
           </div>
           <div
@@ -2619,7 +2619,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="  value"
             >
-              April 20, 2019
+              20 апреля 2019 г.
             </div>
           </div>
           <div
@@ -2633,7 +2633,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="  value"
             >
-              November 21, 2017
+              21 ноября 2017 г.
             </div>
           </div>
         </div>
@@ -2715,7 +2715,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="promoValue"
             >
-              6,533,321.56 ₽
+              6 533 321,56 ₽
             </div>
           </div>
         </div>
@@ -2733,7 +2733,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="  value"
             >
-              September 27, 2019
+              27 сентября 2019 г.
             </div>
           </div>
           <div
@@ -2747,7 +2747,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="  value"
             >
-              February 16, 2018
+              16 февраля 2018 г.
             </div>
           </div>
           <div
@@ -2761,7 +2761,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="  value"
             >
-              September 15, 2017
+              15 сентября 2017 г.
             </div>
           </div>
         </div>
@@ -2839,7 +2839,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            8,295,431.24 ₽
+            8 295 431,24 ₽
           </div>
         </div>
         <div
@@ -2853,7 +2853,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            1,559,295.84 ₽
+            1 559 295,84 ₽
           </div>
         </div>
       </div>
@@ -2876,7 +2876,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            2,202,060.23 ₽
+            2 202 060,23 ₽
           </div>
         </div>
         <div
@@ -2890,7 +2890,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            19,474,460.28 ₽
+            19 474 460,28 ₽
           </div>
         </div>
         <div
@@ -2904,7 +2904,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            16,594,789.28 ₽
+            16 594 789,28 ₽
           </div>
         </div>
       </div>
@@ -2949,7 +2949,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            15,417,181.89 ₽
+            15 417 181,89 ₽
           </div>
         </div>
         <div
@@ -2963,7 +2963,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="promoValue"
           >
-            20,423,028.05 ₽
+            20 423 028,05 ₽
           </div>
         </div>
       </div>
@@ -2986,7 +2986,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            8,865,936.3 ₽
+            8 865 936,3 ₽
           </div>
         </div>
         <div
@@ -3000,7 +3000,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            19,197,363.33 ₽
+            19 197 363,33 ₽
           </div>
         </div>
         <div
@@ -3014,7 +3014,7 @@ exports[`order with data match snapshot 2`] = `
           <div
             class="value"
           >
-            15,632,017.52 ₽
+            15 632 017,52 ₽
           </div>
         </div>
       </div>
@@ -3067,7 +3067,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="value"
             >
-              1,396,638.62 ₽
+              1 396 638,62 ₽
             </div>
           </div>
           <div
@@ -3081,7 +3081,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="value"
             >
-              5,761,799.72 ₽
+              5 761 799,72 ₽
             </div>
           </div>
         </div>
@@ -3122,7 +3122,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="value"
             >
-              20,955,125.72 ₽
+              20 955 125,72 ₽
             </div>
           </div>
           <div
@@ -3136,7 +3136,7 @@ exports[`order with data match snapshot 2`] = `
             <div
               class="value"
             >
-              10,868,072.91 ₽
+              10 868 072,91 ₽
             </div>
           </div>
         </div>
@@ -3579,7 +3579,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            20,638,572.96 ₽
+            20 638 572,96 ₽
           </div>
         </div>
         <div
@@ -3593,7 +3593,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            10,542,306.11 ₽
+            10 542 306,11 ₽
           </div>
         </div>
       </div>
@@ -3662,7 +3662,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            1,180,401.2 ₽
+            1 180 401,2 ₽
           </div>
           <div
             class="line"
@@ -3675,7 +3675,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="value"
             >
-              February 14, 2017
+              14 февраля 2017 г.
             </div>
           </div>
         </div>
@@ -3778,7 +3778,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            16,327,420.01 ₽
+            16 327 420,01 ₽
           </div>
         </div>
       </div>
@@ -3880,7 +3880,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            6,929,359.6 ₽
+            6 929 359,6 ₽
           </div>
         </div>
       </div>
@@ -3963,7 +3963,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            6,653,645.27 ₽
+            6 653 645,27 ₽
           </div>
         </div>
       </div>
@@ -4203,7 +4203,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            17,853,107.91 ₽
+            17 853 107,91 ₽
           </div>
         </div>
       </div>
@@ -4252,7 +4252,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            17,074,535.58 ₽
+            17 074 535,58 ₽
           </div>
         </div>
       </div>
@@ -4324,7 +4324,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="promoValue"
             >
-              10,528,369.9 ₽
+              10 528 369,9 ₽
             </div>
           </div>
         </div>
@@ -4342,7 +4342,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="  value"
             >
-              October 23, 2018
+              23 октября 2018 г.
             </div>
           </div>
           <div
@@ -4356,7 +4356,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="  value"
             >
-              April 20, 2019
+              20 апреля 2019 г.
             </div>
           </div>
           <div
@@ -4370,7 +4370,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="  value"
             >
-              November 21, 2017
+              21 ноября 2017 г.
             </div>
           </div>
         </div>
@@ -4452,7 +4452,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="promoValue"
             >
-              6,533,321.56 ₽
+              6 533 321,56 ₽
             </div>
           </div>
         </div>
@@ -4470,7 +4470,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="  value"
             >
-              September 27, 2019
+              27 сентября 2019 г.
             </div>
           </div>
           <div
@@ -4484,7 +4484,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="  value"
             >
-              February 16, 2018
+              16 февраля 2018 г.
             </div>
           </div>
           <div
@@ -4498,7 +4498,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="  value"
             >
-              September 15, 2017
+              15 сентября 2017 г.
             </div>
           </div>
         </div>
@@ -4576,7 +4576,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            8,295,431.24 ₽
+            8 295 431,24 ₽
           </div>
         </div>
         <div
@@ -4590,7 +4590,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            1,559,295.84 ₽
+            1 559 295,84 ₽
           </div>
         </div>
       </div>
@@ -4613,7 +4613,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            2,202,060.23 ₽
+            2 202 060,23 ₽
           </div>
         </div>
         <div
@@ -4627,7 +4627,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            19,474,460.28 ₽
+            19 474 460,28 ₽
           </div>
         </div>
         <div
@@ -4641,7 +4641,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            16,594,789.28 ₽
+            16 594 789,28 ₽
           </div>
         </div>
       </div>
@@ -4686,7 +4686,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            15,417,181.89 ₽
+            15 417 181,89 ₽
           </div>
         </div>
         <div
@@ -4700,7 +4700,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="promoValue"
           >
-            20,423,028.05 ₽
+            20 423 028,05 ₽
           </div>
         </div>
       </div>
@@ -4723,7 +4723,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            8,865,936.3 ₽
+            8 865 936,3 ₽
           </div>
         </div>
         <div
@@ -4737,7 +4737,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            19,197,363.33 ₽
+            19 197 363,33 ₽
           </div>
         </div>
         <div
@@ -4751,7 +4751,7 @@ exports[`order with data match snapshot 3`] = `
           <div
             class="value"
           >
-            15,632,017.52 ₽
+            15 632 017,52 ₽
           </div>
         </div>
       </div>
@@ -4804,7 +4804,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="value"
             >
-              1,396,638.62 ₽
+              1 396 638,62 ₽
             </div>
           </div>
           <div
@@ -4818,7 +4818,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="value"
             >
-              5,761,799.72 ₽
+              5 761 799,72 ₽
             </div>
           </div>
         </div>
@@ -4859,7 +4859,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="value"
             >
-              20,955,125.72 ₽
+              20 955 125,72 ₽
             </div>
           </div>
           <div
@@ -4873,7 +4873,7 @@ exports[`order with data match snapshot 3`] = `
             <div
               class="value"
             >
-              10,868,072.91 ₽
+              10 868 072,91 ₽
             </div>
           </div>
         </div>

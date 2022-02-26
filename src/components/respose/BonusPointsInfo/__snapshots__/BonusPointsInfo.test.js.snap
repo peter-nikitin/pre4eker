@@ -42,7 +42,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="promoValue"
         >
-          8,295,431.24 ₽
+          8 295 431,24 ₽
         </div>
       </div>
       <div
@@ -56,7 +56,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="promoValue"
         >
-          1,559,295.84 ₽
+          1 559 295,84 ₽
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="value"
         >
-          2,202,060.23 ₽
+          2 202 060,23 ₽
         </div>
       </div>
       <div
@@ -93,7 +93,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="value"
         >
-          19,474,460.28 ₽
+          19 474 460,28 ₽
         </div>
       </div>
       <div
@@ -107,7 +107,7 @@ exports[`customer match snapshot 1`] = `
         <div
           class="value"
         >
-          16,594,789.28 ₽
+          16 594 789,28 ₽
         </div>
       </div>
     </div>
