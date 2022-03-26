@@ -92,17 +92,33 @@ const Request = ({
         />
       </div>
       <div className={style.buttonLine}>
-        {Object.keys(formTypes).map((button) => (
-          <Button
-            key={button}
-            type="TEXT"
-            action={() => changeFormType(formTypes[button].type)}
-            size="sizeAuto"
-            active={type === formTypes[button].type}
-          >
-            {formTypes[button].text}
-          </Button>
-        ))}
+        <Button
+          key={formTypes.requestForm.type}
+          type="TEXT"
+          action={() => changeFormType(formTypes.requestForm.type)}
+          size="sizeAuto"
+          active={type === formTypes.requestForm.type}
+        >
+          Конструктор запроса
+        </Button>
+        <Button
+          key={formTypes.requestJSON.type}
+          type="TEXT"
+          action={() => changeFormType(formTypes.requestJSON.type)}
+          size="sizeAuto"
+          active={type === formTypes.requestJSON.type}
+        >
+          Тело запроса
+        </Button>
+        <Button
+          key={formTypes.responseJSON.type}
+          type="TEXT"
+          action={() => changeFormType(formTypes.responseJSON.type)}
+          size="sizeAuto"
+          active={type === formTypes.responseJSON.type}
+        >
+          Тело ответа
+        </Button>
       </div>
 
       {drawRequestForm(type)}

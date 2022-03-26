@@ -25,14 +25,6 @@ app.use(bodyParser.json());
 // Parse cookies for every request.
 app.use(cookieParser());
 
-// Serve static files.
-app.use("/", express.static(config.static));
-
-// Mount routes.
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../../build/index.html"));
-});
-
 app.post("/prechek", (req, res, next) => {
   mindbox(req.body)
     .then((resp) => resp.json())
